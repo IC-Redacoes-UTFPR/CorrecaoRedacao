@@ -63,6 +63,17 @@ _last_call: dict[str, float] = {}
 _drop: dict[str, set] = {}  # "provider/model" -> campos opcionais que o modelo rejeita
 KEY_ENV: str | None = None  # sobrescreve o nome da variavel da chave (--key-env)
 _anchors: dict[str, str] | None = None  # comp -> bloco de exemplos, carregado sob demanda
+RUBRICA_C5_PATH: str | None = None  # --rubrica-c5, texto da rubrica de C5 do modo mts_rr
+
+# Instrucao de C5 do mts_fs2. E a versao 0 do Reflect-and-Revise (reflect_revise.py).
+C5_RUBRICA_V0 = (
+    "Passo 1: verifique cada elemento na proposta e marque presente ou ausente: "
+    "agente (quem faz), acao (o que faz), modo/meio (como), efeito (para que), "
+    "detalhamento (explica algum elemento).\n"
+    "Passo 2: conte os elementos validos e articulados ao problema. A nota segue a "
+    "contagem, NAO e tudo ou nada: 200 os 5; 160 quatro; 120 tres; 80 dois; 40 um; "
+    "0 so quando nao ha proposta alguma ou ela fere direitos humanos."
+)
 
 
 def _bloco_anchors(comp, path="data/anchors.csv"):
@@ -212,15 +223,22 @@ def prompt_mts_fs2(essay, comp):
     """mts_fs para C1-C4; para C5, ancoras + checklist dos 5 elementos (opcao A)."""
     if comp != "C5":
         return prompt_mts_fs(essay, comp)
+    return prompt_c5(essay, C5_RUBRICA_V0)
+
+
+def prompt_mts_rr(essay, comp):
+    """mts_fs2 com a rubrica de C5 lida de arquivo (--rubrica-c5), refinada por Reflect-and-Revise."""
+    if comp != "C5":
+        return prompt_mts_fs(essay, comp)
+    with open(RUBRICA_C5_PATH, encoding="utf-8") as fh:
+        return prompt_c5(essay, fh.read().strip())
+
+
+def prompt_c5(essay, rubrica):
     return (
         "Voce e avaliador oficial de redacoes do ENEM. Avalie SOMENTE a competencia C5 "
         "(proposta de intervencao para o problema, respeitando os direitos humanos).\n\n"
-        "Passo 1: verifique cada elemento na proposta e marque presente ou ausente: "
-        "agente (quem faz), acao (o que faz), modo/meio (como), efeito (para que), "
-        "detalhamento (explica algum elemento).\n"
-        "Passo 2: conte os elementos validos e articulados ao problema. A nota segue a "
-        "contagem, NAO e tudo ou nada: 200 os 5; 160 quatro; 120 tres; 80 dois; 40 um; "
-        "0 so quando nao ha proposta alguma ou ela fere direitos humanos.\n\n"
+        f"{rubrica}\n\n"
         "Exemplos para calibrar a escala:\n\n"
         f"{_bloco_anchors('C5')}\n"
         f"REDACAO A AVALIAR:\n{essay}\n\n"
@@ -293,31 +311,31 @@ def parse_notas(text, comp=None):
     return vals
 
 
-def score_redacao(provider, model, essay, modo, temperature):
+def score_redacao(provider, model, essay, modo, temperature, comps=COMPS):
     if modo == "holistico":
         resp = chat(provider, model, prompt_holistico(essay), temperature, 2048)
         notas = parse_notas(resp)
         raw = "" if notas else str(resp)  # guarda a resposta crua so quando o parse falha
     else:
         gerar = {"mts2": prompt_mts_v2, "mts_fs": prompt_mts_fs,
-                 "mts_fs2": prompt_mts_fs2}.get(modo, prompt_mts)
-        maxtok = 800 if modo in ("mts2", "mts_fs2") else 512
+                 "mts_fs2": prompt_mts_fs2, "mts_rr": prompt_mts_rr}.get(modo, prompt_mts)
+        maxtok = 800 if modo in ("mts2", "mts_fs2", "mts_rr") else 512
         notas, partes = {}, []
-        for c in COMPS:
+        for c in comps:
             resp = chat(provider, model, gerar(essay, c), temperature, maxtok)
             p = parse_notas(resp, comp=c)
             if p is None:
                 return None, "|".join(partes)
             notas[c] = p[c]
             partes.append(f"{c}: {p['justificativa']}")
-        notas["Nota_Total"] = sum(notas[c] for c in COMPS)
+        notas["Nota_Total"] = sum(notas[c] for c in COMPS) if len(notas) == len(COMPS) else ""
         raw = " || ".join(partes)
     if notas is None:
         return None, ""
     return notas, raw
 
 
-def run(amostra, provider, model, modo, out, temperature, limit, offset=0):
+def run(amostra, provider, model, modo, out, temperature, limit, offset=0, comps=COMPS):
     df = pd.read_csv(amostra)
     df = df.iloc[offset: offset + limit if limit else None]
     print(f"fatia: linhas {offset} a {offset + len(df) - 1} ({len(df)} redacoes)")
@@ -337,12 +355,12 @@ def run(amostra, provider, model, modo, out, temperature, limit, offset=0):
             if idx in feitos:
                 continue
             try:
-                notas, raw = score_redacao(provider, model, limpar(row["essay"]), modo, temperature)
+                notas, raw = score_redacao(provider, model, limpar(row["essay"]), modo, temperature, comps)
             except RuntimeError as e:
                 print(f"[{idx}] {e}, pulando pra proxima", file=sys.stderr)
                 continue  # esgotou retry nessa redacao, nao aborta a fatia toda
             ok = notas is not None
-            pc = [notas[c] if ok else "" for c in COMPS]
+            pc = [notas.get(c, "") if ok else "" for c in COMPS]
             pt = notas["Nota_Total"] if ok else ""
             ts = datetime.now(timezone.utc).isoformat(timespec="seconds")
             raw_c = '"' + raw.replace('"', "'")[:500] + '"'
@@ -370,7 +388,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--provider", choices=PROVIDERS)
     ap.add_argument("--model")
-    ap.add_argument("--modo", choices=["holistico", "mts", "mts2", "mts_fs", "mts_fs2"],
+    ap.add_argument("--modo", choices=["holistico", "mts", "mts2", "mts_fs", "mts_fs2", "mts_rr"],
                     default="holistico")
     ap.add_argument("--amostra", default="data/amostra_300.csv")
     ap.add_argument("--out")
@@ -381,9 +399,16 @@ def main(argv=None):
     ap.add_argument("--list-models", action="store_true", help="lista os modelos visiveis pela chave")
     ap.add_argument("--probe", action="store_true", help="1 requisicao de teste, imprime resposta crua")
     ap.add_argument("--key-env", help="nome da variavel com a chave (ex GEMINI_API_KEY_2), varias contas")
+    ap.add_argument("--comps", default=",".join(COMPS),
+                    help="competencias a pontuar nos modos MTS (ex C5); as outras ficam vazias")
+    ap.add_argument("--rubrica-c5", help="arquivo com a rubrica de C5 (modo mts_rr)")
     args = ap.parse_args(argv)
-    global KEY_ENV
+    global KEY_ENV, RUBRICA_C5_PATH
     KEY_ENV = args.key_env
+    RUBRICA_C5_PATH = args.rubrica_c5
+    comps = [c.strip().upper() for c in args.comps.split(",")]
+    if args.modo == "mts_rr" and not args.rubrica_c5:
+        sys.exit("modo mts_rr precisa de --rubrica-c5")
 
     if not args.provider:
         demo()
@@ -399,7 +424,8 @@ def main(argv=None):
     if args.rpm:
         PROVIDERS[args.provider]["rpm"] = args.rpm
     out = args.out or f"results/api/{args.provider}_{args.modo}.csv"
-    run(args.amostra, args.provider, args.model, args.modo, out, args.temperature, args.limit, args.offset)
+    run(args.amostra, args.provider, args.model, args.modo, out, args.temperature, args.limit,
+        args.offset, comps)
 
 
 if __name__ == "__main__":
