@@ -1,6 +1,6 @@
 # Correção Automática de Redações do ENEM com LLMs
 
-**Qwen 2.5 · Llama 3 · Mistral · Gemma 2 · LoRA · Python**
+**Qwen 2.5 · Llama 3 · Mistral · Gemma 2 · Gemini · LoRA · LanguageTool · Python**
 
 Correção automática de redações do ENEM com LLMs abertos, evoluindo de zero-shot até fine-tuning via LoRA, com geração de feedback formativo para o aluno em vez de só uma nota. Projeto de Iniciação Científica (UTFPR).
 
@@ -44,23 +44,35 @@ flowchart LR
 
 A etapa v6 (modelos de 70B/72B) foi interrompida no meio da execução por falta de crédito computacional no Google Colab Pro, por isso inclui uma tentativa adicional com vLLM (`exp_all_qwen72b_vllm_v3.ipynb`) como alternativa mais eficiente de inferência. Os notebooks dessa etapa refletem o estado real em que os experimentos pararam, não uma versão "limpa": optei por manter assim para documentar o processo real de pesquisa, não só o resultado final.
 
-A etapa v7 abandona o fine-tuning local de modelos grandes e passa a usar modelos hospedados gratuitos, sem GPU. Três achados principais:
+A etapa v7 abandona o fine-tuning local de modelos grandes e passa a usar modelos hospedados gratuitos, sem GPU. Achados principais:
 
 - **Boa parte do QWK baixo dos experimentos anteriores era erro de escala, não de julgamento.** Uma calibração de viés aprendida em folds separados por tema leva o melhor modelo de 7B de QWK 0,25 para 0,42, e é adotada como pós-processamento padrão.
 - **Gemini 3.5 Flash Lite com prompt por competência (uma chamada por C1 a C5, com a rubrica no prompt), calibrado, chega a QWK 0,60** na nota total, avaliação cross-prompt. Esse é o piso da faixa publicada para o essay-br (0,60 a 0,73). O gpt-oss-120B aberto chega ao mesmo patamar do Flash Lite no modo holístico (~0,52), confirmando que não é particularidade de um modelo.
-- **As competências C1 (norma culta) e C5 (proposta de intervenção) seguem sendo o gargalo** (QWK 0,29 e 0,33). Prompts dedicados com análise estruturada para essas duas competências foram testados e não melhoraram.
+- **Redações âncora (uma por faixa de nota) e checklist dos 5 elementos na C5** levam o QWK bruto a 0,59 e o calibrado a 0,605 (`--modo mts_fs2`), com C1 subindo de 0,29 para 0,35.
+- **LanguageTool na C1 e rubrica da C5 refinada por Reflect-and-Revise** dão o melhor número bruto até agora: **QWK 0,63 e Pearson 0,63** (0,61 calibrado). Cada competência sobe cerca de 0,04, mas com 300 redações essas diferenças ficam dentro do ruído (bootstrap pareado no log). Próximo passo: avaliar em mais redações para separar ganhos desse tamanho.
 
-Ver a tabela datada de todos os testes e o estado das cotas das APIs em [`docs/log_experimentos.md`](docs/log_experimentos.md).
+| Configuração (Flash Lite) | QWK bruto | QWK calibrado | C1 | C5 |
+|---|---|---|---|---|
+| holístico | 0,47 | 0,54 | 0,29 | 0,33 |
+| uma chamada por competência (`mts`) | 0,53 | 0,60 | 0,29 | 0,33 |
+| + âncoras e checklist C5 (`mts_fs2`) | 0,59 | 0,61 | 0,35 | 0,35 |
+| + LanguageTool C1 e rubrica C5 refinada (`mts_lt_rr`) | **0,63** | 0,61 | 0,39 | 0,39 |
 
-**Scripts da etapa v7** (rodam localmente, só `pandas` + `numpy` + `requests`):
+Ver a tabela datada de todos os testes, as análises e o estado das cotas das APIs em [`docs/log_experimentos.md`](docs/log_experimentos.md).
+
+**Scripts da etapa v7** (rodam localmente com `pandas` + `numpy` + `requests`; `scikit-learn` para os folds e `language_tool_python` com Java 17 para o LanguageTool):
 
 | Script | O que faz |
 |---|---|
+| `run_api_scoring.py` | Cliente único para Gemini, Groq e Cerebras (endpoint compatível com OpenAI). Modos `holistico`, `mts`, `mts2`, `mts_fs`, `mts_fs2`, `mts_rr` e `mts_lt`; `--comps` pontua só algumas competências. Retry, controle de rate limit e checkpoint por redação |
+| `build_anchors.py` | Escolhe as redações âncora (uma por faixa de nota e competência, fora do teste) |
+| `reflect_revise.py` | Reflect-and-Revise da rubrica da C5 num fold de validação; `--merge` junta rodadas de uma competência no resultado completo |
+| `lt_features.py` | Conta desvios de norma culta com o LanguageTool (offline, pt-BR) para o prompt da C1 |
+| `run_rr.ps1` | Roda o Reflect-and-Revise de ponta a ponta (validação, teste, avaliação) |
 | `evaluate.py` | Pacote de métricas por CSV de predição (MAE, RMSE, QWK total e por competência, Pearson, Spearman, acurácia adjacente, viés, matriz de confusão) |
 | `calibrate.py` | Experimento de recalibração de escala, 5-fold por tema, out-of-fold e oráculo |
 | `build_prompt_map.py` | Reconstrói o mapa redação para tema do conjunto de teste do v5 (validado contra os checkpoints) |
 | `sample_testset.py` | Amostra fixa e estratificada de 300 redações |
-| `run_api_scoring.py` | Cliente único para Gemini, Groq e Cerebras (endpoint compatível com OpenAI), modos `holistico`, `mts` e `mts2`, com retry, controle de rate limit e checkpoint por redação |
 | `plot_progresso.py` | Gráfico da progressão do QWK e do QWK por competência |
 | `verify_metrics.py` | Confere as métricas do `evaluate.py` contra scikit-learn e scipy |
 
@@ -74,7 +86,7 @@ Ver a tabela datada de todos os testes e o estado das cotas das APIs em [`docs/l
 
 ### Tecnologias
 
-Python · Jupyter/Google Colab · Hugging Face Transformers · PEFT (LoRA) · Optuna · BERTScore · Qwen 2.5 · Llama 3 · Mistral · Gemma 2
+Python · Jupyter/Google Colab · Hugging Face Transformers · PEFT (LoRA) · Optuna · BERTScore · Qwen 2.5 · Llama 3 · Mistral · Gemma 2 · Gemini API · LanguageTool
 
 ### Adaptadores LoRA (pesos dos modelos)
 
@@ -92,13 +104,15 @@ Adaptadores publicados no Hugging Face Hub:
 *.py         > scripts standalone da etapa v7 (avaliação, calibração, reteste por API)
 notebooks/   > um notebook por etapa do experimento (v1 a v6)
 results/     > gráficos e CSVs de resultado de cada etapa
-data/        > dataset de feedback (v4) e amostra fixa de 300 redações (v7)
+data/        > dataset de feedback (v4), amostra fixa de 300 redações, âncoras, fold de validação e rubricas da C5 (v7)
 docs/        > configs dos adaptadores LoRA, referências e log datado de experimentos
 ```
 
-### Colaboração
+### Equipe
 
-Projeto desenvolvido por Yuri Matsumoto, com colaboração de Mônica em parte dos experimentos de CoT/instruction tuning (v4).
+- **Orientação:** Profa. Eliane Maria De Bortoli Fávero
+- **Coorientação:** Prof. Ives Rene Venturini Pola
+- **Bolsistas:** Yuri Matsumoto Santos e Monica Paula Oliveira Mackert
 
 ### Referências
 
@@ -140,15 +154,23 @@ flowchart LR
 
 Stage v6 (70B/72B models) was interrupted mid-run when Google Colab Pro compute credits ran out, which is why it also includes an additional attempt using vLLM (`exp_all_qwen72b_vllm_v3.ipynb`) as a more efficient inference alternative. Notebooks in this stage reflect the actual state the experiments stopped at, not a "cleaned up" version: kept this way intentionally to document the real research process, not just the final result.
 
-Stage v7 drops local fine-tuning of large models and moves to free hosted models, no GPU. Three main findings:
+Stage v7 drops local fine-tuning of large models and moves to free hosted models, no GPU. Main findings:
 
 - **Much of the low QWK in earlier experiments was a scale error, not a judgment error.** A bias calibration learned on prompt-disjoint folds takes the best 7B model from QWK 0.25 to 0.42, and is adopted as standard post-processing.
 - **Gemini 3.5 Flash Lite with trait-specific prompting (one call per C1-C5, rubric in the prompt), calibrated, reaches QWK 0.60** on the total score, cross-prompt. That is the floor of the published range for essay-br (0.60 to 0.73). The open gpt-oss-120B reaches the same level as Flash Lite in holistic mode (~0.52), confirming this is not model-specific.
-- **Competencies C1 (formal register) and C5 (intervention proposal) remain the bottleneck** (QWK 0.29 and 0.33). Dedicated prompts with structured analysis for these two competencies were tested and did not help.
+- **Anchor essays (one per score band) and a 5-element checklist on C5** raise raw QWK to 0.59 and calibrated QWK to 0.605 (`--modo mts_fs2`), with C1 going from 0.29 to 0.35.
+- **LanguageTool on C1 and a C5 rubric refined by Reflect-and-Revise** give the best raw number so far: **QWK 0.63 and Pearson 0.63** (0.61 calibrated). Each competency gains about 0.04, but with 300 essays these differences are within noise (paired bootstrap in the log). Next step: evaluate on more essays to separate gains of this size.
 
-See the dated table of all tests and the API quota state in [`docs/log_experimentos.md`](docs/log_experimentos.md).
+| Configuration (Flash Lite) | Raw QWK | Calibrated QWK | C1 | C5 |
+|---|---|---|---|---|
+| holistic | 0.47 | 0.54 | 0.29 | 0.33 |
+| one call per competency (`mts`) | 0.53 | 0.60 | 0.29 | 0.33 |
+| + anchors and C5 checklist (`mts_fs2`) | 0.59 | 0.61 | 0.35 | 0.35 |
+| + LanguageTool C1 and refined C5 rubric (`mts_lt_rr`) | **0.63** | 0.61 | 0.39 | 0.39 |
 
-**Stage v7 scripts** (run locally, only `pandas` + `numpy` + `requests`): `evaluate.py` (metric suite), `calibrate.py` (scale-recalibration experiment, 5-fold by prompt), `build_prompt_map.py` (rebuilds the essay-to-prompt map for the v5 test set), `sample_testset.py` (fixed stratified 300-essay sample), `run_api_scoring.py` (single client for Gemini/Groq/Cerebras via OpenAI-compatible endpoint; `holistico`, `mts`, `mts2` modes; retry, rate-limit control, per-essay checkpoint), `plot_progresso.py` (QWK progression chart), `verify_metrics.py` (checks `evaluate.py` against scikit-learn and scipy).
+See the dated table of all tests, the analyses and the API quota state in [`docs/log_experimentos.md`](docs/log_experimentos.md).
+
+**Stage v7 scripts** (run locally with `pandas` + `numpy` + `requests`; `scikit-learn` for the folds and `language_tool_python` with Java 17 for LanguageTool): `run_api_scoring.py` (single client for Gemini/Groq/Cerebras via OpenAI-compatible endpoint; modes `holistico`, `mts`, `mts2`, `mts_fs`, `mts_fs2`, `mts_rr`, `mts_lt`; `--comps` scores only some competencies; retry, rate-limit control, per-essay checkpoint), `build_anchors.py` (anchor essays, one per score band and competency, outside the test set), `reflect_revise.py` (Reflect-and-Revise of the C5 rubric on a validation fold; `--merge` joins single-competency runs into a full result), `lt_features.py` (counts formal-register errors with LanguageTool, offline pt-BR, for the C1 prompt), `run_rr.ps1` (end-to-end Reflect-and-Revise run), `evaluate.py` (metric suite), `calibrate.py` (scale-recalibration experiment, 5-fold by prompt), `build_prompt_map.py` (rebuilds the essay-to-prompt map for the v5 test set), `sample_testset.py` (fixed stratified 300-essay sample), `plot_progresso.py` (QWK progression chart), `verify_metrics.py` (checks `evaluate.py` against scikit-learn and scipy).
 
 ### Methodology
 
@@ -160,7 +182,7 @@ See the dated table of all tests and the API quota state in [`docs/log_experimen
 
 ### Tech stack
 
-Python · Jupyter/Google Colab · Hugging Face Transformers · PEFT (LoRA) · Optuna · BERTScore · Qwen 2.5 · Llama 3 · Mistral · Gemma 2
+Python · Jupyter/Google Colab · Hugging Face Transformers · PEFT (LoRA) · Optuna · BERTScore · Qwen 2.5 · Llama 3 · Mistral · Gemma 2 · Gemini API · LanguageTool
 
 ### LoRA adapters (model weights)
 
@@ -178,13 +200,15 @@ Adapters published on the Hugging Face Hub:
 *.py         > standalone stage-v7 scripts (evaluation, calibration, API re-test)
 notebooks/   > one notebook per experiment stage (v1 to v6)
 results/     > charts and result CSVs for each stage
-data/        > feedback dataset (v4) and fixed 300-essay sample (v7)
+data/        > feedback dataset (v4), fixed 300-essay sample, anchors, validation fold and C5 rubrics (v7)
 docs/        > LoRA adapter configs, bibliography, dated experiment log
 ```
 
-### Collaboration
+### Team
 
-Developed by Yuri Matsumoto, with Mônica collaborating on part of the CoT/instruction tuning experiments (v4).
+- **Advisor:** Prof. Eliane Maria De Bortoli Fávero
+- **Co-advisor:** Prof. Ives Rene Venturini Pola
+- **Research fellows:** Yuri Matsumoto Santos and Monica Paula Oliveira Mackert
 
 ### References
 
