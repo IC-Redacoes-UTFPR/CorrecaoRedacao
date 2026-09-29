@@ -112,7 +112,7 @@ docs/        > configs dos adaptadores LoRA, referências e log datado de experi
 
 - **Orientação:** Profa. Eliane Maria De Bortoli Fávero
 - **Coorientação:** Prof. Ives Rene Venturini Pola
-- **Bolsistas:** Yuri Matsumoto Santos e Monica Paula Oliveira Mackert
+- **Bolsistas:** Monica Paula Oliveira Mackert e Yuri Matsumoto Santos
 
 ### Referências
 
@@ -208,7 +208,7 @@ docs/        > LoRA adapter configs, bibliography, dated experiment log
 
 - **Advisor:** Prof. Eliane Maria De Bortoli Fávero
 - **Co-advisor:** Prof. Ives Rene Venturini Pola
-- **Research fellows:** Yuri Matsumoto Santos and Monica Paula Oliveira Mackert
+- **Research fellows:** Monica Paula Oliveira Mackert and Yuri Matsumoto Santos
 
 ### References
 
