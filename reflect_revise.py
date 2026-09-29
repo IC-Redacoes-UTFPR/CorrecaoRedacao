@@ -152,7 +152,9 @@ def merge_test(trocas=None, out="results/api/flashlite_mtsrr.csv", modo="mts_rr"
         d[col] = d["index_redacao"].map(novo[col])
         for i, raw in novo["raw"].astype(str).items():
             partes[i] = [p for p in partes.get(i, []) if not p.startswith(comp + ":")] + [raw]
-    d["pred_total"] = d[[f"pred_c{i}" for i in range(1, 6)]].sum(axis=1)
+    # skipna=False: faltando competencia, o total fica vazio (e sai da avaliacao), nao vira soma parcial
+    d["pred_total"] = d[[f"pred_c{i}" for i in range(1, 6)]].sum(axis=1, skipna=False)
+    d["ok"] = d["pred_total"].notna().astype(int)
     d["raw"] = d["index_redacao"].map(lambda i: " || ".join(sorted(partes[i]))[:1500])
     d["modo"] = modo
     d.to_csv(out, index=False)
