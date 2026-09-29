@@ -64,6 +64,8 @@ _drop: dict[str, set] = {}  # "provider/model" -> campos opcionais que o modelo 
 KEY_ENV: str | None = None  # sobrescreve o nome da variavel da chave (--key-env)
 _anchors: dict[str, str] | None = None  # comp -> bloco de exemplos, carregado sob demanda
 RUBRICA_C5_PATH: str | None = None  # --rubrica-c5, texto da rubrica de C5 do modo mts_rr
+LT_PATH = "data/lt_amostra_300.csv"  # --lt-features, contagem do LanguageTool do modo mts_lt
+_lt: pd.DataFrame | None = None
 
 # Instrucao de C5 do mts_fs2. E a versao 0 do Reflect-and-Revise (reflect_revise.py).
 C5_RUBRICA_V0 = (
@@ -205,7 +207,7 @@ def prompt_mts(essay, comp):
     )
 
 
-def prompt_mts_fs(essay, comp):
+def prompt_mts_fs(essay, comp, extra=""):
     """MTS com exemplos ancora (few-shot) por faixa de nota, um por faixa."""
     return (
         f"Voce e avaliador oficial de redacoes do ENEM. Avalie SOMENTE a competencia {comp}.\n\n"
@@ -214,6 +216,7 @@ def prompt_mts_fs(essay, comp):
         f"Use os exemplos abaixo para calibrar a escala. Note que notas parciais existem: "
         f"uma resposta incompleta nao e automaticamente 0.\n\n"
         f"{_bloco_anchors(comp)}\n"
+        f"{extra}"
         f"REDACAO A AVALIAR:\n{essay}\n\n"
         f'Responda APENAS com JSON: {{"{comp}": valor, "justificativa": "1 a 3 frases"}}'
     )
@@ -232,6 +235,32 @@ def prompt_mts_rr(essay, comp):
         return prompt_mts_fs(essay, comp)
     with open(RUBRICA_C5_PATH, encoding="utf-8") as fh:
         return prompt_c5(essay, fh.read().strip())
+
+
+def bloco_lt(idx):
+    """Contagem de desvios do LanguageTool (lt_features.py) como contexto para C1."""
+    global _lt
+    if _lt is None:
+        _lt = pd.read_csv(LT_PATH).set_index("index_redacao")
+    f = _lt.loc[idx]
+    mediana = _lt["desvios_100"].median()
+    ex = "; ".join(f"'{e['trecho']}' ({e['msg']})" for e in json.loads(f["exemplos"])[:6])
+    return (
+        f"APOIO: um corretor automatico (LanguageTool) encontrou {int(f['desvios'])} possiveis "
+        f"desvios em {int(f['palavras'])} palavras, {f['desvios_100']:.1f} por 100 palavras "
+        f"(mediana das redacoes: {mediana:.1f}). Ortografia {int(f['ortografia'])}, gramatica "
+        f"{int(f['gramatica'])}, pontuacao {int(f['pontuacao'])}, maiusculas "
+        f"{int(f['maiusculas'])}, palavras confundidas {int(f['palavras_confundidas'])}. "
+        f"Exemplos: {ex or 'nenhum'}. O corretor tem falsos positivos e nao ve todos os "
+        f"desvios: use como apoio e confira no texto.\n\n"
+    )
+
+
+def prompt_mts_lt(essay, comp, idx):
+    """mts_fs2 com a contagem do LanguageTool no prompt de C1."""
+    if comp != "C1":
+        return prompt_mts_fs2(essay, comp)
+    return prompt_mts_fs(essay, comp, bloco_lt(idx))
 
 
 def prompt_c5(essay, rubrica):
@@ -311,15 +340,16 @@ def parse_notas(text, comp=None):
     return vals
 
 
-def score_redacao(provider, model, essay, modo, temperature, comps=COMPS):
+def score_redacao(provider, model, essay, modo, temperature, comps=COMPS, idx=None):
     if modo == "holistico":
         resp = chat(provider, model, prompt_holistico(essay), temperature, 2048)
         notas = parse_notas(resp)
         raw = "" if notas else str(resp)  # guarda a resposta crua so quando o parse falha
     else:
         gerar = {"mts2": prompt_mts_v2, "mts_fs": prompt_mts_fs,
-                 "mts_fs2": prompt_mts_fs2, "mts_rr": prompt_mts_rr}.get(modo, prompt_mts)
-        maxtok = 800 if modo in ("mts2", "mts_fs2", "mts_rr") else 512
+                 "mts_fs2": prompt_mts_fs2, "mts_rr": prompt_mts_rr,
+                 "mts_lt": lambda e, c: prompt_mts_lt(e, c, idx)}.get(modo, prompt_mts)
+        maxtok = 800 if modo in ("mts2", "mts_fs2", "mts_rr", "mts_lt") else 512
         notas, partes = {}, []
         for c in comps:
             resp = chat(provider, model, gerar(essay, c), temperature, maxtok)
@@ -355,7 +385,7 @@ def run(amostra, provider, model, modo, out, temperature, limit, offset=0, comps
             if idx in feitos:
                 continue
             try:
-                notas, raw = score_redacao(provider, model, limpar(row["essay"]), modo, temperature, comps)
+                notas, raw = score_redacao(provider, model, limpar(row["essay"]), modo, temperature, comps, idx)
             except RuntimeError as e:
                 print(f"[{idx}] {e}, pulando pra proxima", file=sys.stderr)
                 continue  # esgotou retry nessa redacao, nao aborta a fatia toda
@@ -388,7 +418,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--provider", choices=PROVIDERS)
     ap.add_argument("--model")
-    ap.add_argument("--modo", choices=["holistico", "mts", "mts2", "mts_fs", "mts_fs2", "mts_rr"],
+    ap.add_argument("--modo", choices=["holistico", "mts", "mts2", "mts_fs", "mts_fs2", "mts_rr", "mts_lt"],
                     default="holistico")
     ap.add_argument("--amostra", default="data/amostra_300.csv")
     ap.add_argument("--out")
@@ -402,10 +432,13 @@ def main(argv=None):
     ap.add_argument("--comps", default=",".join(COMPS),
                     help="competencias a pontuar nos modos MTS (ex C5); as outras ficam vazias")
     ap.add_argument("--rubrica-c5", help="arquivo com a rubrica de C5 (modo mts_rr)")
+    ap.add_argument("--lt-features", default="data/lt_amostra_300.csv",
+                    help="saida do lt_features.py (modo mts_lt)")
     args = ap.parse_args(argv)
-    global KEY_ENV, RUBRICA_C5_PATH
+    global KEY_ENV, RUBRICA_C5_PATH, LT_PATH
     KEY_ENV = args.key_env
     RUBRICA_C5_PATH = args.rubrica_c5
+    LT_PATH = args.lt_features
     comps = [c.strip().upper() for c in args.comps.split(",")]
     if args.modo == "mts_rr" and not args.rubrica_c5:
         sys.exit("modo mts_rr precisa de --rubrica-c5")

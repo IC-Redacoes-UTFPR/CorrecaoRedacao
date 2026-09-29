@@ -136,19 +136,27 @@ def loop(model, iters, keys, limit, rpm):
     print(f"\n{h.to_string(index=False)}\n\nmelhor: v{best} -> {RUB_DIR}/v{best}.txt")
 
 
-def merge_test(base="results/api/flashlite_mtsfs2.csv", out="results/api/flashlite_mtsrr.csv"):
-    """Troca o C5 do mts_fs2 pelo C5 da rubrica refinada. C1-C4 usam o mesmo prompt nos dois."""
-    novo = pd.concat(pd.read_csv(f) for f in sorted(glob.glob("results/api/rrtest_*.csv")))
-    novo = novo[novo["ok"] == 1].drop_duplicates("index_redacao").set_index("index_redacao")
+def merge_test(trocas=None, out="results/api/flashlite_mtsrr.csv", modo="mts_rr",
+               base="results/api/flashlite_mtsfs2.csv"):
+    """Troca competencias do mts_fs2 pelas de rodadas de uma competencia so (--comps).
+    trocas: {"C5": "results/api/rrtest_*.csv", ...}. As outras competencias usam o mesmo
+    prompt nos dois modos, entao a troca equivale a rodar o modo novo inteiro."""
+    trocas = trocas or {"C5": "results/api/rrtest_*.csv"}
     d = pd.read_csv(base)
-    d = d[d["index_redacao"].isin(novo.index)].copy()
-    d["pred_c5"] = d["index_redacao"].map(novo["pred_c5"])
+    partes = {c: str(t).split(" || ") for c, t in zip(d["index_redacao"], d["raw"])}
+    for comp, padrao in trocas.items():
+        novo = pd.concat(pd.read_csv(f) for f in sorted(glob.glob(padrao)))
+        novo = novo[novo["ok"] == 1].drop_duplicates("index_redacao").set_index("index_redacao")
+        d = d[d["index_redacao"].isin(novo.index)].copy()
+        col = f"pred_{comp.lower()}"
+        d[col] = d["index_redacao"].map(novo[col])
+        for i, raw in novo["raw"].astype(str).items():
+            partes[i] = [p for p in partes.get(i, []) if not p.startswith(comp + ":")] + [raw]
     d["pred_total"] = d[[f"pred_c{i}" for i in range(1, 6)]].sum(axis=1)
-    d["raw"] = d["raw"].astype(str).str.replace(r"\|\| C5:.*$", "", regex=True) + " || C5: " + \
-        d["index_redacao"].map(novo["raw"].astype(str).str.removeprefix("C5: "))
-    d["modo"] = "mts_rr"
+    d["raw"] = d["index_redacao"].map(lambda i: " || ".join(sorted(partes[i]))[:1500])
+    d["modo"] = modo
     d.to_csv(out, index=False)
-    print(f"{len(d)} redacoes -> {out}")
+    print(f"{len(d)} redacoes -> {out} (trocadas: {', '.join(trocas)})")
 
 
 def demo():
@@ -165,6 +173,10 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--build-val", action="store_true")
     ap.add_argument("--merge-test", action="store_true")
+    ap.add_argument("--merge", nargs="+", metavar="COMP=GLOB",
+                    help="ex C1=results/api/lttest_*.csv C5=results/api/rrtest_*.csv")
+    ap.add_argument("--merge-out", default="results/api/flashlite_mtsrr.csv")
+    ap.add_argument("--merge-modo", default="mts_rr")
     ap.add_argument("--model", default="gemini-3.5-flash-lite")
     ap.add_argument("--iters", type=int, default=5)
     ap.add_argument("--keys", default="1", help="numeros das contas, ex 1,2,3,4,5 (uma por versao)")
@@ -173,8 +185,9 @@ def main(argv=None):
     args = ap.parse_args(argv)
     if args.build_val:
         build_val()
-    elif args.merge_test:
-        merge_test()
+    elif args.merge_test or args.merge:
+        trocas = dict(m.split("=", 1) for m in args.merge) if args.merge else None
+        merge_test(trocas, args.merge_out, args.merge_modo)
     elif not os.path.exists(VAL):
         demo()
         print(f"{VAL} nao existe, rode --build-val")
