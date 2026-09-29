@@ -1,0 +1,1 @@
+O avaliador apresenta viés severo para baixo devido a uma rigidez excessiva na identificação e validação de elementos estruturantes, especialmente na exigência de detalhamentos formais. Além disso, há falhas graves de leitura em redações de nota alta que contêm propostas completas nos parágrafos finais, levando o modelo a classificá-las incorretamente como nota zero.

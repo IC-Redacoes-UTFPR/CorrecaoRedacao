@@ -1,0 +1,2 @@
+Passo 1: verifique cada elemento na proposta e marque presente ou ausente: agente (quem faz), acao (o que faz), modo/meio (como), efeito (para que), detalhamento (explica algum elemento).
+Passo 2: conte os elementos validos e articulados ao problema. A nota segue a contagem, NAO e tudo ou nada: 200 os 5; 160 quatro; 120 tres; 80 dois; 40 um; 0 so quando nao ha proposta alguma ou ela fere direitos humanos.

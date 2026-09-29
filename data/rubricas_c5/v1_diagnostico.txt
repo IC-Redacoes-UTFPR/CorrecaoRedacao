@@ -1,0 +1,1 @@
+O avaliador apresenta viés severo de atribuição de nota zero em redações que contêm propostas válidas, mas inseridas no corpo do texto em vez de um parágrafo final isolado, confundindo ausência de intervenção com texto inconcluso. Além disso, há falhas na identificação de elementos implícitos ou distribuídos e rigor excessivo na cobrança de detalhamento explícito.
