@@ -25,6 +25,7 @@ menor. "Calibrado" = deslocamento de viés aprendido out-of-fold (`calibrate.py`
 | 2026-09-29 | Gemini 3.5 Flash Lite | MTS_RR (Reflect-and-Revise no C5) | 292 | 0,62 | 0,60 | 0,62 | rubrica de C5 reescrita pelo próprio modelo em 5 iterações num fold de validação. C5 0,35 para 0,39 (IC95 da diferença [-0,01, +0,08], não significativo). O ganho do bruto vem do viés: C5 virou generoso (+12) e compensa o viés negativo de C1 e C4; calibrado empata. Rodado pela colega |
 | 2026-09-29 | Gemini 3.5 Flash Lite | MTS_LT (LanguageTool no C1) | 293 | 0,60 | 0,61 | 0,61 | contagem de desvios do LanguageTool e exemplos no prompt de C1. C1 0,35 para 0,38 (IC95 [-0,01, +0,09], não significativo), viés de C1 -21 para -16. Total praticamente igual |
 | 2026-09-29 | Gemini 3.5 Flash Lite | MTS_LT_RR (C1 do LT + C5 da v5) | 289 | 0,63 | 0,61 | 0,63 | melhor bruto e melhor Pearson até agora. QWK bruto +0,03 sobre o MTS_FS2 (IC95 [+0,01, +0,06], significativo), mas quase todo por viés; Pearson +0,02 (IC95 [0,00, +0,04]) no limite. Calibrado 0,612 contra 0,605: empate |
+| 2026-09-30 | gpt-oss-20B (vLLM, Colab A100) | MTS_LT | 286 | 0,27 | 0,39 | 0,45 | primeiro teste local no Colab. Bem pior que o Flash Lite. C1 desmonta (QWK 0,01, média 49 contra 136 humano: o modelo fica severo demais com a contagem do LanguageTool), C5 generoso demais (+66). 14 redações sem nota (falha de parse). Tempo não medido: a rodada foi interrompida e retomada. Descartado; próximo é o gpt-oss-120B em H100 |
 
 ### QWK por competência (bruto), Flash Lite
 
