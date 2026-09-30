@@ -68,6 +68,7 @@ _anchors: dict[str, str] | None = None  # comp -> bloco de exemplos, carregado s
 RUBRICA_C5_PATH: str | None = None  # --rubrica-c5, texto da rubrica de C5 do modo mts_rr
 LT_PATH = "data/lt_amostra_300.csv"  # --lt-features, contagem do LanguageTool do modo mts_lt
 _lt: pd.DataFrame | None = None
+MAX_TOKENS: int | None = None  # --max-tokens, sobrescreve o limite por chamada dos modos MTS
 
 # Instrucao de C5 do mts_fs2. E a versao 0 do Reflect-and-Revise (reflect_revise.py).
 C5_RUBRICA_V0 = (
@@ -351,7 +352,7 @@ def score_redacao(provider, model, essay, modo, temperature, comps=COMPS, idx=No
         gerar = {"mts2": prompt_mts_v2, "mts_fs": prompt_mts_fs,
                  "mts_fs2": prompt_mts_fs2, "mts_rr": prompt_mts_rr,
                  "mts_lt": lambda e, c: prompt_mts_lt(e, c, idx)}.get(modo, prompt_mts)
-        maxtok = 800 if modo in ("mts2", "mts_fs2", "mts_rr", "mts_lt") else 512
+        maxtok = MAX_TOKENS or (800 if modo in ("mts2", "mts_fs2", "mts_rr", "mts_lt") else 512)
         notas, partes = {}, []
         for c in comps:
             resp = chat(provider, model, gerar(essay, c), temperature, maxtok)
@@ -428,6 +429,8 @@ def main(argv=None):
     ap.add_argument("--limit", type=int, default=0, help="processa no maximo N redacoes")
     ap.add_argument("--offset", type=int, default=0, help="pula as primeiras N (dividir trabalho entre contas)")
     ap.add_argument("--rpm", type=int, help="sobrescreve o RPM padrao do provedor")
+    ap.add_argument("--reasoning", help="sobrescreve o reasoning_effort do provedor (low, medium, high)")
+    ap.add_argument("--max-tokens", type=int, help="limite de tokens por chamada (raciocinio conta)")
     ap.add_argument("--list-models", action="store_true", help="lista os modelos visiveis pela chave")
     ap.add_argument("--probe", action="store_true", help="1 requisicao de teste, imprime resposta crua")
     ap.add_argument("--key-env", help="nome da variavel com a chave (ex GEMINI_API_KEY_2), varias contas")
@@ -437,10 +440,11 @@ def main(argv=None):
     ap.add_argument("--lt-features", default="data/lt_amostra_300.csv",
                     help="saida do lt_features.py (modo mts_lt)")
     args = ap.parse_args(argv)
-    global KEY_ENV, RUBRICA_C5_PATH, LT_PATH
+    global KEY_ENV, RUBRICA_C5_PATH, LT_PATH, MAX_TOKENS
     KEY_ENV = args.key_env
     RUBRICA_C5_PATH = args.rubrica_c5
     LT_PATH = args.lt_features
+    MAX_TOKENS = args.max_tokens
     comps = [c.strip().upper() for c in args.comps.split(",")]
     if args.modo == "mts_rr" and not args.rubrica_c5:
         sys.exit("modo mts_rr precisa de --rubrica-c5")
@@ -458,6 +462,8 @@ def main(argv=None):
         sys.exit("informe --model")
     if args.rpm:
         PROVIDERS[args.provider]["rpm"] = args.rpm
+    if args.reasoning:
+        PROVIDERS[args.provider]["reasoning"] = args.reasoning
     out = args.out or f"results/api/{args.provider}_{args.modo}.csv"
     run(args.amostra, args.provider, args.model, args.modo, out, args.temperature, args.limit,
         args.offset, comps)
