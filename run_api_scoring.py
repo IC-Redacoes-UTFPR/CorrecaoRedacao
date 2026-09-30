@@ -40,6 +40,8 @@ PROVIDERS = {
     "cerebras": {"url": "https://api.cerebras.ai/v1/chat/completions",          "env": "CEREBRAS_API_KEY", "rpm": 5,  "reasoning": "low"},
     "gemini":   {"url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
                  "env": "GEMINI_API_KEY", "rpm": 10, "reasoning": "none"},
+    # vLLM local (Colab). Sem limite real; a chave e qualquer string (vllm serve sem --api-key).
+    "vllm":     {"url": "http://localhost:8000/v1/chat/completions",           "env": "VLLM_API_KEY",     "rpm": 6000, "reasoning": "low"},
 }
 
 COMPS = ["C1", "C2", "C3", "C4", "C5"]
