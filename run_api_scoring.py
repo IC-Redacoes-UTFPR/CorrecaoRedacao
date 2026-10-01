@@ -211,8 +211,9 @@ def prompt_mts(essay, comp):
     )
 
 
-def prompt_mts_fs(essay, comp, extra=""):
+def prompt_mts_fs(essay, comp, extra="", resposta=None):
     """MTS com exemplos ancora (few-shot) por faixa de nota, um por faixa."""
+    resposta = resposta or f'Responda APENAS com JSON: {{"{comp}": valor, "justificativa": "1 a 3 frases"}}'
     return (
         f"Voce e avaliador oficial de redacoes do ENEM. Avalie SOMENTE a competencia {comp}.\n\n"
         f"{comp}: {RUBRICA[comp]}\n"
@@ -222,8 +223,26 @@ def prompt_mts_fs(essay, comp, extra=""):
         f"{_bloco_anchors(comp)}\n"
         f"{extra}"
         f"REDACAO A AVALIAR:\n{essay}\n\n"
-        f'Responda APENAS com JSON: {{"{comp}": valor, "justificativa": "1 a 3 frases"}}'
+        f"{resposta}"
     )
+
+
+def prompt_mts_fb(essay, comp):
+    """mts_fs (melhor modo do gpt-oss-120b) que devolve, alem da nota, feedback formativo."""
+    return prompt_mts_fs(essay, comp, resposta=(
+        "Depois de decidir a nota, escreva um feedback formativo para o estudante, em portugues, "
+        "falando diretamente com ele (voce), so sobre esta competencia:\n"
+        "- pontos_fortes: 1 ou 2 coisas que a redacao faz bem nesta competencia.\n"
+        "- problemas: ate 3, os que mais pesaram na nota. Em \"trecho\", copie LITERALMENTE um "
+        "trecho curto da redacao, sem corrigir nem inventar. Em \"explicacao\", diga o que esta "
+        "errado e por que, nos termos da competencia.\n"
+        "- como_melhorar: 1 a 3 acoes concretas para a proxima redacao, ligadas aos problemas.\n"
+        "O feedback deve ser coerente com a nota: nota baixa, problemas graves; nota alta, "
+        "problemas pequenos. Com nota 200, problemas pode ser lista vazia.\n\n"
+        f'Responda APENAS com JSON: {{"{comp}": valor, "justificativa": "1 a 2 frases sobre a nota", '
+        '"pontos_fortes": ["..."], "problemas": [{"trecho": "...", "explicacao": "..."}], '
+        '"como_melhorar": ["..."]}'
+    ))
 
 
 def prompt_mts_fs2(essay, comp):
@@ -336,7 +355,7 @@ def parse_notas(text, comp=None):
         d = {}
     if comp:
         n = _num(d.get(comp))
-        return {comp: n, "justificativa": str(d.get("justificativa", ""))} if n is not None else None
+        return {comp: n, "justificativa": str(d.get("justificativa", "")), "json": d} if n is not None else None
     vals = {c: _num(d.get(c)) for c in COMPS}
     if any(v is None for v in vals.values()):
         return None
@@ -349,24 +368,27 @@ def score_redacao(provider, model, essay, modo, temperature, comps=COMPS, idx=No
         resp = chat(provider, model, prompt_holistico(essay), temperature, 2048)
         notas = parse_notas(resp)
         raw = "" if notas else str(resp)  # guarda a resposta crua so quando o parse falha
+        fb = None
     else:
         gerar = {"mts2": prompt_mts_v2, "mts_fs": prompt_mts_fs,
-                 "mts_fs2": prompt_mts_fs2, "mts_rr": prompt_mts_rr,
+                 "mts_fs2": prompt_mts_fs2, "mts_rr": prompt_mts_rr, "mts_fb": prompt_mts_fb,
                  "mts_lt": lambda e, c: prompt_mts_lt(e, c, idx)}.get(modo, prompt_mts)
-        maxtok = MAX_TOKENS or (800 if modo in ("mts2", "mts_fs2", "mts_rr", "mts_lt") else 512)
-        notas, partes = {}, []
+        maxtok = MAX_TOKENS or (2500 if modo == "mts_fb" else
+                                800 if modo in ("mts2", "mts_fs2", "mts_rr", "mts_lt") else 512)
+        notas, partes, fb = {}, [], {}
         for c in comps:
             resp = chat(provider, model, gerar(essay, c), temperature, maxtok)
             p = parse_notas(resp, comp=c)
             if p is None:
-                return None, "|".join(partes)
+                return None, "|".join(partes), None
             notas[c] = p[c]
+            fb[c] = {k: v for k, v in p["json"].items() if k != c}
             partes.append(f"{c}: {p['justificativa']}")
         notas["Nota_Total"] = sum(notas[c] for c in COMPS) if len(notas) == len(COMPS) else ""
         raw = " || ".join(partes)
     if notas is None:
-        return None, ""
-    return notas, raw
+        return None, "", None
+    return notas, raw, (fb if modo == "mts_fb" else None)
 
 
 def run(amostra, provider, model, modo, out, temperature, limit, offset=0, comps=COMPS):
@@ -394,7 +416,7 @@ def run(amostra, provider, model, modo, out, temperature, limit, offset=0, comps
             if idx in feitos:
                 continue
             try:
-                notas, raw = score_redacao(provider, model, limpar(row["essay"]), modo, temperature, comps, idx)
+                notas, raw, fb = score_redacao(provider, model, limpar(row["essay"]), modo, temperature, comps, idx)
             except RuntimeError as e:
                 print(f"[{idx}] {e}, pulando pra proxima", file=sys.stderr)
                 continue  # esgotou retry nessa redacao, nao aborta a fatia toda
@@ -408,6 +430,10 @@ def run(amostra, provider, model, modo, out, temperature, limit, offset=0, comps
                      f"{pc[0]},{pc[1]},{pc[2]},{pc[3]},{pc[4]},"
                      f"{pt},{int(ok)},{model},{modo},{ts},{raw_c}\n")
             fh.flush()
+            if fb:
+                with open(os.path.splitext(out)[0] + "_feedback.jsonl", "a", encoding="utf-8") as fj:
+                    fj.write(json.dumps({"index_redacao": idx, "modelo": model, "notas": notas,
+                                         "feedback": fb}, ensure_ascii=False) + "\n")
             print(f"[{idx}] {'ok ' + str(pt) if ok else 'FALHA parse'}")
     print(f"\nfeito. saida em {out}  (rode: python evaluate.py {out})")
 
@@ -419,6 +445,8 @@ def demo():
     assert parse_notas('{"C1":200}') is None  # incompleto
     assert parse_notas('{"C3": 130, "justificativa": "ok"}', comp="C3")["C3"] == 120  # arredonda p/ faixa
     assert parse_notas("sem json", comp="C1") is None
+    fb = parse_notas('{"C1": 120, "justificativa": "x", "problemas": [{"trecho": "a", "explicacao": "b"}]}', comp="C1")
+    assert fb["json"]["problemas"][0]["trecho"] == "a"  # feedback completo chega no score_redacao
     print("demo ok: parser aceita JSON sujo, corrige escala 0-20, arredonda para faixa de 40, "
           "rejeita incompleto.")
 
@@ -427,7 +455,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--provider", choices=PROVIDERS)
     ap.add_argument("--model")
-    ap.add_argument("--modo", choices=["holistico", "mts", "mts2", "mts_fs", "mts_fs2", "mts_rr", "mts_lt"],
+    ap.add_argument("--modo", choices=["holistico", "mts", "mts2", "mts_fs", "mts_fs2", "mts_rr", "mts_lt", "mts_fb"],
                     default="holistico")
     ap.add_argument("--amostra", default="data/amostra_300.csv")
     ap.add_argument("--out")
