@@ -27,7 +27,7 @@ import sys
 import pandas as pd
 
 import run_api_scoring as ras
-from run_api_scoring import COMPS, RUBRICA, bloco_tema, chat, extrair_json, limpar
+from run_api_scoring import COMPS, RUBRICA, chat, extrair_json, limpar
 
 
 def norm(s):
@@ -37,13 +37,16 @@ def norm(s):
 
 def prompt_feedback(essay, notas, tema_id=None):
     comps = "\n".join(f"- {c} ({notas[c]} de 200): {RUBRICA[c]}" for c in COMPS)
+    # so o titulo do tema: com o texto motivador no prompt o modelo citava trechos dele como se
+    # fossem do aluno (6 dos 8 trechos nao literais do smoke de 2026-10-01)
+    tema = f"TEMA DA REDACAO: {ras.TEMAS[int(tema_id)][0]}\n\n" if ras.TEMAS and tema_id is not None else ""
     item = ('{"pontos_fortes": ["..."], "problemas": [{"trecho": "...", "explicacao": "...", '
             '"correcao": "..."}], "como_melhorar": ["..."]}')
     return (
         "Voce e professor de redacao do ENEM e vai escrever um feedback formativo para o "
         "estudante. A redacao ja foi corrigida; as notas abaixo sao finais, nao as reavalie. "
         "Explique ao estudante por que ele recebeu cada nota e como melhorar.\n\n"
-        f"{bloco_tema(tema_id)}"
+        f"{tema}"
         f"NOTAS POR COMPETENCIA:\n{comps}\n\n"
         f"REDACAO:\n{essay}\n\n"
         "Para cada competencia, falando diretamente com o estudante (voce), em portugues:\n"

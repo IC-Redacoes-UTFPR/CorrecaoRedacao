@@ -30,6 +30,25 @@ menor. "Calibrado" = deslocamento de viés aprendido out-of-fold (`calibrate.py`
 | 2026-09-30 | gpt-oss-120B (vLLM, Colab G4) | MTS_LT, reasoning medium | 298 | 0,56 | 0,58 | 0,59 | `--reasoning medium --max-tokens 4000`, 23 min (4x o low). Não ajuda: Pearson 0,58 para 0,59, dentro do ruído. C1 piora (0,16 para 0,07, viés -47 para -70): pensar mais deixa o modelo ainda mais severo com a lista do LanguageTool. C5 igual (0,19, viés +58). Fica o low |
 | 2026-10-01 | gpt-oss-120B (vLLM, Colab G4) | MTS_FS | 300 | 0,52 | 0,60 | 0,60 | âncoras nas 5 competências, sem LanguageTool e sem checklist. Empata com o Flash Lite (0,605 calibrado). Tirar o checklist do C5 é o que mais ajuda: C5 0,19 para 0,39, viés +52 para -27. C1 segue fraco (0,20 contra 0,35 do Flash Lite) e o viés total volta a ser negativo (-91), que a calibração corrige. A primeira rodada misturou 103 linhas do 20b (MODEL errado no notebook); foram removidas e refeitas, e o script agora recusa retomar CSV de outro modelo |
 | 2026-10-01 | gpt-oss-120B (vLLM, Colab G4) | MTS_FS com 3 âncoras por faixa | 299 | 0,45 | 0,59 | 0,60 | `--anchors data/anchors_k3.csv` (90 âncoras, inclui as 30 do k=1), 5 min. Empata com o k=1 (0,599): C1 sobe (0,20 para 0,26), mas C2 (0,44 para 0,39) e C5 (0,39 para 0,32) caem, e o viés piora (-91 para -127). Usar o C1 do k=3 com o resto do k=1 dá 0,596: sem ganho. Fica o k=1 |
+| 2026-10-01 | gpt-oss-120B (vLLM, Colab G4) | MTS_FS com tema | 299 | 0,41 | 0,59 | 0,60 | `--temas data/prompts_essaybr.csv`: título e texto motivador do tema (essay-br, lplnufpi) no prompt; até aqui o modelo nunca tinha visto a proposta. Total empata (0,592 contra 0,599). Discriminação melhora onde o tema importa: Pearson C3 0,43 para 0,49 (QWK C3 0,39 para 0,48), C2 0,45 para 0,48. Mas o modelo fica mais severo em tudo (viés total -91 para -153), o que derruba o QWK bruto de C2 e C4 |
+
+### Feedback formativo (2026-10-01)
+
+Smoke 1 (`mts_fb`, feedback junto com a nota, uma chamada por competência, 5 primeiras da
+amostra de 300): 67 de 75 trechos citados literais. Problemas: o modelo corrige o erro do aluno
+ao copiar o trecho (esconde justo o erro da C1), explicações de C1 sem sentido ("'não passava'
+deveria ser 'não passava'"), o mesmo trecho citado nas 5 competências, e o feedback acompanha
+a nota do modelo, que nessas 5 estava longe da humana. As 5 primeiras linhas da amostra são
+as de menor nota (a amostra é salva em ordem de índice, que correlaciona 0,6 com a nota), por
+isso o smoke de feedback passou a usar `data/amostra_feedback_30.csv`, embaralhada.
+
+Smoke 2 (`gerar_feedback.py`, duas etapas: nota humana dada, uma chamada por redação para as
+5 competências, com tema e campo `correcao`): 46 de 54 trechos literais. 6 dos 8 não literais
+eram trechos do texto motivador citados como se fossem do aluno; o prompt de feedback passou a
+levar só o título do tema. Pontos bons: correções úteis na C1 ("inciou" para "iniciou"),
+reescritas da proposta da C5 com agente, ação, meio e efeito. Problemas que seguem:
+explicações gramaticais da C1 às vezes erradas ou incoerentes com a correção, problema de C1
+aparecendo na C3, e números inventados nas reescritas da C5 ("reduzir em 30% os impostos").
 
 ### QWK por competência (bruto), Flash Lite
 
