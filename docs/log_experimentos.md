@@ -57,6 +57,20 @@ Números inventados nas correções caem de 8 para 3. Trechos repetidos entre co
 continuam (9 a 11 nas 5 redações), quase sempre a frase da proposta de intervenção citada na
 C2, C3 e C5, o que é em parte natural. Aprovado para rodar as 30.
 
+Rodada das 30 (`data/amostra_feedback_30.csv`), duas versões:
+
+| Versão | Trechos literais | Números inventados | Trechos repetidos | Erro da nota usada |
+|---|---|---|---|---|
+| `feedback_humano_30` (nota humana) | 276/295 (94%) | 8 | 53 | 0 |
+| `feedback_pred_30` (nota do 120b mts_fs) | 281/302 (93%) | 6 | 61 | 35 pts por competência |
+
+Achado: o feedback quase não acompanha a nota dada. O número de problemas apontados é ~2 por
+competência de 40 a 160 e só cai com 200 (0,4). Com nota humana 200 na C1 e na C4 (redação
+902), o feedback aponta os mesmos problemas que com a nota 80 do modelo; com C5 humana 160
+(redação 875), diz que a proposta "não especifica agente, ação, meio, efeito". O modelo escreve
+a partir do próprio julgamento, não da nota recebida. É o critério "alinhamento com a nota"
+da rubrica de avaliação; precisa de leitura humana para medir.
+
 ### QWK por competência (bruto), Flash Lite
 
 | Modo | C1 | C2 | C3 | C4 | C5 |
