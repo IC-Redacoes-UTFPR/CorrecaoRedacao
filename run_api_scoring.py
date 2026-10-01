@@ -202,6 +202,15 @@ def prompt_holistico(essay):
     )
 
 
+def prompt_ft(essay, tema_id=None):
+    """Prompt curto do modelo com fine-tuning (finetune_gptoss.py). Treino e avaliacao usam
+    exatamente este texto; o criterio vem dos exemplos do treino, nao de rubrica no prompt."""
+    tema = f"Tema: {TEMAS[int(tema_id)][0]}\n\n" if TEMAS and tema_id is not None else ""
+    return (f"Corrija esta redacao do ENEM nas 5 competencias (0 a 200, passo 40).\n\n{tema}"
+            f"Redacao:\n{essay}\n\n"
+            'Responda APENAS com JSON: {"C1":v,"C2":v,"C3":v,"C4":v,"C5":v}')
+
+
 def prompt_mts(essay, comp):
     return (
         f"Voce e avaliador oficial de redacoes do ENEM. Avalie SOMENTE a competencia {comp}.\n\n"
@@ -379,8 +388,9 @@ def parse_notas(text, comp=None):
 
 
 def score_redacao(provider, model, essay, modo, temperature, comps=COMPS, idx=None, tema=None):
-    if modo == "holistico":
-        resp = chat(provider, model, prompt_holistico(essay), temperature, 2048)
+    if modo in ("holistico", "ft"):
+        prompt = prompt_ft(essay, tema) if modo == "ft" else prompt_holistico(essay)
+        resp = chat(provider, model, prompt, temperature, MAX_TOKENS or 2048)
         notas = parse_notas(resp)
         raw = "" if notas else str(resp)  # guarda a resposta crua so quando o parse falha
         fb = None
@@ -473,7 +483,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--provider", choices=PROVIDERS)
     ap.add_argument("--model")
-    ap.add_argument("--modo", choices=["holistico", "mts", "mts2", "mts_fs", "mts_fs2", "mts_rr", "mts_lt", "mts_fb"],
+    ap.add_argument("--modo", choices=["holistico", "mts", "mts2", "mts_fs", "mts_fs2", "mts_rr", "mts_lt", "mts_fb", "ft"],
                     default="holistico")
     ap.add_argument("--amostra", default="data/amostra_300.csv")
     ap.add_argument("--out")
@@ -503,8 +513,8 @@ def main(argv=None):
     MAX_TOKENS = args.max_tokens
     ANCHORS_PATH = args.anchors
     if args.temas:
-        if args.modo not in ("mts_fs", "mts_fb"):
-            sys.exit("--temas so vale nos modos mts_fs e mts_fb")
+        if args.modo not in ("mts_fs", "mts_fb", "ft"):
+            sys.exit("--temas so vale nos modos mts_fs, mts_fb e ft")
         t = pd.read_csv(args.temas)
         TEMAS = {int(r.id): (r.title, str(r.description)) for r in t.itertuples()}
     comps = [c.strip().upper() for c in args.comps.split(",")]
