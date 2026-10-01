@@ -68,6 +68,7 @@ _anchors: dict[str, str] | None = None  # comp -> bloco de exemplos, carregado s
 RUBRICA_C5_PATH: str | None = None  # --rubrica-c5, texto da rubrica de C5 do modo mts_rr
 LT_PATH = "data/lt_amostra_300.csv"  # --lt-features, contagem do LanguageTool do modo mts_lt
 _lt: pd.DataFrame | None = None
+ANCHORS_PATH = "data/anchors.csv"  # --anchors, ancoras dos modos few-shot (build_anchors.py)
 MAX_TOKENS: int | None = None  # --max-tokens, sobrescreve o limite por chamada dos modos MTS
 
 # Instrucao de C5 do mts_fs2. E a versao 0 do Reflect-and-Revise (reflect_revise.py).
@@ -81,10 +82,10 @@ C5_RUBRICA_V0 = (
 )
 
 
-def _bloco_anchors(comp, path="data/anchors.csv"):
+def _bloco_anchors(comp):
     global _anchors
     if _anchors is None:
-        a = pd.read_csv(path)
+        a = pd.read_csv(ANCHORS_PATH)
         _anchors = {c: "\n".join(f"EXEMPLO ({c} = {r.band}):\n{r.essay}\n"
                                  for r in a[a.comp == c].itertuples()) for c in COMPS}
     return _anchors[comp]
@@ -374,7 +375,12 @@ def run(amostra, provider, model, modo, out, temperature, limit, offset=0, comps
     print(f"fatia: linhas {offset} a {offset + len(df) - 1} ({len(df)} redacoes)")
     feitos = set()
     if os.path.exists(out):
-        feitos = set(pd.read_csv(out)["index_redacao"])
+        prev = pd.read_csv(out)
+        outros = prev[(prev["modelo"] != model) | (prev["modo"] != modo)]
+        if len(outros):  # retomar por cima de outro modelo/modo mistura resultados
+            sys.exit(f"{out} tem {len(outros)} linhas de outro modelo/modo "
+                     f"({outros['modelo'].iloc[0]}, {outros['modo'].iloc[0]}). Use outro --out.")
+        feitos = set(prev["index_redacao"])
         print(f"retomando: {len(feitos)} ja feitas")
 
     os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
@@ -430,6 +436,8 @@ def main(argv=None):
     ap.add_argument("--offset", type=int, default=0, help="pula as primeiras N (dividir trabalho entre contas)")
     ap.add_argument("--rpm", type=int, help="sobrescreve o RPM padrao do provedor")
     ap.add_argument("--reasoning", help="sobrescreve o reasoning_effort do provedor (low, medium, high)")
+    ap.add_argument("--anchors", default="data/anchors.csv",
+                    help="ancoras dos modos few-shot (ex data/anchors_k3.csv, 3 por faixa)")
     ap.add_argument("--max-tokens", type=int, help="limite de tokens por chamada (raciocinio conta)")
     ap.add_argument("--list-models", action="store_true", help="lista os modelos visiveis pela chave")
     ap.add_argument("--probe", action="store_true", help="1 requisicao de teste, imprime resposta crua")
@@ -440,11 +448,12 @@ def main(argv=None):
     ap.add_argument("--lt-features", default="data/lt_amostra_300.csv",
                     help="saida do lt_features.py (modo mts_lt)")
     args = ap.parse_args(argv)
-    global KEY_ENV, RUBRICA_C5_PATH, LT_PATH, MAX_TOKENS
+    global KEY_ENV, RUBRICA_C5_PATH, LT_PATH, MAX_TOKENS, ANCHORS_PATH
     KEY_ENV = args.key_env
     RUBRICA_C5_PATH = args.rubrica_c5
     LT_PATH = args.lt_features
     MAX_TOKENS = args.max_tokens
+    ANCHORS_PATH = args.anchors
     comps = [c.strip().upper() for c in args.comps.split(",")]
     if args.modo == "mts_rr" and not args.rubrica_c5:
         sys.exit("modo mts_rr precisa de --rubrica-c5")
