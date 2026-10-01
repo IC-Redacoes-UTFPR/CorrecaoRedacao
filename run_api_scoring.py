@@ -68,6 +68,7 @@ _anchors: dict[str, str] | None = None  # comp -> bloco de exemplos, carregado s
 RUBRICA_C5_PATH: str | None = None  # --rubrica-c5, texto da rubrica de C5 do modo mts_rr
 LT_PATH = "data/lt_amostra_300.csv"  # --lt-features, contagem do LanguageTool do modo mts_lt
 _lt: pd.DataFrame | None = None
+TEMAS: dict | None = None  # --temas, id do tema -> (titulo, texto motivador) do essay-br
 ANCHORS_PATH = "data/anchors.csv"  # --anchors, ancoras dos modos few-shot (build_anchors.py)
 MAX_TOKENS: int | None = None  # --max-tokens, sobrescreve o limite por chamada dos modos MTS
 
@@ -227,9 +228,18 @@ def prompt_mts_fs(essay, comp, extra="", resposta=None):
     )
 
 
-def prompt_mts_fb(essay, comp):
+def bloco_tema(tema_id, max_chars=2000):
+    """Proposta de redacao (titulo e texto motivador cortado) para o prompt, se --temas foi dado."""
+    if TEMAS is None or tema_id is None:
+        return ""
+    titulo, texto = TEMAS[int(tema_id)]
+    return (f"PROPOSTA DE REDACAO (tema que o aluno devia desenvolver): {titulo}\n"
+            f"Texto motivador: {texto[:max_chars]}\n\n")
+
+
+def prompt_mts_fb(essay, comp, extra=""):
     """mts_fs (melhor modo do gpt-oss-120b) que devolve, alem da nota, feedback formativo."""
-    return prompt_mts_fs(essay, comp, resposta=(
+    return prompt_mts_fs(essay, comp, extra, resposta=(
         "Depois de decidir a nota, escreva um feedback formativo para o estudante, em portugues, "
         "falando diretamente com ele (voce), so sobre esta competencia:\n"
         "- pontos_fortes: 1 ou 2 coisas que a redacao faz bem nesta competencia.\n"
@@ -363,15 +373,17 @@ def parse_notas(text, comp=None):
     return vals
 
 
-def score_redacao(provider, model, essay, modo, temperature, comps=COMPS, idx=None):
+def score_redacao(provider, model, essay, modo, temperature, comps=COMPS, idx=None, tema=None):
     if modo == "holistico":
         resp = chat(provider, model, prompt_holistico(essay), temperature, 2048)
         notas = parse_notas(resp)
         raw = "" if notas else str(resp)  # guarda a resposta crua so quando o parse falha
         fb = None
     else:
-        gerar = {"mts2": prompt_mts_v2, "mts_fs": prompt_mts_fs,
-                 "mts_fs2": prompt_mts_fs2, "mts_rr": prompt_mts_rr, "mts_fb": prompt_mts_fb,
+        tb = bloco_tema(tema)  # vazio sem --temas
+        gerar = {"mts2": prompt_mts_v2, "mts_fs": lambda e, c: prompt_mts_fs(e, c, tb),
+                 "mts_fs2": prompt_mts_fs2, "mts_rr": prompt_mts_rr,
+                 "mts_fb": lambda e, c: prompt_mts_fb(e, c, tb),
                  "mts_lt": lambda e, c: prompt_mts_lt(e, c, idx)}.get(modo, prompt_mts)
         maxtok = MAX_TOKENS or (2500 if modo == "mts_fb" else
                                 800 if modo in ("mts2", "mts_fs2", "mts_rr", "mts_lt") else 512)
@@ -416,7 +428,8 @@ def run(amostra, provider, model, modo, out, temperature, limit, offset=0, comps
             if idx in feitos:
                 continue
             try:
-                notas, raw, fb = score_redacao(provider, model, limpar(row["essay"]), modo, temperature, comps, idx)
+                notas, raw, fb = score_redacao(provider, model, limpar(row["essay"]), modo, temperature, comps, idx,
+                                               row.get("prompt"))
             except RuntimeError as e:
                 print(f"[{idx}] {e}, pulando pra proxima", file=sys.stderr)
                 continue  # esgotou retry nessa redacao, nao aborta a fatia toda
@@ -466,6 +479,8 @@ def main(argv=None):
     ap.add_argument("--reasoning", help="sobrescreve o reasoning_effort do provedor (low, medium, high)")
     ap.add_argument("--anchors", default="data/anchors.csv",
                     help="ancoras dos modos few-shot (ex data/anchors_k3.csv, 3 por faixa)")
+    ap.add_argument("--temas", help="CSV de temas do essay-br (data/prompts_essaybr.csv): poe a proposta "
+                    "no prompt dos modos mts_fs e mts_fb")
     ap.add_argument("--max-tokens", type=int, help="limite de tokens por chamada (raciocinio conta)")
     ap.add_argument("--list-models", action="store_true", help="lista os modelos visiveis pela chave")
     ap.add_argument("--probe", action="store_true", help="1 requisicao de teste, imprime resposta crua")
@@ -476,12 +491,17 @@ def main(argv=None):
     ap.add_argument("--lt-features", default="data/lt_amostra_300.csv",
                     help="saida do lt_features.py (modo mts_lt)")
     args = ap.parse_args(argv)
-    global KEY_ENV, RUBRICA_C5_PATH, LT_PATH, MAX_TOKENS, ANCHORS_PATH
+    global KEY_ENV, RUBRICA_C5_PATH, LT_PATH, MAX_TOKENS, ANCHORS_PATH, TEMAS
     KEY_ENV = args.key_env
     RUBRICA_C5_PATH = args.rubrica_c5
     LT_PATH = args.lt_features
     MAX_TOKENS = args.max_tokens
     ANCHORS_PATH = args.anchors
+    if args.temas:
+        if args.modo not in ("mts_fs", "mts_fb"):
+            sys.exit("--temas so vale nos modos mts_fs e mts_fb")
+        t = pd.read_csv(args.temas)
+        TEMAS = {int(r.id): (r.title, str(r.description)) for r in t.itertuples()}
     comps = [c.strip().upper() for c in args.comps.split(",")]
     if args.modo == "mts_rr" and not args.rubrica_c5:
         sys.exit("modo mts_rr precisa de --rubrica-c5")
