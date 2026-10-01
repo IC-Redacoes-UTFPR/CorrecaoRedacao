@@ -354,15 +354,20 @@ def _num(v):
     return min(max(int(round(f / 40.0)) * 40, 0), 200)
 
 
-def parse_notas(text, comp=None):
-    """Extrai dict com C1..C5 (holistico) ou {comp: nota, justificativa} (mts)."""
+def extrair_json(text):
+    """Primeiro objeto JSON da resposta, ignorando raciocinio e cercas de codigo. {} se nao houver."""
     try:
         t = re.sub(r"<thought>.*?</thought>|<think(ing)?>.*?</think(ing)?>|```json|```",
                    "", str(text), flags=re.DOTALL)
         i, j = t.find("{"), t.rfind("}") + 1
-        d = json.loads(t[i:j]) if 0 <= i < j else {}
+        return json.loads(t[i:j]) if 0 <= i < j else {}
     except (ValueError, json.JSONDecodeError):
-        d = {}
+        return {}
+
+
+def parse_notas(text, comp=None):
+    """Extrai dict com C1..C5 (holistico) ou {comp: nota, justificativa} (mts)."""
+    d = extrair_json(text)
     if comp:
         n = _num(d.get(comp))
         return {comp: n, "justificativa": str(d.get("justificativa", "")), "json": d} if n is not None else None

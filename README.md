@@ -104,7 +104,7 @@ Adaptadores publicados no Hugging Face Hub:
 *.py         > scripts standalone da etapa v7 (avaliação, calibração, reteste por API)
 notebooks/   > um notebook por etapa do experimento (v1 a v6)
 results/     > gráficos e CSVs de resultado de cada etapa
-data/        > dataset de feedback (v4), amostra fixa de 300 redações, âncoras, fold de validação e rubricas da C5 (v7)
+data/        > dataset de feedback (v4), amostra fixa de 300 redações, amostra de 30 para feedback, âncoras, fold de validação, rubricas da C5 (v7) e temas do essay-br (`prompts_essaybr.csv`, de github.com/lplnufpi/essay-br, licença MIT)
 docs/        > configs dos adaptadores LoRA, referências e log datado de experimentos
 ```
 
@@ -200,7 +200,7 @@ Adapters published on the Hugging Face Hub:
 *.py         > standalone stage-v7 scripts (evaluation, calibration, API re-test)
 notebooks/   > one notebook per experiment stage (v1 to v6)
 results/     > charts and result CSVs for each stage
-data/        > feedback dataset (v4), fixed 300-essay sample, anchors, validation fold and C5 rubrics (v7)
+data/        > feedback dataset (v4), fixed 300-essay sample, 30-essay feedback sample, anchors, validation fold, C5 rubrics (v7) and essay-br prompts (`prompts_essaybr.csv`, from github.com/lplnufpi/essay-br, MIT license)
 docs/        > LoRA adapter configs, bibliography, dated experiment log
 ```
 
