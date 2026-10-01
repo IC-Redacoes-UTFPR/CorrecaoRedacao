@@ -34,13 +34,14 @@ def train_df(dataset_path):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dataset", default="data/meu_dataset.csv")
+    ap.add_argument("--treino", help="CSV de treino ja separado (ex data/cp_train.csv); ignora --dataset")
     ap.add_argument("--out", default="data/anchors.csv")
     ap.add_argument("--por-faixa", type=int, default=1, help="quantas ancoras por faixa")
     ap.add_argument("--max-chars", type=int, default=800, help="corte do texto da ancora")
     ap.add_argument("--seed", type=int, default=7)
     args = ap.parse_args(argv)
 
-    df = train_df(args.dataset)
+    df = pd.read_csv(args.treino) if args.treino else train_df(args.dataset)
     df["essay_limpo"] = df["essay"].apply(limpar)
     # texto medio, nem o mais curto nem o mais longo, e de tamanho tratavel
     df["len"] = df["essay_limpo"].str.len()
