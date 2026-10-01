@@ -50,6 +50,13 @@ reescritas da proposta da C5 com agente, ação, meio e efeito. Problemas que se
 explicações gramaticais da C1 às vezes erradas ou incoerentes com a correção, problema de C1
 aparecendo na C3, e números inventados nas reescritas da C5 ("reduzir em 30% os impostos").
 
+Smoke 3 (mesmas 5, só o título do tema no prompt e regra de não inventar números nas
+correções): 51 de 54 trechos literais (94%), nenhum vindo do texto motivador. Os 3 restantes
+são desvios mínimos (uma palavra trocada ou reordenada num trecho de 130 a 250 caracteres).
+Números inventados nas correções caem de 8 para 3. Trechos repetidos entre competências
+continuam (9 a 11 nas 5 redações), quase sempre a frase da proposta de intervenção citada na
+C2, C3 e C5, o que é em parte natural. Aprovado para rodar as 30.
+
 ### QWK por competência (bruto), Flash Lite
 
 | Modo | C1 | C2 | C3 | C4 | C5 |
