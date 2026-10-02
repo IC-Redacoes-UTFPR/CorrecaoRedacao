@@ -272,3 +272,14 @@ Os ganhos por prompt estão ficando dentro do ruído de 300 redações.
   (GPT-4o, Sabiá-3, DeepSeek-R1). Não é comparável diretamente com o nosso QWK total no essay-br;
   por competência ainda estamos abaixo (0,47 a 0,54). A frase "na faixa realista da literatura"
   na linha do `ft2` não se sustenta. Comparação direta exigiria rodar no corpus deles.
+- **Resultados publicados no próprio essay-br estendido (6.577 a 6.579 redações), conferidos nos PDFs
+  em 2026-10-02.** Todos usam divisão **aleatória** 70/15/15 estratificada por nota, ou seja, os
+  temas do teste aparecem no treino (prompt-specific, mais fácil que o nosso cross-prompt):
+  - Marinho, Anchiêta e Moura (JIDM 2022, artigo do corpus estendido): métodos de features de
+    Amorim e Veloso (2017) e Fonseca et al. (2018). QWK total **0,49 e 0,53**; por competência
+    0,34 a 0,48. Citam 0,6 a 0,8 de QWK como piso usual para avaliação somativa (Mayfield e
+    Black, 2020).
+  - Matsuoka (arXiv 2401.00095, 2023, sem revisão por pares, autor único): BERTimbau base com
+    regressão, tema + redação na entrada, 5 épocas, QWK total **0,79**, por competência 0,74 a
+    0,84. Não informa se o split é o mesmo do JIDM; não reproduzido.
+  - Não encontramos resultado cross-prompt publicado no essay-br: o nosso pode ser o primeiro.
