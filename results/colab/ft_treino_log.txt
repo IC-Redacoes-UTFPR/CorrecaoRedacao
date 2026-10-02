@@ -1,44 +1,21 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
 4573 exemplos de treino
-Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:22<00:45, 22.99s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:27<00:12, 12.31s/it]Fetching 3 files: 100%|██████████| 3/3 [00:29<00:00,  7.56s/it]Fetching 3 files: 100%|██████████| 3/3 [00:29<00:00,  9.91s/it]
-Loading weights:   0%|          | 0/411 [00:00<?, ?it/s]Loading weights:   0%|          | 1/411 [00:00<01:59,  3.42it/s]Loading weights:   1%|          | 5/411 [00:00<00:44,  9.04it/s]Loading weights:   2%|▏         | 7/411 [00:00<00:42,  9.50it/s]Loading weights:   5%|▌         | 22/411 [00:00<00:11, 34.89it/s]Loading weights:   7%|▋         | 27/411 [00:01<00:10, 37.34it/s]Loading weights:   9%|▉         | 39/411 [00:01<00:08, 46.05it/s]Loading weights:  11%|█         | 45/411 [00:01<00:08, 45.05it/s]Loading weights:  14%|█▎        | 56/411 [00:01<00:06, 53.41it/s]Loading weights:  15%|█▌        | 62/411 [00:01<00:06, 54.11it/s]Loading weights:  18%|█▊        | 73/411 [00:01<00:06, 55.83it/s]Loading weights:  19%|█▉        | 79/411 [00:01<00:06, 50.67it/s]Loading weights:  26%|██▌       | 107/411 [00:02<00:03, 99.55it/s]Loading weights:  47%|████▋     | 192/411 [00:02<00:00, 272.84it/s]Loading weights:  67%|██████▋   | 277/411 [00:02<00:00, 411.57it/s]Loading weights:  88%|████████▊ | 362/411 [00:02<00:00, 518.87it/s]Loading weights: 100%|██████████| 411/411 [00:02<00:00, 166.97it/s]
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:27<00:55, 27.52s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:36<00:16, 16.54s/it]Fetching 3 files: 100%|██████████| 3/3 [00:36<00:00,  9.20s/it]Fetching 3 files: 100%|██████████| 3/3 [00:36<00:00, 12.28s/it]
+Loading weights:   0%|          | 0/411 [00:00<?, ?it/s]Loading weights:   0%|          | 1/411 [00:00<01:08,  5.99it/s]Loading weights:   1%|          | 5/411 [00:00<00:23, 17.29it/s]Loading weights:   2%|▏         | 7/411 [00:00<00:22, 17.67it/s]Loading weights:   6%|▌         | 24/411 [00:00<00:06, 61.17it/s]Loading weights:  10%|▉         | 41/411 [00:00<00:04, 81.72it/s]Loading weights:  14%|█▍        | 58/411 [00:00<00:03, 99.53it/s]Loading weights:  18%|█▊        | 75/411 [00:01<00:03, 97.69it/s]Loading weights:  22%|██▏       | 92/411 [00:01<00:03, 97.82it/s]Loading weights:  38%|███▊      | 158/411 [00:01<00:01, 222.68it/s]Loading weights:  51%|█████▏    | 211/411 [00:01<00:00, 292.91it/s]Loading weights:  67%|██████▋   | 277/411 [00:01<00:00, 370.71it/s]Loading weights:  80%|████████  | 330/411 [00:01<00:00, 405.35it/s]Loading weights:  96%|█████████▋| 396/411 [00:01<00:00, 453.65it/s]Loading weights: 100%|██████████| 411/411 [00:01<00:00, 235.83it/s]
+trainable params: 15,040,512 || all params: 20,929,797,696 || trainable%: 0.0719
 Traceback (most recent call last):
   File "/content/CorrecaoRedacao/finetune_gptoss.py", line 92, in <module>
     main()
     ~~~~^^
-  File "/content/CorrecaoRedacao/finetune_gptoss.py", line 65, in main
-    model = get_peft_model(model, LoraConfig(
-        r=8, lora_alpha=16, target_modules="all-linear",
-        target_parameters=[f"{i}.mlp.experts.{p}" for i in (7, 15, 23) for p in ("gate_up_proj", "down_proj")]))
-  File "/usr/local/lib/python3.13/dist-packages/peft/mapping_func.py", line 190, in get_peft_model
-    return PeftModel(
-        model,
-    ...<3 lines>...
-        low_cpu_mem_usage=low_cpu_mem_usage,
-    )
-  File "/usr/local/lib/python3.13/dist-packages/peft/peft_model.py", line 177, in __init__
-    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
-                      ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 344, in __init__
-    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)
-    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py", line 978, in inject_adapter
-    self._create_and_replace(
-    ~~~~~~~~~~~~~~~~~~~~~~~~^
-        peft_config, adapter_name, target, target_name, parent, current_key=key
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py", line 298, in _create_and_replace
-    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)
-  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py", line 447, in _create_new_module
-    new_module = dispatcher(target, adapter_name, config=lora_config, **kwargs)
-  File "/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/torchao.py", line 160, in dispatch_torchao
-    if not is_torchao_available():
-           ~~~~~~~~~~~~~~~~~~~~^^
-  File "/usr/local/lib/python3.13/dist-packages/peft/import_utils.py", line 153, in is_torchao_available
-    raise ImportError(
+  File "/content/CorrecaoRedacao/finetune_gptoss.py", line 72, in main
+    args=SFTConfig(
+         ~~~~~~~~~^
+        output_dir=args.out, num_train_epochs=args.epochs, learning_rate=2e-4,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     ...<2 lines>...
-    )
-ImportError: Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported
+        lr_scheduler_kwargs={"min_lr_rate": 0.1}, logging_steps=10, save_strategy="no",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        report_to="none", bf16=True))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SFTConfig.__init__() got an unexpected keyword argument 'warmup_ratio'
