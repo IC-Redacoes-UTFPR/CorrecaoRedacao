@@ -21,6 +21,14 @@ from run_api_scoring import COMPS, limpar, parse_notas
 BASE = "openai/gpt-oss-20b"
 
 
+def notas_esperadas(scores, tokens, j, ids, bandas):
+    """Para cada passo em que a linha j gerou uma nota, a media das notas ponderada pela
+    probabilidade (softmax dos logits so entre os tokens das 6 notas)."""
+    import torch
+    return [float((torch.softmax(scores[s][j, ids].float(), -1).cpu() * bandas).sum())
+            for s, t in enumerate(tokens) if t in set(ids)]
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--amostra", default="data/cp_test.csv")
@@ -31,6 +39,8 @@ def main(argv=None):
     ap.add_argument("--lote", type=int, default=32)
     ap.add_argument("--max-new-tokens", type=int, default=256)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--esperado", action="store_true",
+                    help="nota = media ponderada pela probabilidade das 6 notas, nao so a mais provavel")
     args = ap.parse_args(argv)
 
     import torch
@@ -53,6 +63,13 @@ def main(argv=None):
                                                  device_map="auto")
     model = PeftModel.from_pretrained(model, args.adaptador).merge_and_unload().eval()
 
+    # cada nota (0, 40, ..., 200) e um token so no tokenizer do gpt-oss; e o que permite ler a
+    # probabilidade de cada nota numa posicao
+    bandas = torch.tensor([0., 40., 80., 120., 160., 200.])
+    ids = [tok.encode(str(int(b)), add_special_tokens=False) for b in bandas]
+    assert all(len(i) == 1 for i in ids), f"nota com mais de um token: {ids}"
+    ids = [i[0] for i in ids]
+
     novo = not os.path.exists(args.out)
     cols = ["index_redacao", "score", "c1", "c2", "c3", "c4", "c5", "pred_c1", "pred_c2", "pred_c3", "pred_c4",
             "pred_c5", "pred_total", "ok", "modelo", "modo", "ts", "raw"]
@@ -63,16 +80,26 @@ def main(argv=None):
         enc = tok(textos, return_tensors="pt", padding=True, add_special_tokens=False).to(model.device)
         with torch.no_grad():
             out = model.generate(**enc, max_new_tokens=args.max_new_tokens, do_sample=False,
-                                 pad_token_id=tok.pad_token_id or tok.eos_token_id)
-        respostas = tok.batch_decode(out[:, enc["input_ids"].shape[1]:], skip_special_tokens=True)
+                                 pad_token_id=tok.pad_token_id or tok.eos_token_id,
+                                 return_dict_in_generate=True, output_scores=args.esperado)
+        gerado = out.sequences[:, enc["input_ids"].shape[1]:]
+        respostas = tok.batch_decode(gerado, skip_special_tokens=True)
         linhas = []
-        for r, resp in zip(lote.itertuples(), respostas):
+        for j, (r, resp) in enumerate(zip(lote.itertuples(), respostas)):
             n = parse_notas(resp)
+            if n and args.esperado:
+                # nas posicoes em que o modelo escreveu uma nota, troca a nota mais provavel pela
+                # media das 6 notas ponderada pela probabilidade de cada uma (o modelo treinado
+                # quase so escolhe as 2 notas do meio; a probabilidade guarda a nuance)
+                ev = notas_esperadas(out.scores, gerado[j].tolist(), j, ids, bandas)
+                if len(ev) >= len(COMPS):
+                    n = {c: round(v, 1) for c, v in zip(COMPS, ev)}
+                    n["Nota_Total"] = round(sum(n.values()), 1)
             linhas.append({"index_redacao": r.index_redacao, "score": r.score,
                            **{c: getattr(r, c) for c in ["c1", "c2", "c3", "c4", "c5"]},
                            **{f"pred_{c.lower()}": (n[c] if n else "") for c in COMPS},
                            "pred_total": n["Nota_Total"] if n else "", "ok": int(bool(n)),
-                           "modelo": "gpt-oss-20b-ft-cp", "modo": "ft",
+                           "modelo": "gpt-oss-20b-ft-cp", "modo": "ft_esperado" if args.esperado else "ft",
                            "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                            "raw": "" if n else resp[:500]})
         pd.DataFrame(linhas, columns=cols).to_csv(args.out, mode="a", header=novo, index=False)
