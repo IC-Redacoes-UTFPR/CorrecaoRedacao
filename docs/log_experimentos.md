@@ -36,6 +36,7 @@ menor. "Calibrado" = deslocamento de viés aprendido out-of-fold (`calibrate.py`
 | 2026-10-02 | gpt-oss-20B com fine-tuning, **nota esperada** | prompt curto, uma chamada | 1396 | 0,52 | 0,53 (hist 0,60) | 0,63 | `avaliar_ft.py --esperado`: em cada posição de nota, média das 6 notas ponderada pela probabilidade, sem novo treino. Bruto sobe de 0,44 para 0,52 (o 120b tem 0,45) e o Pearson iguala o 120b (0,63). Pearson por competência acima do 120b em C1 (0,52 x 0,41), C2 (0,60 x 0,46), C4 (0,60 x 0,56) e C5 (0,45 x 0,36); C3 igual (0,48). As notas ainda saem comprimidas (desvio 107 contra 161 humano), por isso a calibração por quantil (hist) rende mais que o deslocamento: 0,60 contra 0,53 |
 | 2026-10-02 | **Média 120b + 20b com fine-tuning (nota esperada)** | média por competência | 1393 | 0,51 | 0,60 (**hist 0,64**) | **0,67** | média simples das notas por competência dos dois modelos. Melhor Pearson e melhor QWK calibrado do projeto no teste cross-prompt: 0,64 com calibração por quantil out-of-fold por tema (120b sozinho: 0,60; 20b treinado sozinho: 0,60). Os dois erram de jeitos diferentes (120b severo e espalhado; 20b na escala certa e comprimido), e a média aproveita isso |
 | 2026-10-02 | **gpt-oss-20B com fine-tuning, 2 épocas**, nota esperada | prompt curto, uma chamada | 1396 | **0,55** | 0,60 (**hist 0,68**) | **0,70** | rodada `ft2` (`EPOCAS = 2`, 29 min de treino). **Melhor resultado do projeto no teste cross-prompt.** Contra 1 época: Pearson 0,63 para 0,70, C3 0,28 para 0,42, C5 0,25 para 0,41, C2 0,47 para 0,49, C4 0,46 para 0,47; C1 cai um pouco (0,40 para 0,36). Supera o 120b sem treino em tudo menos C3 (0,42 x 0,47), com um modelo 6x menor e uma chamada por redação. A média com o 120b não ajuda mais (hist 0,67, Pearson 0,69): o 20b com 2 épocas sozinho é melhor. QWK por quantil 0,68 já está na faixa realista da literatura (0,65 a 0,68) |
+| 2026-10-02 | **gpt-oss-20B com fine-tuning, 3 épocas**, nota esperada | prompt curto, uma chamada | 1396 | **0,66** | **0,67 (hist 0,69)** | 0,69 | rodada `ft3` (44 min de treino; a primeira tentativa caiu no meio do treino e foi refeita). **Escolhida pela validação** e **calibrada pela validação** (`calibrate.py --calib-file`): o teste só foi usado para a medida final. Ver tabela abaixo |
 | 2026-10-01 | gpt-oss-120B (vLLM, Colab G4) | MTS_FS com tema | 299 | 0,41 | 0,59 | 0,60 | `--temas data/prompts_essaybr.csv`: título e texto motivador do tema (essay-br, lplnufpi) no prompt; até aqui o modelo nunca tinha visto a proposta. Total empata (0,592 contra 0,599). Discriminação melhora onde o tema importa: Pearson C3 0,43 para 0,49 (QWK C3 0,39 para 0,48), C2 0,45 para 0,48. Mas o modelo fica mais severo em tudo (viés total -91 para -153), o que derruba o QWK bruto de C2 e C4 |
 
 ### Feedback formativo (2026-10-01)
@@ -76,6 +77,35 @@ competência de 40 a 160 e só cai com 200 (0,4). Com nota humana 200 na C1 e na
 (redação 875), diz que a proposta "não especifica agente, ação, meio, efeito". O modelo escreve
 a partir do próprio julgamento, não da nota recebida. É o critério "alinhamento com a nota"
 da rubrica de avaliação; precisa de leitura humana para medir.
+
+### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
+
+Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação
+516 (17 temas), teste 1.396 (29 temas), temas disjuntos. gpt-oss-20b com LoRA, nota esperada.
+"Calibrado pela val." = calibrador ajustado nas notas da validação e aplicado ao teste.
+
+| Modelo | Val QWK | Val Pearson | Teste bruto | Teste calib. val (desloc.) | Teste calib. val (quantil) | Teste Pearson |
+|---|---|---|---|---|---|---|
+| 120b sem treino (mts_fs) | 0,39 | 0,62 | 0,45 | 0,62 | 0,60 | 0,63 |
+| 20b, 1 época | 0,56 | 0,70 | 0,52 | 0,57 | 0,65 | 0,63 |
+| 20b, 2 épocas | 0,54 | 0,72 | 0,55 | 0,64 | 0,70 | 0,70 |
+| **20b, 3 épocas** | **0,64** | 0,69 | **0,66** | **0,67** | 0,69 | 0,69 |
+
+QWK por competência no teste:
+
+| Modelo | C1 | C2 | C3 | C4 | C5 |
+|---|---|---|---|---|---|
+| 120b sem treino | 0,21 | 0,46 | 0,47 | 0,31 | 0,25 |
+| 20b, 1 época | 0,40 | 0,47 | 0,28 | 0,46 | 0,25 |
+| 20b, 2 épocas | 0,36 | 0,49 | 0,42 | 0,47 | 0,41 |
+| **20b, 3 épocas** | **0,49** | **0,53** | **0,49** | **0,54** | **0,47** |
+
+Leitura: na validação, 3 épocas é a melhor em QWK total e nas 5 competências (C1 0,43, C2
+0,46, C3 0,46, C4 0,55, C5 0,53), sem sinal de overfitting ainda (o Pearson de validação oscila
+entre 0,69 e 0,72, dentro do ruído de 516 redações). Escolhida a de 3 épocas. No teste, o QWK
+bruto de 0,66 sem calibração nenhuma mostra que o modelo aprendeu a escala dos corretores, e ele
+supera o 120b sem treino em todas as competências, inclusive C3. Com 516 redações a validação
+tem ruído de ±0,04, então a ordem entre 1 e 2 épocas (0,56 x 0,54) não é confiável.
 
 ### QWK por competência (bruto), Flash Lite
 
