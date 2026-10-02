@@ -78,6 +78,14 @@ competência de 40 a 160 e só cai com 200 (0,4). Com nota humana 200 na C1 e na
 a partir do próprio julgamento, não da nota recebida. É o critério "alinhamento com a nota"
 da rubrica de avaliação; precisa de leitura humana para medir.
 
+Métrica automática de alinhamento (2026-10-02, `gerar_feedback.py --relatorio`): Spearman entre a nota
+e o número de problemas apontados, por competência. Formato antigo nas 30: **-0,25** com nota humana e
+**-0,08** com nota do modelo; com nota 40 o modelo aponta menos problemas (1,7) que com 120 (2,2). Novo
+formato `--por-competencia`: uma chamada por competência com a descrição oficial do nível da nota e do
+nível de cima (Cartilha do Participante, INEP), pedindo o que falta para subir de nível e passando os
+trechos já citados. Nova amostra de 30 do `cp_test` (`data/amostra_feedback_cp30.csv`), para usar as
+notas do 20b treinado sem vazamento (a amostra antiga vem do teste do v5, que se sobrepõe ao `cp_train`).
+
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
 Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação
