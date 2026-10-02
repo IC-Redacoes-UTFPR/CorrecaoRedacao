@@ -43,38 +43,49 @@ def main(argv=None):
     ap.add_argument("--out", default="/content/ft_lora")
     ap.add_argument("--merged", default="/content/ft_merged")
     ap.add_argument("--epochs", type=float, default=1)
+    ap.add_argument("--base", default=BASE, help="modelo base (um gpt-oss minusculo local serve de teste)")
+    ap.add_argument("--limit", type=int, default=0, help="usa so N exemplos (teste)")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args(argv)
 
     dados = exemplos(args.train, args.temas)
+    dados = dados[:args.limit] if args.limit else dados
     print(f"{len(dados)} exemplos de treino")
     if args.dry_run:
         print(json.dumps(dados[0], ensure_ascii=False)[:1500])
         return
 
+    import math
+
     import torch
     from datasets import Dataset
     from peft import LoraConfig, get_peft_model
-    from transformers import AutoModelForCausalLM, AutoTokenizer, Mxfp4Config
+    from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer, Mxfp4Config
     from trl import SFTConfig, SFTTrainer
 
-    tok = AutoTokenizer.from_pretrained(BASE)
+    tok = AutoTokenizer.from_pretrained(args.base)
+    cfg = AutoConfig.from_pretrained(args.base)
+    # o checkpoint oficial e MXFP4: desquantiza para bf16 para treinar (sem isso nao ha gradiente)
+    quant = Mxfp4Config(dequantize=True) if getattr(cfg, "quantization_config", None) else None
     model = AutoModelForCausalLM.from_pretrained(
-        BASE, attn_implementation="eager", torch_dtype=torch.bfloat16,
-        quantization_config=Mxfp4Config(dequantize=True), use_cache=False, device_map="auto")
+        args.base, attn_implementation="eager", dtype=torch.bfloat16,
+        quantization_config=quant, use_cache=False, device_map="auto")
+    # experts de 1 a cada 8 camadas, como no cookbook (7, 15, 23 no modelo de 24 camadas)
+    camadas = [i for i in range(cfg.num_hidden_layers) if i % 8 == 7]
     model = get_peft_model(model, LoraConfig(
         r=8, lora_alpha=16, target_modules="all-linear",
-        target_parameters=[f"{i}.mlp.experts.{p}" for i in (7, 15, 23) for p in ("gate_up_proj", "down_proj")]))
+        target_parameters=[f"{i}.mlp.experts.{p}" for i in camadas for p in ("gate_up_proj", "down_proj")]))
     model.print_trainable_parameters()
 
+    passos = math.ceil(len(dados) / 16 * args.epochs)  # 16 = batch 4 x acumulacao 4
     trainer = SFTTrainer(
         model=model, processing_class=tok, train_dataset=Dataset.from_list(dados),
         args=SFTConfig(
             output_dir=args.out, num_train_epochs=args.epochs, learning_rate=2e-4,
             per_device_train_batch_size=4, gradient_accumulation_steps=4, gradient_checkpointing=True,
-            max_length=2048, warmup_ratio=0.03, lr_scheduler_type="cosine_with_min_lr",
-            lr_scheduler_kwargs={"min_lr_rate": 0.1}, logging_steps=10, save_strategy="no",
-            report_to="none", bf16=True))
+            max_length=2048, warmup_steps=max(1, round(0.03 * passos)),  # warmup_ratio saiu do transformers 5
+            lr_scheduler_type="cosine_with_min_lr", lr_scheduler_kwargs={"min_lr_rate": 0.1},
+            logging_steps=10, save_strategy="no", report_to="none", bf16=torch.cuda.is_available()))
     trainer.train()
     trainer.save_model(args.out)
 
