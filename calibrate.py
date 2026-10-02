@@ -107,12 +107,16 @@ def out_of_fold(pred, gold, folds, fit):
 
 
 # ---------------------------------------------------------------- experimento
-def run(path, prompts_file=None, out_csv=None, plot_path=None):
+def _ler(path):
     df = pd.read_csv(path)
     gold = np.asarray(pd.to_numeric(df["score"], errors="coerce"), float)
     pred = np.asarray(pd.to_numeric(df["pred_total"], errors="coerce"), float)
     ok = ~(np.isnan(gold) | np.isnan(pred))
-    gold, pred, df = gold[ok], pred[ok], df.loc[ok].reset_index(drop=True)
+    return gold[ok], pred[ok], df.loc[ok].reset_index(drop=True)
+
+
+def run(path, prompts_file=None, out_csv=None, plot_path=None, calib_file=None):
+    gold, pred, df = _ler(path)
 
     groups = None
     if "prompt" in df.columns:
@@ -133,6 +137,13 @@ def run(path, prompts_file=None, out_csv=None, plot_path=None):
         for tag, yp in (("out-of-fold", oof), ("oraculo", orac)):
             m = evaluate_pair(gold, yp, is_total=True)
             rows.append({"calibrador": nome, "tipo": tag,
+                         "qwk": m["qwk"], "mae": m["mae"], "rmse": m["rmse"],
+                         "pearson": m["pearson"], "spearman": m["spearman"],
+                         "acc_adjacente": m["acc_adjacente"], "vies": m["vies"]})
+        if calib_file:  # ajustado num conjunto separado (validacao) e aplicado aqui: o teste fica intocado
+            gv, pv, _ = _ler(calib_file)
+            m = evaluate_pair(gold, np.clip(fit(pv, gv)(pred), 0, 1000), is_total=True)
+            rows.append({"calibrador": nome, "tipo": "validacao",
                          "qwk": m["qwk"], "mae": m["mae"], "rmse": m["rmse"],
                          "pearson": m["pearson"], "spearman": m["spearman"],
                          "acc_adjacente": m["acc_adjacente"], "vies": m["vies"]})
@@ -194,11 +205,13 @@ def main(argv=None):
     ap.add_argument("--prompts-file", help="CSV com index_redacao,prompt para fold por tema")
     ap.add_argument("--out", help="CSV de saida com a tabela de metricas")
     ap.add_argument("--plot", help="PNG do grafico pred vs nota humana")
+    ap.add_argument("--calib-file", help="CSV de predicao de outro conjunto (validacao): ajusta os "
+                    "calibradores nele e aplica neste arquivo (linhas tipo 'validacao')")
     args = ap.parse_args(argv)
     if not args.file:
         demo()
         return
-    run(args.file, args.prompts_file, args.out, args.plot)
+    run(args.file, args.prompts_file, args.out, args.plot, args.calib_file)
 
 
 if __name__ == "__main__":
