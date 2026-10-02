@@ -65,6 +65,84 @@ def prompt_feedback(essay, notas, tema_id=None):
     )
 
 
+# Niveis oficiais de cada competencia (Cartilha do Participante, INEP). Dizem ao modelo o que a
+# nota significa, para o feedback seguir a nota e nao o julgamento proprio do modelo.
+NIVEIS_ENEM = {
+    "C1": {200: "excelente dominio da modalidade escrita formal e de escolha de registro; desvios so como excepcionalidade e sem reincidencia",
+           160: "bom dominio da modalidade escrita formal e de escolha de registro, com poucos desvios gramaticais e de convencoes da escrita",
+           120: "dominio mediano da modalidade escrita formal e de escolha de registro, com alguns desvios gramaticais e de convencoes da escrita",
+           80: "dominio insuficiente da modalidade escrita formal, com muitos desvios gramaticais, de escolha de registro e de convencoes da escrita",
+           40: "dominio precario da modalidade escrita formal, de forma sistematica, com diversificados e frequentes desvios gramaticais, de escolha de registro e de convencoes da escrita",
+           0: "desconhecimento da modalidade escrita formal da lingua portuguesa"},
+    "C2": {200: "desenvolve o tema por meio de argumentacao consistente, a partir de repertorio sociocultural produtivo, e apresenta excelente dominio do texto dissertativo-argumentativo",
+           160: "desenvolve o tema por meio de argumentacao consistente e apresenta bom dominio do texto dissertativo-argumentativo, com proposicao, argumentacao e conclusao",
+           120: "desenvolve o tema por meio de argumentacao previsivel e apresenta dominio mediano do texto dissertativo-argumentativo, com proposicao, argumentacao e conclusao",
+           80: "desenvolve o tema recorrendo a copia de trechos dos textos motivadores ou apresenta dominio insuficiente do texto dissertativo-argumentativo, sem atender a estrutura com proposicao, argumentacao e conclusao",
+           40: "apresenta o assunto, tangenciando o tema, ou demonstra dominio precario do texto dissertativo-argumentativo, com tracos constantes de outros tipos textuais",
+           0: "fuga ao tema ou nao atendimento a estrutura dissertativo-argumentativa"},
+    "C3": {200: "apresenta informacoes, fatos e opinioes relacionados ao tema, de forma consistente e organizada, configurando autoria, em defesa de um ponto de vista",
+           160: "apresenta informacoes, fatos e opinioes relacionados ao tema, de forma organizada, com indicios de autoria, em defesa de um ponto de vista",
+           120: "apresenta informacoes, fatos e opinioes relacionados ao tema, limitados aos argumentos dos textos motivadores e pouco organizados, em defesa de um ponto de vista",
+           80: "apresenta informacoes, fatos e opinioes relacionados ao tema, mas desorganizados ou contraditorios e limitados aos argumentos dos textos motivadores",
+           40: "apresenta informacoes, fatos e opinioes pouco relacionados ao tema ou incoerentes e sem defesa de um ponto de vista",
+           0: "apresenta informacoes, fatos e opinioes nao relacionados ao tema e sem defesa de um ponto de vista"},
+    "C4": {200: "articula bem as partes do texto e apresenta repertorio diversificado de recursos coesivos",
+           160: "articula as partes do texto com poucas inadequacoes e apresenta repertorio diversificado de recursos coesivos",
+           120: "articula as partes do texto, de forma mediana, com inadequacoes, e apresenta repertorio pouco diversificado de recursos coesivos",
+           80: "articula as partes do texto, de forma insuficiente, com muitas inadequacoes, e apresenta repertorio limitado de recursos coesivos",
+           40: "articula as partes do texto de forma precaria",
+           0: "nao articula as informacoes"},
+    "C5": {200: "elabora muito bem proposta de intervencao, detalhada, relacionada ao tema e articulada a discussao desenvolvida no texto",
+           160: "elabora bem proposta de intervencao relacionada ao tema e articulada a discussao desenvolvida no texto",
+           120: "elabora, de forma mediana, proposta de intervencao relacionada ao tema e articulada a discussao desenvolvida no texto",
+           80: "elabora, de forma insuficiente, proposta de intervencao relacionada ao tema, ou nao articulada com a discussao desenvolvida no texto",
+           40: "apresenta proposta de intervencao vaga, precaria ou relacionada apenas ao assunto",
+           0: "nao apresenta proposta de intervencao ou apresenta proposta nao relacionada ao tema ou ao assunto"},
+}
+
+
+def banda(x):
+    """Nota continua (ex. nota esperada do modelo treinado) -> faixa do ENEM mais proxima."""
+    return int(min(200, max(0, round(float(x) / 40) * 40)))
+
+
+def prompt_feedback_comp(essay, comp, nota, tema_id=None, ja_citados=()):
+    """Feedback de UMA competencia, guiado pelo nivel oficial da nota e pelo nivel de cima."""
+    tema = f"TEMA DA REDACAO: {ras.TEMAS[int(tema_id)][0]}\n\n" if ras.TEMAS and tema_id is not None else ""
+    acima = (f"Para chegar a {nota + 40}, o nivel pede: {NIVEIS_ENEM[comp][nota + 40]}.\n" if nota < 200
+             else "Esta e a nota maxima.\n")
+    citados = ("Trechos ja citados nas outras competencias (escolha outros): "
+               + " | ".join(f'"{t}"' for t in ja_citados) + "\n" if ja_citados else "")
+    return (
+        "Voce e professor de redacao do ENEM e vai escrever um feedback formativo para o "
+        f"estudante, so sobre a competencia {comp}: {RUBRICA[comp]}\n\n"
+        f"{tema}REDACAO:\n{essay}\n\n"
+        f"A redacao ja foi corrigida e tirou {nota} de 200 em {comp}. A nota e final: nao a reavalie.\n"
+        f"Nivel oficial do ENEM para {nota}: {NIVEIS_ENEM[comp][nota]}.\n{acima}\n"
+        "Escreva, falando diretamente com o estudante (voce), em portugues:\n"
+        "- pontos_fortes: 1 ou 2 coisas que justificam a nota nao ser menor.\n"
+        "- problemas: o que mantem a redacao neste nivel e nao no de cima. A quantidade e a "
+        "gravidade devem corresponder ao nivel: perto de 200, 0 a 1 problema leve; no meio, 1 a 2; "
+        "nas notas baixas, ate 3 graves. Em \"trecho\", copie LITERALMENTE um trecho curto da "
+        "redacao, com os erros exatamente como estao, sem corrigir nada. Em \"explicacao\", diga o "
+        "que esta errado nos termos desta competencia. Em \"correcao\", reescreva o trecho do jeito "
+        "certo (obrigatorio na C1), sem inventar dados, numeros ou porcentagens.\n"
+        f"{citados}"
+        "- como_melhorar: 1 a 3 acoes concretas para chegar ao nivel de cima.\n\n"
+        'Responda APENAS com JSON: {"pontos_fortes": ["..."], "problemas": [{"trecho": "...", '
+        '"explicacao": "...", "correcao": "..."}], "como_melhorar": ["..."]}'
+    )
+
+
+def alinhamento(registros):
+    """O feedback acompanha a nota? Media de problemas por nota e Spearman (nota x n de problemas):
+    quanto mais negativo, mais o numero de problemas cai quando a nota sobe."""
+    pares = pd.DataFrame([(r["notas"][c], len((r["feedback"].get(c) or {}).get("problemas") or []))
+                          for r in registros for c in COMPS], columns=["nota", "problemas"])
+    media = pares.groupby("nota")["problemas"].mean().round(1).to_dict()
+    return media, pares["nota"].corr(pares["problemas"], method="spearman")
+
+
 def marcar_literal(fb, essay):
     """Poe literal true/false em cada problema. Devolve (literais, total)."""
     texto, lit, tot = norm(essay), 0, 0
@@ -80,21 +158,35 @@ def notas_de(fonte, df):
     if fonte == "humano":
         return {int(r.index_redacao): {c: int(getattr(r, c.lower())) for c in COMPS} for r in df.itertuples()}
     p = pd.read_csv(fonte).set_index("index_redacao")
-    return {int(i): {c: int(p.loc[i, f"pred_{c.lower()}"]) for c in COMPS}
+    return {int(i): {c: banda(p.loc[i, f"pred_{c.lower()}"]) for c in COMPS}
             for i in df["index_redacao"] if i in p.index and p.loc[i, [f"pred_{c.lower()}" for c in COMPS]].notna().all()}
 
 
-def run(amostra, fonte, provider, model, out, limit=0, max_tokens=6000):
+def feedback_por_competencia(provider, model, essay, notas, tema_id, max_tokens):
+    """Uma chamada por competencia, em ordem, passando os trechos ja citados para nao repetir."""
+    fb, citados = {}, []
+    for c in COMPS:
+        d = extrair_json(chat(provider, model, prompt_feedback_comp(essay, c, notas[c], tema_id, citados),
+                              0.1, max_tokens))
+        if not isinstance(d.get("problemas", []), list):
+            return {}
+        fb[c] = d
+        citados += [p.get("trecho", "") for p in d.get("problemas") or [] if isinstance(p, dict)]
+    return fb
+
+
+def run(amostra, fonte, provider, model, out, limit=0, max_tokens=6000, por_comp=False):
     df = pd.read_csv(amostra)
     df = df.head(limit) if limit else df
     notas = notas_de(fonte, df)
+    formato = "por_competencia" if por_comp else "junto"
     feitos = set()
     if os.path.exists(out):
         prev = [json.loads(l) for l in open(out, encoding="utf-8")]
-        outros = [r for r in prev if (r["modelo"], r["notas_fonte"]) != (model, fonte)]
+        outros = [r for r in prev if (r["modelo"], r["notas_fonte"], r.get("formato", "junto")) != (model, fonte, formato)]
         if outros:  # mesmo cuidado do run_api_scoring: nao misturar rodadas diferentes
-            sys.exit(f"{out} tem linhas de outro modelo/fonte de nota ({outros[0]['modelo']}, "
-                     f"{outros[0]['notas_fonte']}). Use outro --out.")
+            sys.exit(f"{out} tem linhas de outro modelo/fonte de nota/formato ({outros[0]['modelo']}, "
+                     f"{outros[0]['notas_fonte']}, {outros[0].get('formato', 'junto')}). Use outro --out.")
         feitos = {r["index_redacao"] for r in prev}
         print(f"retomando: {len(feitos)} ja feitas")
     os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
@@ -105,18 +197,20 @@ def run(amostra, fonte, provider, model, out, limit=0, max_tokens=6000):
             continue
         essay = limpar(row.essay)
         try:
-            resp = chat(provider, model, prompt_feedback(essay, notas[idx], row.prompt), 0.1, max_tokens)
+            if por_comp:
+                fb = feedback_por_competencia(provider, model, essay, notas[idx], row.prompt, max_tokens)
+            else:
+                fb = extrair_json(chat(provider, model, prompt_feedback(essay, notas[idx], row.prompt), 0.1, max_tokens))
         except RuntimeError as e:
             print(f"[{idx}] {e}, pulando", file=sys.stderr)
             continue
-        fb = extrair_json(resp)
         if not all(isinstance(fb.get(c), dict) for c in COMPS):
             print(f"[{idx}] FALHA parse")
             continue
         lit, tot = marcar_literal(fb, essay)
         lit_tot = [lit_tot[0] + lit, lit_tot[1] + tot]
         with open(out, "a", encoding="utf-8") as fh:
-            fh.write(json.dumps({"index_redacao": idx, "modelo": model, "notas_fonte": fonte,
+            fh.write(json.dumps({"index_redacao": idx, "modelo": model, "notas_fonte": fonte, "formato": formato,
                                  "notas": notas[idx], "feedback": fb}, ensure_ascii=False) + "\n")
         print(f"[{idx}] ok, trechos literais {lit}/{tot}")
     if lit_tot[1]:
@@ -132,7 +226,8 @@ def relatorio(jsonl, amostra, temas_path):
     linhas = [f"# Feedback: {os.path.basename(jsonl)}\n",
               "Trechos marcados com [NAO LITERAL] nao aparecem exatamente assim na redacao.\n"]
     lit = tot = 0
-    for r in (json.loads(l) for l in open(jsonl, encoding="utf-8")):
+    registros = [json.loads(l) for l in open(jsonl, encoding="utf-8")]
+    for r in registros:
         i, a = r["index_redacao"], am.loc[r["index_redacao"]]
         linhas += [f"\n---\n\n## Redacao {i}\n", f"**Tema:** {temas.get(a['prompt'], '?')}\n",
                    "| | C1 | C2 | C3 | C4 | C5 | Total |", "|---|---|---|---|---|---|---|",
@@ -152,10 +247,13 @@ def relatorio(jsonl, amostra, temas_path):
                 cor = f"\n  Correcao: \"{p['correcao']}\"" if p.get("correcao") else ""
                 linhas.append(f"- \"{p.get('trecho')}\"{tag}\n  {p.get('explicacao')}{cor}")
             linhas.append("\n**Como melhorar:**\n" + "\n".join(f"- {p}" for p in f.get("como_melhorar") or []) + "\n")
-    linhas.insert(2, f"Trechos literais: {lit}/{tot}.\n")
+    media, rho = alinhamento(registros)
+    resumo = (f"Trechos literais: {lit}/{tot}. Problemas apontados por nota: {media}. "
+              f"Spearman nota x numero de problemas: {rho:.2f} (quanto mais negativo, mais o feedback acompanha a nota).\n")
+    linhas.insert(2, resumo)
     md = os.path.splitext(jsonl)[0] + ".md"
     open(md, "w", encoding="utf-8").write("\n".join(linhas))
-    print(f"relatorio em {md} (trechos literais {lit}/{tot})")
+    print(f"relatorio em {md}\n{resumo}")
 
 
 def demo():
@@ -180,6 +278,8 @@ def main(argv=None):
     ap.add_argument("--out")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--max-tokens", type=int, default=6000)
+    ap.add_argument("--por-competencia", action="store_true",
+                    help="uma chamada por competencia, guiada pelo nivel oficial da nota e pelo nivel de cima")
     ap.add_argument("--relatorio", help="JSONL ja gerado: escreve o .md legivel ao lado")
     args = ap.parse_args(argv)
 
@@ -194,7 +294,8 @@ def main(argv=None):
     ras.KEY_ENV = args.key_env
     t = pd.read_csv(args.temas)
     ras.TEMAS = {int(r.id): (r.title, str(r.description)) for r in t.itertuples()}
-    run(args.amostra, args.notas, args.provider, args.model, args.out, args.limit, args.max_tokens)
+    run(args.amostra, args.notas, args.provider, args.model, args.out, args.limit, args.max_tokens,
+        args.por_competencia)
 
 
 if __name__ == "__main__":
