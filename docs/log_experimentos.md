@@ -115,6 +115,31 @@ bruto de 0,66 sem calibração nenhuma mostra que o modelo aprendeu a escala dos
 supera o 120b sem treino em todas as competências, inclusive C3. Com 516 redações a validação
 tem ruído de ±0,04, então a ordem entre 1 e 2 épocas (0,56 x 0,54) não é confiável.
 
+### Fine-tuning até 6 épocas: curva de overfitting (2026-10-03, rodada `ft6`)
+
+Um treino de 6 épocas (88 min), adaptador salvo ao fim de cada época, cada um avaliado na
+validação (516 redações, 17 temas novos). O cronograma da taxa de aprendizado cobre as 6 épocas,
+então a época 3 daqui não é igual à rodada `ft3`.
+
+| Época | Acerto por token no treino | QWK val. | Pearson val. | Viés val. | C1 | C2 | C3 | C4 | C5 |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | 0,941 | 0,48 | 0,71 | -109 | 0,29 | 0,32 | 0,41 | 0,42 | 0,36 |
+| 2 | 0,953 | 0,61 | 0,71 | -48 | 0,41 | 0,42 | 0,38 | 0,53 | 0,46 |
+| **3** | 0,959 | **0,63** | 0,69 | -48 | **0,43** | 0,48 | 0,52 | 0,55 | 0,50 |
+| 4 | 0,963 | 0,60 | 0,73 | -82 | 0,34 | 0,48 | 0,49 | 0,57 | 0,52 |
+| 5 | 0,967 | 0,60 | 0,69 | -65 | 0,34 | 0,46 | 0,54 | 0,53 | 0,52 |
+| 6 | 0,974 | 0,60 | 0,70 | -69 | 0,35 | 0,47 | 0,54 | 0,53 | 0,55 |
+
+Leitura: o acerto no treino sobe sem parar (0,941 para 0,974) enquanto a validação para de
+melhorar depois da época 3: o começo do overfitting. Não é uma queda forte (0,63 para 0,60, perto
+do ruído de ±0,04 de 516 redações; o Pearson oscila entre 0,69 e 0,73), mas a C1 cai claramente
+(0,43 para 0,34), enquanto C3 e C5 ainda sobem um pouco. Escolhida a época 3.
+
+No teste, a época 3 do `ft6` repete o `ft3`, que foi um treino independente: QWK bruto 0,66,
+calibrado pela validação 0,67, Pearson 0,68, competências 0,50 / 0,55 / 0,49 / 0,56 / 0,48
+(`ft3`: 0,49 / 0,53 / 0,49 / 0,54 / 0,47). As notas totais dos dois correlacionam 0,90. O
+resultado é reprodutível, e 3 épocas é o ponto certo para este tamanho de treino.
+
 ### QWK por competência (bruto), Flash Lite
 
 | Modo | C1 | C2 | C3 | C4 | C5 |
