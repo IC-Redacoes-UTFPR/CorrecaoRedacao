@@ -138,6 +138,26 @@ repetidos. Rodadas `feedback_cp30_comp2_humano` e `feedback_cp30_comp2_ft3` (cé
 recebe o texto assim, numa linha com `', '` entre parágrafos; mudar isso exigiria refazer as
 rodadas de nota, fica como ideia.
 
+Resultado da versão 2 (2026-10-03, mesmas 30 redações, ~10 min por rodada):
+
+| | v1 nota humana | v2 nota humana | v1 nota do `ft3` | v2 nota do `ft3` |
+|---|---|---|---|---|
+| Palavras por trecho (mediana) | 29 | 16 | 30 | 16 |
+| Trechos repetidos | 34% | 29% | 34% | 26% |
+| Trechos da C5 no último parágrafo | 45% | 64% | 44% | 74% |
+| Trechos literais | 97% | 96% | 94% | 96% |
+| Alinhamento (nota dada) | -0,56 | -0,59 | -0,32 | **-0,43** |
+| Alinhamento por competência | -0,40 / -0,79 / -0,39 / -0,79 / -0,75 | -0,41 / -0,60 / -0,46 / -0,76 / -0,79 | -0,16 / -0,55 / -0,43 / -0,47 / -0,54 | -0,44 / -0,25 / -0,36 / -0,65 / -0,56 |
+
+Leitura: a v2 melhora os três pontos que mirava (trechos com metade do tamanho, menos repetição,
+a C5 volta a citar a conclusão) sem perder literalidade, e o alinhamento do sistema real sobe de
+-0,32 para -0,43, puxado pela C1 (-0,16 para -0,44: com um trecho por erro, o número de problemas
+acompanha o número de erros). A repetição que sobra é quase toda a C2 e a C3 apontando erros de
+gramática (concordância, ortografia) que são da C1: na redação 547 a C2 diz que "o verbo está
+conjugado incorretamente". Isso também explica a queda do alinhamento da C2 (-0,79 para -0,60 e
+-0,55 para -0,25), embora com 30 redações por competência o erro padrão do Spearman seja de ~0,2. Próximo
+ajuste: dizer às competências 2 a 5 que desvios gramaticais são da C1 e não entram ali.
+
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
 Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação
