@@ -19,6 +19,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import ast
 import json
 import os
 import re
@@ -33,6 +34,19 @@ from run_api_scoring import COMPS, RUBRICA, chat, extrair_json, limpar
 def norm(s):
     """Minusculas, sem pontuacao e espaco unico: tolera diferenca de virgula e espaco ao citar."""
     return re.sub(r"\s+", " ", re.sub(r"[^\w\s]", " ", str(s).lower())).strip()
+
+
+def paragrafos(texto):
+    """O essay-br guarda a redacao como lista de paragrafos ("['p1', 'p2']") e o limpar junta tudo
+    numa linha so. No feedback os paragrafos ficam: o modelo precisa achar a conclusao (C5) e nao
+    deve citar um trecho que atravessa dois paragrafos."""
+    try:
+        ps = ast.literal_eval(str(texto))
+    except (ValueError, SyntaxError):
+        return limpar(texto)
+    if not isinstance(ps, list):
+        return limpar(texto)
+    return "\n\n".join(p for p in map(limpar, ps) if p)
 
 
 def prompt_feedback(essay, notas, tema_id=None):
@@ -113,6 +127,7 @@ def prompt_feedback_comp(essay, comp, nota, tema_id=None, ja_citados=()):
              else "Esta e a nota maxima.\n")
     citados = ("Trechos ja citados nas outras competencias (escolha outros): "
                + " | ".join(f'"{t}"' for t in ja_citados) + "\n" if ja_citados else "")
+    c5 = "Na C5, cite trechos da proposta de intervencao, que em geral fica no ultimo paragrafo.\n" if comp == "C5" else ""
     return (
         "Voce e professor de redacao do ENEM e vai escrever um feedback formativo para o "
         f"estudante, so sobre a competencia {comp}: {RUBRICA[comp]}\n\n"
@@ -123,11 +138,12 @@ def prompt_feedback_comp(essay, comp, nota, tema_id=None, ja_citados=()):
         "- pontos_fortes: 1 ou 2 coisas que justificam a nota nao ser menor.\n"
         "- problemas: o que mantem a redacao neste nivel e nao no de cima. A quantidade e a "
         "gravidade devem corresponder ao nivel: perto de 200, 0 a 1 problema leve; no meio, 1 a 2; "
-        "nas notas baixas, ate 3 graves. Em \"trecho\", copie LITERALMENTE um trecho curto da "
-        "redacao, com os erros exatamente como estao, sem corrigir nada. Em \"explicacao\", diga o "
+        "nas notas baixas, ate 3 graves. Em \"trecho\", copie LITERALMENTE so a parte da redacao "
+        "que mostra o problema (de 3 a 15 palavras, dentro de um paragrafo), com os erros "
+        "exatamente como estao, sem corrigir nada. Em \"explicacao\", diga o "
         "que esta errado nos termos desta competencia. Em \"correcao\", reescreva o trecho do jeito "
         "certo (obrigatorio na C1), sem inventar dados, numeros ou porcentagens.\n"
-        f"{citados}"
+        f"{c5}{citados}"
         "- como_melhorar: 1 a 3 acoes concretas para chegar ao nivel de cima.\n\n"
         'Responda APENAS com JSON: {"pontos_fortes": ["..."], "problemas": [{"trecho": "...", '
         '"explicacao": "...", "correcao": "..."}], "como_melhorar": ["..."]}'
@@ -141,6 +157,23 @@ def alinhamento(registros):
                           for r in registros for c in COMPS], columns=["nota", "problemas"])
     media = pares.groupby("nota")["problemas"].mean().round(1).to_dict()
     return media, pares["nota"].corr(pares["problemas"], method="spearman")
+
+
+def repetidos(registros):
+    """Problemas que repetem um trecho ja citado na mesma redacao: um contem o outro e o menor tem
+    pelo menos metade do tamanho do maior. Trecho curto dentro de um longo nao conta (costuma ser
+    outro problema, ex. um erro de C1 dentro da frase da proposta)."""
+    rep = tot = 0
+    for r in registros:
+        vistos = []
+        for c in COMPS:
+            for p in (r["feedback"].get(c) or {}).get("problemas") or []:
+                t = norm(p.get("trecho", ""))
+                rep += any(t and v and (t in v or v in t) and 2 * min(len(t), len(v)) >= max(len(t), len(v))
+                           for v in vistos)
+                tot += 1
+                vistos.append(t)
+    return rep, tot
 
 
 def marcar_literal(fb, essay):
@@ -166,7 +199,10 @@ def feedback_por_competencia(provider, model, essay, notas, tema_id, max_tokens)
     """Uma chamada por competencia, em ordem, passando os trechos ja citados para nao repetir."""
     fb, citados = {}, []
     for c in COMPS:
-        d = extrair_json(chat(provider, model, prompt_feedback_comp(essay, c, notas[c], tema_id, citados),
+        # a C5 nao recebe a lista: a proposta costuma ja ter sido citada (ex. erro de C1 nela), e
+        # com "escolha outros" a C5 criticava a introducao por nao ter proposta (redacao 547)
+        d = extrair_json(chat(provider, model, prompt_feedback_comp(essay, c, notas[c], tema_id,
+                                                                    citados if c != "C5" else ()),
                               0.1, max_tokens))
         if not isinstance(d.get("problemas", []), list):
             return {}
@@ -195,7 +231,7 @@ def run(amostra, fonte, provider, model, out, limit=0, max_tokens=6000, por_comp
         idx = int(row.index_redacao)
         if idx in feitos or idx not in notas:
             continue
-        essay = limpar(row.essay)
+        essay = paragrafos(row.essay)
         try:
             if por_comp:
                 fb = feedback_por_competencia(provider, model, essay, notas[idx], row.prompt, max_tokens)
@@ -234,7 +270,7 @@ def relatorio(jsonl, amostra, temas_path):
                    "| Humano | " + " | ".join(str(a[c.lower()]) for c in COMPS) + f" | {a['score']} |",
                    f"| Usada no feedback ({r['notas_fonte'] if r['notas_fonte'] == 'humano' else 'modelo'}) | "
                    + " | ".join(str(r["notas"][c]) for c in COMPS) + f" | {sum(r['notas'].values())} |\n",
-                   f"**Texto:**\n\n> {limpar(a['essay'])}\n"]
+                   "**Texto:**\n\n> " + paragrafos(a["essay"]).replace("\n\n", "\n>\n> ") + "\n"]
         for c in COMPS:
             f = r["feedback"].get(c) or {}
             linhas.append(f"\n### {c} (nota {r['notas'][c]})\n")
@@ -248,7 +284,9 @@ def relatorio(jsonl, amostra, temas_path):
                 linhas.append(f"- \"{p.get('trecho')}\"{tag}\n  {p.get('explicacao')}{cor}")
             linhas.append("\n**Como melhorar:**\n" + "\n".join(f"- {p}" for p in f.get("como_melhorar") or []) + "\n")
     media, rho = alinhamento(registros)
-    resumo = (f"Trechos literais: {lit}/{tot}. Problemas apontados por nota: {media}. "
+    rep, _ = repetidos(registros)
+    resumo = (f"Trechos literais: {lit}/{tot}. Trechos repetidos entre competencias: {rep}/{tot}. "
+              f"Problemas apontados por nota: {media}. "
               f"Spearman nota x numero de problemas: {rho:.2f} (quanto mais negativo, mais o feedback acompanha a nota).\n")
     linhas.insert(2, resumo)
     md = os.path.splitext(jsonl)[0] + ".md"
@@ -264,7 +302,12 @@ def demo():
     assert marcar_literal(fb, essay) == (1, 2)
     assert fb["C1"]["problemas"][1]["literal"] is False  # corrigir ao copiar conta como nao literal
     assert extrair_json('```json\n{"C1": {"problemas": []}}\n```')["C1"] == {"problemas": []}
-    print("demo ok: checagem de literalidade pega trecho corrigido ao copiar.")
+    assert paragrafos("['Um  texto.', 'Dois.']") == "Um texto.\n\nDois."
+    assert paragrafos("sem lista") == "sem lista"
+    fb["C4"]["problemas"] = [{"trecho": "Ninguem aceitavam isso!"}, {"trecho": "aceitavam"}]
+    # o 1o da C4 repete o 1o da C1; "aceitavam" esta dentro dele, mas curto: outro problema
+    assert repetidos([{"feedback": fb}]) == (1, 4)
+    print("demo ok: literalidade, paragrafos e trechos repetidos.")
 
 
 def main(argv=None):

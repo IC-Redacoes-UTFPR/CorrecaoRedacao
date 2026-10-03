@@ -95,9 +95,13 @@ a nota).
 
 | Rodada | Nota no prompt | Alinhamento | Problemas com nota 40 / 80 / 120 / 160 / 200 | Trechos literais | Trechos repetidos |
 |---|---|---|---|---|---|
-| `feedback_cp30_junto_humano` (formato antigo) | humana | -0,26 | 2,0 / 2,1 / 2,4 / 2,4 / 0,3 | 306/316 (97%) | 58 (18%) |
-| `feedback_cp30_comp_humano` (por competência) | humana | **-0,56** | 2,8 / 2,3 / 2,4 / 1,8 / 0,9 | 290/299 (97%) | 95 (32%) |
-| `feedback_cp30_comp_ft3` (sistema real) | 20b `ft3` | -0,32 | 3,0 / 2,2 / 2,1 / 1,8 / 1,0 | 285/303 (94%) | 89 (29%) |
+| `feedback_cp30_junto_humano` (formato antigo) | humana | -0,26 | 2,0 / 2,1 / 2,4 / 2,4 / 0,3 | 306/316 (97%) | 79 (25%) |
+| `feedback_cp30_comp_humano` (por competência) | humana | **-0,56** | 2,8 / 2,3 / 2,4 / 1,8 / 0,9 | 290/299 (97%) | 103 (34%) |
+| `feedback_cp30_comp_ft3` (sistema real) | 20b `ft3` | -0,32 | 3,0 / 2,2 / 2,1 / 1,8 / 1,0 | 285/303 (94%) | 102 (34%) |
+
+Trecho repetido = igual a um já citado na mesma redação, ou um contém o outro e o menor tem pelo
+menos metade do tamanho (`repetidos()` no `gerar_feedback.py`, desde 2026-10-03; um trecho curto
+dentro de um longo não conta, porque costuma ser outro problema).
 
 Alinhamento por competência (C1 / C2 / C3 / C4 / C5): formato antigo -0,17 / -0,31 / -0,11 /
 -0,32 / -0,54; por competência com nota humana -0,40 / -0,79 / -0,39 / -0,79 / -0,75; com nota do
@@ -115,12 +119,24 @@ Leitura:
   acerta a faixa exata em 54% das competências.
 - Trechos não literais: quase todos são cópias com pequenas diferenças ou dois trechos juntados
   num só; só 1 nas duas rodadas por competência não se parece com o texto (formato antigo: 4).
-- Problema novo: a lista de trechos já citados não evita repetição, que sobe de 18% para ~30% dos
-  problemas. Exemplo (redação 547): a mesma frase da introdução citada na C1 e na C5, onde a
-  crítica "não contém proposta de intervenção" não faz sentido para uma introdução. Corrigir
-  agrupando por trecho depois da geração ou reforçando o prompt.
+- Repetição de trechos entre competências: 25% no formato antigo, 34% por competência; a lista de
+  trechos já citados não resolve. Causas (análise de 2026-10-03): (1) o modelo cita frases
+  inteiras (mediana de 27 a 33 palavras por trecho, apesar de "trecho curto" no prompt), e uma
+  redação tem ~12 frases; (2) a redação chegava ao modelo numa linha só, com os parágrafos
+  separados por `', '` (resto da lista de parágrafos do essay-br, que o `limpar` não desfaz), e 3
+  trechos não literais atravessam dois parágrafos; (3) com "escolha outros", a C5 fugia da proposta: os trechos da C5 no último
+  parágrafo caem de 76% (formato antigo) para 45%. Exemplo (redação 547): a C5 cita uma frase da
+  introdução e diz que ela "não contém proposta de intervenção".
 - Com nota 200 o formato por competência ainda aponta ~1 problema (antigo: 0,3), em geral
   sugestões menores.
+
+Versão 2 do feedback (2026-10-03): parágrafos preservados no texto dado ao modelo
+(`paragrafos()`, nos dois formatos), trecho de 3 a 15 palavras dentro de um parágrafo, a C5
+orientada a citar a proposta e sem a lista de já citados, e o relatório conta os trechos
+repetidos. Rodadas `feedback_cp30_comp2_humano` e `feedback_cp30_comp2_ft3` (célula 6 do
+`colab_vllm.ipynb`). Observação: a nota (`run_api_scoring.py`, fine-tuning e BERTimbau) também
+recebe o texto assim, numa linha com `', '` entre parágrafos; mudar isso exigiria refazer as
+rodadas de nota, fica como ideia.
 
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
