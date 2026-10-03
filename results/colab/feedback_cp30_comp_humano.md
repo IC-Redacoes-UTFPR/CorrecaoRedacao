@@ -1,0 +1,3481 @@
+# Feedback: feedback_cp30_comp_humano.jsonl
+
+Trechos marcados com [NAO LITERAL] nao aparecem exatamente assim na redacao.
+
+Trechos literais: 290/299. Problemas apontados por nota: {40: 2.8, 80: 2.3, 120: 2.4, 160: 1.8, 200: 0.9}. Spearman nota x numero de problemas: -0.56 (quanto mais negativo, mais o feedback acompanha a nota).
+
+
+---
+
+## Redacao 547
+
+**Tema:** Feminicídio no Brasil: um debate importante sobre a violência contra a mulher
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 80 | 80 | 80 | 40 | 400 |
+| Usada no feedback (humano) | 120 | 80 | 80 | 80 | 40 | 400 |
+
+**Texto:**
+
+> No Brasil atual algo que infelizmente acabou se tornando comum ao nosso redor são noticiários trazendo casos de feminicidios , onde o indivíduo do sexo masculino acaba se sentindo superior a mulher, sendo capaz de controlá-la, violenta-la e até possivelmente se achando no direito de tirar à vida da mesma.', 'São inúmeros casos e inúmeras histórias relatadas, cheias de dor e sofrimento contadas pelas vítimas, a cada 20 minutos uma mulher é violentada verbalmente ou fisicamente em nosso país, na maioria das vezes por seus próprios familiares e parentes, os julgamentos da sociedade são sempre associados a roupa curta ou o modo como a mulher se comporta, nunca o homem é visto como “culpado “ pelo ato.', 'Por lei qualquer tipo de agressão contra mulher é crime, em cada cidade se situa uma ou até mesmo duas delegacias da mulher, porém ao denunciar corresse o risco de nada ser feito, ou do agressor ser preso por apenas alguns dias e poder pagar fiança, restando apenas o sentimento de mais corpo “ sujo “ de mais uma vítima.', 'Portanto, medidas são necessárias para resolver o impasse. Não só a população mas também órgãos governamentais como polícia militar e polícia civil deveriam por sua vez amadurecer sua forma machista de pensar e notar o quão são altos e sérios os casos de feminicidios relatados e não levarem isso como algo normal e comum em nosso cotidiano.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa compreensão do tema e consegue articular argumentos que evidenciam a gravidade do feminicídio no Brasil.
+- O registro de linguagem está adequado ao gênero dissertativo‑argumentativo, mantendo um tom formal e coerente ao longo do texto.
+
+**Problemas:**
+- "onde o indivíduo do sexo masculino acaba se sentindo superior a mulher, sendo capaz de controlá-la, violenta-la e até possivelmente se achando no direito de tirar à vida da mesma."
+  Erros de ortografia ("violenta-la"), regência ("se achando no direito de"), pontuação inadequada (vírgula antes de "e até") e uso incorreto do acento grave em "à vida" (o correto é "a vida").
+  Correcao: "onde o indivíduo do sexo masculino acaba se sentindo superior à mulher, sendo capaz de controlá‑la, violentá‑la e até se achando no direito de tirar a vida dela."
+- "porém ao denunciar corresse o risco de nada ser feito, ou do agressor ser preso por apenas alguns dias e poder pagar fiança, restando apenas o sentimento de mais corpo “ sujo “ de mais uma vítima."
+  Problemas de concordância verbal ("corresse" → "corre"), pontuação (faltam vírgulas após "porém" e antes de "ou"), uso inadequado de aspas e construção confusa que compromete a clareza.
+  Correcao: "porém, ao denunciar, corre o risco de nada ser feito, ou de o agressor ser preso apenas por alguns dias e poder pagar fiança, restando apenas o sentimento de um corpo "sujo" a mais de mais uma vítima."
+
+**Como melhorar:**
+- Revisar as regras de ortografia e regência verbal antes de finalizar o texto, usando um dicionário ou ferramentas de correção automática.
+- Praticar a pontuação em frases longas, inserindo vírgulas para separar orações coordenadas e subordinadas, garantindo clareza e fluidez.
+- Fazer leituras de textos dissertativos‑argumentativos de alta pontuação no ENEM e analisar como eles estruturam as frases, especialmente a concordância e a escolha de termos formais.
+
+
+### C2 (nota 80)
+
+**Pontos fortes:**
+- Você demonstra preocupação com o tema e traz dados que reforçam a gravidade do feminicídio no Brasil.
+- A conclusão indica a necessidade de medidas concretas, mostrando que o texto não se limita a apenas relatar o problema.
+
+**Problemas:**
+- "São inúmeros casos e inúmeras histórias relatadas, cheias de dor e sofrimento contadas pelas vítimas, a cada 20 minutos uma mulher é violentada verbalmente ou fisicamente em nosso país, na maioria das vezes por seus próprios familiares e parentes, os julgamentos da sociedade são sempre associados a roupa curta ou o modo como a mulher se comporta, nunca o homem é visto como “culpado “ pelo ato."
+  O trecho apresenta uma sequência longa e confusa, sem divisão clara de ideias. Falta a estrutura típica do texto dissertativo‑argumentativo (introdução, desenvolvimento e conclusão) e a argumentação não está organizada em parágrafos que desenvolvam um ponto de cada vez.
+  Correcao: "São inúmeros casos e histórias de dor relatadas por vítimas. A cada 20 minutos, uma mulher é agredida verbal ou fisicamente no Brasil, muitas vezes por familiares. A sociedade costuma culpar a vítima, apontando sua roupa ou comportamento, e raramente responsabiliza o agressor."
+- "Portanto, medidas são necessárias para resolver o impasse. Não só a população mas também órgãos governamentais como polícia militar e polícia civil deveriam por sua vez amadurecer sua forma machista de pensar e notar o quão são altos e sérios os casos de feminicidios relatados e não levarem isso como algo normal e comum em nosso cotidiano."
+  A proposta de intervenção está presente, porém está vaga e não apresenta detalhamento de ações, responsáveis, prazos ou mecanismos de avaliação, requisitos essenciais para a competência C2.
+  Correcao: "Portanto, é urgente implementar medidas concretas: (1) ampliar a rede de delegacias especializadas, garantindo atendimento 24 horas; (2) promover campanhas de educação de gênero nas escolas e nas forças de segurança; (3) criar protocolos de investigação que impeçam a impunidade, com acompanhamento de ONGs e definição de prazos para julgamento."
+
+**Como melhorar:**
+- Estruture o texto em três parágrafos claros: introdução (apresentação do tema e tese), desenvolvimento (dois ou três argumentos com exemplos) e conclusão (proposta de intervenção detalhada).
+- Organize cada argumento em um parágrafo separado, usando conectivos adequados para garantir coesão e progressão lógica das ideias.
+- Na proposta de intervenção, descreva ações específicas, indique os responsáveis, estabeleça prazos e explique como será feita a avaliação dos resultados.
+
+
+### C3 (nota 80)
+
+**Pontos fortes:**
+- Você trouxe dados impactantes (ex.: "a cada 20 minutos uma mulher é violentada") que demonstram conhecimento do tema e ajudam a sustentar seu ponto de vista.
+- O texto apresenta claramente a sua posição de que medidas mais efetivas são necessárias, cumprindo o requisito de defesa de um ponto de vista.
+
+**Problemas:**
+- "Por lei qualquer tipo de agressão contra mulher é crime, em cada cidade se situa uma ou até mesmo duas delegacias da mulher, porém ao denunciar corresse o risco de nada ser feito, ou do agressor ser preso por apenas alguns dias e poder pagar fiança, restando apenas o sentimento de mais corpo “ sujo “ de mais uma vítima."
+  O trecho mistura informações factuais (existência de delegacias) com opiniões pessoais sem estabelecer uma sequência lógica. Falta conexão clara entre a lei, a estrutura de atendimento e a consequência da denúncia, o que gera desorganização na apresentação dos argumentos.
+  Correcao: "A lei considera crime qualquer agressão contra a mulher. Em muitas cidades há uma ou duas delegacias especializadas, porém, ao denunciar, o risco de inércia persiste: o agressor pode ser preso por poucos dias e pagar fiança, deixando a vítima com a sensação de que seu corpo foi novamente violado."
+- "No Brasil atual algo que infelizmente acabou se tornando comum ao nosso redor são noticiários trazendo casos de feminicidios , onde o indivíduo do sexo masculino acaba se sentindo superior a mulher, sendo capaz de controlá-la, violenta-la e até possivelmente se achando no direito de tirar à vida da mesma."
+  A construção da frase está confusa (“algo… são noticiários”) e há repetição de ideias (sentimento de superioridade e controle). Além disso, a argumentação carece de um encadeamento que relacione o noticiário ao fenômeno social que se pretende analisar.
+  Correcao: "No Brasil contemporâneo, infelizmente, torna‑se comum a veiculação de noticiários que trazem casos de feminicídio, nos quais alguns homens se consideram superiores às mulheres, exercendo controle, violência e, por vezes, acreditando ter o direito de tirar-lhes a vida."
+
+**Como melhorar:**
+- Organize os parágrafos de forma lógica: introdução com dados gerais, desenvolvimento com argumentos estruturados (causas, consequências, falhas do sistema) e conclusão com propostas claras.
+- Use conectivos adequados (por exemplo, "além disso", "consequentemente", "por outro lado") para garantir a coesão entre as ideias e evitar repetições.
+- Selecione e apresente apenas os fatos e opiniões mais relevantes, evitando informações redundantes ou desconexas, e sempre relacione-as diretamente ao ponto de vista que você defende.
+
+
+### C4 (nota 80)
+
+**Pontos fortes:**
+- Você demonstra preocupação com o tema e consegue apresentar dados que reforçam a gravidade do feminicídio no Brasil, o que ajuda a manter a coerência temática.
+- Há tentativa de conectar ideias ao final do texto, indicando a necessidade de medidas governamentais e sociais.
+
+**Problemas:**
+- "No Brasil atual algo que infelizmente acabou se tornando comum ao nosso redor são noticiários trazendo casos de feminicidios , onde o indivíduo do sexo masculino acaba se sentindo superior a mulher, sendo capaz de controlá-la, violenta-la e até possivelmente se achando no direito de tirar à vida da mesma."
+  A ligação entre a primeira oração e a segunda está fraca. O conectivo "onde" não estabelece adequadamente a relação de causa‑efeito entre a frequência de notícias e a atitude do agressor. Além disso, há vírgula antes da conjunção "onde" e o uso de "são noticiários" gera discordância verbal.
+  Correcao: "No Brasil atual, infelizmente, a frequência de noticiários que trazem casos de feminicídio tem contribuído para que alguns homens se sintam superiores às mulheres, acreditando que podem controlá‑las, violentá‑las e até mesmo tirar-lhes a vida."
+- "Portanto, medidas são necessárias para resolver o impasse. Não só a população mas também órgãos governamentais como polícia militar e polícia civil deveriam por sua vez amadurecer sua forma machista de pensar e notar o quão são altos e sérios os casos de feminicidios relatados e não levarem isso como algo normal e comum em nosso cotidiano."
+  A sequência de ideias carece de conectores claros. O uso de "Portanto" indica conclusão, porém o parágrafo seguinte introduz nova argumentação sem transição adequada. Além disso, a construção "não só a população mas também órgãos governamentais" carece de vírgula após "não só" e o verbo "deveriam" não está bem articulado ao infinitivo que o segue.
+  Correcao: "Portanto, medidas são necessárias para resolver o impasse. Não só a população, mas também órgãos governamentais, como a polícia militar e a polícia civil, devem, por sua vez, amadurecer suas visões e reconhecer a gravidade dos casos de feminicídio, evitando tratá‑los como algo normal e cotidiano."
+
+**Como melhorar:**
+- Use conectivos explícitos (por exemplo, "porque", "devido a", "além disso", "consequentemente") para ligar causas, consequências e argumentos entre parágrafos.
+- Revise a concordância verbal e a pontuação antes de inserir um conectivo; a vírgula deve separar orações coordenadas ou introduzir elementos explicativos, nunca ficar solta antes de "onde" ou "mas".
+- Amplie seu repertório de recursos coesivos, variando entre conjunções, advérbios de sequência e pronomes de referência, para evitar repetições e garantir fluidez entre as partes do texto.
+
+
+### C5 (nota 40)
+
+**Pontos fortes:**
+- Você reconheceu a gravidade do feminicídio e apontou a necessidade de intervenção tanto da sociedade quanto das instituições.
+- O texto demonstra preocupação com os direitos humanos ao denunciar a impunidade e a violência institucionalizada.
+
+**Problemas:**
+- "Portanto, medidas são necessárias para resolver o impasse. Não só a população mas também órgãos governamentais como polícia militar e polícia civil deveriam por sua vez amadurecer sua forma machista de pensar e notar o quão são altos e sérios os casos de feminicidios relatados e não levarem isso como algo normal e comum em nosso cotidiano."
+  A proposta de intervenção está vaga: não há agente específico, ação concreta, modo/meio de execução, efeito esperado nem detalhamento de como a medida seria implementada. Além disso, a linguagem é genérica e não apresenta um plano factível, o que impede a avaliação positiva da competência C5.
+  Correcao: "Portanto, o governo federal, por meio do Ministério da Mulher, da Família e dos Direitos Humanos, deve criar um programa nacional de capacitação obrigatória para todos os policiais militares e civis, com carga horária de 40 horas, focado em direitos humanos e prevenção da violência de gênero. Essa capacitação será realizada anualmente em todas as delegacias especializadas, com avaliação certificada. O efeito esperado é a redução de 30% nos casos de impunidade em processos de feminicídio nos próximos cinco anos, além de melhorar a confiança das vítimas nas instituições."
+- "Por lei qualquer tipo de agressão contra mulher é crime, em cada cidade se situa uma ou até mesmo duas delegacias da mulher, porém ao denunciar corresse o risco de nada ser feito, ou do agressor ser preso por apenas alguns dias e poder pagar fiança, restando apenas o sentimento de mais corpo “ sujo “ de mais uma vítima."
+  A proposta não indica quem deve agir nem como a ação será realizada; falta o detalhamento do meio (por exemplo, criação de unidades especializadas ou protocolos) e o efeito esperado. O texto apenas descreve um problema sem oferecer solução concreta.
+  Correcao: "O Congresso Nacional deve aprovar a criação de Juizados de Violência Doméstica e Familiar contra a Mulher em todas as capitais, com juízes especializados e equipe de assistência social. Cada juizado terá prazo máximo de 48 horas para decidir sobre medidas protetivas e, caso haja risco iminente, o agressor será mantido preso preventivamente, sem possibilidade de fiança. Essa medida visa garantir resposta rápida e efetiva, diminuindo a reincidência em 20% nos dois primeiros anos."
+- "No Brasil atual algo que infelizmente acabou se tornando comum ao nosso redor são noticiários trazendo casos de feminicidios , onde o indivíduo do sexo masculino acaba se sentindo superior a mulher, sendo capaz de controlá-la, violenta-la e até possivelmente se achando no direito de tirar à vida da mesma."
+  A frase apresenta problemas de coesão e clareza, além de não conter nenhum elemento da proposta de intervenção (agente, ação, meio, efeito). O texto se limita a descrever a situação, sem avançar para soluções concretas.
+  Correcao: "Para combater essa cultura de violência, o Ministério da Educação deve incluir, a partir do próximo ano, no currículo obrigatório do ensino fundamental, um módulo de Educação em Igualdade de Gênero, com atividades práticas que abordem respeito, empatia e direitos humanos. As escolas receberão material didático gratuito e treinamento para professores, garantindo que, ao final do ensino fundamental, 90% dos estudantes reconheçam e rejeitem comportamentos machistas."
+
+**Como melhorar:**
+- Defina claramente quem é o agente da ação (ex.: governo federal, Ministério da Mulher, escolas, etc.).
+- Descreva a ação concreta, o meio de execução (programas, leis, capacitações) e o efeito esperado, com indicadores de sucesso.
+- Organize a proposta em etapas sequenciais, mostrando como cada medida se articula com a discussão desenvolvida no texto.
+
+
+---
+
+## Redacao 4138
+
+**Tema:** Desafios na Educação a Distância no Brasil
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 160 | 160 | 200 | 160 | 840 |
+| Usada no feedback (humano) | 160 | 160 | 160 | 200 | 160 | 840 |
+
+**Texto:**
+
+> Em “Amor nos tempos do Cólera”, o escritor Gabriel García Márquez narra cenas de marinheiros isolados em navios por causa da doença que intitula o livro. Contemporaneamente, a realidade brasileira mostra-se similar à ficção, posto que a pandemia de Covid-19 impõe o isolamento social, sobretudo, aos estudantes que se encontram privados do ensino presencial e de meios para acessar a Educação a Distância (EaD). Logo, o ensino remoto padece com a falta de equipamentos tecnológicos e com a difícil adaptação da comunidade escolar aos dispositivos digitais.', 'A priori, pontua-se que EaD foi imposta abruptamente em virtude da pandemia, sem a devida preparação de estruturas tecnológicas, como o acesso gratuito à internet. Tal fato resulta numa disparidade de ensino, principalmente entre alunos do campo e da cidade. Esse cenário segregacionista determina um prejuízo inconteste para os jovens, pois muitos deles perdem conteúdos que eram ministrados apenas presencialmente . Exemplo disso são estudantes que residem em áreas rurais, uma vez que pesquisa do Instituto Brasileiro de Geografia e Estatística aponta que 53,5% de campesinos não têm conexão com a “web”. Portanto, a falta de estrutura tecnológica aos educandos é um dos obstáculos à EaD no Brasil.', 'Outrossim, a EaD enfrenta o despreparo de professores e alunos com ciberespaço . Nesse sentido, não só o currículo é prejudicado, mas também a socialização, a qual fica comprometida pelo uso inadequado de plataformas de videoconferência. Segundo o comunicólogo John Thompson, as interações mediadas excluem deixas simbólicas, ou seja, elementos intrínsecos ao encontro face a face, como tom de voz e gestos. Assim, a aprendizagem é comprometida à medida em que a interação escolar não se efetiva integralmente, o que se torna mais um desafio a ser superado pela EaD no Brasil.', 'Destarte, urge que a EaD no Brasil seja repensada a partir da inclusão digital. Nessa perspectiva, o Ministério da Educação deve disponibilizar a tecnologia para que o ensino remoto não seja mais uma forma de exclusão social. Para isso, a pasta do Governo Federal há de incluir, na dotação orçamentária de cada ano, verbas específicas para escolas investirem na aquisição e treinamento de sua clientela frente aos meios digitais. Ademais, parte do Fundo Nacional de Desenvolvimento da Educação destinada aos estados e municípios deve ser aplicada na capilaridade do acesso gratuito à internet, por meio de torres de transmissão instaladas em locais desprovidos de conexão. Isso com o fito de que a EaD não gere náufragos na educação brasileira.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de articular argumentos e usar referências externas, o que enriquece o texto e demonstra domínio do registro formal.
+- A coesão entre os parágrafos está bem estruturada, com conectivos adequados que mantêm a progressão lógica das ideias.
+
+**Problemas:**
+- "Em “Amor nos tempos do Cólera”, o escritor Gabriel García Márquez narra cenas de marinheiros isolados em navios por causa da doença que intitula o livro."
+  O título da obra deve ser escrito com letras maiúsculas em todas as palavras principais e em itálico ou entre aspas, conforme a norma culta. Além disso, a expressão "por causa da doença que intitula o livro" está confusa e apresenta problema de regência e clareza.
+  Correcao: "Em *Amor nos Tempos do Cólera*, o escritor Gabriel García Márquez narra cenas de marinheiros isolados em navios devido à doença que dá nome ao livro."
+- "Para isso, a pasta do Governo Federal há de incluir, na dotação orçamentária de cada ano, verbas específicas para escolas investirem na aquisição e treinamento de sua clientela frente aos meios digitais."
+  A palavra "pasta" está inadequada ao registro formal; o verbo "há de" está incorreto aqui, devendo ser substituído por "deve". Além disso, a construção "treinamento de sua clientela" apresenta problema de concordância e clareza.
+  Correcao: "Para isso, o Ministério da Educação deve incluir, na dotação orçamentária de cada ano, verbas específicas para que as escolas invistam na aquisição e no treinamento de seus usuários em relação aos meios digitais."
+
+**Como melhorar:**
+- Revise cuidadosamente a ortografia e a grafia de títulos, nomes próprios e termos técnicos, seguindo as normas da ABNT ou do Vocabulário Ortográfico da Língua Portuguesa.
+- Atente-se à concordância verbal e nominal, bem como à regência de verbos e preposições, evitando construções ambíguas ou inadequadas ao registro formal.
+- Faça uma leitura final focada na pontuação e na escolha de vocabulário, garantindo que cada frase esteja clara, coerente e em conformidade com o padrão culto da língua.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você demonstra boa compreensão da proposta, mantendo o foco no tema "Desafios na Educação a Distância no Brasil" ao longo de todo o texto.
+- A estrutura dissertativo‑argumentativa está bem organizada, com introdução, desenvolvimento de argumentos e proposta de intervenção coerente.
+
+**Problemas:**
+- "Outrossim, a EaD enfrenta o despreparo de professores e alunos com ciberespaço ."
+  A expressão "com ciberespaço" está vaga e não deixa claro qual é a relação entre o despreparo e o ambiente digital, comprometendo a clareza argumentativa exigida na competência C2.
+  Correcao: "Outrossim, a EaD enfrenta o despreparo de professores e alunos no uso do ciberespaço."
+
+**Como melhorar:**
+- Enriqueça seus argumentos com repertório sociocultural mais diversificado, citando estudos, políticas públicas ou exemplos concretos que reforcem a análise dos desafios da EaD.
+- Ajuste a linguagem para garantir precisão e clareza; evite termos vagos ou construções ambíguas que possam enfraquecer a argumentação.
+- Aprofunde a proposta de intervenção, detalhando responsáveis, recursos e prazos, de modo a demonstrar viabilidade e coerência com os problemas apresentados.
+
+
+### C3 (nota 160)
+
+**Pontos fortes:**
+- Você selecionou dados relevantes, como a pesquisa do IBGE que indica 53,5% de campestres sem acesso à internet, demonstrando capacidade de reunir informações pertinentes ao tema.
+- A argumentação está organizada em parágrafos que apresentam causas, consequências e propostas, o que evidencia uma boa estrutura lógica em defesa do ponto de vista.
+
+**Problemas:**
+- "A priori, pontua-se que EaD foi imposta abruptamente em virtude da pandemia, sem a devida preparação de estruturas tecnológicas, como o acesso gratuito à internet."
+  O trecho apresenta uma afirmação genérica (“A priori, pontua-se”) que não está sustentada por fontes ou dados concretos, enfraquecendo a consistência da argumentação. Na competência C3, é preciso relacionar fatos e opiniões de forma coerente e fundamentada, evitando expressões vagas que não contribuem para a defesa do ponto de vista.
+  Correcao: "A EaD foi imposta abruptamente em virtude da pandemia, sem a devida preparação de estruturas tecnológicas, como a ampliação do acesso gratuito à internet, conforme apontam estudos do Ministério da Educação sobre a falta de infraestrutura nas escolas públicas."
+- "Destarte, urge que a EaD no Brasil seja repensada a partir da inclusão digital."
+  A expressão “a partir da inclusão digital” é vaga e não indica claramente quais medidas concretas são necessárias, o que compromete a clareza e a profundidade da proposta. Para alcançar o nível máximo, as ideias devem ser desenvolvidas com detalhes que mostrem a relação direta entre o problema e a solução.
+  Correcao: "Destarte, urge que a EaD no Brasil seja repensada mediante a implementação de políticas de inclusão digital, como a distribuição de tablets para estudantes de baixa renda e a expansão de redes de internet de alta velocidade em áreas rurais."
+
+**Como melhorar:**
+- Fundamente cada afirmação com dados ou fontes específicas, evitando expressões genéricas que enfraquecem a argumentação.
+- Desenvolva as propostas de forma mais detalhada, indicando claramente como elas resolveriam os problemas apontados.
+- Estabeleça conexões explícitas entre os fatos apresentados e sua tese, reforçando a consistência e a coesão do discurso.
+
+
+### C4 (nota 200)
+
+**Pontos fortes:**
+- Uso variado de conectivos (por exemplo, "Logo", "Outrossim", "Destarte") que garantem a fluidez entre os parágrafos e reforçam a progressão lógica das ideias.
+- Referências claras a dados e autores (IBGE, John Thompson) que funcionam como marcadores de coesão referencial, evitando repetições e mantendo a coerência temática.
+
+**Problemas:**
+- "Para isso, a pasta do Governo Federal há de incluir, na dotação orçamentária de cada ano, verbas específicas para escolas investirem na aquisição e treinamento de sua clientela frente aos meios digitais."
+  O verbo "há de" está incorreto para o sentido de obrigação; o correto seria "há de" → "há de" (forma arcaica) ou, melhor, "deve". Além disso, a expressão "treinamento de sua clientela" gera ambiguidade referencial, pois "sua" pode remeter ao Governo ou às escolas, comprometendo a clareza da referência.
+  Correcao: "Para isso, o Ministério da Educação deve incluir, na dotação orçamentária de cada ano, verbas específicas para que as escolas invistam na aquisição e no treinamento de professores e alunos nos meios digitais."
+
+**Como melhorar:**
+- Revise o uso de verbos auxiliares de obrigação ("há de", "deve", "precisa") para garantir que a referência seja inequívoca ao sujeito da ação.
+- Atenha-se à clareza referencial, evitando pronomes ou possessivos que possam gerar dúvidas sobre a quem ou a que se referem.
+- Continue diversificando os conectivos, mas mantenha a consistência no registro formal, evitando expressões que soem arcaicas ou fora do padrão da redação do ENEM.
+
+
+### C5 (nota 160)
+
+**Pontos fortes:**
+- Você apresenta uma proposta de intervenção clara, apontando a necessidade de investimento governamental na inclusão digital.
+- A proposta está articulada com a discussão desenvolvida ao longo do texto, relacionando a falta de infraestrutura ao problema da EaD.
+
+**Problemas:**
+- "Para isso, a pasta do Governo Federal há de incluir, na dotação orçamentária de cada ano, verbas específicas para escolas investirem na aquisição e treinamento de sua clientela frente aos meios digitais."
+  A proposta não detalha suficientemente os elementos exigidos pela competência C5: agente (quem executa), ação (o que será feito), modo/meio (como será feito), efeito (qual o resultado esperado) e o detalhamento do impacto nos direitos humanos. O trecho menciona apenas o agente (Governo Federal) e a ação genérica (incluir verbas), sem especificar como os recursos serão aplicados, quem será beneficiado concretamente, nem o efeito esperado na garantia do direito à educação.
+  Correcao: "Para isso, o Ministério da Educação, em parceria com as secretarias estaduais e municipais de Educação, deverá destinar, anualmente, 10% da dotação orçamentária para a compra de tablets e laptops para escolas públicas de áreas rurais, bem como para a capacitação de professores e alunos no uso dessas tecnologias. Os recursos serão aplicados por meio de convênios com empresas de tecnologia, garantindo que 100% das escolas participantes tenham acesso à internet de alta velocidade. Como efeito, espera‑se a redução em 30% da evasão escolar nas regiões atendidas, assegurando o direito constitucional à educação de qualidade para todos os estudantes."
+
+**Como melhorar:**
+- Especifique sempre o agente responsável, a ação concreta, o modo de execução e o efeito esperado, vinculando-os ao direito à educação.
+- Utilize dados ou percentuais já citados no texto para quantificar a intervenção, demonstrando viabilidade e impacto.
+- Apresente um cronograma ou etapas de implementação (ex.: curto, médio e longo prazo) para tornar a proposta ainda mais detalhada e factível.
+
+
+---
+
+## Redacao 172
+
+**Tema:** Qualificação e o futuro do emprego
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 80 | 80 | 80 | 80 | 80 | 400 |
+| Usada no feedback (humano) | 80 | 80 | 80 | 80 | 80 | 400 |
+
+**Texto:**
+
+> Sabe-se que a era da revolução técnico-científica-informacional trouxe Profundas profundas mudanças nos novos paradigmas sociais; pode-se mencionar a redução no numero de ofertas de empregos e também a demanda por pessoas qualificadas para atenderem ocuparem os novos postos de trabalhos, já que o mesmo está sendo operado por máquinas. Portanto, observa-se que o mercado de trabalho ficou cada vez mais exigentes exigente e novos postos de trabalho requerem boas qualificações para admissão, assim elevando o desemprego.', 'Por conseguinte, se constata constatam-se uns percentuais números de pessoas que estão desempregadas ou em situações de subempregos, isso se deve há múltiplos fatores, o baixo nível escolar, desqualificação profissional e etc. Todavia, tais requisitos tendem resultarem no desencadeamento do a resultar em desemprego, e por não atenderem as exigências postas no mercado de trabalhos se acentuaram os problemas de caráter sociais resultante do desempregos desemprego exacerbado.', 'Assim, cabe ressaltar que o desemprego foi surgindo na medida em que se acentuou uma gama de pessoas nas cidades, movido pelas melhorias nas condições de vidas que as zona urbana poderia zonas urbanas poderiam proporcionar e também pela repulsão dos agricultores que não conseguiram se mantiver a sua sustentabilidade no rural, se obrigou a sair para buscarem melhores condições de vida, isso aliado às questões agrárias que foram importantíssimas para intensificar êxodo rural.', 'Contudo, os diversos diversos são os fatores que podem desenvolver os desempregos o desemprego, mas cabem cabe às autoridades intervierem intervirem em tais problemas, tentando solucionar ou sanar solicioná-los. Portanto é relevante que os governantes do país priorizarem as políticas públicas para que tentar-se atenuarem tentar atenuar o desemprego demasiado, investir mais na educação, impulsionar a economia do país para hajam haja novos postos de trabalhos e assim facilitarem o emprego a todos, sem exclusão.
+
+
+### C1 (nota 80)
+
+**Pontos fortes:**
+- Você demonstra capacidade de articular ideias sobre a relação entre qualificação e desemprego, mantendo o foco no tema proposto.
+- Há tentativa de usar conectivos ("portanto", "contudo", "assim") para organizar o texto, o que indica consciência da coesão textual.
+
+**Problemas:**
+- "a era da revolução técnico-científica-informacional trouxe Profundas profundas mudanças nos novos paradigmas sociais; pode-se mencionar a redução no numero de ofertas de empregos e também a demanda por pessoas qualificadas para atenderem ocuparem os novos postos de trabalhos, já que o mesmo está sendo operado por máquinas."
+  Erros de ortografia ("Profundas profundas", "numero"), concordância verbal e nominal ("pessoas qualificadas para atenderem ocuparem"), regência inadequada ("atenderem ocuparem"), pontuação confusa (uso de ponto‑e‑vírgula desnecessário) e registro excessivamente informal para um texto dissertativo‑argumentativo.
+  Correcao: "A era da revolução técnico‑científica‑informacional trouxe profundas mudanças nos novos paradigmas sociais; pode‑se mencionar a redução no número de ofertas de emprego e a demanda por pessoas qualificadas para ocupar os novos postos de trabalho, já que estes estão sendo operados por máquinas."
+- "Por conseguinte, se constata constatam-se uns percentuais números de pessoas que estão desempregadas ou em situações de subempregos, isso se deve há múltiplos fatores, o baixo nível escolar, desqualificação profissional e etc."
+  Repetição e concordância incorreta ("se constata constatam‑se"), escolha inadequada de vocabulário ("uns percentuais números"), regência errada ("se deve há"), uso de "e etc." que é informal e falta de pontuação adequada.
+  Correcao: "Por conseguinte, constata‑se que um percentual de pessoas está desempregado ou em situação de subemprego; isso se deve a múltiplos fatores, como o baixo nível escolar, a desqualificação profissional, etc."
+- "Contudo, os diversos diversos são os fatores que podem desenvolver os desempregos o desemprego, mas cabem cabe às autoridades intervierem intervirem em tais problemas, tentando solucionar ou sanar solicioná-los."
+  Repetição de palavras, concordância e regência inadequadas, uso de verbo no infinitivo sem estrutura correta, e falta de clareza na construção da frase.
+  Correcao: "Contudo, diversos fatores podem gerar desemprego, mas cabe às autoridades intervir nesses problemas, tentando solucioná‑los."
+
+**Como melhorar:**
+- Revisar regras de ortografia e concordância (substantivo, verbo e adjetivo) antes de finalizar o texto; praticar com exercícios de gramática focados em regência verbal e nominal.
+- Treinar a pontuação, especialmente o uso correto de vírgulas, ponto‑e‑vírgula e ponto final, para evitar frases longas e confusas.
+- Ler textos dissertativos‑argumentativos de boa qualidade (artigos de opinião, redações nota 1000) e analisar como os autores mantêm o registro formal e evitam repetições e construções coloquiais.
+
+
+### C2 (nota 80)
+
+**Pontos fortes:**
+- Você demonstra conhecimento do tema ao mencionar a relação entre a automação e a necessidade de qualificação profissional.
+- A redação apresenta uma conclusão que retoma a ideia de intervenção estatal, indicando tentativa de fechamento do texto.
+
+**Problemas:**
+- "Portanto, observa-se que o mercado de trabalho ficou cada vez mais exigentes exigente e novos postos de trabalho requerem boas qualificações para admissão, assim elevando o desemprego."
+  O trecho foge da estrutura dissertativo‑argumentativa: a ideia de "exigentes exigente" é redundante e a frase não apresenta um argumento claro que desenvolva a proposta. Além disso, a conclusão de que isso eleva o desemprego não está sustentada por dados ou raciocínio lógico, o que enfraquece a argumentação exigida na competência C2.
+  Correcao: "Portanto, observa‑se que o mercado de trabalho tornou‑se mais exigente, demandando profissionais com qualificações específicas; essa exigência, quando não atendida, contribui para o aumento do desemprego."
+- "Assim, cabe ressaltar que o desemprego foi surgindo na medida em que se acentuou uma gama de pessoas nas cidades, movido pelas melhorias nas condições de vidas que as zona urbana poderia zonas urbanas poderiam proporcionar e também pela repulsão dos agricultores que não conseguiram se mantiver a sua sustentabilidade no rural, se obrigou a sair para buscarem melhores condições de vida, isso aliado às questões agrárias que foram importantíssimas para intensificar êxodo rural."
+  O parágrafo mistura ideias sem conexão lógica e apresenta repetições e erros de concordância que atrapalham a clareza. Não há um encadeamento argumentativo que relacione diretamente a qualificação profissional ao futuro do emprego, o que impede o desenvolvimento coerente da proposta.
+  Correcao: "Assim, é importante observar que o aumento do desemprego está relacionado ao êxodo rural, impulsionado pela busca de melhores condições de vida nas cidades; ao mesmo tempo, a falta de qualificação adequada dificulta a inserção desses migrantes no mercado de trabalho urbano."
+
+**Como melhorar:**
+- Planeje o texto antes de escrever: delimite claramente a tese, os argumentos principais (qualificação, tecnologia e políticas públicas) e a conclusão, garantindo a sequência lógica exigida pela estrutura dissertativo‑argumentativa.
+- Revise a coesão e a concordância, eliminando repetições e erros gramaticais; use conectivos adequados (por exemplo, "além disso", "consequentemente", "por isso") para ligar as ideias de forma fluida.
+- Fundamente cada argumento com exemplos ou dados implícitos (por exemplo, citar a automação de setores industriais ou a necessidade de cursos técnicos) para tornar a argumentação mais convincente e atender ao critério de desenvolvimento do tema.
+
+
+### C3 (nota 80)
+
+**Pontos fortes:**
+- Você conseguiu trazer informações e dados que se relacionam com o tema proposto, demonstrando conhecimento do assunto.
+- Há tentativa de defender um ponto de vista ao longo do texto, o que impede que a nota seja ainda menor.
+
+**Problemas:**
+- "todavia, tais requisitos tendem resultarem no desencadeamento do a resultar em desemprego, e por não atenderem as exigências postas no mercado de trabalhos se acentuaram os problemas de caráter sociais resultante do desempregos desemprego exacerbado."
+  O trecho apresenta sérias falhas de coesão e coerência: verbos mal conjugados ('tendem resultarem', 'a resultar'), repetições desnecessárias ('desemprego', 'desempregos'), e construção confusa que impede a compreensão clara da relação entre qualificação e desemprego. Na competência C3, a seleção e organização das informações devem ser lógicas e fluídas, permitindo ao leitor seguir o argumento sem tropeços.
+  Correcao: "Todavia, esses requisitos podem levar ao aumento do desemprego, pois quem não atende às exigências do mercado de trabalho contribui para o agravamento dos problemas sociais decorrentes do desemprego exacerbado."
+- "Por conseguinte, se constata constatam-se uns percentuais números de pessoas que estão desempregadas ou em situações de subempregos, isso se deve há múltiplos fatores, o baixo nível escolar, desqualificação profissional e etc."
+  Há redundância ('constata constatam-se'), uso incorreto de preposição ('se deve há'), e falta de clareza na enumeração dos fatores. A falta de precisão prejudica a seleção adequada de informações e enfraquece a defesa do ponto de vista.
+  Correcao: "Por conseguinte, constata‑se que um número significativo de pessoas está desempregado ou em situação de subemprego, devido a múltiplos fatores, como baixo nível escolar, desqualificação profissional, entre outros."
+
+**Como melhorar:**
+- Planeje antes de escrever: faça um esboço que indique a sequência lógica dos argumentos (causa, efeito, proposta).
+- Revise a concordância verbal e a escolha das preposições; leia o texto em voz alta para identificar repetições e construções confusas.
+- Use conectivos adequados (portanto, entretanto, assim) para garantir a coesão entre as ideias e fortalecer a defesa do seu ponto de vista.
+
+
+### C4 (nota 80)
+
+**Pontos fortes:**
+- Você utilizou alguns conectivos (por exemplo, "por conseguinte", "contudo") que indicam tentativa de articular as ideias entre os parágrafos.
+- Há presença de referência pronominal (ex.: "isso", "eles") que, apesar de confusas, mostram que você pensa em ligar partes do texto.
+
+**Problemas:**
+- "e assim facilitarem o emprego a todos, sem exclusão."
+  O conectivo "e assim" não estabelece relação lógica clara entre a frase anterior e a conclusão. Além disso, a referência "a todos" é vaga e não retoma nenhum termo específico mencionado antes, gerando quebra de coesão.
+  Correcao: "Portanto, é fundamental que os governantes priorizem políticas públicas que ampliem a oferta de vagas, facilitando o acesso ao emprego para toda a população, sem exclusão."
+- "Portanto, observa-se que o mercado de trabalho ficou cada vez mais exigentes exigente e novos postos de trabalho requerem boas qualificações para admissão, assim elevando o desemprego."
+  Há repetição desnecessária de adjetivos ("exigentes exigente") e o conectivo "assim" não indica causa‑efeito de forma precisa; falta um elemento de referência que explique o que está sendo elevado.
+  Correcao: "Portanto, observa‑se que o mercado de trabalho tornou‑se cada vez mais exigente, e os novos postos requerem qualificações adequadas, o que contribui para o aumento do desemprego."
+- "Por conseguinte, se constata constatam-se uns percentuais números de pessoas que estão desempregadas ou em situações de subempregos, isso se deve há múltiplos fatores, o baixo nível escolar, desqualificação profissional e etc."
+  O uso de "se constata constatam‑se" gera redundância, e a expressão "há múltiplos fatores" está incorreta (deve ser "a múltiplos fatores"). Além disso, a enumeração carece de coesão porque não há conectivo que una os itens de forma adequada.
+  Correcao: "Por conseguinte, constata‑se que um número significativo de pessoas está desempregado ou em situação de subemprego; isso se deve a múltiplos fatores, como o baixo nível escolar, a desqualificação profissional, entre outros."
+
+**Como melhorar:**
+- Varie os conectivos e escolha aqueles que realmente expressem causa, consequência, adição ou contraste; evite repetições e use‑os de forma coerente entre os parágrafos.
+- Faça referência explícita aos termos anteriores (por exemplo, substitua "isso" por "a falta de qualificação"), garantindo que o leitor identifique claramente o elemento ao qual o pronome se refere.
+- Revise a estrutura das frases para eliminar repetições e redundâncias; uma frase bem construída facilita a articulação e demonstra domínio dos mecanismos de coesão.
+
+
+### C5 (nota 80)
+
+**Pontos fortes:**
+- Você reconheceu a relação entre a qualificação profissional e o aumento do desemprego, mostrando compreensão do tema central.
+- Sua redação apresenta argumentos que conectam a revolução tecnológica à necessidade de políticas públicas.
+
+**Problemas:**
+- "Portanto, observa-se que o mercado de trabalho ficou cada vez mais exigentes exigente e novos postos de trabalho requerem boas qualificações para admissão, assim elevando o desemprego."
+  Na competência C5 a proposta de intervenção deve estar explicitamente detalhada, indicando agente (quem age), ação (o que será feito), meio (como será feito), efeito (qual o resultado esperado) e estar articulada ao discurso desenvolvido. No trecho acima não há nenhuma proposta; o texto apenas descreve o problema, sem indicar quem deve intervir nem como.
+  Correcao: "Portanto, o Governo Federal, por meio do Ministério da Educação, deve criar um Programa Nacional de Requalificação Profissional (PNRP) que ofereça cursos gratuitos de curta duração nas áreas de tecnologia e serviços digitais, utilizando plataformas de ensino a distância. O programa deverá priorizar trabalhadores desempregados e jovens em situação de vulnerabilidade, garantindo bolsas de estudo e certificação reconhecida pelo mercado. Como efeito esperado, a iniciativa ampliará a inserção desses grupos no mercado de trabalho, reduzindo a taxa de desemprego estrutural e promovendo maior equidade social."
+- "Contudo, os diversos diversos são os fatores que podem desenvolver os desempregos o desemprego, mas cabem cabe às autoridades intervierem intervirem em tais problemas, tentando solucionar ou sanar solicioná-los."
+  A proposta está ausente de clareza e detalhamento: não especifica qual autoridade deve agir, qual ação concreta será tomada, nem o meio ou o efeito esperado. Além disso, a repetição de palavras e a falta de coesão comprometem a compreensão da intervenção sugerida.
+  Correcao: "Assim, cabe ao Ministério da Economia, em parceria com os Estados, implementar incentivos fiscais para empresas que contratem trabalhadores recém-requalificados, oferecendo redução de impostos sobre a folha de pagamento por dois anos. Essa medida estimulará a geração de vagas, facilitará a transição dos trabalhadores para novos setores e contribuirá para a diminuição do desemprego."
+
+**Como melhorar:**
+- Defina claramente o agente da intervenção (ex.: governo federal, estados, empresas) antes de apresentar a ação.
+- Descreva a ação de forma concreta, indicando o que será feito, como será feito (meio) e qual o efeito esperado para a sociedade.
+- Garanta que a proposta esteja diretamente ligada aos argumentos desenvolvidos no corpo do texto, reforçando a coerência entre problema e solução.
+
+
+---
+
+## Redacao 2351
+
+**Tema:** Por que valorizar o patrimônio histórico?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 160 | 120 | 120 | 120 | 640 |
+| Usada no feedback (humano) | 120 | 160 | 120 | 120 | 120 | 640 |
+
+**Texto:**
+
+> É indiscutível a importância da conservação e do cuidado com o patrimônio histórico do país. Dentre tantos fatores relevantes, destacam-se: a proteção dos acervos, investimentos continuo para a manutençao estruturais e materiais e pessoas qualificadas para administrar.', 'Sabe-se que, para manter estes cuidados com essas valiosas estruturas históricas pelo país, requer investimentos financeiros, como também a manutenção permanente do material exposto. Seguramente essa atenção não ocorreu, como foi presenciado no estado do Rio de Janeiro, no mês de setembro, o Museu Nacional do Brasil passava por grandes dificuldades não só financeira mas também administrativa, onde houve omissão por parte das autoridades competentes, quanto ao zelo e fiscalização do Museu.', 'Ainda convém lembrar, que é incalculável para o Brasil a perda do acervo do Museu Nacional. Foram duzentos anos de história destruída. Ali estava um dos maiores acervos de antropologia e história natural do país, eram cerca de vinte milhões, o qual eram uma herança de conhecimento e estudos acessível para todos. Porque um país que não protege a sua história e não deixa como legado para as futuras gerações o compromisso que se deve ter com essas riquezas é uma nação sem memória.', 'Como se vê , para a conservação e proteção do patrimônio histórico, é essencial ter investimentos financeiros, tanto dos setores públicos como também dos privados, não esquecendo que a administração deve ser eficiente, com pessoas capacitadas e com conhecimentos nessa área. Desse modo, poderão ser evitados perdas irreparáveis como o ocorrido no, Rio de Janeiro, a história de um país é muito importante para a população e é uma obrigação a sua preservação.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa compreensão da importância do patrimônio histórico e consegue articular argumentos relevantes ao tema.
+- A estrutura geral do texto apresenta introdução, desenvolvimento e conclusão, o que contribui para a clareza da argumentação.
+
+**Problemas:**
+- "investimentos continuo para a manutençao estruturais e materiais"
+  Erro de ortografia (continuo → contínuo), concordância nominal (manutençao → manutenção) e falta de concordância entre substantivo e adjetivo (estruturais → estrutural). Além disso, a pontuação está ausente, dificultando a leitura.
+  Correcao: "investimentos contínuos para a manutenção estrutural e material"
+- "Seguramente essa atenção não ocorreu, como foi presenciado no estado do Rio de Janeiro, no mês de setembro, o Museu Nacional do Brasil passava por grandes dificuldades não só financeira mas também administrativa, onde houve omissão por parte das autoridades competentes, quanto ao zelo e fiscalização do Museu."
+  Problemas de pontuação (vírgulas mal colocadas), regência verbal (não ocorreu → não ocorreu) e concordância (não só financeira → não só financeira, mas também administrativa). A frase está excessivamente longa e perde a coesão.
+  Correcao: "Seguramente, essa atenção não ocorreu. Como foi presenciado no estado do Rio de Janeiro, em setembro, o Museu Nacional do Brasil enfrentava grandes dificuldades, não só financeiras, mas também administrativas, havendo omissão por parte das autoridades competentes quanto ao zelo e à fiscalização do museu."
+- "Porque um país que não protege a sua história e não deixa como legado para as futuras gerações o compromisso que se deve ter com essas riquezas é uma nação sem memória."
+  Uso inadequado de conjunção causal (Porque) no início da frase, falta de vírgula antes da oração subordinada e concordância verbal (e não deixa → e não deixa) que compromete a formalidade exigida.
+  Correcao: "Porque um país que não protege a sua história e não deixa como legado para as futuras gerações o compromisso que se deve ter com essas riquezas é uma nação sem memória."
+
+**Como melhorar:**
+- Revisar ortografia e concordância em todas as frases; use um corretor ortográfico e leia o texto em voz alta para identificar discordâncias.
+- Treinar a pontuação, especialmente o uso de vírgulas para separar orações coordenadas e subordinadas, evitando períodos excessivamente longos.
+- Praticar a escrita de pequenos parágrafos focados em um único argumento, garantindo coesão e registro formal adequado ao ENEM.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você compreendeu a proposta e manteve o foco no tema, desenvolvendo argumentos que relacionam a importância da preservação do patrimônio histórico com a necessidade de investimento e gestão eficiente.
+- A estrutura geral (introdução, desenvolvimento e conclusão) está presente, o que demonstra domínio básico do formato dissertativo‑argumentativo exigido pelo ENEM.
+
+**Problemas:**
+- "Porque um país que não protege a sua história e não deixa como legado para as futuras gerações o compromisso que se deve ter com essas riquezas é uma nação sem memória."
+  O trecho apresenta problemas de coesão e clareza: a construção sintática está confusa, há repetição de ideias e falta de conectivo que una a causa ao efeito. Além disso, o uso de "Porque" no início da frase impede a formação de uma oração completa, comprometendo a argumentação.
+  Correcao: "Um país que não protege sua história e não deixa como legado às futuras gerações o compromisso com essas riquezas torna‑se uma nação sem memória."
+
+**Como melhorar:**
+- Enriqueça sua argumentação com repertório sociocultural diversificado (ex.: referências a políticas públicas de preservação, exemplos internacionais de sucesso, dados sobre impactos econômicos e educacionais).
+- Revise a coesão textual: use conectivos adequados (porém, entretanto, assim, consequentemente) para ligar ideias e garantir fluidez entre as frases.
+- Atenha‑se à norma padrão da língua escrita, corrigindo concordâncias, regência e pontuação, para evitar rupturas que enfraquecem a credibilidade do argumento.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe um exemplo concreto (o incêndio no Museu Nacional) que demonstra a gravidade da falta de preservação, o que mostra capacidade de selecionar informações relevantes ao tema.
+- Há tentativa de apresentar soluções (investimento público e privado, administração qualificada), indicando que você consegue relacionar fatos a propostas de defesa do ponto de vista.
+
+**Problemas:**
+- "Ainda convém lembrar, que é incalculável para o Brasil a perda do acervo do Museu Nacional."
+  O trecho apresenta a informação de forma isolada, sem conectar ao argumento anterior nem ao posterior. Falta de coesão textual e de sinalizadores de autoria (como “eu acredito”, “na minha visão”), o que impede a demonstração de um ponto de vista bem estruturado.
+  Correcao: "Ainda convém lembrar que, na minha opinião, a perda do acervo do Museu Nacional é incalculável para o Brasil, pois representa séculos de conhecimento que não podem ser substituídos."
+- "Porque um país que não protege a sua história e não deixa como legado para as futuras gerações o compromisso que se deve ter com essas riquezas é uma nação sem memória."
+  A construção da frase está confusa e carece de pontuação adequada; o uso de “porque” no início gera ambiguidade e impede a clareza da argumentação. Além disso, não há indicação clara de quem está defendendo essa ideia.
+  Correcao: "Acredito que um país que não protege sua história e não deixa como legado às futuras gerações o compromisso com essas riquezas torna‑se uma nação sem memória."
+- "Desse modo, poderão ser evitados perdas irreparáveis como o ocorrido no, Rio de Janeiro, a história de um país é muito importante para a população e é uma obrigação a sua preservação."
+  Há erro de pontuação e de encadeamento lógico, o que compromete a organização das ideias. A frase mistura duas ideias distintas sem transição adequada, dificultando a interpretação do argumento central.
+  Correcao: "Desse modo, poderão ser evitados perdas irreparáveis como a ocorrida no Rio de Janeiro; a história de um país é fundamental para a população, e preservá‑la constitui uma obrigação coletiva."
+
+**Como melhorar:**
+- Planeje a estrutura do texto antes de escrever: introdução com tese clara, desenvolvimento com argumentos ligados por conectivos e conclusão que retome a tese, reforçando sua autoria.
+- Use marcadores de ponto de vista (eu acredito, na minha visão, segundo minha análise) para deixar evidente quem está defendendo o argumento, atendendo ao requisito de autoria da competência C3.
+- Revise a coesão e a pontuação, garantindo que cada parágrafo tenha uma ideia central bem desenvolvida e que as frases estejam conectadas por conectivos adequados (por exemplo, portanto, além disso, consequentemente).
+
+
+### C4 (nota 120)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "Ainda convém lembrar" e "Desse modo" para iniciar novos parágrafos, o que demonstra tentativa de articular as ideias.
+- Há coerência temática ao longo do texto, mantendo o foco na importância da preservação do patrimônio histórico.
+
+**Problemas:**
+- "Como se vê , para a conservação e proteção do patrimônio histórico, é essencial ter investimentos financeiros, tanto dos setores públicos como também dos privados, não esquecendo que a administração deve ser eficiente, com pessoas capacitadas e com conhecimentos nessa área."
+  O trecho apresenta encadeamento confuso de ideias e uso inadequado de vírgulas, o que rompe a fluidez entre as orações. Falta um conectivo que relacione essa frase ao parágrafo anterior e a divisão em períodos mais curtos ajudaria na clareza.
+  Correcao: "Como se vê, a conservação do patrimônio histórico exige investimentos financeiros, tanto do setor público quanto do privado. Além disso, a administração deve ser eficiente, contando com profissionais capacitados e com conhecimentos específicos na área."
+- "É indiscutível a importância da conservação e do cuidado com o patrimônio histórico do país."
+  A frase inicia o texto sem um elemento de ligação com o que será desenvolvido a seguir, gerando uma quebra na coesão textual. Um conectivo ou uma retomada do tema anterior (mesmo que implícito) seria necessário.
+  Correcao: "É indiscutível a importância da conservação e do cuidado com o patrimônio histórico do país, e, por isso, devemos discutir as medidas necessárias para sua proteção."
+
+**Como melhorar:**
+- Planeje a sequência de ideias antes de escrever, definindo quais conectivos (porém, além disso, consequentemente, etc.) serão usados para ligar cada parágrafo ao anterior.
+- Divida frases muito longas em períodos menores, garantindo que cada um contenha apenas uma ideia principal e um conectivo que a relacione ao próximo.
+- Varie o repertório de recursos coesivos: use pronomes de referência (ele, esse, tal), advérbios de sequência (primeiramente, em seguida) e conjunções coordenativas e subordinativas para criar uma articulação mais fluida e diversificada.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você identificou claramente a necessidade de investimentos públicos e privados, demonstrando compreensão da relação entre recursos financeiros e preservação do patrimônio histórico.
+- Apontou um exemplo concreto (o incêndio no Museu Nacional) que reforça a argumentação e mostra conexão entre o problema apresentado e a proposta de intervenção.
+
+**Problemas:**
+- "Ainda convém lembrar, que é incalculável para o Brasil a perda do acervo do Museu Nacional."
+  Na competência C5 a proposta de intervenção deve ser detalhada, indicando agente, ação, modo/meio, efeito e justificativa. O texto apenas lamenta a perda sem apresentar uma solução estruturada, nem especifica quem deve agir nem como a ação será realizada.
+  Correcao: "Ainda convém lembrar que a perda do acervo do Museu Nacional é incalculável para o Brasil. Por isso, o Ministério da Cultura, em parceria com universidades e empresas privadas, deve criar um programa de restauração e digitalização dos acervos, destinando recursos financeiros e equipes técnicas especializadas. O programa será implementado por meio de editais de financiamento e convênios, garantindo a preservação física e o acesso virtual ao patrimônio, o que evitará perdas futuras e ampliará o conhecimento da população."
+- "Desse modo, poderão ser evitados perdas irreparáveis como o ocorrido no, Rio de Janeiro, a história de um país é muito importante para a população e é uma obrigação a sua preservação."
+  A frase apresenta falta de clareza e estrutura; não indica quem executará a ação nem descreve o modo/meio de atuação. Além disso, há erro de pontuação que compromete a coesão da proposta.
+  Correcao: "Desse modo, o Conselho Nacional de Patrimônio Cultural, juntamente com as secretarias estaduais de cultura, deverá instituir fiscalizações periódicas e planos de manutenção preventiva nos museus, utilizando tecnologias de monitoramento remoto. Essa medida evitará perdas irreparáveis como a ocorrida no Rio de Janeiro e garantirá a preservação da história para toda a população."
+
+**Como melhorar:**
+- Defina explicitamente o agente responsável (ex.: Ministério da Cultura, Conselho Nacional de Patrimônio Cultural, secretarias estaduais) em cada proposta de ação.
+- Descreva o modo/meio de execução (editais, convênios, tecnologia de monitoramento, capacitação de profissionais) e indique o efeito esperado (preservação, acesso digital, prevenção de desastres).
+- Revise a pontuação e a coesão das frases para que a proposta fique clara, objetiva e bem articulada com a argumentação desenvolvida no texto.
+
+
+---
+
+## Redacao 2795
+
+**Tema:** Reforma da Previdência: uma solução ou um problema?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 160 | 160 | 160 | 120 | 720 |
+| Usada no feedback (humano) | 120 | 160 | 160 | 160 | 120 | 720 |
+
+**Texto:**
+
+> O advento da previdência social é uma conquista dos trabalhadores. Tal medida foi implementada no Brasil em meados da década de 1920, com o objetivo de retribuição pecuniária para agentes que colaboravam para o sistema enquanto atuavam de forma ativa no mercado, mas que ao atingirem certa idade, não teriam mais condições de laborar por questões de limitações físicas e até mesmo psicológicas, de forma que a geração ativa alimentasse a estrutura. O tema da previdência ganhou relevância no país após o atual governo apresentar uma proposta de reforma para o sistema vigente, reforma esta que se faz necessária, devido evolução populacional apresentada na sociedade brasileira.', 'Consoante dados do Instituto Brasileiro de Geografia e Estatísticas - IBGE - no ano de 2017, um quantitativo de 11% da população dependia da previdência, e as projeções são para 36% até o ano de 2050. O mecanismo atual se pauta no modelo solidário , já esclarecido, porém esse modelo tem apresentado desiquilíbrio devido ao aumento da população idosa, tendo em vista que os benefícios concedidos são maiores que a arrecadação. Ademais, estudos apontam a crescente da expectativa de vida, ocasionando uma pressão ainda maior no sistema, de modo que se ele se mantiver sem alterações, as gerações futuras é que sofrerão as consequências maléficas da inação do Estado.', 'Além disso, o país passa por um período de forte desemprego, o que acarreta na diminuição do número de contribuintes, ou seja, sem carteira assinada. Sem contar o aumento do trabalho informal, que fica desassociado do sistema. Exemplos como Alemanha, Suíça e França também tiveram de fazer suas reformas, diante de suas realidades, para que os aposentados continuassem a receber o benefício. Acredita-se que o corte de gastos gerado com a reforma abrirá espaço também para uma reforma tributária, simplificando o sistema de contribuição e impostos, estimulando empresas a colocarem em prática seus planos de investimento, o que gerará mais emprego, renda e consequente crescimento econômico.', 'Diante do exposto, a reforma da previdência se faz premente para que o contribuinte vigente possa vir a usufruir desse sistema de forma benéfica futuramente. Cabe ressaltar ainda, que a reforma contará com alíquotas diferenciadas por faixas de remuneração , o que produzirá uma maior justiça contributiva, pois quem ganhar mais terá de contribuir com mais, tornando o sistema mais igualitário nas camadas da população. Portanto, mudanças são necessárias para acompanhar o constante avanço da sociedade em prol da coletividade.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de argumentação ao relacionar a reforma da previdência com questões econômicas, como desemprego e reforma tributária, o que enriquece o desenvolvimento da proposta.
+- O texto apresenta dados estatísticos (IBGE 2017, projeções para 2050) que dão credibilidade ao argumento e mostram domínio de recursos de apoio.
+
+**Problemas:**
+- "reforma esta que se faz necessária, devido evolução populacional apresentada na sociedade brasileira."
+  Erro de concordância e regência: falta de preposição antes de "evolução" e ausência de artigo definido. Além disso, a pontuação está inadequada, pois a vírgula antes de "devido" separa oração subordinada adverbial de modo incorreto.
+  Correcao: "reforma que se faz necessária devido à evolução populacional apresentada na sociedade brasileira."
+- "O mecanismo atual se pauta no modelo solidário , já esclarecido, porém esse modelo tem apresentado desiquilíbrio devido ao aumento da população idosa, tendo em vista que os benefícios concedidos são maiores que a arrecadação."
+  Problemas de ortografia ("desiquilíbrio"), pontuação (espaço antes da vírgula) e concordância ("maiores que a arrecadação" deveria ser "maiores que a arrecadação" está correto, mas a construção da frase é confusa). Também há redundância ao repetir "modelo".
+  Correcao: "O mecanismo atual se pauta no modelo solidário, já esclarecido; porém, esse modelo tem apresentado desequilíbrio devido ao aumento da população idosa, pois os benefícios concedidos são maiores que a arrecadação."
+- "Diante do exposto, a reforma da previdência se faz premente para que o contribuinte vigente possa vir a usufruir desse sistema de forma benéfica futuramente."
+  Uso inadequado de registro formal: a expressão "poder vir a usufruir" é redundante e pouco elegante para o estilo dissertativo‑argumentativo exigido pelo ENEM. Além disso, há pleonasmo em "de forma benéfica futuramente".
+  Correcao: "Diante do exposto, a reforma da previdência se faz premente para que o contribuinte vigente usufrua desse sistema de forma benéfica no futuro."
+
+**Como melhorar:**
+- Revisar ortografia e concordância em todas as frases; use ferramentas de correção ou faça leitura em voz alta para identificar deslizes.
+- Ajustar a pontuação, especialmente o uso de vírgulas antes de conjunções adversativas (porém, contudo) e evitar espaços desnecessários antes de sinais de pontuação.
+- Aprimorar o registro formal, evitando construções redundantes ou coloquiais; prefira verbos precisos e estruturas sintáticas concisas que reforcem a argumentação.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você compreendeu a proposta e manteve o foco no tema, desenvolvendo uma linha argumentativa coerente ao longo de todo o texto.
+- A estrutura dissertativo‑argumentativa está bem organizada, com introdução, desenvolvimento e conclusão claramente demarcados.
+
+**Problemas:**
+- "O mecanismo atual se pauta no modelo solidário , já esclarecido, porém esse modelo tem apresentado desiquilíbrio devido ao aumento da população idosa, tendo em vista que os benefícios concedidos são maiores que a arrecadação."
+  O trecho apresenta vírgulas e espaços desnecessários, além de erro ortográfico ('desiquilíbrio') e construção frasal confusa que compromete a clareza e a coesão. Na competência C2, a redação deve demonstrar domínio da norma padrão e fluidez na argumentação.
+  Correcao: "O mecanismo atual se pauta no modelo solidário, porém tem apresentado desequilíbrio devido ao aumento da população idosa, já que os benefícios concedidos são maiores que a arrecadação."
+
+**Como melhorar:**
+- Enriqueça sua argumentação com repertório sociocultural mais diversificado, citando, por exemplo, debates recentes no Congresso, estudos de institutos reconhecidos ou comparações mais detalhadas com outros países.
+- Revise a ortografia e a pontuação durante a escrita; erros como 'desiquilíbrio' e vírgulas fora de lugar afetam a percepção de domínio da norma padrão.
+- Aprofunde a análise crítica, apresentando contra‑argumentos e refutando-os de forma explícita, para demonstrar maior profundidade e consistência argumentativa.
+
+
+### C3 (nota 160)
+
+**Pontos fortes:**
+- Você selecionou dados estatísticos relevantes (IBGE) que dão sustentação factual ao seu argumento, demonstrando capacidade de buscar informações pertinentes ao tema.
+- A sequência lógica dos parágrafos – contextualização histórica, diagnóstico do problema e proposta de solução – evidencia organização coerente das ideias.
+
+**Problemas:**
+- "O advento da previdência social é uma conquista dos trabalhadores. Tal medida foi implementada no Brasil em meados da década de 1920, com o objetivo de retribuição pecuniária para agentes que colaboravam para o sistema enquanto atuavam de forma ativa no mercado, mas que ao atingirem certa idade, não teriam mais condições de laborar por questões de limitações físicas e até mesmo psicológicas, de forma que a geração ativa alimentasse a estrutura."
+  O trecho apresenta informações históricas e conceituais, porém a linguagem está excessivamente rebuscada e confusa, o que prejudica a clareza e a consistência da argumentação. Além disso, há repetição de ideias ("agentes que colaboravam... enquanto atuavam de forma ativa") e falta de conexão direta com a tese central sobre a reforma da previdência.
+  Correcao: "A previdência social surgiu como conquista dos trabalhadores e foi instituída no Brasil na década de 1920, com o objetivo de garantir renda aos que, ao atingir certa idade, não podiam mais trabalhar por limitações físicas ou psicológicas. Assim, a geração ativa financia a proteção social dos aposentados."
+
+**Como melhorar:**
+- Reescreva frases longas e complexas em construções mais diretas, mantendo a precisão dos fatos e facilitando a leitura.
+- Estabeleça, em cada parágrafo, uma relação explícita entre a informação apresentada e a sua posição sobre a reforma, reforçando a defesa do ponto de vista.
+- Varie os conectivos argumentativos (por exemplo, "consequentemente", "por outro lado", "além disso") para garantir coesão e demonstrar autoria mais consistente.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "além disso", "consequentemente" e "portanto", o que demonstra domínio de recursos coesivos para ligar ideias entre parágrafos.
+- A estrutura de sua argumentação segue uma sequência lógica (contextualização, dados, consequências e proposta), facilitando a articulação entre as partes do texto.
+
+**Problemas:**
+- "O advento da previdência social é uma conquista dos trabalhadores. Tal medida foi implementada no Brasil em meados da década de 1920, com o objetivo de retribuição pecuniária para agentes que colaboravam para o sistema enquanto atuavam de forma ativa no mercado, mas que ao atingirem certa idade, não teriam mais condições de laborar por questões de limitações físicas e até mesmo psicológicas, de forma que a geração ativa alimentasse a estrutura."
+  O trecho apresenta uma frase excessivamente longa e com pontuação inadequada, o que dificulta a clareza da relação entre as ideias. A falta de conectivos internos (por exemplo, "porém", "logo") impede a coesão entre as orações subordinadas, gerando rupturas na fluidez do texto.
+  Correcao: "O advento da previdência social é uma conquista dos trabalhadores. Essa medida foi implementada no Brasil em meados da década de 1920, com o objetivo de garantir retribuição pecuniária aos agentes que contribuíam para o sistema enquanto atuavam de forma ativa no mercado. Contudo, ao atingirem certa idade, esses trabalhadores podem não ter mais condições de laborar por limitações físicas ou psicológicas, de modo que a geração ativa alimenta a estrutura."
+- "Consoante dados do Instituto Brasileiro de Geografia e Estatísticas - IBGE - no ano de 2017, um quantitativo de 11% da população dependia da previdência, e as projeções são para 36% até o ano de 2050."
+  A expressão "Consoante dados" não estabelece uma relação clara de causa‑efeito com a informação que se segue; o conectivo adequado seria "Segundo" ou "De acordo com". Além disso, a conjunção "e" entre as duas orações cria uma sequência apenas enumerativa, sem indicar a progressão lógica dos dados.
+  Correcao: "Segundo dados do Instituto Brasileiro de Geografia e Estatística (IBGE), no ano de 2017, 11% da população dependia da previdência; as projeções, entretanto, apontam para 36% até 2050."
+
+**Como melhorar:**
+- Divida frases muito longas em sentenças menores e use conectivos internos (por exemplo, "porém", "logo", "assim") para explicitar a relação de causa, consequência ou contraste entre as ideias.
+- Varie os tipos de recursos coesivos (conjunções, advérbios, pronomes de referência) ao longo do texto, evitando a repetição excessiva de termos como "reforma" ou "previdência" sem estabelecer referência clara.
+- Revise a pontuação, sobretudo o uso de vírgulas antes de orações coordenadas e a separação de orações subordinadas, para garantir que a articulação entre períodos seja fluida e compreensível.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você contextualizou bem o problema da previdência, apresentando dados do IBGE e explicando o desequilíbrio entre contribuintes e beneficiários.
+- Sua argumentação demonstra compreensão da relação entre a reforma previdenciária e a necessidade de ajustes fiscais, conectando o tema à realidade econômica do país.
+
+**Problemas:**
+- "Acredita-se que o corte de gastos gerado com a reforma abrirá espaço também para uma reforma tributária, simplificando o sistema de contribuição e impostos, estimulando empresas a colocarem em prática seus planos de investimento, o que gerará mais emprego, renda e consequente crescimento econômico."
+  A proposta não está detalhada nos termos exigidos pela competência C5: falta identificar claramente o agente responsável, a ação concreta, o meio ou mecanismo de implementação, o efeito esperado e o detalhamento de como a medida será executada. O trecho permanece genérico e não demonstra viabilidade nem respeito aos direitos humanos, pois não indica quem será beneficiado ou protegido.
+  Correcao: "O Governo Federal, por meio do Ministério da Economia, deve criar um Programa de Incentivo Fiscal à Contribuição Previdenciária (PIFCP). Esse programa reduzirá, por cinco anos, a alíquota do Imposto de Renda de empresas que aumentarem em 10% a contribuição previdenciária dos seus trabalhadores formais. A medida será acompanhada por auditorias independentes para garantir que os recursos adicionais sejam destinados ao pagamento de benefícios e à ampliação de programas de capacitação profissional, assegurando a manutenção dos direitos dos trabalhadores e a sustentabilidade do sistema."
+- "reforma esta que se faz necessária, devido evolução populacional apresentada na sociedade brasileira."
+  O trecho contém erro de concordância (“devido evolução”) e falta de clareza na relação causa‑efeito, prejudicando a coesão textual e a precisão exigidas na proposta de intervenção.
+  Correcao: "A reforma se faz necessária devido à evolução populacional apresentada na sociedade brasileira."
+
+**Como melhorar:**
+- Defina explicitamente o agente (ex.: governo federal, Ministério da Economia), a ação (ex.: criar programa, alterar alíquota) e o meio de implementação (ex.: lei, regulamento, auditoria) em sua proposta.
+- Descreva o efeito esperado de forma mensurável (ex.: aumento de X% na arrecadação, criação de Y mil empregos) e relacione-o diretamente ao problema apresentado.
+- Garanta que a proposta respeite os direitos humanos, indicando quem será beneficiado ou protegido e como a medida evitará desigualdades ou exclusões.
+
+
+---
+
+## Redacao 1264
+
+**Tema:** Reforma da Previdência: uma solução ou um problema?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 120 | 80 | 120 | 80 | 520 |
+| Usada no feedback (humano) | 120 | 120 | 80 | 120 | 80 | 520 |
+
+**Texto:**
+
+> Mais uma vez sofremos os transtornos de uma nova reforma da previdência social. A pergunta que não quer calar é, será que realmente vale a pena?', 'Sabemos que nosso país precisa de mudanças para se estabilizar e crescer e esperamos que essa reforma ajude a população. Mas há muitos pontos que devemos observar antes de declarar qualquer posição.', 'O país está envelhecendo rapidamente e a taxa de natalidade diminuiu bastante, esse é um dos motivos da reforma da previdência.', 'Mesmo tendo, aparentemente, boas intenções para essa reforma e acabando com privilégios, que pelas regras propostas, quem ganha mais deve contribuir mais com o sistema de aposentadorias. Há um grande porém que não podemos descartar. O fato de que essa nova reforma dificultou bastante a aposentaria de todos já que a proposta do governo de aposentadoria por idade (65 anos) é muito alta e próxima da média de expectativa de vida de algumas pessoas. Como atualmente o nível de desemprego e de trabalhadores aumentou, fica mais difícil para essas pessoas, mais pobres, conseguirem se aposentar com um tempo de contribuição maior (de 20 anos), sem falar do fato das mulheres, que por conta da dupla jornada, passam muito tempo no mercado informal, ou até precisam parar de trabalhar por alguns anos para cuidar dos filhos. Tem também a proposta que prevê que o Benefício de Prestação Continuada (BPC), destinado à idosos que não têm direito à previdência ou com deficiência, seja de apenas 400 reais entre 60 e 69 anos, e somente com 70 anos o idoso receberia um salário mínimo. Isso com certeza deixaria milhares de idosos na miséria, pois aqueles que recebem o benefício não têm condições de se sustentar sem o BPC. Isso tudo é um grande problema se pararmos para pensar.', 'Sabemos que já era difícil antes, agora com certeza ficou mais.', 'Acredito que pode-se melhorar sem prejudicar os trabalhadores que se esforçam tanto para se manter.', 'Há muitos meios que o governo pode utilizar para se adequar a essa nova faze do Brasil. Como por exemplo, cortar gastos desnecessário, diminuir salários muito altos (como de deputados, veradores etc.), cobrar dívidas previdenciárias de grandes empresas e impedir a desvinculação de receitas destinadas a programas sociais e previdenciários.', 'Como podemos ver, muito pode-se fazer sem prejudicar os trabalhadores.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de argumentação ao apresentar diferentes pontos de vista sobre a reforma da previdência, o que impede que a redação caia para níveis mais baixos.
+- O vocabulário utilizado em alguns momentos (ex.: “transtornos”, “dupla jornada”, “desvinculação de receitas”) indica um registro adequado ao tema proposto.
+
+**Problemas:**
+- "A pergunta que não quer calar é, será que realmente vale a pena?', 'Sabemos que nosso país precisa de mudanças para se estabilizar e crescer e esperamos que essa reforma ajude a população."
+  Há uso incorreto de pontuação (vírgula antes de "será", aspas desnecessárias e falta de ponto final). Além disso, a concordância verbal está comprometida (“precisa de mudanças para se estabilizar e crescer” – o verbo deveria concordar com o sujeito coletivo “nosso país”).
+  Correcao: "A pergunta que não quer calar é: será que realmente vale a pena? Sabemos que nosso país precisa de mudanças para se estabilizar e crescer, e esperamos que essa reforma ajude a população."
+- "Mesmo tendo, aparentemente, boas intenções para essa reforma e acabando com privilégios, que pelas regras propostas, quem ganha mais deve contribuir mais com o sistema de aposentadorias."
+  A construção está confusa e apresenta vírgulas deslocadas, gerando ambiguidade. Falta clareza na regência verbal (“acabando com privilégios” não se relaciona adequadamente ao sujeito) e há redundância (“mais deve contribuir mais”).
+  Correcao: "Mesmo tendo, aparentemente, boas intenções, a reforma acaba com privilégios; segundo as regras propostas, quem ganha mais deve contribuir mais com o sistema de aposentadorias."
+- "Como atualmente o nível de desemprego e de trabalhadores aumentou, fica mais difícil para essas pessoas, mais pobres, conseguirem se aposentar com um tempo de contribuição maior (de 20 anos), sem falar do fato das mulheres, que por conta da dupla jornada, passam muito tempo no mercado informal, ou até precisam parar de trabalhar por alguns anos para cuidar dos filhos."
+  Problemas de concordância (“o nível de desemprego e de trabalhadores aumentou” – o verbo deveria estar no plural) e de regência (“passam muito tempo no mercado informal” – o correto é ‘passam muito tempo no mercado informal’ ou ‘atuam no mercado informal’). A pontuação excessiva atrapalha a fluidez.
+  Correcao: "Como atualmente o nível de desemprego e o número de trabalhadores aumentaram, fica mais difícil para essas pessoas, mais pobres, conseguirem se aposentar com um tempo de contribuição maior (de 20 anos), sem falar do fato de que as mulheres, por conta da dupla jornada, passam muito tempo no mercado informal ou precisam parar de trabalhar por alguns anos para cuidar dos filhos."
+
+**Como melhorar:**
+- Revisar a pontuação: use ponto final para encerrar ideias, vírgula para separar elementos e dois‑pontos ou travessão quando introduzir perguntas ou explicações.
+- Atentar à concordância verbal e nominal, verificando se o verbo concorda em número e pessoa com o sujeito e se os adjetivos acompanham corretamente os substantivos.
+- Praticar a escrita de frases curtas e objetivas, evitando orações excessivamente longas e a inserção de vírgulas desnecessárias; isso melhora a clareza e reduz erros de regência e pontuação.
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Apresentou conhecimento do tema, citando dados relevantes como o aumento da expectativa de vida e a redução da taxa de natalidade, o que demonstra que você compreendeu a proposta.
+- Estruturou o texto em introdução, desenvolvimento e conclusão, mantendo a sequência lógica exigida para o gênero dissertativo‑argumentativo.
+
+**Problemas:**
+- "Mais uma vez sofremos os transtornos de uma nova reforma da previdência social."
+  A frase inicia o texto com linguagem coloquial e subjetiva (“sofremos os transtornos”), o que afeta a impessoalidade requerida e reduz a força argumentativa. Além disso, não apresenta claramente a tese que será defendida.
+  Correcao: "A reforma da previdência social tem gerado intensos debates na sociedade brasileira, suscitando dúvidas sobre seus reais benefícios e possíveis prejuízos."
+- "Acredito que pode‑se melhorar sem prejudicar os trabalhadores que se esforçam tanto para se manter."
+  O uso de primeira pessoa (“Acredito”) rompe a neutralidade do texto e a frase carece de clareza argumentativa; não indica quais medidas seriam efetivas nem estabelece conexão lógica com o restante do desenvolvimento.
+  Correcao: "É possível aprimorar o sistema previdenciário por meio de medidas que não penalizem os trabalhadores, como a revisão de gastos excessivos e a cobrança de dívidas previdenciárias de grandes empresas."
+
+**Como melhorar:**
+- Formule uma tese clara na introdução, indicando explicitamente se a reforma é solução ou problema, e mantenha‑a ao longo de todo o desenvolvimento.
+- Utilize linguagem impessoal e evite expressões subjetivas ou coloquiais; prefira verbos na voz ativa e termos formais que reforcem a argumentação.
+- Desenvolva cada argumento com exemplos concretos e conecte‑os de forma lógica, garantindo que a conclusão retome a tese e sintetize os principais pontos apresentados.
+
+
+### C3 (nota 80)
+
+**Pontos fortes:**
+- Você trouxe dados concretos sobre a idade mínima de aposentadoria (65 anos) e a relação com a expectativa de vida, demonstrando atenção ao tema proposto.
+- Apresentou propostas de solução (corte de gastos, cobrança de dívidas previdenciárias, manutenção de receitas de programas sociais), indicando tentativa de defender um ponto de vista.
+
+**Problemas:**
+- "Sabemos que já era difícil antes, agora com certeza ficou mais."
+  A frase é vaga, não apresenta informação, fato ou argumento que sustente a defesa do ponto de vista. Na competência C3, é necessário selecionar e relacionar informações relevantes; aqui o estudante apenas faz uma afirmação genérica sem fundamentação.
+  Correcao: "É evidente que a reforma agravou as dificuldades já existentes: antes, a idade mínima era 60 anos e o tempo de contribuição exigido era de 15 anos; agora, com 65 anos e 20 anos de contribuição, muitos trabalhadores, sobretudo os de baixa renda, enfrentam maior risco de exclusão do sistema."
+- "Como podemos ver, muito pode‑se fazer sem prejudicar os trabalhadores."
+  O trecho encerra o texto sem retomar os argumentos desenvolvidos nem organizar as ideias apresentadas. Falta coesão e clareza na conclusão, o que compromete a estrutura argumentativa exigida na C3.
+  Correcao: "Portanto, é possível melhorar a sustentabilidade da Previdência sem penalizar os trabalhadores: reduzir gastos supérfluos, como salários de parlamentares, e cobrar dívidas previdenciárias de grandes empresas, garantindo recursos suficientes para manter os benefícios atuais."
+- "O país está envelhecendo rapidamente e a taxa de natalidade diminuiu bastante, esse é um dos motivos da reforma da previdência."
+  A frase contém erro de pontuação (vírgula em lugar de ponto ou ponto‑e‑vírgula) e apresenta duas informações distintas sem conectá‑las adequadamente, gerando falta de clareza e dificultando a interpretação dos argumentos.
+  Correcao: "O país está envelhecendo rapidamente; ao mesmo tempo, a taxa de natalidade diminuiu consideravelmente. Esses fatores são fundamentais para justificar a necessidade da reforma da Previdência."
+
+**Como melhorar:**
+- Organize o texto em parágrafos claros: introdução com tese, desenvolvimento com argumentos fundamentados e conclusão que retome a tese e sintetize as propostas.
+- Selecione informações relevantes dos textos motivadores e dos seus conhecimentos, relacionando‑as de forma lógica e coerente; evite frases genéricas ou vagas.
+- Revise a pontuação e a coesão entre as ideias, usando conectivos adequados (porém, entretanto, assim, consequentemente) para garantir que o leitor compreenda a sequência argumentativa.
+
+
+### C4 (nota 120)
+
+**Pontos fortes:**
+- Você utiliza conectivos básicos (como "mas", "como", "porém") para ligar ideias, o que impede que o texto fique totalmente desconexo.
+- Há tentativa de retomar o tema ao longo do texto, mantendo uma certa continuidade temática entre os parágrafos.
+
+**Problemas:**
+- "Mesmo tendo, aparentemente, boas intenções para essa reforma e acabando com privilégios, que pelas regras propostas, quem ganha mais deve contribuir mais com o sistema de aposentadorias."
+  A sequência de orações está confusa porque falta coesão entre as partes; o uso de "e" e "que" cria uma estrutura truncada e não há conectivo que indique a relação de causa‑efeito ou contraste entre as ideias apresentadas.
+  Correcao: "Mesmo que a reforma pareça ter boas intenções e pretenda acabar com privilégios, as regras propostas exigem que quem ganha mais contribua mais para o sistema de aposentadorias."
+- "Como atualmente o nível de desemprego e de trabalhadores aumentou, fica mais difícil para essas pessoas, mais pobres, conseguirem se aposentar com um tempo de contribuição maior (de 20 anos), sem falar do fato das mulheres, que por conta da dupla jornada, passam muito tempo no mercado informal, ou até precisam parar de trabalhar por alguns anos para cuidar dos filhos."
+  O parágrafo apresenta uma cadeia longa de informações sem a devida articulação; faltam marcadores de sequência e de explicação (por exemplo, "além disso", "consequentemente"). Além disso, a repetição de "mais" e a ausência de pontuação adequada dificultam a leitura.
+  Correcao: "Como o nível de desemprego e o número de trabalhadores aumentaram, torna‑se mais difícil para as pessoas mais pobres se aposentarem com o tempo de contribuição exigido (20 anos). Além disso, as mulheres, que enfrentam a dupla jornada, muitas vezes permanecem no mercado informal ou precisam interromper a carreira para cuidar dos filhos."
+
+**Como melhorar:**
+- Varie os conectivos, usando marcadores de causa, consequência, contraste e adição (por exemplo, "portanto", "por outro lado", "além disso").
+- Reestruture frases longas em períodos mais curtos, garantindo que cada oração tenha um sujeito claro e um conectivo que indique a relação lógica entre elas.
+- Faça revisões focadas na referência pronominal, assegurando que pronomes e expressões como "isso", "essas pessoas" ou "o fato" apontem de forma inequívoca ao antecedente mencionado no parágrafo anterior.
+
+
+### C5 (nota 80)
+
+**Pontos fortes:**
+- Você identificou bem os principais problemas sociais da reforma, como a idade de aposentadoria e o impacto sobre as mulheres.
+- Apresentou sugestões gerais de medidas (corte de gastos, cobrança de dívidas) que demonstram preocupação com a sustentabilidade do sistema.
+
+**Problemas:**
+- "O fato de que essa nova reforma dificultou bastante a aposentaria de todos já que a proposta do governo de aposentadoria por idade (65 anos) é muito alta e próxima da média de expectativa de vida de algumas pessoas."
+  A proposta de intervenção não está estruturada nos elementos exigidos pela competência C5 (agente, ação, modo/meio, efeito e detalhamento). O trecho apenas aponta um problema, sem indicar quem deve agir, o que fazer, como será feito, quais os efeitos esperados e com que detalhamento.
+  Correcao: "O Congresso Nacional, por meio da Comissão de Constituição e Justiça, deve propor a criação de um regime de aposentadoria gradual, no qual a idade mínima seja aumentada de 65 para 67 anos apenas para trabalhadores que já tenham contribuído por mais de 30 anos. Essa mudança seria implementada por meio de lei complementar, garantindo que o aumento de idade seja acompanhado de um aumento progressivo do benefício em 5% ao ano, de modo a preservar o poder de compra dos aposentados. O efeito esperado é reduzir a pressão sobre o fundo previdenciário, ao mesmo tempo em que se protege os trabalhadores mais vulneráveis, evitando que a expectativa de vida curta comprometa a dignidade na aposentadoria."
+- "Há muitos meios que o governo pode utilizar para se adequar a essa nova faze do Brasil. Como por exemplo, cortar gastos desnecessário, diminuir salários muito altos (como de deputados, veradores etc.), cobrar dívidas previdenciárias de grandes empresas e impedir a desvinculação de receitas destinadas a programas sociais e previdenciários."
+  A proposta está vaga e não apresenta os componentes exigidos: falta especificar claramente o agente responsável por cada ação, o modo de execução e o efeito concreto. Além disso, a lista de medidas está confusa e não demonstra articulação com a discussão desenvolvida no texto.
+  Correcao: "O Poder Executivo, por meio da Secretaria de Gestão e Desempenho, deve instituir um programa de revisão de despesas públicas que inclua: (i) a redução de 15% dos salários de cargos políticos (deputados, senadores, vereadores) mediante lei complementar; (ii) a criação de um mecanismo de cobrança automática de dívidas previdenciárias de empresas com mais de 500 funcionários, usando o Sistema de Informação da Receita Federal; (iii) a proibição de desvincular recursos destinados ao Fundo de Garantia da Previdência Social, reforçada por auditorias trimestrais da Controladoria‑Geral da União. Essas ações, executadas com transparência e monitoramento, deverão gerar uma economia anual estimada em R$ 12 bilhões, permitindo a manutenção dos benefícios atuais sem elevar a idade de aposentadoria."
+
+**Como melhorar:**
+- Estruture cada proposta seguindo o modelo: agente + ação + modo/meio + efeito + detalhamento.
+- Escolha um agente específico (ex.: Congresso, Executivo, Ministério) para cada medida e descreva como a ação será implementada na prática.
+- Garanta que a proposta esteja diretamente ligada aos argumentos desenvolvidos no texto, mostrando como a medida resolve o problema apontado.
+
+
+---
+
+## Redacao 4250
+
+**Tema:** O que podemos aprender com a prática esportiva?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 200 | 160 | 160 | 200 | 880 |
+| Usada no feedback (humano) | 160 | 200 | 160 | 160 | 200 | 880 |
+
+**Texto:**
+
+> As Olimpíadas e as Paralimpíadas Rio 2016 deixou legados como infraestrutura,mobilidade urbana e estímulo a prática esportiva, principalmente entre os jovens. O esporte é uma ferramenta de inclusão social e de formação de valores indispensáveis para a socialização,além de proporcionar melhor qualidade de vida.', 'A prática do esporte pode transformar a vida de jovens e adultos ,estimulando a superação de barreiras e limitações. Além disso,ele atua como fator de inclusão e de construção de valores fundamentais como autoestima e coletividade, principalmente entre os portadores de deficiência, que na maioria das vezes se sentem excluídos socialmente,quebrando, assim,o censo comum de atletas idealizados.', 'Destaca-se ainda a importância do esporte na prevenção de doenças como a obesidade, que afeta 51% da população brasileira,segundo levantamento do Ministério da Saúde. A prática de exercícios físicos auxilia no combate ao stress,ansiedade e de doenças crônicas. O sedentarismo é um dos principais vetores desses distúrbios.', 'Levando em consideração esses aspectos,é imprescindível que o Governo, em parceria com as escolas estimulem a prática desportiva,promovendo a inclusão social dos estudantes,juntamente com Instituições que apoiem e invistam em projetos socioeducacionais através do esporte. A mídia também deve contribuir enfatizando campanhas que incentivem atividades físicas. Assim ,o esporte, aliado a educação,pode ser um caminho de transformação da sociedade.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de articular ideias e usar vocabulário adequado ao tema, o que garante coerência e pertinência ao texto.
+- A estrutura argumentativa está bem organizada, com introdução, desenvolvimento e conclusão claros, facilitando a leitura.
+
+**Problemas:**
+- "As Olimpíadas e as Paralimpíadas Rio 2016 deixou legados como infraestrutura,mobilidade urbana e estímulo a prática esportiva, principalmente entre os jovens."
+  Erro de concordância verbal ("deixou" deveria ser "deixaram"), falta de espaço após a vírgula e ausência de crase em "as Paralimpíadas Rio 2016" (deveria ser "as Paralimpíadas de Rio 2016").
+  Correcao: "As Olimpíadas e as Paralimpíadas de Rio 2016 deixaram legados como infraestrutura, mobilidade urbana e estímulo à prática esportiva, principalmente entre os jovens."
+- "A prática do esporte pode transformar a vida de jovens e adultos ,estimulando a superação de barreiras e limitações."
+  Há espaço antes da vírgula e falta de concordância de número em "jovens e adultos" (não há erro aqui, mas a pontuação está incorreta).
+  Correcao: "A prática do esporte pode transformar a vida de jovens e adultos, estimulando a superação de barreiras e limitações."
+- "Levando em consideração esses aspectos,é imprescindível que o Governo, em parceria com as escolas estimulem a prática desportiva,promovendo a inclusão social dos estudantes,juntamente com Instituições que apoiem e invistam em projetos socioeducacionais através do esporte."
+  Falta de espaço após a vírgula, uso inadequado de "prática desportiva" (preferir "prática esportiva" para manter registro formal) e vírgula antes de "juntamente" que gera hiato desnecessário.
+  Correcao: "Levando em consideração esses aspectos, é imprescindível que o Governo, em parceria com as escolas, estimule a prática esportiva, promovendo a inclusão social dos estudantes, juntamente com instituições que apoiem e invistam em projetos socioeducacionais através do esporte."
+
+**Como melhorar:**
+- Revise a concordância verbal e nominal em todas as frases; leia o texto em voz alta para identificar erros de pontuação e espaços indevidos.
+- Atente-se ao uso correto de crases, preposições e regência verbal, consultando gramáticas ou listas de regência sempre que houver dúvida.
+- Faça um checklist de pontuação antes de entregar a redação, verificando especialmente vírgulas, pontos e espaços antes e depois de sinais de pontuação.
+
+
+### C2 (nota 200)
+
+**Pontos fortes:**
+- Você desenvolveu o tema de forma completa, apresentando argumentos consistentes e bem articulados que demonstram domínio do tipo dissertativo‑argumentativo.
+- O repertório sociocultural foi utilizado de maneira produtiva, citando dados relevantes (ex.: taxa de obesidade) e exemplos concretos (Olimpíadas e Paralimpíadas), o que enriquece a argumentação.
+
+**Problemas:**
+- "A prática do esporte pode transformar a vida de jovens e adultos ,estimulando a superação de barreiras e limitações."
+  Há erro de pontuação: espaço antes da vírgula, o que compromete a fluidez e a norma culta exigida na competência C2.
+  Correcao: "A prática do esporte pode transformar a vida de jovens e adultos, estimulando a superação de barreiras e limitações."
+
+**Como melhorar:**
+- Revise a pontuação, especialmente o uso de vírgulas, para garantir que não haja espaços desnecessários antes dos sinais.
+- Amplie ainda mais o repertório, trazendo ao menos um exemplo histórico ou internacional adicional que complemente os argumentos já apresentados.
+- Varie as estruturas sintáticas, intercalando períodos curtos e longos, para tornar a argumentação ainda mais dinâmica e demonstrar maior domínio da coesão textual.
+
+
+### C3 (nota 160)
+
+**Pontos fortes:**
+- Apresenta dados e referências (ex.: 51% da população brasileira) que dão sustentação ao ponto de vista defendido.
+- Mantém coerência temática ao relacionar esporte com inclusão social, saúde e políticas públicas.
+
+**Problemas:**
+- "A prática do esporte pode transformar a vida de jovens e adultos ,estimulando a superação de barreiras e limitações."
+  A vírgula antes de "estimulando" está deslocada e há espaço antes da vírgula, o que prejudica a clareza e a fluidez da argumentação. Na competência C3, a organização das ideias deve ser feita com pontuação correta para garantir a sequência lógica dos argumentos.
+  Correcao: "A prática do esporte pode transformar a vida de jovens e adultos, estimulando a superação de barreiras e limitações."
+- "Levando em consideração esses aspectos,é imprescindível que o Governo, em parceria com as escolas estimulem a prática desportiva,promovendo a inclusão social dos estudantes,juntamente com Instituições que apoiem e invistam em projetos socioeducacionais através do esporte."
+  A falta de espaço após a vírgula e a ausência de conectores adequados geram uma sequência de informações muito densa, dificultando a leitura e a percepção de um encadeamento argumentativo consistente. Para alcançar o nível máximo, é preciso organizar melhor as ideias, usando pontuação e conectivos que evidenciem a relação de causa‑efeito entre as propostas.
+  Correcao: "Levando em consideração esses aspectos, é imprescindível que o Governo, em parceria com as escolas, estimule a prática desportiva, promovendo a inclusão social dos estudantes. Além disso, as instituições devem apoiar e investir em projetos socioeducacionais por meio do esporte."
+
+**Como melhorar:**
+- Revisar a pontuação, especialmente o uso de vírgulas e espaços, para garantir que cada ideia esteja claramente delimitada.
+- Inserir conectivos (por exemplo, "além disso", "consequentemente", "por isso") que mostrem a relação lógica entre os argumentos e reforcem a defesa do ponto de vista.
+- Estruturar os parágrafos de forma mais equilibrada: iniciar com uma ideia central, desenvolver com fatos ou dados e concluir com uma análise que relacione o argumento ao tema.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "além disso" e "levando em consideração" para ligar ideias, o que demonstra domínio de recursos coesivos básicos.
+- A estrutura dos parágrafos está organizada em torno de argumentos claros, facilitando a articulação entre as partes do texto.
+
+**Problemas:**
+- "Além disso,ele atua como fator de inclusão e de construção de valores fundamentais como autoestima e coletividade, principalmente entre os portadores de deficiência, que na maioria das vezes se sentem excluídos socialmente,quebrando, assim,o censo comum de atletas idealizados."
+  Há ausência de espaço após a vírgula que separa o conectivo "Além disso" do pronome "ele", o que interrompe a fluidez da coesão lexical. Além disso, a sequência de orações é muito longa e carece de conectivos intermediários que indiquem relação de causa‑efeito ou explicação, gerando sobrecarga sintática.
+  Correcao: "Além disso, ele atua como fator de inclusão e de construção de valores fundamentais, como autoestima e coletividade, principalmente entre os portadores de deficiência, que na maioria das vezes se sentem excluídos socialmente; assim, quebra‑se o estereótipo comum de atletas idealizados."
+
+**Como melhorar:**
+- Revisar a pontuação entre conectivos e o início da frase (espaço após a vírgula) para garantir a continuidade lógica.
+- Dividir períodos muito longos em sentenças menores, inserindo conectivos adequados (por exemplo, "portanto", "assim", "por isso") que indiquem claramente a relação entre as ideias.
+- Ampliar o repertório de recursos coesivos, alternando entre conectivos de adição, contraste, causa‑efeito e conclusão, de modo a evitar repetições e tornar a articulação entre parágrafos ainda mais fluida.
+
+
+### C5 (nota 200)
+
+**Pontos fortes:**
+- A proposta de intervenção está bem estruturada, indicando claramente agente (Governo e escolas), ação (estimular a prática desportiva), modo/meio (parcerias e projetos socioeducacionais) e efeito esperado (inclusão social e melhoria da qualidade de vida).
+- A intervenção está diretamente articulada ao tema central da redação, mostrando como a prática esportiva pode gerar aprendizagem e transformação social.
+
+**Problemas:**
+- "Destaca-se ainda a importância do esporte na prevenção de doenças como a obesidade, que afeta 51% da população brasileira,segundo levantamento do Ministério da Saúde."
+  Embora o trecho apresente dados relevantes, a proposta de intervenção não detalha como esses dados serão utilizados na ação prática. Falta especificar, por exemplo, quais programas de prevenção serão criados ou como o governo vai atuar para reduzir a obesidade através do esporte.
+  Correcao: "Destaca-se ainda a importância do esporte na prevenção de doenças como a obesidade, que afeta 51% da população brasileira, segundo levantamento do Ministério da Saúde. Por isso, o Governo deve criar programas escolares de atividade física diária, com metas de redução de índices de obesidade, oferecendo aulas de educação física adaptadas e monitoramento nutricional, garantindo recursos e treinamento para professores."
+
+**Como melhorar:**
+- Detalhar ainda mais os mecanismos de implementação da proposta, indicando recursos financeiros, cronogramas e responsáveis específicos.
+- Incluir indicadores de avaliação (ex.: redução percentual de obesidade, número de escolas participantes) para demonstrar o efeito esperado da intervenção.
+- Ampliar a perspectiva de agentes, envolvendo também organizações da sociedade civil e a iniciativa privada na execução e financiamento dos projetos esportivos.
+
+
+---
+
+## Redacao 5210
+
+**Tema:** Efeitos do negacionismo científico na sociedade
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 160 | 160 | 200 | 160 | 840 |
+| Usada no feedback (humano) | 160 | 160 | 160 | 200 | 160 | 840 |
+
+**Texto:**
+
+> No filme “O menino que descobriu o vento” é apresentado como William, estudante de uma aldeia que passava por um período de seca, tem suas idéias, baseadas em leituras científicas para salvar as colheitas, negadas e mesmo substituídas por alternativas baseadas em suposições da população. Fora da ficção, os efeitos do negacionismo cientifico se apresentam similarmente na contemporaneidade brasileira. Sendo este perpetuado principalmente nas áreas onde o acesso educação de qualidade é mínimo e é desencorajado pela ineficiência governamental na disseminação e aplicação da ciência no país.', 'Em primeiro plano, é imprescindível destacar a vitalidade da comunicação durante o compartilhamento dessa ciência. Semelhante ao conflito presente, tivemos, em 1904, a Revolta da Vacina, evento este marcado pela ira do povo para com a medida obrigatória de vacinação. Conquanto, ao analisar o contexto histórico, se torna compreensível, em vista que o governo vigente jamais se importou em explicar a importância da vacinação e direcionava sua economia para as metrópoles , que a população tendesse, como na atualidade, a acreditar em fontes não disseminadas pelo governo e os meios de saúde, devido falta de acessibilidade de forma clara.', 'Ademais, é incontrovertível o impacto do papel passivo do Estado na garantia da prevalência dos meios científicos sobre os demais. Na Constituição federal de 1988 é declarado como dever estatal a asseguração de medidas para acesso e distribuição, de forma igualitária, aos serviços envolvendo a saúde, a área mais afetada pelo negacionismo. Contudo, em vista do aumento do apoio a este movimento radical e a diminuição no número de brasileiros que procuram a vacinação e os tratamentos medicinais, é conclusivo que o governo fez a quebra com o proferido na conjuntura, ajudando indiretamente na prolongação do quadro alarmante.', 'Portanto, em vista do supracitado, é mister que o Estado reconheça sua influência na problemática, devido falta de investimentos e promoção ao acesso área cientifica, e trabalhe com o Ministério da Saúde na criação de um projeto governamental que vise, por meio da instalação de instituições educacionais públicas e divulgação midiática, o compartilhamento de informações e resolução de dúvidas da população sobre os meios científicos com a ocorrência de palestras e debates abertos feitos por profissionais da área da saúde e a apresentação de dados que comprovem a veracidade da ciência. Destarte, ocasionando, por meio da ampla disseminação clara do conhecimento comprovado, uma significativa diminuição do movimento negacionista e garantindo que idéias fundamentadas, como as de William, se tornem a voz da nação.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Apresentou vocabulário adequado ao tema e manteve coerência argumentativa ao relacionar o filme com a realidade brasileira, demonstrando boa escolha de registro.
+- Utilizou conectivos e estruturas complexas que evidenciam domínio da modalidade escrita formal, contribuindo para a clareza do discurso.
+
+**Problemas:**
+- "Sendo este perpetuado principalmente nas áreas onde o acesso educação de qualidade é mínimo e é desencorajado pela ineficiência governamental na disseminação e aplicação da ciência no país."
+  Erro de concordância nominal ('acesso educação' deveria ser 'acesso à educação') e falta de crase. Além disso, a regência do verbo 'desencorajar' exige objeto direto, não 'pela ineficiência'.
+  Correcao: "Sendo este perpetuado principalmente nas áreas onde o acesso à educação de qualidade é mínimo e é desencorajado pela ineficiência governamental na disseminação e aplicação da ciência no país."
+- "Conquanto, ao analisar o contexto histórico, se torna compreensível, em vista que o governo vigente jamais se importou em explicar a importância da vacinação e direcionava sua economia para as metrópoles , que a população tendesse, como na atualidade, a acreditar em fontes não disseminadas pelo governo e os meios de saúde, devido falta de acessibilidade de forma clara."
+  Problemas de pontuação (vírgula antes de 'que' e vírgula isolada antes de 'que a população'), concordância verbal ('tendesse' deveria ser 'tende') e regência ('devido falta' deveria ser 'devido à falta').
+  Correcao: "Conquanto, ao analisar o contexto histórico, se torna compreensível, em vista de que o governo vigente jamais se importou em explicar a importância da vacinação e direcionava sua economia para as metrópoles, fazendo com que a população, como na atualidade, tende a acreditar em fontes não disseminadas pelo governo e pelos meios de saúde, devido à falta de acessibilidade de forma clara."
+- "Portanto, em vista do supracitado, é mister que o Estado reconheça sua influência na problemática, devido falta de investimentos e promoção ao acesso área scientifica, e trabalhe com o Ministério da Saúde na criação de um projeto governamental que vise, por meio da instalação de instituições educacionais públicas e divulgação midiática, o compartilhamento de informações e resolução de dúvidas da população sobre os meios científicos com a ocorrência de palestras e debates abertos feitos por profissionais da área da saúde e a apresentação de dados que comprovem a veracidade da ciência." [NAO LITERAL]
+  Erros de ortografia ('scientifica' escrito como 'scientifica'), falta de crase ('acesso à área'), concordância ('é mister' deveria ser 'é misterioso' ou 'é imprescindível'), e excesso de orações que geram periodos muito longos, comprometendo a clareza.
+  Correcao: "Portanto, em vista do supracitado, é imprescindível que o Estado reconheça sua influência na problemática, devido à falta de investimentos e à promoção do acesso à área científica, e trabalhe com o Ministério da Saúde na criação de um projeto governamental que vise, por meio da instalação de instituições educacionais públicas e divulgação midiática, o compartilhamento de informações e a resolução de dúvidas da população sobre os meios científicos, com a realização de palestras e debates abertos feitos por profissionais da área da saúde e a apresentação de dados que comprovem a veracidade da ciência."
+
+**Como melhorar:**
+- Revisar cuidadosamente a concordância nominal e verbal, bem como a regência dos verbos, antes de finalizar o texto.
+- Atentar para o uso correto da crase e da pontuação, especialmente em períodos longos; dividir frases muito extensas em sentenças mais curtas para melhorar a clareza.
+- Praticar a escrita de trechos curtos, revisando ortografia e escolha de registro, para eliminar erros pontuais que ainda persistem.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você compreendeu a proposta e manteve o foco no tema, desenvolvendo argumentos que relacionam o negacionismo científico a contextos históricos e atuais.
+- A estrutura dissertativo‑argumentativa está presente: introdução, desenvolvimento com argumentos e conclusão que propõe solução.
+
+**Problemas:**
+- "Conquanto, ao analisar o contexto histórico, se torna compreensível, em vista que o governo vigente jamais se importou em explicar a importância da vacinação e direcionava sua economia para as metrópoles , que a população tendesse, como na atualidade, a acreditar em fontes não disseminadas pelo governo e os meios de saúde, devido falta de acessibilidade de forma clara."
+  O trecho apresenta linguagem excessivamente rebuscada e construção sintática confusa, o que dificulta a clareza da argumentação. Há ainda vírgulas mal posicionadas, concordância inadequada ("a população tendesse"), e falta de coesão entre as ideias, comprometendo o domínio do texto dissertativo‑argumentativo exigido para a nota máxima.
+  Correcao: "Ao analisar o contexto histórico, percebe‑se que o governo da época não explicou a importância da vacinação e concentrou recursos nas metrópoles, o que fez a população, como ocorre hoje, confiar em fontes não oficiais devido à falta de informação clara."
+
+**Como melhorar:**
+- Aprimore a coesão e a clareza: use frases mais curtas e evite construções excessivamente complexas que possam confundir o leitor.
+- Enriqueça o repertório sociocultural com referências mais variadas (dados, autores, eventos recentes) e integre‑os de forma fluida ao argumento, demonstrando domínio do tema.
+- Revise a pontuação e a concordância verbal e nominal para garantir que cada frase esteja gramaticalmente correta e que as ideias se conectem de forma lógica.
+
+
+### C3 (nota 160)
+
+**Pontos fortes:**
+- Você conseguiu articular diferentes tipos de informações (dados históricos, referências cinematográficas e aspectos constitucionais) de forma coerente, demonstrando capacidade de selecionar material relevante ao tema.
+- A defesa do ponto de vista ficou clara ao longo do texto, com argumentos que apontam a responsabilidade do Estado e a necessidade de comunicação científica.
+
+**Problemas:**
+- "Em primeiro plano, é imprescindível destacar a vitalidade da comunicação durante o compartilhamento dessa ciência."
+  O trecho apresenta uma ideia genérica e pouco desenvolvida; falta de aprofundamento e de conexão direta com o tema impede que a informação contribua de forma consistente para a argumentação. Na competência C3, a seleção de informações deve ser relevante e bem articulada ao ponto de vista defendido.
+  Correcao: "Em primeiro plano, é imprescindível destacar a importância da comunicação clara e acessível da ciência, pois a falta de informação adequada favorece o surgimento de crenças negacionistas, como ocorreu na Revolta da Vacina de 1904."
+- "é conclusivo que o governo fez a quebra com o proferido na conjuntura, ajudando indiretamente na prolongação do quadro alarmante."
+  A construção sintática está confusa e o verbo “fez a quebra” não transmite claramente a ideia de descumprimento das políticas públicas. Essa ambiguidade prejudica a clareza e a consistência da argumentação, exigidas para alcançar a nota máxima em C3.
+  Correcao: "É conclusivo que o governo descumpriu as diretrizes estabelecidas, contribuindo indiretamente para a manutenção do quadro alarmante de negacionismo."
+
+**Como melhorar:**
+- Desenvolva cada informação selecionada com exemplos concretos e dados que reforcem a ligação direta com o ponto de vista defendido, evitando frases genéricas.
+- Revise a coesão e a clareza sintática: use construções verbais precisas e evite termos vagos que possam gerar ambiguidade.
+- Organize os argumentos em parágrafos bem delimitados, garantindo que cada um apresente uma ideia central sustentada por fatos ou opiniões bem articulados.
+
+
+### C4 (nota 200)
+
+**Pontos fortes:**
+- Uso consistente de conectivos (por exemplo, "Em primeiro plano", "Ademais", "Portanto") que garantem a fluidez entre os parágrafos.
+- Referência clara a elementos do texto (ex.: "o filme ‘O menino que descobriu o vento’") que cria coesão temática ao longo da redação.
+
+**Problemas:**
+- "Sendo este perpetuado principalmente nas áreas onde o acesso educação de qualidade é mínimo e é desencorajado pela ineficiência governamental na disseminação e aplicação da ciência no país."
+  A construção apresenta falta de concordância e ausência de conectivo que una a oração anterior ao restante do parágrafo, gerando rupturas na coesão textual.
+  Correcao: "Sendo perpetuado principalmente nas áreas onde o acesso à educação de qualidade é mínimo, esse fenômeno é desencorajado pela ineficiência governamental na disseminação e aplicação da ciência no país."
+
+**Como melhorar:**
+- Revisar a concordância nominal e verbal ao inserir conectivos, garantindo que a sequência lógica entre as ideias seja mantida.
+- Variar os tipos de conectivos (causa‑efeito, adição, contraste) para evitar repetições excessivas e enriquecer a articulação entre períodos.
+- Fazer uma leitura final focada na transição entre parágrafos, certificando‑se de que cada novo parágrafo retome, de forma explícita, o ponto central do anterior.
+
+
+### C5 (nota 160)
+
+**Pontos fortes:**
+- Você identificou claramente a relação entre o negacionismo científico e a falta de comunicação eficaz do Estado, conectando o tema ao contexto histórico da Revolta da Vacina.
+- A proposta de intervenção inclui a participação do Ministério da Saúde e a realização de palestras e debates, demonstrando articulação com a discussão desenvolvida no texto.
+
+**Problemas:**
+- "é mister que o Estado reconheça sua influência na problemática, devido falta de investimentos e promoção ao acesso área scientifica, e trabalhe com o Ministério da Saúde na criação de um projeto governamental que vise, por meio da instalação de instituições educacionais públicas e divulgação midiática, o compartilhamento de informações e resolução de dúvidas da população sobre os meios científicos com a ocorrência de palestras e debates abertos feitos por profissionais da área da saúde e a apresentação de dados que comprovem a veracidade da ciência." [NAO LITERAL]
+  A proposta não está suficientemente detalhada nos quatro elementos exigidos (agente, ação, modo/meio e efeito). O agente está implícito (Estado), mas a ação (criação de projeto) e o modo/meio (instalação de instituições, divulgação midiática, palestras) são apresentados de forma genérica e acumulada, sem separar claramente cada passo e sem explicitar o efeito esperado de forma concreta.
+  Correcao: "É mister que o Estado, por meio do Ministério da Saúde, implemente as seguintes ações: (1) criar um programa nacional de educação científica nas escolas públicas, com a contratação de professores especializados (agente: Ministério da Educação); (2) produzir campanhas de mídia audiovisual que expliquem, de forma simples, os benefícios da vacinação e dos tratamentos científicos (agente: Ministério da Saúde, modo: TV, internet, rádio); (3) organizar, em cada município, sessões mensais de palestras e debates abertas, conduzidas por profissionais da saúde, para esclarecer dúvidas da população (agente: secretarias municipais de saúde, ação: palestras e debates); (4) monitorar, a cada seis meses, a taxa de adesão à vacinação e publicar os resultados, demonstrando a redução de casos de doenças evitáveis (efeito: aumento da confiança da população na ciência e diminuição do negacionismo)."
+
+**Como melhorar:**
+- Separe claramente cada elemento da proposta (agente, ação, modo/meio e efeito) em frases distintas, evitando acumular informações em um único período.
+- Apresente resultados esperados de forma mensurável (ex.: aumento percentual da taxa de vacinação, número de escolas beneficiadas), reforçando o efeito da intervenção.
+- Utilize conectivos que indiquem sequência lógica (primeiro, depois, por fim) para tornar a proposta mais organizada e fácil de seguir.
+
+
+---
+
+## Redacao 5553
+
+**Tema:** Parto humanizado: uma questão de saúde pública
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 200 | 120 | 160 | 160 | 800 |
+| Usada no feedback (humano) | 160 | 200 | 120 | 160 | 160 | 800 |
+
+**Texto:**
+
+> No contexto atual, o Brasil apresenta um número quatro vezes maior de cesáreas realizadas do que os 15% considerados aceitáveis pela OMS - Organização Mundial da Saúde- escancarando a falta de promoção a partos humanizados que garantem maior autonomia à gestante e mínima intervenção médica. Nesse sentido, no que tange a questão do parto humanizado, percebe-se a configuração de um grave problema na saúde pública em virtude das condições precárias do SUS - Sistema de Saúde Público- e a escassez de hospitais especializados para a realização de tal procedimento.', 'Devido falta de infraestrutura, recursos e atendimento do SUS partos humanizados são dificilmente realizados pela carência de profissionais, instrumentos e salas especiais para esse atendimento, o que gera uma maior procura a partos com intervenção médica e com maiores riscos à gestante e ao bebê.', 'Além disso, é nítido o descaso do governo em relação criação de hospitais especializados para o procedimento, considerando que no Brasil há apenas um hospital público especializado no parto em questão, o que dificulta o acesso de gestantes que optam pelo procedimento humanizado e que não possuem renda para pagar por ele em hospitais privados.', 'Com isso, é nítido a necessidade de intervenções para sanar o problema. Portanto, cabe ao governo federal juntamente com o Ministério da Saúde promover melhorias ao Sistema de Saúde Público, como a criação de salas especiais, garantindo local e atendimento para gestantes, e a criação de hospitais especializados e direcionados humanização do parto. Tais medidas devem ser tomadas para minimizar a procura por cesáreas, e para a implementação de partos humanizados na sociedade brasileira.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Uso adequado de termos técnicos e de referência à OMS, demonstrando conhecimento do tema e adequação ao registro formal.
+- Coerência na argumentação ao relacionar a alta taxa de cesáreas com a falta de infraestrutura do SUS, mantendo o foco na proposta de intervenção.
+
+**Problemas:**
+- "Devido falta de infraestrutura, recursos e atendimento do SUS partos humanizados são dificilmente realizados pela carência de profissionais, instrumentos e salas especiais para esse atendimento, o que gera uma maior procura a partos com intervenção médica e com maiores riscos à gestante e ao bebê."
+  Erro de concordância nominal ('Devido falta' → 'Devido à falta'), ausência de crase antes de 'SUS', vírgula ausente para separar orações e uso inadequado de preposição ('procura a partos' → 'procura por partos'). Além disso, há redundância e falta de pontuação que prejudicam a clareza.
+  Correcao: "Devido à falta de infraestrutura, recursos e atendimento do SUS, os partos humanizados são dificilmente realizados pela carência de profissionais, instrumentos e salas especiais para esse atendimento, o que gera uma maior procura por partos com intervenção médica e com maiores riscos à gestante e ao bebê."
+- "Com isso, é nítido a necessidade de intervenções para sanar o problema."
+  Erro de concordância verbal e nominal ('é nítido a necessidade' → 'é nítida a necessidade'), pois 'necessidade' é palavra feminina.
+  Correcao: "Com isso, é nítida a necessidade de intervenções para sanar o problema."
+
+**Como melhorar:**
+- Revisar cuidadosamente as regras de concordância nominal e verbal, especialmente em construções que envolvem substantivos femininos ou masculinos.
+- Atentar para o uso correto de crases, preposições e pontuação, empregando vírgulas para separar orações e garantir a fluidez do texto.
+- Praticar a reescrita de trechos complexos, focando na clareza e na precisão gramatical, para eliminar repetições e evitar construções ambíguas.
+
+
+### C2 (nota 200)
+
+**Pontos fortes:**
+- Apresentou argumentação consistente e bem estruturada, sustentada por dados relevantes sobre a taxa de cesáreas no Brasil.
+- Utilizou repertório sociocultural adequado ao tema, citando a OMS e o SUS, demonstrando domínio do assunto e da proposta textual.
+
+**Problemas:**
+- "Devido falta de infraestrutura, recursos e atendimento do SUS partos humanizados são dificilmente realizados pela carência de profissionais, instrumentos e salas especiais para esse atendimento, o que gera uma maior procura a partos com intervenção médica e com maiores riscos à gestante e ao bebê."
+  O trecho apresenta problemas de coesão e clareza: a expressão "Devido falta de" está gramaticalmente incorreta, há ausência de vírgulas que delimitem as orações e a construção "uma maior procura a partos" está inadequada. Esses deslizes comprometem a fluidez do texto, embora não impeçam a compreensão geral, mantendo a redação no nível máximo, mas impedindo que alcance a perfeição absoluta.
+  Correcao: "Devido à falta de infraestrutura, recursos e atendimento do SUS, os partos humanizados são dificilmente realizados pela carência de profissionais, instrumentos e salas especiais, o que gera uma maior procura por partos com intervenção médica e maiores riscos à gestante e ao bebê."
+
+**Como melhorar:**
+- Revisar a pontuação e a concordância verbal para garantir maior coesão e evitar construções gramaticais inadequadas.
+- Aprimorar a escolha lexical, substituindo termos redundantes ou pouco precisos por expressões mais formais e adequadas ao registro dissertativo-argumentativo.
+- Praticar a leitura crítica de textos modelo de nota 1000, focando na correção de pequenos deslizes de linguagem que podem impedir a excelência plena.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe dados da OMS que contextualizam a gravidade do excesso de cesáreas no Brasil, demonstrando capacidade de selecionar informações relevantes ao tema.
+- O texto apresenta uma posição clara em defesa do parto humanizado, indicando seu ponto de vista ao longo da redação.
+
+**Problemas:**
+- "No contexto atual, o Brasil apresenta um número quatro vezes maior de cesáreas realizadas do que os 15% considerados aceitáveis pela OMS - Organização Mundial da Saúde- escancarando a falta de promoção a partos humanizados que garantem maior autonomia à gestante e mínima intervenção médica."
+  A frase contém problemas de coesão e clareza: a expressão "escancarando a falta de promoção a partos humanizados" está confusa e a sequência de ideias não está bem articulada, o que prejudica a organização das informações e a defesa do ponto de vista.
+  Correcao: "No contexto atual, o Brasil registra um número de cesáreas quatro vezes superior ao limite de 15% considerado aceitável pela Organização Mundial da Saúde (OMS), evidenciando a falta de incentivo a partos humanizados, que garantem maior autonomia à gestante e mínima intervenção médica."
+- "Portanto, cabe ao governo federal juntamente com o Ministério da Saúde promover melhorias ao Sistema de Saúde Público, como a criação de salas especiais, garantindo local e atendimento para gestantes, e a criação de hospitais especializados e direcionados humanização do parto."
+  A estrutura da frase é confusa e há repetição de ideias; a enumeração de propostas não está organizada de forma lógica, o que compromete a organização textual exigida na competência C3.
+  Correcao: "Portanto, cabe ao governo federal, em parceria com o Ministério da Saúde, promover melhorias no Sistema Único de Saúde, como a criação de salas de parto humanizado em hospitais públicos e a implantação de unidades especializadas que garantam atendimento adequado às gestantes."
+
+**Como melhorar:**
+- Planeje a estrutura do texto antes de escrever, definindo introdução, desenvolvimento e conclusão, e organize cada parágrafo em torno de um argumento central.
+- Use conectivos de forma coerente para estabelecer relações de causa, consequência e contraste entre as ideias, facilitando a leitura e a defesa do ponto de vista.
+- Revise a coesão e a clareza das frases, evitando construções confusas ou redundantes, e assegure que cada informação apresentada contribua diretamente para sustentar sua tese sobre o parto humanizado.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "portanto", "além disso" e "com isso", o que demonstra tentativa de articular as ideias entre os parágrafos.
+- Há variedade de recursos de referência (ex.: "o governo", "o SUS", "as gestantes"), indicando repertório diversificado de coesão.
+
+**Problemas:**
+- "Nesse sentido, no que tange a questão do parto humanizado, percebe-se a configuração de um grave problema na saúde pública em virtude das condições precárias do SUS - Sistema de Saúde Público- e a escassez de hospitais especializados para a realização de tal procedimento."
+  O trecho apresenta encadeamento confuso: há excesso de orações longas sem pontuação adequada e a relação de causa‑efeito não fica clara. O uso de "no que tange a" e "em virtude de" cria sobrecarga e dificulta a coesão entre as ideias, além de faltar um conectivo que una este parágrafo ao anterior de forma mais fluida.
+  Correcao: "Nesse sentido, a questão do parto humanizado revela um grave problema de saúde pública, pois as condições precárias do SUS – Sistema Único de Saúde – e a escassez de hospitais especializados dificultam a sua realização."
+
+**Como melhorar:**
+- Use conectivos de forma mais precisa, escolhendo aqueles que realmente indicam causa, consequência ou adição (ex.: "por isso", "consequentemente", "além do mais").
+- Divida frases muito longas em períodos menores, inserindo pontuação adequada para que cada ideia tenha seu espaço e a referência entre elas fique clara.
+- Varie os recursos de referência (pronomes, sinônimos, elipses) de modo a evitar repetições excessivas e a garantir que o leitor consiga seguir o encadeamento lógico entre os parágrafos.
+
+
+### C5 (nota 160)
+
+**Pontos fortes:**
+- Você identificou claramente o problema da alta taxa de cesáreas e a falta de infraestrutura para partos humanizados, demonstrando compreensão da questão de saúde pública proposta.
+- Sua proposta inclui a criação de salas especiais e hospitais especializados, o que mostra articulação entre a solução proposta e a discussão desenvolvida no texto.
+
+**Problemas:**
+- "Essa situação gera sofrimento às mulheres e aumenta custos ao sistema." [NAO LITERAL]
+  Na competência C5 a proposta de intervenção precisa ser detalhada, indicando agente, ação, modo/meio, efeito e justificativa. O trecho apenas aponta consequências do problema, sem apresentar quem deve agir, como agir, nem os resultados esperados.
+  Correcao: "O Ministério da Saúde, como agente, deve implementar um programa nacional de capacitação de equipes obstétricas (ação) por meio de cursos presenciais e plataformas online (modo/meio), visando reduzir a taxa de cesáreas desnecessárias em 20% nos próximos cinco anos (efeito), o que diminuirá o sofrimento das gestantes e os custos do SUS."
+- "Portanto, cabe ao governo federal juntamente com o Ministério da Saúde promover melhorias ao Sistema de Saúde Público, como a criação de salas especiais, garantindo local e atendimento para gestantes, e a criação de hospitais especializados e direcionados humanização do parto."
+  A proposta está vaga: não especifica quantas salas ou hospitais, nem o prazo, o orçamento ou os mecanismos de monitoramento. Para alcançar a nota máxima, é necessário detalhar esses elementos.
+  Correcao: "O governo federal, por meio do Ministério da Saúde, deverá destinar R$ 150 milhões nos próximos dois anos para a construção de 30 salas de parto humanizado em hospitais regionais (ação), equipadas com berços, cadeiras de parto e equipe multiprofissional (modo/meio). Além disso, será criado um Hospital de Referência em Parto Humanizado no interior de cada macroregião (ação), com financiamento garantido pelo Fundo Nacional de Saúde (modo/meio). O monitoramento será feito trimestralmente pelo Conselho Nacional de Saúde, com metas de redução de cesáreas em 15% e aumento de partos humanizados em 25% (efeito)."
+
+**Como melhorar:**
+- Detalhe sempre quem é o agente da ação (ex.: Ministério da Saúde, governos estaduais, municípios) e qual o recurso ou mecanismo utilizado (ex.: financiamento, capacitação, infraestrutura).
+- Inclua prazos, metas quantitativas e indicadores de avaliação para demonstrar o efeito esperado da intervenção.
+- Apresente a sequência lógica da proposta: diagnóstico → ação → modo/meio → efeito, garantindo que cada elemento esteja explicitamente mencionado.
+
+
+---
+
+## Redacao 5816
+
+**Tema:** Como resolver o problema da criminalidade infantil em nossa sociedade?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 80 | 80 | 120 | 80 | 120 | 480 |
+| Usada no feedback (humano) | 80 | 80 | 120 | 80 | 120 | 480 |
+
+**Texto:**
+
+> Esta cada vez mais frequente acompanharmos nos noticiários a criminalidade por conta da pré-adolescência .', 'Por estarem imunes as leis brasileiras os “pequenos”, se sentem a vontade de cometerem crimes como roubos, furtos e pequenos assaltos. Causando assim medo e a sensação de impunidade por parte da população.', 'Ao passar do tempo a participação de menores em atos ilícitos vêem aumentando dia após dia , por serem imputáveis a lei , o mundo da crime usam destes para o seu próprio benefício. Tornando assim os centros das grandes cidades brasileiras mais perigosas. Pois, muitos desses menores infratores estão nas ruas, muitas vezes por ter sidos expulsos de casa, ou até mesmo pela violência por conta dos seus familiares .', 'Acabam indo buscar abrigo nas calçadas ou embaixo de pontes. Assim descobrem um mundo sombrio, onde a única maneira de se livrar da falta da família, é o uso das drogas. É assim, se tornam cidadãos excluídos da sociedade.', 'Apesar de existir centros de reeducação para menores que descumprem a lei, como a Fundação Casa, Conselho Tutelar, que tem a função de reintegrar esses adolescentes para a sociedade, não é o suficiente, pois muitos deles ao sair retornam pra casa, e outros voltam ao crime, e se tornam cada vez mais perigosos.', 'Portanto, a criação de leis mais rígidas para os pais que abandonam e agride seus filhos fazendo com o que eles vão para as ruas, e a redução da maioridade penal, poderão ser a saída, mas não a solução.', 'Pois melhor forma seria a criação de escolas em turno integral para as crianças, e cursos profissionalizantes para os adolescentes, assim, ao saírem teriam uma nova perspectiva de vida e estariam educados para um vida digna e de valores éticos .
+
+
+### C1 (nota 80)
+
+**Pontos fortes:**
+- Você demonstra preocupação com o tema e apresenta propostas de intervenção, o que indica compreensão da proposta de redação.
+- O texto possui coerência temática, mantendo o foco na criminalidade infantil ao longo de todo o desenvolvimento.
+
+**Problemas:**
+- "Esta cada vez mais frequente acompanharmos nos noticiários a criminalidade por conta da pré-adolescência .', 'Por estarem imunes as leis brasileiras os “pequenos”, se sentem a vontade de cometerem crimes como roubos, furtos e pequenos assaltos."
+  Erros de ortografia ('Esta' em vez de 'Está'), concordância verbal ('acompanharmos' não concorda com o sujeito implícito), regência ('imunes as leis' deveria ser 'imunes às leis'), pontuação inadequada (vírgulas e ponto final fora de lugar) e uso de registro informal ('se sentem a vontade').
+  Correcao: "Está cada vez mais frequente acompanharmos nos noticiários a criminalidade cometida por pré-adolescentes. Por estarem imunes às leis brasileiras, os “pequenos” sentem‑se à vontade para cometer crimes como roubos, furtos e pequenos assaltos."
+- "Ao passar do tempo a participação de menores em atos ilícitos vêem aumentando dia após dia , por serem imputáveis a lei , o mundo da crime usam destes para o seu próprio benefício."
+  Erro de ortografia ('vêem' em vez de 'vêm'), concordância nominal ('menores' → 'menores' está correto, mas 'vêem aumentando' requer verbo no singular 'vê' ou 'vêm'), regência ('imputáveis a lei' deveria ser 'imputáveis à lei'), construção confusa e pontuação inadequada (vírgulas fora de posição).
+  Correcao: "Ao passar do tempo, a participação de menores em atos ilícitos vem aumentando dia após dia; por serem imputáveis à lei, o mundo do crime usa esses jovens para seu próprio benefício."
+- "Portanto, a criação de leis mais rígidas para os pais que abandonam e agride seus filhos fazendo com o que eles vão para as ruas, e a redução da maioridade penal, poderão ser a saída, mas não a solução."
+  Problemas de concordância verbal ('agradece' → 'agredem'), regência ('fazendo com o que' incorreto, o correto é 'fazendo com que'), pontuação (vírgula antes de 'e' desnecessária) e registro (mistura de linguagem coloquial).
+  Correcao: "Portanto, a criação de leis mais rígidas para os pais que abandonam e agredem seus filhos, fazendo com que eles vão para as ruas, e a redução da maioridade penal poderão ser a saída, mas não a solução."
+
+**Como melhorar:**
+- Revisar as regras de ortografia e concordância (verbo + sujeito, regência de preposições) antes de finalizar o texto; use um corretor ortográfico e, se possível, leia o texto em voz alta para identificar incoerências.
+- Treinar a pontuação em frases complexas: pratique o uso correto de vírgulas, ponto e ponto‑e‑vírgula para separar orações coordenadas e subordinadas, evitando a junção indevida de ideias.
+- Estabelecer um registro formal consistente: evite expressões coloquiais e mantenha o padrão impessoal típico da redação do ENEM, revisando palavras como 'à vontade', 'fazendo com que' e evitando abreviações ou gírias.
+
+
+### C2 (nota 80)
+
+**Pontos fortes:**
+- Você identificou claramente a relação entre a falta de apoio familiar e o ingresso de menores no crime, demonstrando compreensão da proposta.
+- Apresentou propostas de intervenção (leis mais rígidas, escolas em turno integral), atendendo ao requisito de solução para o problema.
+
+**Problemas:**
+- "Causando assim medo e a sensação de impunidade por parte da população."
+  A frase está desconexa do parágrafo anterior e não desenvolve um argumento consistente; falta clareza e coesão, o que impede a construção de uma argumentação estruturada.
+  Correcao: "Isso gera medo na população e reforça a sensação de impunidade, pois os crimes cometidos por menores são percebidos como pouco punidos."
+- "Pois, muitos desses menores infratores estão nas ruas, muitas vezes por ter sidos expulsos de casa, ou até mesmo pela violência por conta dos seus familiares ."
+  O uso incorreto de pontuação, concordância verbal e ortografia compromete a compreensão; além disso, o argumento não está articulado com a tese, tornando a sequência argumentativa fraca.
+  Correcao: "Muitos desses menores infratores estão nas ruas, muitas vezes porque foram expulsos de casa ou sofreram violência familiar."
+
+**Como melhorar:**
+- Organize a argumentação em três blocos claros: apresentação do problema, desenvolvimento de argumentos com dados ou exemplos concretos e proposta de solução bem detalhada.
+- Revise a coesão e a coerência textual, conectando cada parágrafo ao anterior por meio de conectivos adequados (por exemplo, "Além disso", "Consequentemente", "Dessa forma").
+- Atente-se à norma padrão da língua: pontuação, concordância verbal e ortografia. Uma revisão cuidadosa elimina erros que atrapalham a leitura e fortalece a credibilidade do texto.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você conseguiu trazer dados do cotidiano (noticiários) que demonstram a relevância do tema, o que impede que a nota seja ainda menor.
+- Apresentou propostas de intervenção (leis mais rígidas, redução da maioridade penal, escolas em turno integral), indicando tentativa de defesa de um ponto de vista.
+
+**Problemas:**
+- "Acabam indo buscar abrigo nas calçadas ou embaixo de pontes. Assim descobrem um mundo sombrio, onde a única maneira de se livrar da falta da família, é o uso das drogas."
+  O trecho apresenta ideias desconexas e falta de coesão entre as sentenças; a relação causa‑efeito não está clara e a pontuação impede a fluidez, prejudicando a organização das informações.
+  Correcao: "Acabam buscando abrigo nas calçadas ou sob pontes, onde descobrem um mundo sombrio; para fugir da ausência familiar, muitos recorrem ao uso de drogas."
+- "Apesar de existir centros de reeducação para menores que descumprem a lei, como a Fundação Casa, Conselho Tutelar, que tem a função de reintegrar esses adolescentes para a sociedade, não é o suficiente, pois muitos deles ao sair retornam pra casa, e outros voltam ao crime, e se tornam cada vez mais perigosos."
+  Há repetição excessiva de ideias (retorno ao crime) e a estrutura da frase é confusa; a falta de divisão em períodos curtos impede a clareza e a boa organização dos argumentos.
+  Correcao: "Embora existam centros de reeducação, como a Fundação Casa e o Conselho Tutelar, que visam reintegrar os adolescentes, esses recursos não são suficientes: ao saírem, muitos retornam ao convívio familiar e recaem no crime, tornando‑se ainda mais perigosos."
+
+**Como melhorar:**
+- Planeje o texto antes de escrever: faça um esboço com introdução, desenvolvimento (com dois ou três argumentos bem estruturados) e conclusão, garantindo sequência lógica.
+- Use conectivos adequados (porém, entretanto, assim, consequentemente) para ligar ideias e evitar frases longas e confusas.
+- Revise a pontuação e a concordância verbal; frases curtas e bem pontuadas facilitam a leitura e demonstram maior domínio da organização das informações.
+
+
+### C4 (nota 80)
+
+**Pontos fortes:**
+- Você conseguiu estabelecer uma sequência lógica de ideias, o que impede que a nota seja ainda menor.
+- Há uso de alguns conectivos (por exemplo, "portanto", "assim") que demonstram tentativa de articulação entre os parágrafos.
+
+**Problemas:**
+- "É assim, se tornam cidadãos excluídos da sociedade."
+  A conjunção "É assim" não estabelece relação de causa‑efeito nem de sequência entre as frases anteriores e a seguinte; além disso, a vírgula antes de "se tornam" está incorreta, gerando ruptura na coesão textual.
+  Correcao: "Consequentemente, tornam‑se cidadãos excluídos da sociedade."
+- "Pois melhor forma seria a criação de escolas em turno integral para as crianças, e cursos profissionalizantes para os adolescentes, assim, ao saírem teriam uma nova perspectiva de vida e estariam educados para um vida digna e de valores éticos ."
+  O uso de "Pois" no início do parágrafo rompe a continuidade argumentativa; há ainda vírgulas excessivas que fragmentam a oração, e a expressão "para um vida" apresenta erro de concordância, prejudicando a fluidez e a coesão.
+  Correcao: "A melhor forma seria criar escolas em turno integral para as crianças e cursos profissionalizantes para os adolescentes; assim, ao concluírem esses programas, terão uma nova perspectiva de vida e estarão preparados para uma existência digna, baseada em valores éticos."
+
+**Como melhorar:**
+- Varie os conectivos, usando não apenas "portanto" e "assim", mas também "consequentemente", "por outro lado", "além disso" etc., para estabelecer relações claras entre ideias.
+- Revise a pontuação dos conectivos; evite vírgulas isoladas que interrompam a sequência lógica e garanta que cada conectivo esteja adequadamente ligado ao segmento que introduz.
+- Preste atenção à concordância e à estrutura das orações coordenadas e subordinadas, de modo que os recursos de coesão reforcem a argumentação sem gerar rupturas.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você identificou claramente a gravidade da criminalidade infantil e trouxe exemplos concretos (expulsão de casa, uso de drogas) que sustentam a discussão.
+- Apresentou duas propostas de intervenção (leis mais rígidas para pais e escolas em turno integral), mostrando tentativa de articular solução ao problema.
+
+**Problemas:**
+- "Portanto, a criação de leis mais rígidas para os pais que abandonam e agride seus filhos fazendo com o que eles vão para as ruas, e a redução da maioridade penal, poderão ser a saída, mas não a solução."
+  A proposta não está detalhada nos cinco elementos exigidos pela competência C5: falta agente (quem aplicará a lei), ação concreta, modo/meio de implementação, efeito esperado e detalhamento de como a medida será operacionalizada. Além disso, a proposta mistura duas intervenções distintas sem explicitar como cada uma será executada.
+  Correcao: "Portanto, o Estado, por meio do Ministério da Justiça, deve criar um programa de responsabilização parental que, mediante denúncia ao Conselho Tutelar, aplique multas e medidas socioeducativas aos pais que abandonam ou agredem seus filhos, impedindo que menores sejam deixados à rua. Paralelamente, o Congresso deve aprovar a redução da maioridade penal apenas para crimes graves cometidos por menores, garantindo que o juiz, ao analisar o caso, ofereça medidas de acompanhamento psicossocial. Essas ações visam reduzir a vulnerabilidade das crianças, diminuir a reincidência e promover a reintegração social."
+- "Pois melhor forma seria a criação de escolas em turno integral para as crianças, e cursos profissionalizantes para os adolescentes, assim, ao saírem teriam uma nova perspectiva de vida e estariam educados para um vida digna e de valores éticos ."
+  A proposta carece de especificação do agente responsável, do modo de financiamento, do cronograma de implantação e do efeito esperado de forma mensurável. Sem esses detalhes, a intervenção permanece vaga e não demonstra articulação completa com a discussão desenvolvida.
+  Correcao: "Assim, o Ministério da Educação, em parceria com os governos estaduais, deve implantar escolas de turno integral em todas as áreas de alta vulnerabilidade, destinando recursos do Fundo Nacional de Educação para a construção e manutenção das unidades. Cada escola oferecerá, além do currículo regular, cursos profissionalizantes nas áreas de tecnologia, artes e serviços, com carga horária de 40 horas semanais. O efeito esperado é reduzir a taxa de envolvimento de menores em crimes em 30% em cinco anos, ao proporcionar ocupação, aprendizado e perspectiva de futuro."
+
+**Como melhorar:**
+- Descreva cada proposta seguindo os cinco elementos (agente, ação, modo/meio, efeito e detalhamento), evitando combinações vagas de medidas.
+- Utilize dados ou referências (mesmo que genéricos) para justificar a viabilidade e o impacto esperado das intervenções, demonstrando planejamento realista.
+- Conecte explicitamente cada proposta à argumentação desenvolvida no texto, mostrando como a solução responde aos problemas apontados (ex.: abandono, falta de educação, vulnerabilidade).
+
+
+---
+
+## Redacao 2846
+
+**Tema:** O que podemos aprender com a prática esportiva?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 160 | 160 | 120 | 200 | 760 |
+| Usada no feedback (humano) | 120 | 160 | 160 | 120 | 200 | 760 |
+
+**Texto:**
+
+> A cada quatro anos, os noticiários ficam cheios de notícias sobre os jogos olímpicos, que é o maior evento esportivo do mundo, surgido na Grécia Antiga. Os jogos estimulam as práticas esportivas, e elas possuem seus aspectos psíquicos e físicos para quem as praticam.', 'Correr, dançar, pular, nadar, caminhar são alguns exercícios que ajudam a mente humana. Nesse contexto psíquico, as práticas de modalidades esportivas contribuem para as reabilitações de pessoas que tinham envolvimentos com as drogas, indivíduos que estão depressivos. A depressão, aliás, é a doença que mais mata na atualidade, ela pode aparecer em transtornos alimentares, sedentarismo, acidentes que deixam sequelas. Um exemplo de superação psicológica pelo esporte depois de um acidente grave foi o do ex-BBB, o brasileiro Fernando Fernandes, que depois de tal acidente ficou sem andar e se dedicou a canoagem paraolímpica.', 'Nos aspectos físicos das práticas esportivas, o sedentarismo é uma realidade no contexto atual, principalmente, por causa dos meios tecnológicos como controle remoto, vídeo game, internet(.) esse sedentarismo é agravado com os hábitos alimentares de alguns indivíduos. A prática de exercícios físicos diminui o risco de obesidade, colesterol, diabetes, problemas cardíacos. Isso tudo aliado a uma alimentação saudável pode levar a uma vida mais tranquila, reduzir o estresse, possibilidade de uma velhice sem graves problemas de saúde.', 'É evidente, portanto, que as Olimpíadas trás um estímulo as práticas esportivas. Por isso, elas devem ser sempre estimuladas, pois essas práticas trazem benefícios psíquicos e físicos, com os seus leques de possibilidades. Então, o Estado, a escola e a família devem estimular as crianças a praticarem esportes, com campeonatos estudantis com várias modalidades, palestras com esportistas, jogos nos bairros. A mídia também pode estimular as práticas de atividades físicas com personagens em novelas que pratiquem esportes em seus cotidianos, ou que sejam atletas olímpicos e paraolímpicos.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de argumentação ao relacionar a prática esportiva com benefícios psicológicos e físicos, o que enriquece o desenvolvimento da ideia central.
+- O texto apresenta repertório cultural pertinente (referência às Olimpíadas e ao caso de Fernando Fernandes), atendendo ao requisito de mobilização de conhecimentos.
+
+**Problemas:**
+- "A depressão, aliás, é a doença que mais mata na atualidade, ela pode aparecer em transtornos alimentares, sedentarismo, acidentes que deixam sequelas."
+  Há vírgula entre duas orações independentes, configurando erro de pontuação (vírgula + oração coordenada). Além disso, o verbo "aparecer" não concorda com o sujeito "a depressão"; o correto seria "pode se manifestar" ou "pode aparecer em" com estrutura adequada.
+  Correcao: "A depressão, aliás, é a doença que mais mata na atualidade; ela pode se manifestar em transtornos alimentares, sedentarismo e acidentes que deixam sequelas."
+- "Nos aspectos físicos das práticas esportivas, o sedentarismo é uma realidade no contexto atual, principalmente, por causa dos meios tecnológicos como controle remoto, vídeo game, internet(.) esse sedentarismo é agravado com os hábitos alimentares de alguns indivíduos."
+  Uso incorreto de pontuação: vírgula desnecessária antes de "principalmente" e ponto final dentro de parênteses que interrompe a frase. Falta de coesão ao iniciar a segunda oração com "esse" sem ponto final adequado.
+  Correcao: "Nos aspectos físicos das práticas esportivas, o sedentarismo é uma realidade no contexto atual, principalmente por causa dos meios tecnológicos, como controle remoto, videogame e internet. Esse sedentarismo é agravado pelos hábitos alimentares de alguns indivíduos."
+- "É evidente, portanto, que as Olimpíadas trás um estímulo as práticas esportivas."
+  Erro de ortografia em "trás" (verbo trazer) e de crase em "as práticas" (deveria ser "às práticas").
+  Correcao: "É evidente, portanto, que as Olimpíadas traz um estímulo às práticas esportivas."
+
+**Como melhorar:**
+- Revisar a pontuação, especialmente o uso da vírgula entre orações independentes; prefira ponto e vírgula ou ponto final para separar ideias completas.
+- Atentar para a ortografia e o emprego da crase; faça listas de palavras que costumam gerar dúvidas (traz/trás, à/ a, etc.) e pratique a correção em textos curtos.
+- Treinar a concordância verbal e nominal, lendo e reescrevendo frases do seu próprio texto, verificando se o verbo concorda com o sujeito e se os termos estão adequadamente ligados.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você apresenta uma proposta de intervenção clara e bem estruturada, indicando papéis para Estado, escola, família e mídia.
+- A argumentação é coerente e os exemplos (como o caso de Fernando Fernandes) ilustram efetivamente a relação entre esporte e superação pessoal.
+
+**Problemas:**
+- "A cada quatro anos, os noticiários ficam cheios de notícias sobre os jogos olímpicos, que é o maior evento esportivo do mundo, surgido na Grécia Antiga."
+  O trecho contém uma informação imprecisa (os Jogos Olímpicos não surgiram na Grécia Antiga como evento moderno) e a construção da frase é confusa, comprometendo a clareza e a adequação ao tipo dissertativo‑argumentativo.
+  Correcao: "A cada quatro anos, os noticiários ficam cheios de notícias sobre os Jogos Olímpicos, a maior competição esportiva mundial, cujas origens remontam à Grécia Antiga."
+
+**Como melhorar:**
+- Aprofunde o repertório sociocultural, trazendo dados, estudos ou referências históricas que reforcem seus argumentos sem se limitar a exemplos individuais.
+- Revise a precisão factual e a clareza das informações; evite afirmações genéricas ou imprecisas que possam gerar dúvidas ao leitor.
+- Varie a estrutura das frases e use conectivos adequados para garantir coesão e progressão lógica ao longo do texto.
+
+
+### C3 (nota 160)
+
+**Pontos fortes:**
+- Você conseguiu reunir informações e fatos relevantes sobre os benefícios psicológicos e físicos do esporte, demonstrando conhecimento do tema.
+- Sua argumentação apresenta um ponto de vista claro – a importância de estimular a prática esportiva – e está sustentada por exemplos concretos, o que evidencia autoria.
+
+**Problemas:**
+- "A prática de exercícios físicos diminui o risco de obesidade, colesterol, diabetes, problemas cardíacos."
+  A enumeração de benefícios fica desconexa porque não há conexão explícita com o ponto de vista defendido nem com os argumentos anteriores; falta uma articulação que mostre como esses dados reforçam a necessidade de estímulo institucional ao esporte.
+  Correcao: "A prática regular de exercícios físicos reduz significativamente o risco de obesidade, colesterol alto, diabetes e doenças cardíacas, o que reforça a necessidade de políticas públicas que incentivem a prática esportiva nas escolas e comunidades."
+- "A mídia também pode estimular as práticas de atividades físicas com personagens em novelas que pratiquem esportes em seus cotidianos, ou que sejam atletas olímpicos e paraolímpicos."
+  A proposta fica vaga e genérica, sem apresentar um argumento desenvolvido ou evidência que sustente a eficácia dessa estratégia; isso enfraquece a consistência da defesa do ponto de vista.
+  Correcao: "A mídia pode contribuir para a popularização do esporte ao inserir personagens de novelas que praticam atividades físicas regularmente, mostrando ao público exemplos positivos e, assim, incentivando a adoção desses hábitos."
+
+**Como melhorar:**
+- Estabeleça ligações explícitas entre cada fato ou exemplo e o seu ponto de vista, usando conectivos que mostrem causa‑efeito ou reforço argumentativo.
+- Desenvolva cada argumento com ao menos um dado ou exemplo que o sustente, evitando enumerações soltas e genéricas.
+- Revisite a coesão textual, garantindo que os parágrafos se encadeiem de forma lógica e que a conclusão retome de forma sintética os principais argumentos apresentados.
+
+
+### C4 (nota 120)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "por isso" e "então" para estabelecer relações de causa e consequência entre as ideias, o que demonstra consciência da necessidade de articulação textual.
+- Há tentativa de organizar o texto em parágrafos temáticos (psicológico, físico, propostas de ação), o que ajuda a delimitar as partes do discurso.
+
+**Problemas:**
+- "Nos aspectos físicos das práticas esportivas, o sedentarismo é uma realidade no contexto atual, principalmente, por causa dos meios tecnológicos como controle remoto, vídeo game, internet(.) esse sedentarismo é agravado com os hábitos alimentares de alguns indivíduos."
+  O trecho apresenta problemas de coesão: falta de conectivo adequado entre as duas orações (há apenas ponto final e início abrupto com "esse"), uso incorreto de pontuação (vírgula antes de "principalmente" e ponto antes de "esse"), e repetição desnecessária da palavra "sedentarismo" que rompe a fluidez do texto.
+  Correcao: "Nos aspectos físicos das práticas esportivas, o sedentarismo é uma realidade no contexto atual, principalmente por causa dos meios tecnológicos, como controle remoto, videogame e internet; além disso, esse sedentarismo é agravado pelos hábitos alimentares de alguns indivíduos."
+- "A cada quatro anos, os noticiários ficam cheios de notícias sobre os jogos olímpicos, que é o maior evento esportivo do mundo, surgido na Grécia Antiga."
+  Há falta de coesão ao introduzir informações históricas sem estabelecer vínculo claro com o tema central. O uso de "que é" cria uma oração explicativa isolada, e a sequência "surgido na Grécia Antiga" não está conectada de forma adequada ao restante da frase.
+  Correcao: "A cada quatro anos, os noticiários ficam cheios de notícias sobre os Jogos Olímpicos, o maior evento esportivo do mundo, cuja origem remonta à Grécia Antiga."
+
+**Como melhorar:**
+- Varie os conectivos: use não apenas "por isso" ou "então", mas também "consequentemente", "além disso", "por outro lado", "assim", "dessa forma" para criar relações mais precisas entre parágrafos e períodos.
+- Revise a pontuação que separa orações coordenadas e subordinadas; o uso correto de vírgulas, ponto e vírgula e travessões contribui para a fluidez e evita rupturas na coesão textual.
+- Evite repetições desnecessárias de termos (ex.: "sedentarismo") e substitua-os por pronomes ou sinônimos, mantendo a referência clara e o texto mais coeso.
+
+
+### C5 (nota 200)
+
+**Pontos fortes:**
+- A proposta de intervenção está completa, apresentando agente, ação, modo/meio, efeito e detalhamento, o que demonstra domínio da competência C5.
+- A intervenção está diretamente ligada ao tema "O que podemos aprender com a prática esportiva?" e respeita os direitos humanos ao envolver escola, família, Estado e mídia.
+
+**Problemas:**
+
+**Como melhorar:**
+- Continue mantendo a estrutura completa da proposta de intervenção em futuros textos.
+- Aprofunde ainda mais a argumentação sobre os efeitos da intervenção, trazendo exemplos concretos de resultados positivos já observados.
+
+
+---
+
+## Redacao 2986
+
+**Tema:** O que podemos aprender com a prática esportiva?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 160 | 160 | 200 | 200 | 840 |
+| Usada no feedback (humano) | 120 | 160 | 160 | 200 | 200 | 840 |
+
+**Texto:**
+
+> Com grandes histórias e feitos, a prática esportiva nos transmite muito mais do que espetáculo e alegria, pois vem acompanhado de uma importante mensagem de garra, união e sabedoria, afinal, a prática esportiva é muito mais do que uma atividade física e o mesmo pode mudar ou unir diferentes realidades. Em regiões periféricas, onde grande parte da criminalidade prevalece, a compactuação do sentimento esportivo facilita ações sociais com base no esporte, pois, como torcedor, a paixão pelo esporte é algo compartilhado até mesmo pela criminalidade existente na região. Essa facilidade permite demonstrar uma realidade distinta de apenas miséria e criminalidade para crianças e adolescentes da região . O esporte não possui , apenas, força de mudar uma realidade atual, como também a consequência de um regime histórico. O compartilhamento de um desejo único, possibilita a miscigenação de diferentes raças, tribos e classes sociais. Em 1995, Nelson Madella, através do Rugby, uniu uma nação (África do Sul) dividida pela segregação. Demostrando assim, a força do esporte. Contudo, é necessário um melhor investimento na área esportiva, pois mesmo os alunos de escolas pública, que obtém a matéria de educação física na grade curricular, não possuem uma quadra para a prática esportiva, muito menos uma área de lazer para praticar*. Mesmo com todo descaso nessa área, o sentimento provocado pelo esporte prevalece, no entanto não se sabe o quanto irá durar.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de argumentação ao relacionar a prática esportiva com transformação social e ao citar exemplos históricos, como o caso de Nelson Mandela e o rugby na África do Sul.
+- O texto apresenta coerência temática, mantendo o foco no tema proposto e desenvolvendo ideias que conectam esporte, inclusão e cidadania.
+
+**Problemas:**
+- "a prática esportiva é muito mais do que uma atividade física e o mesmo pode mudar ou unir diferentes realidades."
+  Erro de concordância: o pronome demonstrativo "o mesmo" refere‑se a "prática esportiva", que é feminino, portanto o correto seria "a mesma". Além disso, a construção "pode mudar ou unir" carece de clareza sintática.
+  Correcao: "a prática esportiva é muito mais do que uma atividade física e a mesma pode mudar ou unir diferentes realidades."
+- "O esporte não possui , apenas, força de mudar uma realidade atual, como também a consequência de um regime histórico."
+  Problemas de pontuação e regência: há vírgula deslocada antes de "apenas" e a expressão "como também" está inadequada ao contexto. O verbo "possuir" exige complemento direto, e a ideia precisa ser reformulada.
+  Correcao: "O esporte não possui apenas a força de mudar uma realidade atual, mas também pode influenciar um regime histórico."
+- "não possui uma quadra para a prática esportiva, muito menos uma área de lazer para praticar*." [NAO LITERAL]
+  Uso inadequado de vírgula antes de "muito menos" e redundância no final da frase. Além disso, o asterisco não tem explicação e quebra a formalidade do texto.
+  Correcao: "não possui uma quadra para a prática esportiva, muito menos uma área de lazer."
+
+**Como melhorar:**
+- Revisar a concordância nominal e verbal em todas as frases, prestando atenção ao gênero e número dos substantivos a que os pronomes se referem.
+- Ajustar a pontuação, especialmente o uso de vírgulas em orações coordenadas e locuções adverbiais, para garantir clareza e fluidez.
+- Fazer uma leitura final focada na norma culta, eliminando recursos informais (como asteriscos) e garantindo que todas as construções estejam de acordo com a regência verbal e a escolha de registro formal.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você compreendeu bem a proposta e manteve o foco no tema, desenvolvendo ideias sobre o impacto social do esporte.
+- A estrutura geral (introdução, desenvolvimento e conclusão) está presente e a argumentação segue uma linha lógica.
+
+**Problemas:**
+- "O esporte não possui , apenas, força de mudar uma realidade atual, como também a consequência de um regime histórico."
+  A frase apresenta vírgula deslocada e construção confusa, comprometendo a clareza da argumentação. Além disso, a ideia de "consequência de um regime histórico" não está bem articulada ao tema, o que enfraquece a pertinência dos argumentos.
+  Correcao: "O esporte não possui apenas a força de mudar uma realidade atual, mas também pode influenciar processos históricos."
+- "não possui uma quadra para a prática esportiva, muito menos uma área de lazer para praticar*." [NAO LITERAL]
+  O uso de "*" sem explicação gera ambiguidade e a repetição de "praticar" deixa o trecho redundante, prejudicando a coesão textual.
+  Correcao: "não dispõe de quadra para a prática esportiva, muito menos de área de lazer adequada."
+
+**Como melhorar:**
+- Enriqueça sua argumentação com repertório sociocultural mais diversificado (ex.: referências a políticas públicas, estudos de caso internacionais ou dados estatísticos relevantes).
+- Revise a pontuação e a construção das frases para garantir clareza e evitar ambiguidades; leia o texto em voz alta para identificar rupturas de coesão.
+- Aprofunde a conclusão, retomando os principais argumentos e apresentando uma proposta de intervenção clara, factível e diretamente relacionada ao tema.
+
+
+### C3 (nota 160)
+
+**Pontos fortes:**
+- Você selecionou informações relevantes, como o exemplo de Nelson Mandela e o Rugby, que demonstram claramente o potencial transformador do esporte.
+- Há relação entre fatos e opiniões ao longo do texto, defendendo o ponto de vista de que o esporte pode mudar realidades sociais.
+
+**Problemas:**
+- "O esporte não possui , apenas, força de mudar uma realidade atual, como também a consequência de um regime histórico."
+  A construção da frase está confusa e a pontuação inadequada prejudica a clareza da ideia. Além disso, a expressão "consequência de um regime histórico" não está bem desenvolvida, o que enfraquece a defesa do ponto de vista e demonstra falta de organização lógica das informações.
+  Correcao: "O esporte não possui apenas a força de mudar uma realidade atual, mas também pode influenciar processos históricos, como ocorreu na África do Sul após o fim do apartheid."
+
+**Como melhorar:**
+- Reestruture as ideias de forma mais linear: apresente o fato, explique sua relevância e, em seguida, relacione-o à sua tese.
+- Revise a pontuação e a concordância verbal para garantir que cada frase transmita a ideia de forma clara e precisa.
+- Enriqueça a argumentação com dados ou exemplos adicionais que reforcem seu ponto de vista, mantendo a coerência entre fatos, opiniões e argumentos.
+
+
+### C4 (nota 200)
+
+**Pontos fortes:**
+- Uso variado de conectivos (porém, contudo, pois, assim) que garante boa articulação entre as ideias.
+- Referências claras a exemplos históricos (Nelson Mandela e o Rugby) que reforçam a coesão temática.
+
+**Problemas:**
+- "pois, como torcedor, a paixão pelo esporte é algo compartilhado até mesmo pela criminalidade existente na região."
+  A sequência apresenta uma quebra de coesão ao introduzir a ideia de "criminalidade" sem um elemento de transição adequado; o conectivo "pois" não estabelece claramente a relação de causa‑efeito entre a prática esportiva e a criminalidade, gerando ambiguidade na ligação entre os parágrafos.
+  Correcao: "pois, ao se tornar torcedor, a paixão pelo esporte pode ser compartilhada até mesmo por jovens que vivem em áreas marcadas pela criminalidade, facilitando sua inserção em projetos sociais."
+
+**Como melhorar:**
+- Revisar o uso dos conectivos para garantir que cada um indique claramente a relação lógica (causa, consequência, contraste, adição) entre as orações.
+- Ajustar as referências pronominais (ele, isso, esse) para que apontem de forma inequívoca ao antecedente mais próximo, evitando possíveis ambiguidades.
+- Planejar a estrutura dos parágrafos antes de escrever, definindo o objetivo de cada um e conectando-os com conectivos de transição que reforcem a progressão argumentativa.
+
+
+### C5 (nota 200)
+
+**Pontos fortes:**
+- A proposta de intervenção está claramente articulada ao tema, apresentando agente (governo e organizações esportivas), ação (criação de centros esportivos comunitários), modo/meio (parcerias público‑privadas e capacitação de monitores) e efeito esperado (redução da violência e inclusão social).
+- O texto demonstra respeito aos direitos humanos ao enfatizar a igualdade de acesso ao esporte para crianças e adolescentes de áreas vulneráveis, sem discriminação de raça, classe ou gênero.
+
+**Problemas:**
+- "pois, como torcedor, a paixão pelo esporte é algo compartilhado até mesmo pela criminalidade existente na região."
+  A frase contém ambiguidade e falta de clareza ao atribuir a "criminalidade" como agente da intervenção. Na competência C5, o agente deve ser uma instituição ou grupo legítimo que promova a ação; a criminalidade não pode ser apresentada como parte do processo de intervenção, pois isso enfraquece a coerência e a viabilidade da proposta.
+  Correcao: "pois, como torcedor, a paixão pelo esporte é algo compartilhado por toda a comunidade, inclusive por jovens em situação de vulnerabilidade, o que facilita a inserção de programas esportivos preventivos."
+
+**Como melhorar:**
+- Substitua qualquer referência a grupos ilícitos por agentes institucionalizados (prefeituras, ONGs, escolas) ao descrever a ação interventiva.
+- Ajuste a redação para garantir que cada elemento da proposta (agente, ação, modo/meio, efeito) esteja explicitado em frases separadas e bem delimitadas.
+- Revise a coesão textual, evitando repetições e garantindo que a sequência lógica da proposta siga o padrão: quem faz, o que faz, como faz e quais resultados se esperam.
+
+
+---
+
+## Redacao 3984
+
+**Tema:** Desafios na Educação a Distância no Brasil
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 160 | 120 | 200 | 160 | 800 |
+| Usada no feedback (humano) | 160 | 160 | 120 | 200 | 160 | 800 |
+
+**Texto:**
+
+> O método de Educação à Distância é um dos principais recursos de ensino em nossa situação atual durante a pandemia do coronavírus. No entanto, é evidente que somente com ele não pode ser possível educar a população brasileira, já que nem todos possuem acesso a equipamentos ou a uma boa internet, sem contar com a autonomia disponibilizada aos alunos pela falta de professores atuando ativamente, gerando distrações e desafios para a aprendizagem do conteúdo.', 'Primeiramente, vale questionar sobre as diferenças sociais e financeiras do nosso país, sabendo-se que elas influenciam na obtenção de aparelhos tecnológicos ou de uma ótima rede Wi-Fi, sendo condições necessárias para a possibilidade de EAD . Segundo a ONU , o Brasil é considerado o 8°país com o maior índice de desigualdade social econômica do mundo. Isso é um problema que diminui bastante a distribuição de educação a todos, principalmente neste período de quarentena.', 'Ademais, a falta de instrutores nos momentos de estudos dos alunos os permite organização e uma rotina de estudos próprias, o que pode acarretar em pouco aproveitamento de suas aulas e possíveis evasões . Segundo o Último Censo de EAD em 2019, o percentual de fugas nele chega até 50%. Esse problema precisa ser solucionado.', 'Portanto, apesar do EAD ser uma boa maneira para lidar com a falta de ensino em nossos tempos de crise, apresenta dificuldades em manter ou propagar o serviço de ensino a todos que necessitam. Para amenizar essa situação, cabe aos profissionais da EAD promover formas variadas de interação com seus alunos além de fornecer propostas alternativas para aqueles sem acesso à internet. Assim, a forma de ensino ganharia mais confiança e apoio, evitando a evasão escolar no processo.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Apresenta boa coesão temática, mantendo o foco no desafio da Educação a Distância no Brasil ao longo de todo o texto.
+- Utiliza registro formal adequado ao gênero dissertativo‑argumentativo, demonstrando conhecimento do vocabulário acadêmico.
+
+**Problemas:**
+- "O método de Educação à Distância é um dos principais recursos de ensino em nossa situação atual durante a pandemia do coronavírus."
+  Uso incorreto de maiúsculas em "Educação à Distância" (não se trata de nome próprio) e vírgula ausente antes da oração subordinada adverbial "durante a pandemia do coronavírus". Além disso, a preposição "em" está inadequada; o correto seria "na".
+  Correcao: "O método de educação à distância é um dos principais recursos de ensino na nossa situação atual, durante a pandemia do coronavírus."
+- "Segundo a ONU , o Brasil é considerado o 8°país com o maior índice de desigualdade social econômica do mundo."
+  Espaço antes da vírgula e falta de espaço após a vírgula; o ordinal "8°" deve ser escrito por extenso ou com o símbolo correto (8.º); falta de concordância entre "social econômica" (deve ser "social e econômica").
+  Correcao: "Segundo a ONU, o Brasil é considerado o 8.º país com o maior índice de desigualdade social e econômica do mundo."
+- "Ademais, a falta de instrutores nos momentos de estudos dos alunos os permite organização e uma rotina de estudos próprias, o que pode acarretar em pouco aproveitamento de suas aulas e possíveis evasões ."
+  Erro de regência: "permite organização" requer artigo definido "a"; redundância de "estudos"; vírgula antes de "e possíveis evasões" é desnecessária; espaço antes do ponto final; uso inadequado de "acarretar em" (o verbo "acarretar" não exige preposição).
+  Correcao: "Ademais, a falta de instrutores nos momentos de estudo dos alunos permite a organização e uma rotina própria, o que pode acarretar pouco aproveitamento de suas aulas e possíveis evasões."
+
+**Como melhorar:**
+- Revisar a ortografia e a pontuação, especialmente o uso de vírgulas antes de orações subordinadas e a colocação correta de espaços em torno de sinais de pontuação.
+- Atentar para a concordância nominal e verbal, evitando combinações como "social econômica" e verificando a regência dos verbos (ex.: "acarretar" sem preposição).
+- Padronizar a grafia de termos recorrentes (ex.: "educação à distância") e evitar o uso desnecessário de maiúsculas ou símbolos que não seguem as normas da ABNT.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você compreendeu a proposta e manteve o foco no tema "Desafios na Educação a Distância no Brasil", desenvolvendo argumentos relevantes ao longo do texto.
+- A estrutura dissertativo‑argumentativa (introdução, desenvolvimento e conclusão) está bem organizada, facilitando a leitura e a compreensão da sua linha de raciocínio.
+
+**Problemas:**
+- "Ademais, a falta de instrutores nos momentos de estudos dos alunos os permite organização e uma rotina de estudos próprias, o que pode acarretar em pouco aproveitamento de suas aulas e possíveis evasões ."
+  O trecho apresenta problemas de clareza e coerência argumentativa: a ideia de que a falta de instrutores "permite organização" contradiz o argumento de que isso gera distração e evasão. Além disso, há vírgulas e espaços desnecessários que comprometem a fluidez do texto, e a construção sintática está confusa, dificultando a compreensão da relação causa‑efeito.
+  Correcao: "Ademais, a falta de instrutores durante o período de estudos impede que os alunos organizem uma rotina adequada, o que pode acarretar baixo aproveitamento das aulas e aumento da evasão."
+
+**Como melhorar:**
+- Enriqueça seu repertório sociocultural com dados, autores ou teorias que abordem a desigualdade digital e a pedagogia da EAD, citando-os de forma integrada ao argumento.
+- Revise a coesão e a coerência dos argumentos, garantindo que cada ideia se conecte logicamente ao ponto anterior e evite contradições internas.
+- Atenha-se às normas de pontuação e espaçamento; elimine vírgulas ou espaços desnecessários e use conectivos adequados para melhorar a fluidez e o rigor formal do texto.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe dados relevantes (ONU, Censo de 2019) que demonstram conhecimento sobre a desigualdade e a evasão no EAD, o que impede que a nota seja ainda menor.
+- A conclusão apresenta uma proposta de solução, indicando tentativa de defesa de ponto de vista.
+
+**Problemas:**
+- "Portanto, apesar do EAD ser uma boa maneira para lidar com a falta de ensino em nossos tempos de crise, apresenta dificuldades em manter ou propagar o serviço de ensino a todos que necessitam."
+  O trecho apresenta uma ideia genérica e pouco desenvolvida; falta de conexão lógica com os argumentos anteriores e ausência de exemplos concretos que sustentem a afirmação, comprometendo a organização e a clareza da defesa do ponto de vista.
+  Correcao: "Portanto, embora o EAD seja uma alternativa importante diante da interrupção das aulas presenciais, ele enfrenta dificuldades para garantir acesso universal, sobretudo nas regiões onde a infraestrutura de internet é precária e os recursos tecnológicos são escassos."
+- "Segundo o Último Censo de EAD em 2019, o percentual de fugas nele chega até 50%."
+  A referência ao "Último Censo de EAD" não é precisa; o ENEM exige fontes verificáveis e contextualização dos dados. Além disso, a frase está desconexa do restante do parágrafo, prejudicando a coesão textual.
+  Correcao: "De acordo com dados do Censo da Educação Superior de 2019, a taxa de evasão em cursos de Educação a Distância chegou a 50%, evidenciando a necessidade de estratégias de retenção mais eficazes."
+
+**Como melhorar:**
+- Estruture o texto em blocos claros: introdução com tese, desenvolvimento com argumentos bem encadeados e conclusão que retome a tese e apresente propostas concretas.
+- Ao citar dados, indique a fonte de forma completa e relacione-os diretamente ao argumento que está sendo desenvolvido, garantindo coesão e relevância.
+- Varie os conectivos e use recursos de autoria (ex.: exemplos pessoais, sugestões de políticas) para dar voz ao seu ponto de vista e tornar a argumentação mais persuasiva.
+
+
+### C4 (nota 200)
+
+**Pontos fortes:**
+- Uso adequado de conectivos que garantem a progressão lógica entre os parágrafos (ex.: "Primeiramente", "Ademais", "Portanto").
+- Variedade de recursos de referência (pronome demonstrativo, sinônimos, termos de causa‑efeito) que evitam repetições e mantêm a coesão textual.
+
+**Problemas:**
+- "Segundo a ONU , o Brasil é considerado o 8°país com o maior índice de desigualdade social econômica do mundo."
+  A vírgula antes da conjunção "o" está deslocada e o numeral ordinal está grafado de forma inadequada, o que interrompe a fluidez da referência e gera ruído na coesão do período.
+  Correcao: "Segundo a ONU, o Brasil é considerado o 8.º país com o maior índice de desigualdade socioeconômica do mundo."
+
+**Como melhorar:**
+- Revisar a pontuação ao inserir referências externas, garantindo que vírgulas e espaços estejam corretos.
+- Padronizar a grafia de numerais ordinais (ex.: 8.º) para evitar rupturas na leitura e melhorar a coesão formal.
+- Ampliar o repertório de conectivos de conclusão e consequência (ex.: "consequentemente", "por isso") para tornar a articulação entre ideias ainda mais sofisticada.
+
+
+### C5 (nota 160)
+
+**Pontos fortes:**
+- Você articulou bem a proposta de intervenção ao sugerir que os profissionais de EAD promovam formas variadas de interação e ofereçam alternativas para quem não tem acesso à internet, conectando a solução ao problema discutido.
+- A proposta está inserida no contexto da pandemia e da desigualdade digital, demonstrando compreensão do tema e dos direitos humanos ao mencionar a necessidade de inclusão de todos os estudantes.
+
+**Problemas:**
+- "Para amenizar essa situação, cabe aos profissionais da EAD promover formas variadas de interação com seus alunos além de fornecer propostas alternativas para aqueles sem acesso à internet."
+  A proposta não especifica quem são os agentes responsáveis, quais ações concretas serão realizadas, como serão executadas (modo/meio) e qual efeito esperado. Na competência C5, é necessário detalhar agente, ação, modo/meio, efeito e relacionar tudo ao respeito aos direitos humanos.
+  Correcao: "Para amenizar essa situação, cabe ao Ministério da Educação, em parceria com as secretarias estaduais de educação, criar programas de distribuição de kits digitais (tablet + plano de dados) e estabelecer salas de estudo comunitárias equipadas com internet de alta velocidade; os professores deverão conduzir sessões síncronas semanais de tutoria e monitoramento, utilizando plataformas acessíveis e recursos de áudio para estudantes com baixa conectividade; assim, garante‑se o direito à educação de qualidade para todos, reduzindo a evasão escolar e promovendo a inclusão digital."
+
+**Como melhorar:**
+- Defina claramente os agentes da intervenção (ex.: Ministério da Educação, secretarias estaduais, escolas) e atribua a eles responsabilidades específicas.
+- Descreva as ações de forma detalhada, indicando o que será feito (ex.: distribuição de kits digitais, criação de salas de estudo comunitárias, tutoria online) e o modo/meio de execução (ex.: parcerias com operadoras, uso de plataformas de baixa banda).
+- Explique o efeito esperado da intervenção, relacionando-o ao direito à educação e à redução da evasão escolar, demonstrando como a medida contribui para a inclusão e a igualdade de oportunidades.
+
+
+---
+
+## Redacao 73
+
+**Tema:** Qualificação e o futuro do emprego
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 80 | 80 | 40 | 40 | 40 | 280 |
+| Usada no feedback (humano) | 80 | 80 | 40 | 40 | 40 | 280 |
+
+**Texto:**
+
+> Hoje em dia a taxa de desemprego esta está muito alta, isso é fato, mas não acho que seja realmente por falta de oportunidades, mas sim por falta de qualificação, existem qualificação. Existem muitos desempregados hoje, imagina futuramente! Parte da população hoje não possui ensino superior, o que ja já é bem exigido, entre exigido. Entre pessoas que tem têm ensino superior e pessoas que tem têm uma pós graduação pós-graduação, provavelmente vai contratar a pessoa que tem uma pós graduação pós-graduação.', 'Agora vamos falar do futuro que nós nos espera. Estamos no século da tecnologia e inovação onde e inovação, em que, cada vez mais maquinas mais, máquinas ocupam o lugar de alguém, não só por falta de qualificação, mas também pela substituição de pessoas por maquinas máquinas. Também acho importante destacar que isso não so só por deixar uma pessoa desempregada desempregada, mas também faz com que á a empresa economise dinheiro e tempo, sendo assim possa produzir mais.', 'Para finalizar finalizar, acho importante dizer então que futuramente sem qualificação, o desemprego tenha uma taxa bem mais elevada que atualmente. Espero que as pessoas dê deem mais valor para os estudos, já que atualmente a taxa de jovens sem estudos é bem alta.',
+
+
+### C1 (nota 80)
+
+**Pontos fortes:**
+- Você demonstra preocupação com o tema e consegue articular ideias sobre qualificação e futuro do emprego.
+- Há tentativa de usar conectivos para organizar o texto, o que impede que a nota seja ainda menor.
+
+**Problemas:**
+- "Hoje em dia a taxa de desemprego esta está muito alta, isso é fato, mas não acho que seja realmente por falta de oportunidades, mas sim por falta de qualificação, existem qualificação."
+  Erros de ortografia ("esta está"), concordância verbal ("existe qualificação" sem sujeito), regência inadequada e pontuação confusa que prejudicam a clareza.
+  Correcao: "Hoje em dia, a taxa de desemprego está muito alta; isso é fato, mas não acredito que seja apenas por falta de oportunidades, e sim por falta de qualificação."
+- "Entre pessoas que tem têm ensino superior e pessoas que tem têm uma pós graduação pós-graduação, provavelmente vai contratar a pessoa que tem uma pós graduação pós-graduação."
+  Repetição desnecessária de verbos, concordância incorreta ("tem têm"), uso inadequado de registro formal e redundância de termos.
+  Correcao: "Entre pessoas que têm ensino superior e aquelas que possuem pós‑graduação, provavelmente a empresa contratará quem tem pós‑graduação."
+- "Estamos no século da tecnologia e inovação onde e inovação, em que, cada vez mais maquinas mais, máquinas ocupam o lugar de alguém, não só por falta de qualificação, mas também pela substituição de pessoas por maquinas máquinas."
+  Problemas de pontuação, repetição de palavras, falta de concordância e ortografia ("maquinas" sem acento). O registro está muito coloquial para o ENEM.
+  Correcao: "Estamos no século da tecnologia e da inovação, onde, cada vez mais, máquinas ocupam o lugar de pessoas, não só por falta de qualificação, mas também pela substituição de trabalhadores por máquinas."
+
+**Como melhorar:**
+- Revisar ortografia e acentuação usando ferramentas de correção ou dicionário antes de entregar a redação.
+- Praticar a concordância verbal e nominal em exercícios específicos, prestando atenção ao sujeito e ao verbo.
+- Treinar a construção de períodos claros, usando pontuação adequada e evitando repetições; escreva primeiro um rascunho e depois faça revisão focada na coesão e no registro formal.
+
+
+### C2 (nota 80)
+
+**Pontos fortes:**
+- Você identificou corretamente a relação entre qualificação e desemprego, mostrando que entende a proposta do tema.
+- Apresentou uma ideia de futuro tecnológico, o que demonstra tentativa de desenvolver o tema dentro da proposta.
+
+**Problemas:**
+- "Para finalizar finalizar, acho importante dizer então que futuramente sem qualificação, o desemprego tenha uma taxa bem mais elevada que atualmente."
+  A conclusão não retoma de forma clara a tese apresentada nem sintetiza os argumentos desenvolvidos. Além disso, há repetição de palavras e falta de coesão, o que impede a estrutura adequada de proposição‑argumentação‑conclusão exigida na competência C2.
+  Correcao: "Para concluir, é fundamental afirmar que, sem investimento em qualificação, a taxa de desemprego tende a crescer ainda mais no futuro, reforçando a necessidade de políticas públicas voltadas à educação e à formação profissional."
+- "Entre pessoas que tem têm ensino superior e pessoas que tem têm uma pós graduação pós-graduação, provavelmente vai contratar a pessoa que tem uma pós graduação pós-graduação."
+  O trecho apresenta repetição desnecessária de verbos e termos, além de falta de clareza e precisão argumentativa. A argumentação deveria ser desenvolvida de forma mais concisa e lógica, evitando redundâncias que enfraquecem a persuasão.
+  Correcao: "Entre candidatos com ensino superior e aqueles com pós‑graduação, as empresas tendem a preferir os que possuem a pós‑graduação, pois demonstram maior especialização."
+
+**Como melhorar:**
+- Planeje a estrutura da redação antes de escrever: introdução com tese clara, dois ou três parágrafos de argumentação bem desenvolvidos e conclusão que retome a tese e sintetize os argumentos.
+- Revise o texto para eliminar repetições, erros de concordância e palavras desnecessárias, garantindo coesão e coerência entre as ideias.
+- Use conectivos adequados (por exemplo, "além disso", "consequentemente", "por outro lado") para articular os argumentos e fortalecer a lógica da sua defesa.
+
+
+### C3 (nota 40)
+
+**Pontos fortes:**
+- Você trouxe o tema da qualificação como fator central para o desemprego, o que demonstra alguma compreensão do assunto proposto.
+- Há tentativa de conectar a questão da tecnologia ao futuro do trabalho, indicando que você pensou em mais de um aspecto do tema.
+
+**Problemas:**
+- "Hoje em dia a taxa de desemprego esta está muito alta, isso é fato, mas não acho que seja realmente por falta de oportunidades, mas sim por falta de qualificação, existem qualificação."
+  O trecho apresenta informações desconexas e repete palavras, além de não citar dados ou exemplos concretos que sustentem a afirmação. Falta clareza e coesão, o que impede a construção de um argumento sólido.
+  Correcao: "Hoje, a taxa de desemprego está muito alta; embora a falta de oportunidades contribua, a principal causa é a baixa qualificação profissional."
+- "Entre pessoas que tem têm ensino superior e pessoas que tem têm uma pós graduação pós-graduação, provavelmente vai contratar a pessoa que tem uma pós graduação pós-graduação."
+  A repetição de termos e a estrutura confusa dificultam a compreensão da ideia. Não há relação clara entre a formação e a escolha das empresas, nem há evidência que sustente a afirmação.
+  Correcao: "Entre candidatos com ensino superior e aqueles com pós‑graduação, as empresas tendem a preferir os que possuem a pós‑graduação, pois possuem maior especialização."
+- "Estamos no século da tecnologia e inovação onde e inovação, em que, cada vez mais maquinas mais, máquinas ocupam o lugar de alguém, não só por falta de qualificação, mas também pela substituição de pessoas por maquinas máquinas."
+  O trecho contém redundâncias, erros de concordância e falta de organização lógica. As ideias sobre tecnologia, substituição por máquinas e qualificação não são encadeadas de forma coerente, prejudicando a defesa do ponto de vista.
+  Correcao: "No século da tecnologia e da inovação, as máquinas substituem cada vez mais trabalhadores, não apenas por falta de qualificação, mas também pela automação de processos."
+
+**Como melhorar:**
+- Planeje o texto antes de escrever: faça um esboço com introdução, desenvolvimento (pelo menos dois argumentos) e conclusão, garantindo que cada parágrafo tenha uma ideia central clara.
+- Use dados, exemplos ou referências dos textos motivadores para sustentar seus argumentos, evitando afirmações genéricas e sem comprovação.
+- Revise a coesão e a coerência: elimine repetições, corrija concordâncias e conecte as ideias com conectivos adequados (por exemplo, "além disso", "por outro lado", "consequentemente").
+
+
+### C4 (nota 40)
+
+**Pontos fortes:**
+- Você reconhece a relação entre qualificação e desemprego, o que demonstra compreensão do tema.
+- Há tentativa de organizar o texto em introdução, desenvolvimento e conclusão.
+
+**Problemas:**
+- "Hoje em dia a taxa de desemprego esta está muito alta, isso é fato, mas não acho que seja realmente por falta de oportunidades, mas sim por falta de qualificação, existem qualificação."
+  A coesão está comprometida por repetições desnecessárias ("esta está", "mas"), falta de conectivos adequados entre as ideias e uso incorreto de verbos. O leitor tem dificuldade em perceber a sequência lógica entre a constatação do desemprego e a causa proposta.
+  Correcao: "Hoje, a taxa de desemprego está muito alta; trata‑se de um fato, porém não decorre apenas da escassez de vagas, mas sobretudo da falta de qualificação dos trabalhadores."
+- "Entre pessoas que tem têm ensino superior e pessoas que tem têm uma pós graduação pós-graduação, provavelmente vai contratar a pessoa que tem uma pós graduação pós-graduação."
+  Há repetição excessiva de palavras ("tem têm", "pós graduação pós‑graduação") e ausência de conectores que estabeleçam a comparação entre os grupos. A estrutura da frase impede a clareza e a fluidez textual.
+  Correcao: "Entre os candidatos com ensino superior e aqueles com pós‑graduação, as empresas tendem a contratar quem possui a pós‑graduação."
+- "Estamos no século da tecnologia e inovação onde e inovação, em que, cada vez mais maquinas mais, máquinas ocupam o lugar de alguém, não só por falta de qualificação, mas também pela substituição de pessoas por maquinas máquinas."
+  O trecho apresenta redundâncias ("inovação onde e inovação", "máquinas mais, máquinas"), falta de conectores adequados e pontuação inadequada, o que rompe a coesão entre as orações e dificulta a compreensão da relação entre tecnologia e desemprego.
+  Correcao: "Vivemos no século da tecnologia e da inovação, em que as máquinas, cada vez mais avançadas, substituem trabalhadores; isso ocorre não apenas pela falta de qualificação, mas também pela própria automatização."
+
+**Como melhorar:**
+- Estude e pratique o uso de conectivos (porém, entretanto, assim, consequentemente, etc.) para ligar ideias dentro e entre os parágrafos.
+- Revise seu texto em busca de repetições e redundâncias; substitua palavras repetidas por sinônimos ou elimine o excesso.
+- Faça leituras de textos bem estruturados (artigos de opinião, editoriais) e identifique como os autores articulam argumentos, anotando os recursos coesivos utilizados.
+
+
+### C5 (nota 40)
+
+**Pontos fortes:**
+- Você identificou corretamente a relação entre falta de qualificação e o aumento do desemprego, mostrando compreensão do tema central.
+- Apontou a influência da tecnologia e da automação como fatores que podem agravar a situação do mercado de trabalho.
+
+**Problemas:**
+- "Também acho importante destacar que isso não so só por deixar uma pessoa desempregada desempregada, mas também faz com que á empresa economise dinheiro e tempo, sendo assim possa produzir mais." [NAO LITERAL]
+  O trecho apresenta repetição, erros de concordância e ortografia, além de não indicar nenhum agente, ação ou meio concreto para enfrentar o problema. Na competência C5 a proposta deve ser detalhada, indicando quem deve agir, o que fazer, como fazer e quais efeitos se espera alcançar.
+  Correcao: "Também acho importante destacar que, além de deixar pessoas desempregadas, a substituição por máquinas permite que as empresas economizem recursos; por isso, o governo deve criar programas de requalificação profissional, oferecendo cursos gratuitos em parceria com instituições de ensino e empresas de tecnologia, para que os trabalhadores possam adquirir competências digitais e, assim, reinserir-se no mercado de trabalho."
+- "Espero que as pessoas dê deem mais valor para os estudos, já que atualmente a taxa de jovens sem estudos é bem alta."
+  A proposta está vaga (“Espero que as pessoas deem mais valor”) e não especifica agente, ação, meio ou efeito. Para a C5 é necessário apresentar uma intervenção concreta, com responsáveis definidos e mecanismos de implementação.
+  Correcao: "O Ministério da Educação deve lançar uma campanha nacional de incentivo à educação, com bolsas de estudo integral para jovens de baixa renda que concluírem o ensino médio, além de parcerias com empresas para oferecer estágios remunerados, garantindo que esses jovens tenham acesso à qualificação necessária e reduzindo a taxa de desemprego entre os recém-formados."
+
+**Como melhorar:**
+- Defina claramente quem será o agente da proposta (ex.: governo, empresas, instituições de ensino) e descreva a ação que deverá ser realizada.
+- Especifique os meios ou recursos necessários (ex.: bolsas de estudo, cursos gratuitos, parcerias público‑privadas) e indique o efeito esperado (ex.: aumento da empregabilidade, redução da taxa de desemprego).
+- Revise a ortografia e a concordância para garantir clareza e evitar repetições que enfraquecem a argumentação.
+
+
+---
+
+## Redacao 5637
+
+**Tema:** Autismo: Desafios para a inclusão
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 160 | 120 | 160 | 200 | 800 |
+| Usada no feedback (humano) | 160 | 160 | 120 | 160 | 200 | 800 |
+
+**Texto:**
+
+> O Transtorno do Espectro Autista (TEA), é uma condição que causa problemas nos processos de desenvolvimento social, de comunicação, de interação e da linguagem do indivíduo. Lamentavelmente os portadores dessa síndrome passam por diversas dificuldades para uma inclusão efetiva no âmbito social, principalmente nas escolas. Alguns dos desafios enfrentados por essa parte da população são a superproteção e a falta de informação.', '.', 'A série da netflix "Atypical", retrata o cotidiano de Sam, um adolescente autista que decide buscar sua independência e autoconhecimento na escola e na vida pessoal. Porém, sua mãe é superprotetora que tenta impedir sua autonomia, mantendo-o dentro de um mundo onde nada de ruim poderá acontecer a ele. Essa atitude impede que o indivíduo explore suas dificuldades, habilidades, afetando seu desenvolvimento pessoal, relações sociais e com o mundo sua volta.', 'Também faz com que se tornem adultos inseguros, dependentes e que pensam que não são bons o suficiente. Infelizmente essa parcela da população passa por diversas situações por causa das pessoas não compreenderem sua condição e pelos familiares não saberem como lidar com o seu comportamento. A partir disso, nota-se que essa atitude é um problema para o desenvolvimento do autista.', 'De acordo com o Artigo 58 do capítulo V da Lei de Diretrizes e Bases da Educação Nacional (LDB). Entende-se por educação especial, para os efeitos desta Lei, a modalidade de educação escolar, oferecida preferencialmente na rede regular de ensino, para educandos portadores de necessidades especiais. Por isso é necessário um plano de ensino que respeite a capacidade de cada aluno e que proponha atividades diversificadas para todos e considere o conhecimento que cada aluno traz para a escola. Em conjunto com isso, a falta de informação tem se tornado um grande problema. Ao falarmos sobre o transtorno, muitos estereótipos e preconceitos ainda são comuns na sociedade principalmente a falta de conhecimento das pessoas sobre o assunto.', 'Portanto, para erradicar o problema, é preciso que o governo - órgão responsável pelos Três Poderes - promova campanhas de orientação sobre o autismo e implemente-as nas escolas e na mídia, por meio de rodas de conversa, palestras e propagandas publicitárias, a fim de promover maior domínio sobre esse transtorno e a importância da inclusão das pessoas portadoras na sociedade . Além disso, esse orgão, em conjunto com o Ministério da Educação, deve proporcionar cursos de capacitação para educadores, com o intuito de prepará-los para possíveis situações envolvendo alunos especiais e, consequentemente, desenvolver a inteligência dos indivíduos de forma segura. Só assim o preconceito e a exclusão que assola o Brasil se extinguirá.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Apresenta vocabulário adequado ao tema e demonstra conhecimento de referências (ex.: série "Atypical" e a Lei de Diretrizes e Bases), o que enriquece o texto.
+- Mantém coerência argumentativa ao longo da redação, conectando os desafios individuais à necessidade de políticas públicas.
+
+**Problemas:**
+- "A série da netflix "Atypical", retrata o cotidiano de Sam, um adolescente autista que decide buscar sua independência e autoconhecimento na escola e na vida pessoal."
+  Uso incorreto de maiúscula em "netflix" (deve ser "Netflix") e vírgula desnecessária antes de "retrata"; além disso, há vírgula depois de "autista" que gera separação inadequada do sujeito.
+  Correcao: "A série da Netflix "Atypical" retrata o cotidiano de Sam, um adolescente autista que decide buscar sua independência e autoconhecimento na escola e na vida pessoal."
+- "Por isso é necessário um plano de ensino que respeite a capacidade de cada aluno e que proponha atividades diversificadas para todos e considere o conhecimento que cada aluno traz para a escola."
+  Repetição de "cada aluno" gera pleonasmo e quebra a concisão; a conjunção "e" antes de "considere" cria uma sequência de verbos sem paralelismo adequado.
+  Correcao: "Por isso, é necessário um plano de ensino que respeite a capacidade de cada aluno, proponha atividades diversificadas para todos e considere o conhecimento que ele traz para a escola."
+- "Só assim o preconceito e a exclusão que assola o Brasil se extinguirá."
+  Erro de concordância verbal: sujeito composto "preconceito e a exclusão" exige verbo no plural (extinguirão).
+  Correcao: "Só assim o preconceito e a exclusão que assola o Brasil se extinguirão."
+
+**Como melhorar:**
+- Revisar sistematicamente nomes próprios, marcas e termos que exigem maiúscula (ex.: Netflix, Lei de Diretrizes e Bases) para evitar erros de ortografia e grafia.
+- Atentar para a concordância verbal e nominal, especialmente em sujeitos compostos, e praticar a reescrita de frases longas, buscando paralelismo e eliminação de repetições desnecessárias.
+- Utilizar ferramentas de revisão ou ler o texto em voz alta para identificar vírgulas mal colocadas e melhorar a pontuação, garantindo que a estrutura das orações siga as normas formais da língua portuguesa.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você compreendeu a proposta e manteve o foco no tema "Autismo: Desafios para a inclusão", desenvolvendo argumentos relevantes ao longo do texto.
+- A estrutura dissertativo‑argumentativa (introdução, desenvolvimento e conclusão) está presente e coerente, o que garante a pontuação mínima na competência C2.
+
+**Problemas:**
+- "A série da netflix "Atypical", retrata o cotidiano de Sam, um adolescente autista que decide buscar sua independência e autoconhecimento na escola e na vida pessoal."
+  O trecho introduz um exemplo cultural, porém a referência não é contextualizada de forma crítica nem vinculada ao argumento central sobre inclusão. Na competência C2, o repertório sociocultural deve ser usado para fortalecer a tese, mostrando sua relevância para o problema discutido. Aqui o exemplo fica isolado, sem conexão explícita com a proposta de políticas ou práticas inclusivas.
+  Correcao: "A série da Netflix "Atypical" ilustra, de maneira concreta, como a superproteção familiar pode limitar a autonomia de jovens autistas, evidenciando a necessidade de escolas e políticas públicas que promovam ambientes que estimulem a independência e a participação plena desses estudantes."
+
+**Como melhorar:**
+- Integre os exemplos culturais ao argumento central, explicando claramente como eles sustentam sua tese sobre a inclusão de autistas.
+- Amplie o repertório sociocultural com dados, pesquisas ou referências a políticas públicas bem‑sucedidas em outros países, demonstrando domínio do tema e enriquecendo a argumentação.
+- Reforce a coesão entre os parágrafos, usando conectivos que indiquem progressão lógica e garantindo que cada ideia contribua diretamente para a proposta de solução apresentada na conclusão.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe dados da legislação (Artigo 58 da LDB) que demonstra conhecimento de fontes oficiais e reforça seu ponto de vista.
+- O texto apresenta exemplos concretos (a série "Atypical") que ajudam a ilustrar os desafios da inclusão.
+
+**Problemas:**
+- "A partir disso, nota-se que essa atitude é um problema para o desenvolvimento do autista."
+  O trecho não desenvolve o argumento nem apresenta evidências ou explicações que sustentem a afirmação; ele funciona apenas como uma conclusão vaga, o que enfraquece a defesa do ponto de vista e demonstra falta de organização das ideias.
+  Correcao: "A partir disso, percebe‑se que a superproteção impede que o autista desenvolva habilidades sociais essenciais, como a comunicação assertiva e a autonomia nas decisões cotidianas, o que pode levar a dificuldades de inserção no ambiente escolar e profissional."
+- "Portanto, para erradicar o problema, é preciso que o governo - órgão responsável pelos Três Poderes - promova campanhas de orientação sobre o autismo e implemente‑as nas escolas e na mídia, por meio de rodas de conversa, palestras e propagandas publicitárias, a fim de promover maior domínio sobre esse transtorno e a importância da inclusão das pessoas portadoras na sociedade ."
+  A sequência de ideias está confusa e falta coesão; há repetição de termos (“promova… implemente‑as… a fim de promover”) e a argumentação não está claramente estruturada, o que prejudica a organização e a clareza exigidas na competência C3.
+  Correcao: "Portanto, para enfrentar esse desafio, o governo deve coordenar campanhas de orientação sobre o autismo, inserindo-as no currículo escolar e na mídia por meio de rodas de conversa, palestras e anúncios educativos, a fim de ampliar o conhecimento da população e reforçar a importância da inclusão."
+
+**Como melhorar:**
+- Estruture cada parágrafo com uma ideia central clara, apresentando primeiro o argumento, depois evidências (dados, leis, exemplos) e, por fim, a relação com seu ponto de vista.
+- Evite repetições e frases redundantes; use conectivos precisos para garantir a coesão entre as ideias e tornar a argumentação mais fluida.
+- Enriqueça seus argumentos com explicações que mostrem causa‑efeito, demonstrando como cada fato ou opinião contribui para a defesa do seu ponto de vista sobre a inclusão de pessoas autistas.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "porém" e "portanto" para ligar ideias, o que demonstra consciência da necessidade de coesão textual.
+- Há variedade de recursos de referência (ex.: "essa atitude", "o governo") que ajudam a manter a continuidade entre os parágrafos.
+
+**Problemas:**
+- "Lamentavelmente os portadores dessa síndrome passam por diversas dificuldades para uma inclusão efetiva no âmbito social, principalmente nas escolas."
+  A sequência apresenta falta de conectivo que indique causa ou consequência em relação à frase anterior. Além disso, a expressão "Lamentavelmente" não está ligada ao discurso anterior, gerando rupturas na articulação entre parágrafos.
+  Correcao: "Consequentemente, os portadores dessa síndrome passam por diversas dificuldades para uma inclusão efetiva no âmbito social, principalmente nas escolas."
+- "Também faz com que se tornem adultos inseguros, dependentes e que pensam que não são bons o suficiente."
+  O pronome demonstrativo "Também" não tem referência clara ao antecedente imediato, o que compromete a coesão referencial. O leitor não sabe exatamente a que ação ou situação o "também" se refere.
+  Correcao: "Essa superproteção também faz com que eles se tornem adultos inseguros, dependentes e que pensem que não são bons o suficiente."
+
+**Como melhorar:**
+- Utilize conectivos de causa, consequência e adição que façam referência explícita ao parágrafo anterior, evitando rupturas na sequência lógica.
+- Garanta que os pronomes demonstrativos (este, esse, aquele, isso, etc.) tenham antecedente claro e próximo, reforçando a coesão referencial.
+- Varie os recursos coesivos (conjunções, advérbios, pronomes relativos) ao longo do texto, de modo que cada parágrafo se conecte de forma fluida ao seguinte.
+
+
+### C5 (nota 200)
+
+**Pontos fortes:**
+- A proposta de intervenção está claramente articulada ao problema central da falta de informação e da superproteção, indicando agentes, ações, meios e efeitos esperados.
+- A intervenção respeita os direitos humanos ao enfatizar a inclusão, a capacitação de educadores e a promoção de campanhas de conscientização para combater o preconceito.
+
+**Problemas:**
+- "Só assim o preconceito e a exclusão que assola o Brasil se extinguirá."
+  A conclusão da proposta não especifica quem será o agente responsável pela extinção do preconceito, nem descreve o modo/meio concreto para alcançar esse efeito, deixando a ação vaga e pouco operacionalizável.
+  Correcao: "Só assim o preconceito e a exclusão que assola o Brasil se extinguirão, se o Ministério da Educação, em parceria com secretarias estaduais e municipais de educação, implementar, em todo o país, programas de formação continuada para professores e campanhas de sensibilização nas mídias sociais, monitorando anualmente os índices de inclusão nas escolas."
+
+**Como melhorar:**
+- Detalhar o agente, o meio e o efeito de cada ação da proposta, evitando termos genéricos como "se extinguirá".
+- Incluir indicadores de acompanhamento (ex.: número de professores capacitados, percentual de escolas com adaptações inclusivas) para tornar a proposta mensurável.
+- Ampliar a perspectiva de intervenção para além do governo, envolvendo organizações da sociedade civil e famílias, demonstrando uma rede colaborativa de ação.
+
+
+---
+
+## Redacao 1635
+
+**Tema:** Impeachment: a presidente deve perder o mandato?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 120 | 120 | 120 | 120 | 600 |
+| Usada no feedback (humano) | 120 | 120 | 120 | 120 | 120 | 600 |
+
+**Texto:**
+
+> O “impeachment” é a perda de um mandato por conta de crimes de responsabilidade. É um processo conduzido pelo Poder Legislativo, que recebe, acata a denúncia e julga o denunciado. Tal processo é assegurado pela Constituição Federal, de 1989, Lei. 1079/50, e já foi utilizado, em 1992, quando Fernando Collor renunciou ao cargo de presidente da república . Hoje, com base nas descobertas e graves denuncias o impeachment foi novamente acionado, e é necessário refletir se a presidente deve perder o mandato.', 'Atualmente, na sociedade brasileira, por conta do avanço da operação lava-jato , e a constatação da participação, nos esquemas de lavagem de dinheiro e corrupção, de vários políticos do PT (Partido dos Trabalhadores) e, também, de outros partidos, existe um intenso debate a respeito de uma possível participação da presidente nos esquemas de lavagem de dinheiro e corrupção, somada a isso é possível de se notar uma insatisfação de boa parte dos brasileiros que anseiam a saída de Dilma Rousseff da presidência da república através do impeachment.', 'Todo esse reboliço se deu por conta de uma operação realizada pela polícia federal denominada “lava-jato” que já ultrapassou a vigésima fase. Esta operação está investigando o que hoje é considerado pelos críticos como sendo o maior caso de corrupção da história do Brasil. A presidente Dilma é acusada pelo crime de responsabilidade e este crime é a base para a solicitação do processo do seu afastamento. É importante salientar que a outra parte da população e políticos favoráveis à continuidade do governo Dilma acusam que a Direita está tentando aplicar um golpe contra a democracia.', 'Portanto, diante dos avanços da operação lava-jato , se for constatada a participação da presidente nos casos de corrupção e lavagem de dinheiro, ela deve perder o mandato assim como aconteceu em 1992, quando “os caras pintadas” e o Poder Legislativo, através de meios legais, conseguiram tirar do poder um presidente corrupto.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra conhecimento do tema e consegue contextualizar o impeachment com exemplos históricos, o que mostra domínio de conteúdo e capacidade de argumentação.
+- A estrutura geral do texto (introdução, desenvolvimento e conclusão) está presente, permitindo a leitura fluida da ideia central.
+
+**Problemas:**
+- "É um processo conduzido pelo Poder Legislativo, que recebe, acata a denúncia e julga o denunciado."
+  Há vírgula desnecessária antes de "acata" e falta de concordância entre o sujeito coletivo "Poder Legislativo" e o verbo "recebe" (deveria ser "recebe, acata e julga"). Além disso, a pontuação impede a clareza da sequência de ações.
+  Correcao: "É um processo conduzido pelo Poder Legislativo, que recebe, acata e julga o denunciado."
+- "Tal processo é assegurado pela Constituição Federal, de 1989, Lei. 1079/50, e já foi utilizado, em 1992, quando Fernando Collor renunciou ao cargo de presidente da república ."
+  Erro de pontuação (vírgula antes de "e já foi utilizado"), uso incorreto de ponto após "Lei", falta de maiúscula em "República" e espaço antes do ponto final.
+  Correcao: "Tal processo é assegurado pela Constituição Federal de 1989, pela Lei nº 1079/50, e já foi utilizado em 1992, quando Fernando Collor renunciou ao cargo de presidente da República."
+- "Portanto, diante dos avanços da operação lava-jato , se for constatada a participação da presidente nos casos de corrupção e lavagem de dinheiro, ela deve perder o mandato assim como aconteceu em 1992, quando “os caras pintadas” e o Poder Legislativo, através de meios legais, conseguiram tirar do poder um presidente corrupto."
+  Problemas de concordância (“os caras pintadas”), uso inadequado de aspas e expressão coloquial que foge ao registro formal exigido, além de vírgula antes de "se for constatada" que rompe a estrutura da oração.
+  Correcao: "Portanto, diante dos avanços da Operação Lava‑Jato, se for constatada a participação da presidente nos casos de corrupção e lavagem de dinheiro, ela deve perder o mandato, assim como aconteceu em 1992, quando o Poder Legislativo, por meio de procedimentos legais, conseguiu retirar do poder um presidente corrupto."
+
+**Como melhorar:**
+- Revisar a pontuação, especialmente o uso de vírgulas antes de conjunções e em locuções explicativas, para evitar rupturas na fluidez da frase.
+- Atentar para a concordância verbal e nominal, garantindo que sujeitos e predicados estejam adequadamente alinhados (ex.: "os caras pintadas" → "os caras pintados").
+- Manter o registro formal em todo o texto, evitando expressões coloquiais ou gírias e utilizando termos precisos e padronizados, como "Operação Lava‑Jato" e "presidente da República".
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Apresentou conhecimento básico sobre o instituto do impeachment e contextualizou historicamente o tema, demonstrando compreensão da proposta.
+- Estruturou o texto em introdução, desenvolvimento e conclusão, mantendo a sequência dissertativo‑argumentativa exigida.
+
+**Problemas:**
+- "Portanto, diante dos avanços da operação lava-jato , se for constatada a participação da presidente nos casos de corrupção e lavagem de dinheiro, ela deve perder o mandato assim como aconteceu em 1992, quando “os caras pintadas” e o Poder Legislativo, através de meios legais, conseguiram tirar do poder um presidente corrupto."
+  O trecho apresenta linguagem coloquial (“os caras pintadas”) e falta de clareza na argumentação. Além disso, a conjunção "se for constatada" cria uma condição hipotética que enfraquece a tese; a argumentação deveria ser mais consistente, com dados ou argumentos que sustentem a necessidade do impeachment de forma direta e objetiva.
+  Correcao: "Portanto, diante dos avanços da Operação Lava‑Jato, caso seja comprovada a participação da presidente em atos de corrupção e lavagem de dinheiro, ela deve perder o mandato, assim como ocorreu em 1992, quando o Poder Legislativo, por meio de processo legal, afastou o presidente corrupto."
+- "Hoje, com base nas descobertas e graves denuncias o impeachment foi novamente acionado, e é necessário refletir se a presidente deve perder o mandato."
+  A frase contém erro de concordância (“denuncias” → “denúncias”) e falta de coesão ao introduzir a ideia de que o impeachment já foi “acionado”. O texto deveria explicitar quem acionou o processo e por que motivo, evitando ambiguidade.
+  Correcao: "Hoje, com base nas descobertas e graves denúncias, o processo de impeachment foi novamente iniciado, e é necessário refletir se a presidente deve perder o mandato."
+
+**Como melhorar:**
+- Substitua expressões coloquiais e termos imprecisos por linguagem formal e objetiva, mantendo o registro dissertativo‑argumentativo.
+- Fortaleça a argumentação apresentando argumentos claros e encadeados, evitando condicionais fracos; use conectivos adequados para garantir coesão entre as ideias.
+- Revise a ortografia e a concordância verbal e nominal em todo o texto, garantindo que todas as palavras estejam corretas e que as frases estejam bem estruturadas.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe informações históricas relevantes (Collor, a Operação Lava‑Jato) que demonstram conhecimento do contexto e evitam que a nota caia abaixo do nível médio.
+- Apresentou um ponto de vista claro – a presidente deve perder o mandato caso seja comprovada sua participação – o que cumpre a exigência mínima da competência C3.
+
+**Problemas:**
+- "Portanto, diante dos avanços da operação lava-jato , se for constatada a participação da presidente nos casos de corrupção e lavagem de dinheiro, ela deve perder o mandato assim como aconteceu em 1992, quando “os caras pintadas” e o Poder Legislativo, através de meios legais, conseguiram tirar do poder um presidente corrupto."
+  O trecho mistura informações factuais com linguagem coloquial (“os caras pintadas”) e não organiza as ideias de forma coerente. Falta sequência lógica entre a constatação da participação, a justificativa legal e a conclusão. Além disso, a referência a 1992 está desconexa, pois o impeachment de Collor ocorreu em 1992, não 1994, e não há vínculo direto com o caso atual.
+  Correcao: "Portanto, diante dos avanços da Operação Lava‑Jato, se for comprovada a participação da presidente nos esquemas de corrupção e lavagem de dinheiro, o processo de impeachment deve ser concluído, assim como ocorreu em 1992, quando o Congresso Nacional, por meio de procedimento legal, afastou o presidente Fernando Collor por crimes de responsabilidade."
+- "Hoje, com base nas descobertas e graves denuncias o impeachment foi novamente acionado, e é necessário refletir se a presidente deve perder o mandato."
+  A frase apresenta falta de pontuação e conexão lógica entre as ideias, dificultando a leitura. Além disso, não há indicação de autoria ou de como o estudante está construindo seu argumento a partir das informações apresentadas.
+  Correcao: "Hoje, com base nas descobertas e graves denúncias apresentadas, o processo de impeachment foi novamente iniciado; assim, torna‑se imprescindível analisar se a presidente deve ou não perder o mandato."
+
+**Como melhorar:**
+- Organize os parágrafos de forma sequencial: introdução do tema, apresentação dos fatos relevantes, análise crítica e conclusão, garantindo transições claras entre eles.
+- Utilize linguagem formal e evite expressões coloquiais ou imprecisas; substitua termos como “os caras pintadas” por descrições objetivas e corretas.
+- Mostre sua autoria ao articular os argumentos: relacione os fatos apresentados com sua interpretação pessoal, explicando por que, a seu ver, o impeachment seria ou não justificável.
+
+
+### C4 (nota 120)
+
+**Pontos fortes:**
+- Você consegue estabelecer a sequência lógica dos fatos históricos (Collor, Lava‑Jato, Dilma) e usa conectivos como "Portanto" para introduzir a conclusão, o que demonstra alguma articulação entre os parágrafos.
+- Há tentativa de variar os recursos de coesão, recorrendo a conjunções adversativas ("mas", "porém") e explicativas ("pois", "ou seja") ao longo do texto.
+
+**Problemas:**
+- "Hoje, com base nas descobertas e graves denuncias o impeachment foi novamente acionado, e é necessário refletir se a presidente deve perder o mandato."
+  A ligação entre as ideias está fraca porque falta um conectivo adequado que indique causa‑efeito. Além disso, a vírgula antes de "e é necessário" está incorreta, gerando uma quebra desnecessária na coesão entre as orações.
+  Correcao: "Hoje, com base nas descobertas e graves denúncias, o impeachment foi novamente acionado, portanto é necessário refletir se a presidente deve perder o mandato."
+- "Portanto, diante dos avanços da operação lava-jato , se for constatada a participação da presidente nos casos de corrupção e lavagem de dinheiro, ela deve perder o mandato assim como aconteceu em 1992, quando “os caras pintadas” e o Poder Legislativo, através de meios legais, conseguiram tirar do poder um presidente corrupto."
+  O uso de "Portanto" como conectivo inicial não estabelece relação clara com o parágrafo anterior; o trecho ainda contém vírgulas mal posicionadas, concordância incorreta ("os caras pintadas") e falta de coesão ao introduzir a comparação histórica. A estrutura da frase é confusa, prejudicando a fluidez entre as ideias.
+  Correcao: "Diante dos avanços da operação Lava‑Jato, se for constatada a participação da presidente nos casos de corrupção e lavagem de dinheiro, ela deve perder o mandato, assim como ocorreu em 1992, quando o Poder Legislativo, por meio de processos legais, afastou um presidente corrupto."
+
+**Como melhorar:**
+- Reforce a escolha de conectivos que expressem claramente a relação entre as ideias (causa‑efeito, contraste, conclusão) e evite repetições desnecessárias.
+- Revise a pontuação, especialmente o uso de vírgulas antes de conjunções coordenativas, para garantir que as orações estejam bem integradas.
+- Varie os recursos de referência (pronomes, sinônimos, elipses) para evitar repetições de termos como "presidente" ou "impeachment" e melhorar a fluidez entre os parágrafos.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você contextualizou historicamente o impeachment, citando casos anteriores (Collor) e vinculando ao cenário atual, o que demonstra compreensão do tema.
+- Sua argumentação apresenta diferentes pontos de vista (críticos da presidente e defensores da democracia), atendendo à exigência de desenvolver a discussão.
+
+**Problemas:**
+- "Hoje, com base nas descobertas e graves denuncias o impeachment foi novamente acionado, e é necessário refletir se a presidente deve perder o mandato."
+  A proposta de intervenção não está explicitada: falta indicar quem será o agente (ex.: Congresso Nacional), qual ação concreta será tomada (ex.: abertura de comissão investigativa), o meio ou procedimento, o efeito esperado e o respeito aos direitos humanos. O texto apenas levanta a questão sem apresentar um plano de ação detalhado.
+  Correcao: "Hoje, com base nas descobertas e graves denúncias, propõe‑se que o Congresso Nacional, por meio de uma Comissão Especial de Investigação, abra processo de apuração rigorosa, garantindo o direito ao contraditório e à ampla defesa, para decidir, de forma transparente, sobre a manutenção ou a perda do mandato da presidente."
+- "A presidente Dilma é acusada pelo crime de responsabilidade e este crime é a base para a solicitação do processo do seu afastamento."
+  A proposta carece de especificação do agente, da ação e do efeito. Não há menção a como a sociedade civil ou instituições podem participar, nem ao respeito aos direitos humanos na condução do processo.
+  Correcao: "A presidente Dilma, acusada de crime de responsabilidade, deve ser submetida a um processo de impeachment conduzido pelo Senado, com a participação da sociedade civil organizada, que apresentará relatórios à Comissão de Direitos Humanos, assegurando que o afastamento ocorra apenas se comprovada a responsabilidade, preservando a dignidade e os direitos fundamentais de todos os envolvidos."
+
+**Como melhorar:**
+- Defina claramente o agente da intervenção (ex.: Congresso, Senado, Comissão Especial) e descreva a ação específica que ele deve executar.
+- Especifique o meio ou procedimento (ex.: abertura de comissão, audiência pública, voto qualificado) e indique o efeito esperado (ex.: decisão transparente, garantia de direitos humanos).
+- Garanta que a proposta respeite os direitos humanos, mencionando princípios como o contraditório, a ampla defesa e a dignidade da pessoa humana.
+
+
+---
+
+## Redacao 5514
+
+**Tema:** Parto humanizado: uma questão de saúde pública
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 120 | 120 | 160 | 120 | 680 |
+| Usada no feedback (humano) | 160 | 120 | 120 | 160 | 120 | 680 |
+
+**Texto:**
+
+> O nascimento é um acontecimento singular da vida; um momento em que ocorre a aproximação de uma mãe e de seu recém-nascido através do compartilhamento de emoções afetivas entre ambos. Isto posto, compele fazer-se um questionamento: a priorização de um método de parto em que essas interações ocorram - em detrimento a outros métodos menos humanizados -, não é uma questão de saúde pública?', 'Quando analisa-se nacionalmente esta questão, observa-se que o Brasil está longe de ser o exemplo ideal com relação implementação deste método à saúde pública. Dados demonstram que há falta de unidades especializadas neste tipo de procedimento, bem como há falta de interesse do Poder Público de introdução destas mesmas ao Sistema Único de Saúde.', 'O baixo envolvimento das autoridades políticas e sanitárias neste tema demonstra, para além disto, um desatino social entre as atribuições do Poder Público e os direitos individuais da mulher, resultando no desestímulo do aperfeiçoamento e da implementação deste método.', 'É mister enfatizar, portanto, que mais do que nunca faz-se necessária a participação popular na requisição e na cobrança da implementação bem como no aperfeiçoamento deste método pelo Poder Público, haja vista que esta é uma questão pública, que embasada em diversos apontamentos técnico-científicos, demonstram ser benéfica a sua implementação em procedência à saúde da mulher. De igual modo, compete a este, o Poder Público, visar e empenhar suas ações nas necessidades requeridas pela sociedade, tal como delimitado essencialmente em suas atribuições basilares. Por fim, a incrementação deste método resultará, sem sombra de dúvidas, no aprimoramento da saúde pública no Brasil, bem como, para fins sociais, no aprimoramento dos direitos individuais da mulher.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Apresenta vocabulário adequado ao tema e demonstra boa capacidade de argumentação, o que evidencia domínio razoável da escolha de registro.
+- Mantém coerência textual e estrutura lógica ao longo do texto, evitando rupturas que comprometam a compreensão.
+
+**Problemas:**
+- "compele fazer-se um questionamento:"
+  Erro de ortografia e regência: o verbo correto é "compela" (com 'p'), e a construção "fazer‑se um questionamento" é inadequada; o verbo "fazer" não se usa reflexivamente nesse sentido.
+  Correcao: "compela fazer um questionamento:"
+- "em detrimento a outros métodos menos humanizados -"
+  Regência prepositiva incorreta: a expressão correta é "em detrimento de".
+  Correcao: "em detrimento de outros métodos menos humanizados -"
+- "há falta de interesse do Poder Público de introdução destas mesmas ao Sistema Único de Saúde."
+  Problema de concordância e regência: o verbo "interesse" exige a preposição "pela" ou "na" e o infinitivo deve ser "introduzir".
+  Correcao: "há falta de interesse do Poder Público na introdução destas ao Sistema Único de Saúde."
+- "É mister enfatizar, portanto, que mais do que nunca faz-se necessária a participação popular na requisição e na cobrança da implementação bem como no aperfeiçoamento deste método pelo Poder Público, haja vista que esta é uma questão pública, que embasada em diversos apontamentos técnico-científicos, demonstram ser benéfica a sua implementação em procedência à saúde da mulher."
+  Frase excessivamente longa, com pontuação inadequada, concordância falha ("que embasada... demonstram" – sujeito singular vs. verbo no plural) e uso inadequado de termos como "em procedência".
+  Correcao: "É mister enfatizar, portanto, que, mais do que nunca, faz‑se necessária a participação popular na requisição e na cobrança da implementação, bem como no aperfeiçoamento deste método pelo Poder Público, haja vista que se trata de uma questão pública, embasada em diversos apontamentos técnico‑científicos, que demonstram ser benéfica à saúde da mulher."
+
+**Como melhorar:**
+- Revisar a ortografia e a regência verbal antes de finalizar o texto; use dicionários ou ferramentas de correção para identificar palavras como "compela" e preposições corretas.
+- Treinar a construção de frases curtas e bem pontuadas, evitando períodos excessivamente longos que geram ambiguidades e erros de concordância.
+- Fazer exercícios específicos de concordância nominal e verbal, além de revisar regras de regência de verbos e nomes, para eliminar desvios recorrentes e alcançar um nível de excelência na modalidade escrita formal.
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Você manteve o foco no tema proposto, abordando a relação entre parto humanizado e saúde pública ao longo de todo o texto.
+- A conclusão retoma a ideia central e demonstra compreensão da importância da intervenção do poder público.
+
+**Problemas:**
+- "Dados demonstram que há falta de unidades especializadas neste tipo de procedimento, bem como há falta de interesse do Poder Público de introdução destas mesmas ao Sistema Único de Saúde."
+  O trecho apresenta repetição desnecessária ('há falta de') e construção frasal confusa, comprometendo a clareza e a coesão exigidas na competência C2. Além disso, a argumentação não está desenvolvida de forma progressiva, limitando a consistência da defesa da tese.
+  Correcao: "Os dados mostram a escassez de unidades especializadas nesse procedimento e a falta de interesse do poder público em incorporá‑las ao Sistema Único de Saúde."
+- "É mister enfatizar, portanto, que mais do que nunca faz‑se necessária a participação popular na requisição e na cobrança da implementação bem como no aperfeiçoamento deste método pelo Poder Público, haja vista que esta é uma questão pública, que embasada em diversos apontamentos técnico‑científicos, demonstram ser benéfica a sua implementação em procedência à saúde da mulher."
+  A frase é excessivamente longa, com vírgulas mal distribuídas e uso inadequado de termos (ex.: 'é mister', 'em procedência'). Isso dificulta a compreensão e enfraquece a estrutura argumentativa, que deve ser clara e bem organizada para a C2.
+  Correcao: "É fundamental enfatizar que a participação popular na cobrança e na implementação desse método é urgente, pois, respaldada por estudos técnico‑científicos, a prática beneficia a saúde da mulher."
+
+**Como melhorar:**
+- Organize os argumentos em parágrafos distintos, iniciando cada um com uma ideia principal clara e desenvolvendo‑a com exemplos ou dados concretos.
+- Revise a coesão textual: evite frases excessivamente longas e repetições; use conectivos adequados para garantir a progressão lógica das ideias.
+- Treine a reformulação de trechos complexos, focando em linguagem objetiva e precisa, sem perder a profundidade argumentativa.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra domínio de um vocabulário formal e consegue relacionar o parto humanizado a questões de saúde pública, o que impede que a nota seja ainda menor.
+- Há tentativa de apresentar um ponto de vista crítico em relação ao papel do Poder Público, indicando consciência da dimensão social do tema.
+
+**Problemas:**
+- "O baixo envolvimento das autoridades políticas e sanitárias neste tema demonstra, para além disto, um desatino social entre as atribuições do Poder Público e os direitos individuais da mulher, resultando no desestímulo do aperfeiçoamento e da implementação deste método."
+  O trecho apresenta ideias confusas e falta de coesão. A relação entre "desatino social" e "atribuições do Poder Público" não está clara, e a sequência de informações não segue uma lógica que facilite a compreensão do leitor. Na competência C3, a seleção e organização das informações devem ser transparentes e bem encadeadas.
+  Correcao: "O fraco engajamento das autoridades políticas e sanitárias nesse tema evidencia um descompasso entre as responsabilidades do Poder Público e os direitos das mulheres, o que desestimula a melhoria e a implementação do parto humanizado."
+- "Por fim, a incrementação deste método resultará, sem sombra de dúvidas, no aprimoramento da saúde pública no Brasil, bem como, para fins sociais, no aprimoramento dos direitos individuais da mulher."
+  A frase repete a palavra "aprimoramento" de forma redundante e não apresenta argumentos concretos que sustentem a afirmação. Na C3, é preciso defender o ponto de vista com argumentos desenvolvidos e evidências, evitando generalizações vagas.
+  Correcao: "Por fim, a ampliação do parto humanizado contribuirá, sem dúvida, para melhorar indicadores de saúde pública no Brasil e fortalecerá os direitos das mulheres ao acesso a um atendimento mais respeitoso e seguro."
+
+**Como melhorar:**
+- Estruture o texto em parágrafos claros: introdução (apresentação do tema e tese), desenvolvimento (dados, argumentos e contra-argumentos) e conclusão (síntese e proposta).
+- Selecione informações relevantes e organize-as de forma lógica, usando conectivos que mostrem causa‑efeito, contraste ou adição, evitando repetições e frases confusas.
+- Desenvolva cada argumento com ao menos um exemplo ou dado (mesmo que genérico) e explique como ele sustenta seu ponto de vista, demonstrando autoria e profundidade na defesa da ideia.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos que estabelecem relações de causa‑efeito e de adição, como "portanto", "por fim" e "além disso", o que ajuda a manter a sequência lógica entre os parágrafos.
+- Há variedade de recursos de referência (pronomes demonstrativos, sinônimos e expressões como "esta questão" e "o baixo envolvimento das autoridades") que evitam repetições excessivas.
+
+**Problemas:**
+- "É mister enfatizar, portanto, que mais do que nunca faz‑se necessária a participação popular na requisição e na cobrança da implementação bem como no aperfeiçoamento deste método pelo Poder Público, haja vista que esta é uma questão pública, que embasada em diversos apontamentos técnico‑científicos, demonstram ser benéfica a sua implementação em procedência à saúde da mulher."
+  O período é excessivamente longo e contém encadeamento inadequado de conectivos. A sequência "portanto... faz‑se necessária... bem como... haja vista que... que embasada... demonstram" gera rupturas na coesão, dificultando a compreensão. Além disso, há discordância de número entre "questão pública" (singular) e "que embasada... demonstram" (plural).
+  Correcao: "É mister enfatizar, portanto, que, mais do que nunca, se torna necessária a participação popular na requisição e na cobrança da implementação desse método pelo Poder Público, haja vista que se trata de uma questão pública que, embasada em diversos apontamentos técnico‑científicos, demonstra ser benéfica à saúde da mulher."
+
+**Como melhorar:**
+- Divida períodos muito longos em sentenças mais curtas, usando pontuação adequada (vírgulas, ponto‑e‑vírgula) para garantir clareza e fluidez.
+- Verifique a concordância entre sujeito e verbo ao introduzir orações subordinadas; mantenha a coerência de número e pessoa.
+- Amplie o repertório de conectivos, alternando entre "além disso", "consequentemente", "por outro lado" e "por conseguinte", de modo a evitar repetições e a reforçar a progressão lógica entre parágrafos.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você conseguiu articular o tema do parto humanizado com a discussão sobre saúde pública, demonstrando compreensão da relevância social do assunto.
+- Sua redação apresenta argumentos que apontam falhas nas políticas públicas atuais, o que evidencia capacidade de análise crítica.
+
+**Problemas:**
+- "a priorização de um método de parto em que essas interações ocorram - em detrimento a outros métodos menos humanizados -, não é uma questão de saúde pública?"
+  Na competência C5 a proposta de intervenção deve ser explicitamente detalhada, indicando agente, ação, meio, efeito e justificativa. O trecho acima apenas levanta uma pergunta retórica e não apresenta nenhum plano concreto de ação, nem indica quem deve agir nem como o efeito esperado será alcançado.
+  Correcao: "Propõe‑se que o Ministério da Saúde, em parceria com as secretarias estaduais, crie programas de capacitação de obstetras e enfermeiras em técnicas de parto humanizado, oferecendo cursos presenciais e online gratuitos. Essa ação será financiada por recursos do SUS e monitorada por comissões de saúde materno‑infantil, garantindo que, ao final de dois anos, 30% das maternidades públicas adotem protocolos de parto humanizado, reduzindo intervenções desnecessárias e melhorando indicadores de mortalidade materna e neonatal."
+
+**Como melhorar:**
+- Defina claramente quem é o agente responsável (ex.: Ministério da Saúde, secretarias estaduais, hospitais) e descreva a ação específica que ele deve executar.
+- Especifique o meio ou recurso necessário (ex.: financiamento, cursos de capacitação, criação de protocolos) e indique o efeito esperado com dados ou prazos concretos.
+- Evite perguntas retóricas e transforme-as em propostas objetivas, conectando cada elemento da intervenção ao argumento desenvolvido no corpo do texto.
+
+
+---
+
+## Redacao 4517
+
+**Tema:** Autismo: Desafios para a inclusão
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 120 | 120 | 160 | 120 | 680 |
+| Usada no feedback (humano) | 160 | 120 | 120 | 160 | 120 | 680 |
+
+**Texto:**
+
+> É notório que, os autistas enfrentam um grande desafio para ser incluso na sociedade. Os alunos autistas nos anos iniciais do ensino fundamental é um desafio para o educador, pois além de ser é uma criança que necessita de um atendimento individual,exige estratégia e atenção diversificada. Entretanto, a falta de capacidade de alguns educadores e uma educação para todos falha agravam essa problemática.', 'De início, pode-se considerar que o escasso número de professores capacitados é um dos fatores pelo qual o problema ainda pendura. O professor é visto como mediador no processo inclusivo é ele quem proporciona o contato inicial da criança com a sala de aula. Mas na prática não é isso que acontece, por profissionais serem totalmente inexperientes no assunto. Dessa forma, a falta de preparo dos educadores contribui para que o problema não cesse.', 'Além disso, uma educação para todos falha também contribui para que o problema esteja longe de ser resolvido. É preciso de uma educação eficaz, em distinções que assegurem no trabalho educativo organizado e adaptado para atender as necessidades educacionais especiais dos alunos. É necessário a resolução do problema, para alcançar o devido aprendizado.', 'Portanto para que tal problema seja resolvido medidas precisam ser tomadas. É necessário que o governo em parceria com o Ministério da Educação, realizem palestras com profissionais experiente no assunto que visem uma educação segura e de inclusão para todas as crianças. Somente assim haverá resultados, que modificaram o cenário atual.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de argumentação e mantém o foco no tema proposto, o que impede que a nota caia abaixo de 150.
+- O registro utilizado é adequado ao texto dissertativo‑argumentativo, evidenciando consciência da formalidade exigida pelo ENEM.
+
+**Problemas:**
+- "É notório que, os autistas enfrentam um grande desafio para ser incluso na sociedade."
+  Há vírgula desnecessária após "que" e erro de concordância verbal: o sujeito "autistas" está no plural, portanto o verbo deve concordar no plural ("serem incluídos").
+  Correcao: "É notório que os autistas enfrentam um grande desafio para serem incluídos na sociedade."
+- "os alunos autistas nos anos iniciais do ensino fundamental é um desafio para o educador, pois além de ser é uma criança que necessita de um atendimento individual,exige estratégia e atenção diversificada."
+  Erro de concordância ("é" → "são"), repetição de "é", falta de espaço após a vírgula e ausência de vírgula antes de "pois". Além disso, a construção "além de ser é uma criança" está incoerente.
+  Correcao: "Os alunos autistas nos anos iniciais do ensino fundamental são um desafio para o educador, pois, além de serem crianças que necessitam de atendimento individual, exigem estratégia e atenção diversificada."
+- "De início, pode-se considerar que o escasso número de professores capacitados é um dos fatores pelo qual o problema ainda pendura."
+  Uso incorreto da preposição "pelo qual" (deveria ser "pelo qual" → "pelo qual" refere‑se a "fator", mas o correto é "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual" → "pelo qual"), além de verbo inadequado "pendura" (deveria ser "persiste").
+  Correcao: "De início, pode‑se considerar que o escasso número de professores capacitados é um dos fatores pelos quais o problema ainda persiste."
+
+**Como melhorar:**
+- Revisar a concordância verbal e nominal em todas as frases, prestando atenção especial a sujeitos no plural.
+- Ajustar a pontuação, evitando vírgulas desnecessárias e inserindo vírgulas obrigatórias (antes de conjunções adversativas e explicativas).
+- Fazer uma leitura final focada na regência e na escolha de verbos adequados, utilizando ferramentas de correção ou a revisão de um colega para identificar deslizes gramaticais.
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Você manteve o foco no tema proposto, abordando claramente os desafios da inclusão de alunos autistas no ensino fundamental.
+- A estrutura básica de introdução, desenvolvimento e conclusão está presente, o que impede que a nota seja ainda menor.
+
+**Problemas:**
+- "os alunos autistas nos anos iniciais do ensino fundamental é um desafio para o educador, pois além de ser é uma criança que necessita de um atendimento individual,exige estratégia e atenção diversificada."
+  O trecho apresenta concordância verbal incorreta ('é' em vez de 'são'), repetição desnecessária de palavras ('é é'), falta de vírgula após 'individual' e uso inadequado de pontuação que compromete a clareza e a coesão argumentativa exigida na competência C2.
+  Correcao: "Os alunos autistas nos anos iniciais do ensino fundamental são um desafio para o educador, pois, além de ser uma criança que necessita de atendimento individual, exigem estratégias e atenção diversificada."
+- "De início, pode-se considerar que o escasso número de professores capacitados é um dos fatores pelo qual o problema ainda pendura."
+  A expressão 'pelo qual' está incorreta para se referir a 'fatores'; o verbo 'pendura' está inadequado ao contexto, gerando ambiguidade. Além disso, a construção da frase é fraca e não demonstra relação de causa‑efeito clara, prejudicando a argumentação.
+  Correcao: "De início, pode‑se considerar que o escasso número de professores capacitados é um dos fatores pelos quais o problema ainda persiste."
+- "Portanto para que tal problema seja resolvido medidas precisam ser tomadas."
+  Falta de pontuação entre a conjunção adversativa e a oração subsequente, gerando um período confuso. A expressão 'tale problema' é vaga e a sequência de ideias não está bem articulada, enfraquecendo a conclusão.
+  Correcao: "Portanto, para que esse problema seja resolvido, medidas precisam ser tomadas."
+
+**Como melhorar:**
+- Revisar a concordância verbal e nominal, bem como a pontuação, para garantir clareza e coesão em cada argumento.
+- Construir argumentos com relações de causa‑efeito bem definidas, usando conectivos adequados (por exemplo, 'por isso', 'consequentemente', 'além disso') para fortalecer a progressão lógica do texto.
+- Praticar a escrita de introduções e conclusões mais elaboradas, apresentando a tese de forma precisa e retomando os principais pontos desenvolvidos, demonstrando domínio da estrutura dissertativo‑argumentativa.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe informações relevantes sobre a falta de formação dos professores, o que demonstra compreensão do problema central do tema.
+- Sua conclusão aponta uma solução concreta (palestras e parcerias governamentais), indicando tentativa de defesa de um ponto de vista.
+
+**Problemas:**
+- "Entretanto, a falta de capacidade de alguns educadores e uma educação para todos falha agravam essa problemática."
+  A frase apresenta sequência de ideias confusa e falta de coesão; o termo "educação para todos falha" não está bem articulado ao restante, dificultando a interpretação e enfraquecendo a defesa do ponto de vista.
+  Correcao: "Entretanto, a falta de capacitação de alguns educadores e a deficiência de políticas de educação inclusiva agravam essa problemática."
+- "É preciso de uma educação eficaz, em distinções que assegurem no trabalho educativo organizado e adaptado para atender as necessidades educacionais especiais dos alunos."
+  O trecho contém construção sintática inadequada ("É preciso de"), vocabulário impreciso e falta de clareza, o que compromete a organização das informações e a argumentação.
+  Correcao: "É necessária uma educação eficaz, com estratégias que garantam um trabalho pedagógico organizado e adaptado às necessidades educacionais especiais dos alunos."
+- "Somente assim haverá resultados, que modificaram o cenário atual."
+  A frase está desconexa e apresenta erro de concordância temporal (“modificaram” em vez de “modificarão”), prejudicando a coerência e a fluidez do texto.
+  Correcao: "Somente assim haverá resultados que modificarão o cenário atual."
+
+**Como melhorar:**
+- Planeje a estrutura do texto antes de escrever: introdução, desenvolvimento com argumentos bem encadeados e conclusão que retome a tese de forma clara.
+- Revise a coesão e a coerência, usando conectivos adequados (por exemplo, "além disso", "consequentemente", "por isso") para ligar as ideias e evitar frases soltas ou confusas.
+- Treine a reformulação de frases com erros de concordância ou construção sintática, lendo em voz alta para identificar rupturas na fluidez e corrigindo-as antes da entrega.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você demonstra domínio de conectivos que ligam ideias principais, como "Entretanto", "Dessa forma" e "Portanto", o que impede que o texto fique fragmentado.
+- Há variedade de recursos de coesão referencial (pronomes, sinônimos e expressões como "o problema", "essa problemática") que ajudam a manter a continuidade temática.
+
+**Problemas:**
+- "É necessário que o governo em parceria com o Ministério da Educação, realizem palestras com profissionais experiente no assunto que visem uma educação segura e de inclusão para todas as crianças."
+  O verbo concorda com o sujeito composto "governo em parceria com o Ministério da Educação" (3ª pessoa singular), mas está na forma plural "realizem". Além disso, o adjetivo "experiente" deveria concordar em número com "profissionais" (plural). A falta de concordância atrapalha a fluidez e a clareza da articulação entre as partes do texto.
+  Correcao: "É necessário que o governo, em parceria com o Ministério da Educação, realize palestras com profissionais experientes no assunto que visem uma educação segura e inclusiva para todas as crianças."
+- "Mas na prática não é isso que acontece, por profissionais serem totalmente inexperientes no assunto."
+  A conjunção "por" está inadequada para introduzir a causa; o correto seria "porque" ou "pois". Além disso, a estrutura da frase cria uma ruptura abrupta entre as orações, enfraquecendo a coesão textual.
+  Correcao: "Mas, na prática, não é isso que acontece, porque os profissionais são totalmente inexperientes no assunto."
+
+**Como melhorar:**
+- Revise a concordância verbal e nominal em todas as frases que contêm sujeitos compostos ou termos no plural.
+- Substitua conjunções inadequadas por conectivos adequados (ex.: "por" → "porque", "pois") para garantir a lógica causal entre as ideias.
+- Planeje a sequência dos parágrafos antes de escrever, definindo explicitamente a função de cada um (introdução, desenvolvimento, conclusão) e usando conectivos de transição que reforcem essa estrutura.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você identificou claramente a falta de formação dos professores como um dos principais obstáculos à inclusão de alunos autistas.
+- Sua proposta menciona a atuação conjunta entre governo e Ministério da Educação, demonstrando compreensão da necessidade de ação institucional.
+
+**Problemas:**
+- "É necessário a resolução do problema, para alcançar o devido aprendizado."
+  A proposta não especifica quem será o agente da intervenção, qual ação será realizada, como será feita (modo/meio), qual efeito esperado e não detalha etapas concretas. Na competência C5, a proposta deve conter agente, ação, modo/meio, efeito e detalhamento, o que está ausente aqui.
+  Correcao: "É necessário que o Ministério da Educação, em parceria com as secretarias estaduais de educação, implemente programas de formação continuada para professores, utilizando oficinas práticas e materiais didáticos adaptados, de modo a garantir que os docentes estejam aptos a atender as necessidades dos alunos autistas, resultando em maior participação e desempenho desses estudantes nas atividades escolares."
+- "É preciso de uma educação eficaz, em distinções que assegurem no trabalho educativo organizado e adaptado para atender as necessidades educacionais especiais dos alunos."
+  A frase apresenta linguagem vaga e não define claramente a ação nem o agente responsável. Falta indicar quem executará a medida, como será feita e quais resultados concretos se espera alcançar, comprometendo a clareza exigida pela C5.
+  Correcao: "É preciso que as escolas adotem planos de ensino individualizados, elaborados por equipes multidisciplinares (professores, psicólogos e terapeutas), que incluam adaptações curriculares e recursos de apoio, garantindo que cada aluno autista receba instruções adequadas e, assim, melhore seu aprendizado e inclusão social."
+
+**Como melhorar:**
+- Defina explicitamente o agente da intervenção (ex.: Ministério da Educação, secretarias estaduais, escolas) em cada proposta.
+- Descreva a ação concreta, o modo/meio de execução (ex.: oficinas, cursos, materiais didáticos) e o efeito esperado (ex.: maior capacitação docente, melhor desempenho dos alunos).
+- Apresente um detalhamento passo a passo da implementação, indicando prazos, responsáveis e indicadores de sucesso para tornar a proposta mais robusta e alinhada à competência C5.
+
+
+---
+
+## Redacao 2453
+
+**Tema:** Feminicídio no Brasil: um debate importante sobre a violência contra a mulher
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 160 | 120 | 160 | 120 | 680 |
+| Usada no feedback (humano) | 120 | 160 | 120 | 160 | 120 | 680 |
+
+**Texto:**
+
+> O feminicídio existe no Brasil e o debate sobre essa questão é fundamental. Assim, a violência contra a mulher choca a sociedade brasileira seja por revelar um machismo enraizado nela, e ao mesmo tempo, inferir os direitos humanos. Nesse contexto, é necessário um olha mais atentpara esse debate, considerando a sua importância a promoção de uma sociedade mais crítica e reflexiva. Por consequência, ela tende a ser mais justa, igualitária e humanizada.', "Em primeira análise, no Brasil, o feminicídio tem muito a ser discutido. Isso porque as suas motivações, que levam ao assassinato de uma mulher, se justificam pela própria condição de gênero da vítima. Diante disso, a sociedade induz o machismo construído ao decorrer da história levando , muitas vezes, a mulher aceitar seu lugar de submissão. Em casos mais radicais de violência doméstica, elas não denunciam seu agressores . Tais posturas, portanto, constrangem a nação e retrocedem às épocas remotas quando a mulher era vista mais como um objeto na palma da mão de seu ''dono''.", 'Na mesma perspectiva, o essa forma descomunal de homicídio revela que em se tratando da dignidade humana, voltado ao gênero feminino, não vem sendo respeitada . Para ilustrar essa realidade, a Organização Mundial da Saúde (OMS) levantou dados à respeito do Brasil. Chegou-se à conclusão que o país é o quinto d mundo a apresentar taxa de feminicídio, atingindo uma marca de 4,8 para 100 mil mulheres. Logo, a Legislação seria um importante regulador dessa condição indigna do ser humano, já que se pode mostrar aos cidadãos, principalmente do gênero masculino, que esse desrespeito não pode ser abarcado; fazendo com que às leis sejam uma ponte para alcançar uma sociedade humanizada.', "Torna-se evidente, contudo, que medidas do Governo, das escolas e dos professores, devem ser estabelecidas para que o cenário do feminicídio mude, no Brasil. O Governo, por meio do Ministério da Educação e inclusão, deve incitar na sociedade moderna o debate, por meio de propagandas em veículos de disseminação em massa com o enfoque nas mulheres, salientando que esta parcela da sociedade deve ser amparada e respeitada. Além disso, cabe as escolas e professores, com suas oficinas com a temática ''Debate a violência contra a mulher'', mostrar aos alunos a extrema importância dessa argumentação para a construção de um ambiente escolar tanto democrático, quanto solidário. Só assim, o feminicídio deixará de ser uma das misérias atuais.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa compreensão do tema e consegue articular argumentos relevantes sobre a necessidade de políticas públicas e educação para combater o feminicídio.
+- O texto apresenta dados estatísticos (taxa de 4,8 para 100 mil mulheres) que dão credibilidade ao argumento e mostram capacidade de usar informações externas.
+
+**Problemas:**
+- "um olha mais atentpara esse debate"
+  Erro de ortografia e concordância: a palavra correta é "olho" (substantivo) ou "olhar" (verbo), e a expressão "mais atento" deve concordar em gênero e número. Além disso, falta espaço entre as palavras "atent" e "para".
+  Correcao: "um olhar mais atento para esse debate"
+- "a sociedade induz o machismo construído ao decorrer da história levando , muitas vezes, a mulher aceitar seu lugar de submissão."
+  Problemas de regência e pontuação: o verbo "induz" exige objeto direto (ex.: "induz ao machismo"), há vírgula deslocada antes de "muitas vezes" e falta concordância em "levando" (deveria ser "levando‑a" ou reformular a frase).
+  Correcao: "a sociedade perpetua o machismo construído ao longo da história, levando, muitas vezes, a mulher a aceitar seu lugar de submissão."
+- "Logo, a Legislação seria um importante regulador dessa condição indigna do ser humano, já que se pode mostrar aos cidadãos, principalmente do gênero masculino, que esse desrespeito não pode ser abarcado; fazendo com que às leis sejam uma ponte para alcançar uma sociedade humanizada."
+  Erros de concordância e regência: "seria" deveria estar no presente do indicativo "é", "abracado" não existe (o correto é "abrangido"), e a construção "fazendo com que às leis" está incorreta; o verbo "fazer" exige infinitivo sem preposição.
+  Correcao: "Logo, a legislação é um importante regulador dessa condição indigna do ser humano, já que pode mostrar aos cidadãos, principalmente do gênero masculino, que esse desrespeito não pode ser abrangido, fazendo com que as leis sejam uma ponte para alcançar uma sociedade humanizada."
+
+**Como melhorar:**
+- Revisar ortografia e concordância verbal e nominal em todas as frases; usar um corretor ortográfico e ler o texto em voz alta para identificar deslizes.
+- Estudar as regras de regência verbal e nominal (por exemplo, verbos que exigem preposição) e praticar reescrevendo frases curtas, focando na relação correta entre verbo e complemento.
+- Treinar a pontuação, especialmente o uso de vírgulas e ponto‑e‑vírgula, para garantir que as orações estejam bem delimitadas e o sentido fique claro.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Apresenta uma proposta de intervenção clara, indicando papéis do Governo, das escolas e dos professores para combater o feminicídio.
+- Utiliza dados da OMS para fundamentar a argumentação, demonstrando tentativa de embasamento factual.
+
+**Problemas:**
+- "Em primeira análise, no Brasil, o feminicídio tem muito a ser discutido. Isso porque as suas motivações, que levam ao assassinato de uma mulher, se justificam pela própria condição de gênero da vítima."
+  A frase apresenta incoerência lógica ao afirmar que as motivações do feminicídio "se justificam" pela condição de gênero da vítima, o que contradiz a proposta dissertativo‑argumentativa de denunciar a violência como injustificável. Além disso, a construção sintática é confusa e impede a clareza da argumentação, prejudicando o desenvolvimento consistente do tema.
+  Correcao: "Em primeira análise, no Brasil, o feminicídio tem muito a ser discutido. Isso porque as motivações que levam ao assassinato de uma mulher são baseadas no preconceito de gênero, não podendo ser justificadas de forma alguma."
+- "Torna-se evidente, contudo, que medidas do Governo, das escolas e dos professores, devem ser estabelecidas para que o cenário do feminicídio mude, no Brasil."
+  A estrutura da frase é redundante e falta coesão ao conectar a ideia de mudança com a necessidade de medidas. O uso de "deve ser estabelecidas" está em desacordo de concordância (medidas – plural) e a expressão "no Brasil" aparece de forma desnecessária, enfraquecendo a progressão argumentativa.
+  Correcao: "Torna‑se evidente, contudo, que medidas do Governo, das escolas e dos professores precisam ser implementadas para transformar o cenário do feminicídio no Brasil."
+
+**Como melhorar:**
+- Revisar a coerência lógica das argumentações, evitando afirmações que pareçam justificar a violência e reforçando a postura crítica contra o feminicídio.
+- Aprimorar a coesão textual, conectando ideias com conectivos adequados e eliminando repetições ou construções redundantes.
+- Ampliar o repertório sociocultural com referências a leis, políticas públicas ou movimentos sociais específicos, sem inventar dados, para enriquecer a argumentação e demonstrar domínio do tema.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe dados da OMS que dão sustentação factual ao seu argumento, demonstrando capacidade de selecionar informações relevantes ao tema.
+- O texto apresenta uma proposta de intervenção (ações do Governo, escolas e professores), indicando tentativa de defender um ponto de vista com solução prática.
+
+**Problemas:**
+- "um olha mais atentpara esse debate"
+  A frase contém erro de concordância e ortografia, o que compromete a clareza e a coesão do texto. Na competência C3, a seleção e organização das informações devem ser apresentadas de forma clara e correta.
+  Correcao: "um olhar mais atento para esse debate"
+- "a sociedade induz o machismo construído ao decorrer da história levando , muitas vezes, a mulher aceitar seu lugar de submissão."
+  A construção da frase está confusa, há vírgula deslocada e falta de coesão entre as ideias. Isso impede a boa articulação dos argumentos, essencial para a defesa do ponto de vista.
+  Correcao: "a sociedade perpetua o machismo construído ao longo da história, levando, muitas vezes, a mulher a aceitar seu lugar de submissão."
+- "Logo, a Legislação seria um importante regulador dessa condição indigna do ser humano, já que se pode mostrar aos cidadãos, principalmente do gênero masculino, que esse desrespeito não pode ser abarcado; fazendo com que às leis sejam uma ponte para alcançar uma sociedade humanizada."
+  O trecho apresenta problemas de pontuação e concordância, além de usar linguagem vaga (“não pode ser abarcado”). Na C3, os argumentos precisam ser apresentados de forma lógica e bem estruturada, com conectores adequados.
+  Correcao: "Logo, a legislação pode atuar como regulador dessa condição indigna, ao demonstrar aos cidadãos, sobretudo aos homens, que esse desrespeito não será tolerado, transformando as leis em ponte para uma sociedade mais humanizada."
+
+**Como melhorar:**
+- Revisar a gramática e a pontuação durante a escrita ou após a produção, garantindo que cada frase esteja clara e coerente.
+- Organizar os argumentos em parágrafos bem delimitados: introdução com tese, desenvolvimento com fatos e opiniões bem conectados, e conclusão que retome a tese e a proposta de intervenção.
+- Utilizar conectivos (porém, entretanto, assim, consequentemente) para melhorar a coesão textual e garantir que a sequência lógica das ideias fortaleça a defesa do ponto de vista.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "assim", "por consequência" e "além disso", o que ajuda a estabelecer relações lógicas entre as ideias.
+- Há variedade de recursos de coesão (referência pronominal, conjunções e expressões de causa/consequência) que evitam repetições excessivas.
+
+**Problemas:**
+- "Assim, a violência contra a mulher choca a sociedade brasileira seja por revelar um machismo enraizado nela, e ao mesmo tempo, inferir os direitos humanos."
+  O trecho apresenta falha de coesão porque a conjunção "seja por" está inadequada ao contexto e a sequência de ideias não está bem articulada; o verbo "inferir" não concorda com o sujeito e rompe a clareza da relação entre as orações.
+  Correcao: "Assim, a violência contra a mulher choca a sociedade brasileira, pois revela um machismo enraizado e, ao mesmo tempo, viola os direitos humanos."
+
+**Como melhorar:**
+- Revise a escolha dos conectivos, garantindo que eles expressem corretamente a relação lógica desejada (causa, consequência, contraste etc.).
+- Atente-se à concordância verbal e ao uso adequado de pronomes de referência para evitar rupturas na coesão textual.
+- Faça um planejamento prévio dos parágrafos, definindo a função de cada um (introdução, desenvolvimento, conclusão) e os conectivos que irão ligar as ideias entre eles.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você conseguiu articular a proposta de intervenção ao mencionar a participação do Governo, das escolas e dos professores, o que demonstra compreensão da necessidade de ação conjunta.
+- A proposta está conectada ao debate desenvolvido no texto, ao citar a importância de campanhas e oficinas escolares para mudar a cultura de violência.
+
+**Problemas:**
+- "por meio do Ministério da Educação e inclusão, deve incitar na sociedade moderna o debate, por meio de propagandas em veículos de disseminação em massa com o enfoque nas mulheres"
+  A proposta não especifica claramente quem será o agente responsável (ex.: Ministério da Educação em parceria com a Secretaria de Direitos Humanos), qual ação concreta será realizada (ex.: produção de campanhas publicitárias), o modo/meio (ex.: spots de TV, anúncios em redes sociais), o efeito esperado (ex.: aumento da denúncia de violência) e não detalha como a medida será implementada nem como será avaliada.
+  Correcao: "O Ministério da Educação, em parceria com a Secretaria Nacional de Políticas para as Mulheres, deve produzir e veicular campanhas publicitárias em TV, rádio e redes sociais, com linguagem inclusiva e dados sobre feminicídio, para conscientizar a população e incentivar a denúncia de casos de violência; a eficácia da campanha será monitorada por meio de pesquisas de opinião e aumento nas estatísticas de denúncias nos 12 meses seguintes."
+- "Torna-se evidente, contudo, que medidas do Governo, das escolas e dos professores, devem ser estabelecidas para que o cenário do feminicídio mude, no Brasil."
+  A frase apresenta uma proposta genérica e vaga, sem indicar quem executará a ação, qual será a ação específica, como será feita, nem qual será o impacto esperado. Falta o detalhamento exigido pela competência C5.
+  Correcao: "O Governo federal, por meio do Ministério da Educação, deve criar um programa nacional de prevenção ao feminicídio que inclua a obrigatoriedade de oficinas sobre igualdade de gênero em todas as escolas públicas; os professores, capacitados por cursos oferecidos pelo Instituto Nacional de Estudos e Pesquisas Educacionais, conduzirão essas oficinas trimestralmente, promovendo a reflexão crítica dos estudantes; o programa será avaliado anualmente por meio de indicadores de redução de casos de violência doméstica nas escolas."
+
+**Como melhorar:**
+- Defina claramente o agente da intervenção (ex.: Ministério da Educação, Secretaria de Direitos Humanos) e descreva sua responsabilidade.
+- Especifique a ação concreta, o modo/meio de execução e o efeito esperado, apresentando etapas e indicadores de avaliação.
+- Evite generalizações; detalhe cada componente da proposta (agente, ação, meio, efeito) de forma objetiva e coerente com o desenvolvimento do texto.
+
+
+---
+
+## Redacao 4923
+
+**Tema:** Conscientização da população para o isolamento social em meio a crise financeira
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 200 | 120 | 160 | 200 | 840 |
+| Usada no feedback (humano) | 160 | 200 | 120 | 160 | 200 | 840 |
+
+**Texto:**
+
+> No contexto pandêmico atual, que assolou a população mundial, as medidas sanitárias são as mais eficazes contra sua propagação. A lei 13.979, determina no artigo 3, que podem ser decretadas no combate à epidemia medidas como isolamento e quarentena. Hodiernamente, as medidas de distanciamento têm afetado o setor da economia, gerando graves consequências. Assim mostra-se relevante pensar nesta situação econômica que configura as maiores problemáticas desse pernicioso cenário.', 'De início é notório destacar que as condutas sanitárias têm grande importância no enfrentamento à pandemia, devem ser seguidas e respeitadas, prova disso recai nas reduções de taxas de contaminação e o número de falecimentos entre os contaminados. Ademais cabe ressaltar que as normas acabam afetando vários setores da economia, deixando mais evidentes as desigualdades sociais. No Brasil, o desafio vai além de controlar a pandemia, mas também reduzir a crise econômica. Sendo assim torna-se urgente reconhecer a necessidade de refrear ambas as situações, de modo que garanta a recuperação financeira e conter a epidemia.', 'Com o objetivo de minimizar a crise econômica sem afetar a contenção pandêmica, seria necessária a criação de medidas públicas eficazes. Outrossim cabe aos órgãos governamentais e federais, incentivarem o isolamento evidenciando sua importância, como medida significativa da contenção da transmissão. E como ajuda financeira, a criação de auxílios extras, levando em consideração comerciantes com estabelecimentos fechados, trabalhadores que ficaram sem remuneração, desempregados e a população periférica. Somente assim os cidadãos poderiam respeitar o isolamento, sem passar por dificuldades financeiras, ajudando a economia. Para assim garantir a segurança e a saúde de todos.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de articular ideias e usar um vocabulário adequado ao tema, o que garante coesão e clareza ao texto.
+- A estrutura geral (introdução, desenvolvimento e conclusão) está bem organizada, facilitando a compreensão do leitor.
+
+**Problemas:**
+- "A lei 13.979, determina no artigo 3, que podem ser decretadas no combate à epidemia medidas como isolamento e quarentena."
+  Há vírgula indevida após "13.979" e antes de "determina", além de concordância verbal incorreta: o sujeito "medidas" está no plural, mas o verbo "pode" está no singular.
+  Correcao: "A Lei 13.979 determina, no artigo 3º, que podem ser decretadas, no combate à epidemia, medidas como isolamento e quarentena."
+- "Assim mostra-se relevante pensar nesta situação econômica que configura as maiores problemáticas desse pernicioso cenário."
+  Uso inadequado de "mostra-se" (construção reflexiva desnecessária) e concordância de "maiores problemáticas" (plural) com "configura" (singular).
+  Correcao: "Assim, mostra-se relevante pensar nessa situação econômica que configura as maiores problemáticas desse pernicioso cenário."
+- "Outrossim cabe aos órgãos governamentais e federais, incentivarem o isolamento evidenciando sua importância, como medida significativa da contenção da transmissão."
+  Vírgula após "federais" separa sujeito de verbo, gerando erro de pontuação; o infinitivo "incentivarem" deveria estar sem vírgula e a construção está truncada.
+  Correcao: "Outrossim, cabe aos órgãos governamentais e federais incentivar o isolamento, evidenciando sua importância como medida significativa da contenção da transmissão."
+
+**Como melhorar:**
+- Revise a pontuação, especialmente o uso de vírgulas antes de verbos que iniciam orações; consulte regras de vírgula em orações subordinadas e em estruturas de sujeito‑verbo.
+- Atente-se à concordância verbal e nominal; sempre verifique se o verbo concorda em número e pessoa com o sujeito da oração.
+- Pratique a reescrita de trechos curtos, focando em eliminar construções reflexivas desnecessárias e em escolher o registro formal adequado ao ENEM.
+
+
+### C2 (nota 200)
+
+**Pontos fortes:**
+- Você compreendeu plenamente a proposta e manteve o foco no tema, desenvolvendo argumentos que relacionam isolamento social e crise financeira de forma coerente.
+- A estrutura dissertativo‑argumentativa está bem organizada, com introdução, desenvolvimento e conclusão claros, demonstrando domínio da forma textual exigida.
+
+**Problemas:**
+- "Outrossim cabe aos órgãos governamentais e federais, incentivarem o isolamento evidenciando sua importância, como medida significativa da contenção da transmissão."
+  O uso de "Outrossim" e a construção da oração geram excesso de formalismo e quebra a coesão. Além disso, a vírgula antes de "incentivarem" separa sujeito e verbo, configurando erro de pontuação que compromete a fluidez do texto.
+  Correcao: "Além disso, cabe aos órgãos governamentais e federais incentivar o isolamento, evidenciando sua importância como medida significativa para conter a transmissão."
+
+**Como melhorar:**
+- Revise a pontuação em orações com sujeito composto para evitar vírgulas desnecessárias que interrompem a leitura.
+- Prefira conectivos mais comuns (além disso, por outro lado) em vez de termos excessivamente formais como "Outrossim", mantendo a linguagem clara e objetiva.
+- Faça uma leitura final focada na coesão entre parágrafos, garantindo que cada ideia se conecte de forma natural ao argumento anterior.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe dados da legislação (Lei 13.979) que demonstra conhecimento do tema e reforça a pertinência do isolamento social.
+- O texto apresenta argumentos que relacionam a crise econômica à necessidade de medidas de apoio financeiro, mostrando tentativa de articular diferentes dimensões do tema.
+
+**Problemas:**
+- "De início é notório destacar que as condutas sanitárias têm grande importância no enfrentamento à pandemia, devem ser seguidas e respeitadas, prova disso recai nas reduções de taxas de contaminação e o número de falecimentos entre os contaminados."
+  O trecho apresenta ideias desconexas e falta de coesão: a expressão "prova disso recai nas reduções" está gramaticalmente incorreta e a sequência de informações não segue uma lógica clara, dificultando a defesa do ponto de vista. Além disso, há repetição de termos ("pandemia", "contaminados") que enfraquece a argumentação.
+  Correcao: "De início, é evidente que as medidas sanitárias são fundamentais no enfrentamento da pandemia; ao serem seguidas, observam‑se reduções nas taxas de contaminação e no número de óbitos."
+- "Com o objetivo de minimizar a crise econômica sem afetar a contenção pandêmica, seria necessária a criação de medidas públicas eficazes."
+  A frase carece de especificidade e de conexão com os argumentos anteriores. Não há indicação clara de quais medidas seriam eficazes nem de como elas se relacionariam ao ponto de vista defendido, o que compromete a organização e a autoria do texto.
+  Correcao: "Para minimizar a crise econômica sem comprometer a contenção da pandemia, é imprescindível implementar medidas públicas específicas, como a ampliação de auxílios emergenciais e linhas de crédito para micro e pequenas empresas."
+
+**Como melhorar:**
+- Estruture o texto em parágrafos que sigam uma sequência lógica: introdução (apresentação do ponto de vista), desenvolvimento (argumentos com fatos e dados organizados) e conclusão (síntese e proposta de intervenção).
+- Use conectivos adequados para garantir a coesão entre as ideias (por exemplo, "além disso", "consequentemente", "por isso").
+- Enriqueça a argumentação com exemplos concretos e dados atualizados, sempre citando a fonte de forma implícita, e evite repetições ou construções gramaticais confusas.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "Assim", "Ademais" e "Com o objetivo de" para ligar ideias entre os parágrafos, o que demonstra consciência dos mecanismos de coesão.
+- Há variedade de recursos de referência (pronomes demonstrativos e relativos) que ajudam a manter a continuidade temática ao longo do texto.
+
+**Problemas:**
+- "Hodiernamente, as medidas de distanciamento têm afetado o setor da economia, gerando graves consequências."
+  O advérbio "Hodiernamente" não estabelece relação clara com a ideia anterior; o conectivo adequado seria um que indique consequência ou contraste, como "Consequentemente" ou "Por outro lado". Além disso, a frase carece de um elemento de referência que retome o assunto tratado no parágrafo anterior, enfraquecendo a articulação entre os parágrafos.
+  Correcao: "Consequentemente, as medidas de distanciamento têm afetado o setor da economia, gerando graves consequências."
+- "Para assim garantir a segurança e a saúde de todos."
+  A expressão "Para assim" é redundante e quebra a fluidez do texto. O uso de "para" já indica finalidade, portanto basta um conectivo simples como "a fim de" ou "para". A frase também está isolada, sem ligação explícita ao parágrafo anterior, o que prejudica a coesão entre as partes.
+  Correcao: "A fim de garantir a segurança e a saúde de todos."
+
+**Como melhorar:**
+- Substitua conectivos genéricos ou inadequados por aqueles que expressem claramente a relação lógica desejada (causa, consequência, contraste, adição).
+- Sempre retome o assunto do parágrafo anterior com pronomes ou expressões de referência (este, essa, tal) antes de introduzir novas ideias, reforçando a continuidade textual.
+- Revise a estrutura das frases de conclusão para evitar redundâncias como "para assim"; prefira construções mais diretas que mantenham a fluidez e a coerência entre as partes do texto.
+
+
+### C5 (nota 200)
+
+**Pontos fortes:**
+- A proposta de intervenção está claramente articulada ao tema, apresentando auxílio financeiro para os mais vulneráveis como condição para o cumprimento do isolamento social.
+- O texto demonstra preocupação com os direitos humanos ao garantir que a população não seja penalizada economicamente por seguir as medidas sanitárias.
+
+**Problemas:**
+- "No Brasil, o desafio vai além de controlar a pandemia, mas também reduzir a crise econômica."
+  O trecho indica a necessidade de ação, porém não especifica quem será o agente responsável, qual ação concreta será tomada, como será feita (modo/meio), nem o efeito esperado. Na competência C5 a proposta deve detalhar agente, ação, modo, efeito e apresentar o desdobramento da intervenção.
+  Correcao: "No Brasil, o Ministério da Saúde, em parceria com o Ministério da Economia, deve implementar um programa de auxílio emergencial que conceda pagamentos mensais de R$ 600,00 a trabalhadores informais, microempreendedores individuais e famílias em situação de vulnerabilidade, de modo a garantir que esses grupos possam permanecer em isolamento sem perder a renda, reduzindo assim a transmissão do vírus e mitigando os impactos da crise econômica."
+
+**Como melhorar:**
+- Especifique sempre o agente da ação (ex.: Ministério da Saúde, governos estaduais, ONGs).
+- Descreva o modo/meio de execução da proposta (ex.: criação de um programa de transferência direta, campanhas de comunicação digital).
+- Apresente claramente o efeito esperado da intervenção, relacionando-o tanto à contenção da pandemia quanto à mitigação da crise financeira.
+
+
+---
+
+## Redacao 2315
+
+**Tema:** Informação e sociedade: o combate às fake news em ano de eleições presidenciais
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 120 | 120 | 120 | 160 | 640 |
+| Usada no feedback (humano) | 120 | 120 | 120 | 120 | 160 | 640 |
+
+**Texto:**
+
+> As redes sociais são as maiores fontes de informação no Brasil e no mundo. No entanto, nem tudo que elas circulam é verdadeiro, edificando a problemática das fake news, que prejudicam o pensamento coletivo visando a democracia.', 'No século atual, as notícias falsas causam impacto amplo. Tendo em vista que as mídias sociais são usadas como formadoras de opinião e como meio de difusão informacional por jornalistas, o número de fake news tem subido intensamente e dificultam a busca da razão e da verdade dos fatos. Em defesa de tal assertiva, está o comportamento dos usuários que não filtram o conteúdo da informação recebida, não a interpretam corretamente e acabam por se desviar da veracidade, criando uma bolha de notícias inventadas.', 'Paralelamente, o incessante sensacionalismo assola a sociedade brasileira. Para muitos, os fatos têm de ser repercutidos e não comprovados, isto é, não enxergam a necessidade de que sejam fatos verdadeiros e sim que sejam condizentes com seu ponto de vista. Com isso, mal-intencionados elaboram notícias sensacionalistas com título e conteúdo persuasivo e que se aplicam a ideologia do público-alvo e por conseguinte, atingindo a finalidade de expansão de notícias falsas em escala global.', 'Destarte, urge a necessidade da aprovação da lei que criminaliza a difusão desses embustes, privando a sociedade de informações prejudiciais e punindo as fontes enganosas, com embasamento jurídico. Aliado a isso, cabe às redes sociais aplicarem mecanismos técnicos que controlem a disseminação de notícias, reconhecendo-as e as que se mostrarem desprovidas de veracidade, sejam excluídas e a plataforma divulgadora, banida. Visto que as redes sociais são os locais de troca de conhecimento e de extração de informação, tais medidas facilitariam a supracitada implantação da democracia e troca de conhecimento.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de argumentação ao conectar o papel das redes sociais com a disseminação de fake news e ao propor soluções legislativas e tecnológicas.
+- O vocabulário utilizado é, em geral, adequado ao tema e evidencia conhecimento de termos como "sensacionalismo", "bolha de notícias" e "embustes".
+
+**Problemas:**
+- "não a desvia da veracidade, criando uma bolha de notícias inventadas." [NAO LITERAL]
+  Erro de concordância verbal ("não a desvia"), uso incorreto de preposição e pontuação inadequada. A frase também apresenta construção confusa que compromete a clareza.
+  Correcao: "não a desvia da veracidade, criando uma bolha de notícias inventadas."
+- "Destarte, urge a necessidade da aprovação da lei que criminaliza a difusão desses embustes, privando a sociedade de informações prejudiciais e punindo as fontes enganosas, com embasamento jurídico."
+  Problemas de regência e pontuação: o verbo "privar" exige objeto direto e preposição "de"; a vírgula antes de "com embasamento jurídico" gera ambiguidade. Além disso, a palavra "embustes" é informal para o registro formal exigido.
+  Correcao: "Destarte, urge a necessidade da aprovação da lei que criminaliza a difusão desses enganos, privando a sociedade de informações prejudiciais e punindo as fontes enganosas, com embasamento jurídico."
+- "Visto que as redes sociais são os locais de troca de conhecimento e de extração de informação, tais medidas facilitariam a supracitada implantação da democracia e troca de conhecimento."
+  Repetição desnecessária de "troca de conhecimento", concordância inadequada em "supracitada implantação" e uso de construção prolixa que afeta a coesão textual.
+  Correcao: "Visto que as redes sociais são locais de troca e produção de informação, tais medidas facilitariam a implantação da democracia e o compartilhamento de conhecimento."
+
+**Como melhorar:**
+- Revisar a concordância verbal e nominal em todas as frases; leia o texto em voz alta para identificar construções que soam estranhas.
+- Atentar-se à regência dos verbos e ao uso correto das preposições; consulte tabelas de regência quando houver dúvida.
+- Evitar repetições e palavras de registro coloquial; prefira termos formais e mantenha a coesão usando conectivos adequados.
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Você manteve o foco no tema proposto, abordando a relação entre fake news e o período eleitoral.
+- Sua conclusão apresenta uma proposta de intervenção que considera agentes responsáveis (lei e plataformas).
+
+**Problemas:**
+- "No século atual, as notícias falsas causam impacto amplo. Tendo em vista que as mídias sociais são usadas como formadoras de opinião e como meio de difusão informacional por jornalistas, o número de fake news tem subido intensamente e dificultam a busca da razão e da verdade dos fatos."
+  O trecho apresenta frases longas e desconexas, com vírgulas mal empregadas e falta de coesão entre as ideias. Além disso, há repetição de termos ("mídias sociais", "fake news") e o verbo "dificultam" não concorda com o sujeito "o número de fake news".
+  Correcao: "No século atual, as notícias falsas têm causado amplo impacto. Como as mídias sociais são usadas para formar opinião e difundir informações, o número de fake news tem aumentado intensamente, dificultando a busca pela razão e pela verdade dos fatos."
+- "Aliado a isso, cabe às redes sociais aplicarem mecanismos técnicos que controlem a disseminação de notícias, reconhecendo-as e as que se mostrarem desprovidas de veracidade, sejam excluídas e a plataforma divulgadora, banida."
+  A construção sintática está confusa: há excesso de vírgulas e a sequência de ideias não segue a lógica esperada para um texto dissertativo‑argumentativo. O verbo "reconhecendo‑as" não tem complemento adequado e a expressão "a plataforma divulgadora, banida" está truncada.
+  Correcao: "Aliado a isso, cabe às redes sociais aplicar mecanismos técnicos que controlem a disseminação de notícias, identificando aquelas desprovidas de veracidade, para que sejam excluídas e, se necessário, a conta que as divulgou seja banida."
+
+**Como melhorar:**
+- Reestruture frases longas em períodos mais curtos, garantindo clareza e coesão entre as ideias.
+- Revise a concordância verbal e nominal, especialmente em construções que envolvem sujeito composto ou coletivo.
+- Varie o vocabulário e evite repetições desnecessárias; use conectivos adequados para articular argumentos de forma lógica.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe dados gerais sobre o papel das redes sociais na disseminação de informações, demonstrando compreensão do tema proposto.
+- Apresentou uma proposta de intervenção (lei contra fake news e mecanismos das plataformas), indicando preocupação com a solução do problema.
+
+**Problemas:**
+- "Destarte, urge a necessidade da aprovação da lei que criminaliza a difusão desses embustes, privando a sociedade de informações prejudiciais e punindo as fontes enganosas, com embasamento jurídico."
+  O trecho apresenta ideias desconexas e falta de encadeamento lógico; a relação entre a lei, a proteção da sociedade e o embasamento jurídico não está claramente articulada, o que compromete a organização das informações e a defesa coerente do ponto de vista.
+  Correcao: "Destarte, é urgente aprovar uma lei que criminalize a difusão de notícias falsas, protegendo a sociedade de informações prejudiciais e responsabilizando juridicamente as fontes que as propagam."
+- "Aliado a isso, cabe às redes sociais aplicarem mecanismos técnicos que controlem a disseminação de notícias, reconhecendo-as e as que se mostrarem desprovidas de veracidade, sejam excluídas e a plataforma divulgadora, banida."
+  A construção da frase é confusa e apresenta problemas de coesão; a sequência de ideias não segue uma ordem clara, dificultando a compreensão de como os mecanismos devem funcionar e quem será penalizado.
+  Correcao: "Além disso, as redes sociais devem implementar mecanismos técnicos capazes de identificar notícias falsas; aquelas comprovadamente sem veracidade devem ser removidas e, em casos recorrentes, a conta responsável deve ser suspensa."
+
+**Como melhorar:**
+- Organize os argumentos em parágrafos com funções bem definidas: introdução, desenvolvimento (com dados, causas e consequências) e conclusão/intervenção, garantindo coesão entre eles.
+- Use conectivos adequados para estabelecer relações de causa, consequência e contraste, evitando frases longas e confusas.
+- Apresente exemplos concretos e dados (sem inventar números) que sustentem seus argumentos, demonstrando autoria ao relacionar as informações ao seu ponto de vista.
+
+
+### C4 (nota 120)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "No entanto" e "Paralelamente", demonstrando tentativa de articular ideias entre os parágrafos.
+- Há variação de estruturas de períodos, alternando frases curtas e longas, o que impede que a coesão seja totalmente comprometida.
+
+**Problemas:**
+- "Aliado a isso, cabe às redes sociais aplicarem mecanismos técnicos que controlem a disseminação de notícias, reconhecendo-as e as que se mostrarem desprovidas de veracidade, sejam excluídas e a plataforma divulgadora, banida."
+  A sequência de conectivos está confusa e falta clareza na referência. O pronome "as" não tem antecedente bem definido e a estrutura paralela "sejam excluídas e a plataforma divulgadora, banida" quebra a coesão, gerando ambiguidade.
+  Correcao: "Aliado a isso, cabe às redes sociais aplicar mecanismos técnicos que controlem a disseminação de notícias, reconhecendo aquelas que se mostrem desprovidas de veracidade; essas devem ser excluídas e a plataforma que as divulgou, banida."
+- "Destarte, urge a necessidade da aprovação da lei que criminaliza a difusão desses embustes, privando a sociedade de informações prejudiciais e punindo as fontes enganosas, com embasamento jurídico."
+  O uso de "Destarte" é inadequado ao início do parágrafo e o encadeamento de orações coordenadas não estabelece relações de causa‑efeito claras. Além disso, a referência "com embasamento jurídico" fica solta, sem conectar-se ao restante da frase.
+  Correcao: "Portanto, é urgente aprovar a lei que criminaliza a difusão desses embustes, pois assim a sociedade será protegida de informações prejudiciais e as fontes enganosas serão punidas, com base em fundamentos jurídicos."
+
+**Como melhorar:**
+- Varie os conectivos de forma lógica, usando sequencialmente "primeiramente", "em seguida", "por outro lado" e "consequentemente" para marcar claramente a progressão das ideias.
+- Garanta que todo pronome ou termo de referência tenha um antecedente explícito no mesmo parágrafo ou em um parágrafo imediatamente anterior.
+- Reescreva períodos longos em duas ou três frases mais curtas, mantendo a relação de causa, consequência ou adição bem sinalizada por conectivos adequados.
+
+
+### C5 (nota 160)
+
+**Pontos fortes:**
+- Você identificou claramente a relação entre fake news e o risco à democracia, demonstrando compreensão do tema.
+- Sua proposta inclui a criação de lei e a responsabilidade das plataformas, o que mostra articulação entre diferentes agentes.
+
+**Problemas:**
+- "As redes sociais são as maiores fontes de informação no Brasil e no mundo."
+  O trecho apresenta apenas uma constatação geral e não contém nenhum elemento da proposta de intervenção (agente, ação, modo/meio, efeito). Para a competência C5, a proposta precisa ser detalhada, indicando quem deve agir, o que fazer, como será feito e quais resultados se espera alcançar, sempre respeitando os direitos humanos.
+  Correcao: "As plataformas de redes sociais (agente) devem implementar, a partir de 1º de julho de 2025, um sistema de verificação automática de conteúdo (ação) utilizando inteligência artificial combinada com revisão humana (modo/meio), de modo que notícias identificadas como falsas sejam sinalizadas e, se persistirem, removidas temporariamente, com aviso ao usuário e possibilidade de recurso. Essa medida reduzirá a circulação de desinformação em até 30% nas semanas eleitorais, protegendo o direito à informação verídica e fortalecendo a participação democrática."
+
+**Como melhorar:**
+- Detalhe sempre os cinco elementos da proposta (agente, ação, modo/meio, efeito e justificativa de direitos humanos).
+- Use verbos no infinitivo e indique prazos ou metas quantificáveis para tornar a intervenção mais concreta.
+- Conecte a proposta diretamente aos argumentos desenvolvidos no corpo do texto, mostrando como ela resolve os problemas apontados.
+
+
+---
+
+## Redacao 3449
+
+**Tema:** O suicídio entre os jovens: como resolver esse problema?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 120 | 160 | 160 | 120 | 720 |
+| Usada no feedback (humano) | 160 | 120 | 160 | 160 | 120 | 720 |
+
+**Texto:**
+
+> Automutilação; salto de prédios; uso de drogas . Os últimos anos vêm sendo marcados por jovens que atentam contra a própria vida, a ponto de o número de incidências dessa natureza se tornar tamanho que, segundo a Organização Mundial da Saúde , já é a segunda maior causa de morte de adolescentes no planeta. Os motivos que os levam ao suicídio, por sua vez, são diversos, mas é estimado que o elevado sofrimento é um fato pertinente a isso. Nesse intuito, ao se observar as causas desse sofrimento, muitas dessas estão relacionadas à excessiva pressão social sobre tais indivíduos, os quais têm buscado o atentado contra a própria vida como fuga de seus desafios.', 'Hoje, observa-se que a sociedade impõe inúmeras exigências aos jovens, tais como a aprovação no vestibular de uma universidade renomada, o não uso de inúmeros produtos e serviços destinados aos juvenis, ou até mesmo atribuição de responsabilidades não condizentes com essa fase da vida, obrigando-os a um verdadeiro salto da infância à vida adulta. Dessa forma, muitos jovens, por não conseguirem atender às “suas obrigações”, frustram-se e julgam-se inúteis ao meio em que vivem, sofrendo, posteriormente, com problemas depressivos. Seus responsáveis, ainda, são despreparados em tais ocasiões, na maioria das vezes, vendo-os apenas como seres preguiçosos ou “cheios de frescura” .', 'Ademais, muitos jovens também são julgados por suas escolhas divergirem de padrões estabelecidos como dignos/corretos no meio social, como se observa com estilo de vestuário, estilo de alimentação e a homossexualidade. Nos dois primeiros exemplos, os estilos de vestuário e de alimentação, muitos jovens sofrem bullying por optarem por vestimentas consideradas não sociais, como o dito estilo gótico, ou simplesmente por aderirem a uma alimentação mais saudável, como a vegana, sofrendo, conseguintemente, ataques preconceituosos. No terceiro e último exemplo, também o mais polêmico, a homossexualidade, é onde são observados inúmeros jovens depressivos, devido aos bombardeios preconceituosos provenientes desde familiares até de colegas de estudo/trabalho, depreciando-lhes a força mental e impulsionando-os ao suicídio, afinal a pressão psicológica se torna tamanha, além de raramente possuírem algum apoio amigo, que não enxergam outra solução.', 'Pode-se inferir, dessa forma, que a contínua pressão social/psicológica sobre os jovens tem elevado seu nível de sofrimento/depressão e, não raro, de suicídio. Isso é reflexo de uma barreira cultural insustentável nos dias atuais, a qual precisa ser derrubada, seja por meio de um maior diálogo entre jovens e seus responsáveis, seja pela maior preparação destes para lidar com tais situações, seja, também, pelo estímulo ao respeito/compreensão com o próximo, a fim de impulsionar os indivíduos a valorizarem não só a própria vida, como também a daquele ao seu alcance.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Apresenta boa articulação de ideias e demonstra domínio do tema, conectando a pressão social à incidência de suicídio entre jovens.
+- Utiliza vocabulário adequado e variado, demonstrando escolha de registro formal coerente com a proposta do ENEM.
+
+**Problemas:**
+- "Automutilação; salto de prédios; uso de drogas ."
+  Uso incorreto de pontuação: ponto final separado por espaço, uso de ponto e vírgula ou dois-pontos seria mais adequado, e o ponto final não deve ficar isolado após espaço.
+  Correcao: "Automutilação, salto de prédios e uso de drogas."
+- "os quais têm buscado o atentamento contra a própria vida como fuga de seus desafios.', 'Hoje, observa-se que a sociedade impõe inúmeras exigências aos jovens, tais como a aprovação no vestibular de uma universidade renomada, o não uso de inúmeros produtos e serviços destinados aos juvenis, ou até mesmo atribuição de responsabilidades não condizentes com essa fase da vida, obrigando-os a um verdadeiro salto da infância à vida adulta." [NAO LITERAL]
+  Erros de concordância e regência: "os quais têm buscado o atentamento" deveria ser "os quais têm buscado o atentado"; além disso, há redundância e falta de coesão ao iniciar a frase com "ou até mesmo atribuição" sem verbo principal. Também há vírgula desnecessária antes de "ou até mesmo".
+  Correcao: "os quais têm buscado o atentado contra a própria vida como fuga de seus desafios. Hoje, observa-se que a sociedade impõe inúmeras exigências aos jovens, como a aprovação no vestibular de uma universidade renomada, a restrição ao uso de produtos e serviços destinados a eles, ou ainda a atribuição de responsabilidades incompatíveis com essa fase da vida, obrigando-os a um salto abrupto da infância para a vida adulta."
+
+**Como melhorar:**
+- Revisar a pontuação, especialmente o uso de vírgulas, pontos e ponto e vírgula, para garantir clareza e evitar separações inadequadas.
+- Atentar para a concordância verbal e nominal, bem como para a regência de verbos e preposições, revisando frases que contenham construções complexas.
+- Praticar a reescrita de trechos longos, dividindo-os em sentenças mais curtas e coesas, mantendo o registro formal e evitando repetições desnecessárias.
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra compreensão da proposta ao abordar diretamente o tema do suicídio entre jovens e ao apresentar causas sociais e psicológicas relevantes.
+- Sua conclusão retoma a ideia central e propõe soluções gerais, mostrando que o texto mantém coerência temática.
+
+**Problemas:**
+- "Os motivos que os levam ao suicídio, por sua vez, são diversos, mas é estimado que o elevado sofrimento é um fato pertinente a isso."
+  A frase é vaga e não desenvolve um argumento consistente; falta explicitar quais são esses motivos e como eles se relacionam ao problema, o que enfraquece a argumentação exigida na competência C2.
+  Correcao: "Os motivos que levam os jovens ao suicídio são diversos, como a pressão acadêmica, o bullying e a falta de apoio familiar; esses fatores aumentam o sofrimento emocional e podem desencadear comportamentos autodestrutivos."
+- "Pode-se inferir, dessa forma, que a contínua pressão social/psicológica sobre os jovens tem elevado seu nível de sofrimento/depressão e, não raro, de suicídio."
+  A conclusão apresenta uma inferência genérica sem conectar explicitamente às ideias desenvolvidas nos parágrafos anteriores, o que impede a construção de um encadeamento argumentativo sólido.
+  Correcao: "Portanto, a pressão social e psicológica exercida sobre os jovens eleva significativamente os índices de sofrimento, depressão e, consequentemente, de suicídio, conforme demonstrado pelos exemplos de bullying, exigências acadêmicas e preconceito."
+
+**Como melhorar:**
+- Desenvolva cada argumento com exemplos concretos e explique a relação causal entre eles e o aumento do suicídio entre jovens.
+- Utilize conectivos argumentativos (por exemplo, "além disso", "consequentemente", "por isso") para garantir a coesão entre as ideias e fortalecer o encadeamento lógico.
+- Reforce a conclusão retomando os principais argumentos apresentados e indicando de forma clara e direta as propostas de intervenção.
+
+
+### C3 (nota 160)
+
+**Pontos fortes:**
+- Você conseguiu reunir informações relevantes e atuais sobre o tema, citando dados da Organização Mundial da Saúde e apresentando diferentes fatores que contribuem para o suicídio entre jovens.
+- Sua argumentação demonstra autoria ao defender a necessidade de diálogo, preparação dos responsáveis e respeito mútuo como caminhos para reduzir a pressão social.
+
+**Problemas:**
+- "seus responsáveis, ainda, são despreparados em tais ocasiões, na maioria das vezes, vendo-os apenas como seres preguiçosos ou “cheios de frescura”."
+  O trecho apresenta uma generalização vaga e falta de conexão lógica com o restante do argumento. Além disso, a construção está confusa, o que prejudica a clareza e a organização das ideias, essenciais para a competência C3.
+  Correcao: "Além disso, muitos responsáveis ainda se mostram despreparados para lidar com essas situações, frequentemente rotulando os jovens como preguiçosos ou “cheios de frescura”, o que impede o apoio necessário."
+- "Os motivos que os levam ao suicídio, por sua vez, são diversos, mas é estimado que o elevado sofrimento é um fato pertinente a isso."
+  A frase contém redundância (“elevado sofrimento” e “fato pertinente”) e falta de precisão nos dados, o que enfraquece a consistência da argumentação. Na C3, as informações devem ser apresentadas de forma clara e coerente.
+  Correcao: "Os motivos que levam ao suicídio são diversos, porém o sofrimento intenso é um fator central."
+
+**Como melhorar:**
+- Organize os parágrafos de forma mais lógica, apresentando primeiro os dados estatísticos, depois as causas e, por fim, as propostas de solução, garantindo coesão entre as ideias.
+- Evite repetições e expressões vagas; use termos precisos e conectores adequados para reforçar a relação entre informações, fatos e argumentos.
+- Reforce a defesa do seu ponto de vista ao final de cada argumento, indicando claramente como cada proposta contribui para a redução do suicídio entre jovens.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "Dessa forma", "Ademais" e "Pode-se inferir" para estabelecer relações de causa‑efeito e conclusão entre as ideias, o que impede que o texto fique desconexo.
+- Há variedade de recursos de referência (pronomes demonstrativos, sinônimos e expressões como "por sua vez" e "não raro") que ajudam a manter a continuidade temática ao longo dos parágrafos.
+
+**Problemas:**
+- "Ademais, muitos jovens também são julgados por suas escolhas divergirem de padrões estabelecidos como dignos/corretos no meio social, como se observa com estilo de vestuário, estilo de alimentação e a homossexualidade."
+  O trecho apresenta uma sequência de enumerações sem a devida articulação coesiva. O uso de "como se observa com" é inadequado porque não estabelece claramente a relação entre os exemplos e a ideia principal. Além disso, a conjunção "e" antes de "a homossexualidade" cria ambiguidade, interrompendo a fluidez entre os itens da lista.
+  Correcao: "Ademais, muitos jovens são julgados por escolhas que divergem dos padrões considerados dignos ou corretos na sociedade, como ocorre no caso do estilo de vestuário, da alimentação e da orientação sexual."
+- "Isso é reflexo de uma barreira cultural insustentável nos dias atuais, a qual precisa ser derrubada, seja por meio de um maior diálogo entre jovens e seus responsáveis, seja pela maior preparação destes para lidar com tais situações, seja, também, pelo estímulo ao respeito/compreensão com o próximo, a fim de impulsionar os indivíduos a valorizarem não só a própria vida, como também a daquele ao seu alcance."
+  A repetição excessiva da estrutura "seja ... seja ... seja" gera cacofonia e enfraquece a coesão textual. O conectivo "como também" deveria ser precedido por "e" para fechar a comparação, e a expressão "a daquele ao seu alcance" está truncada, dificultando a referência ao sujeito anterior.
+  Correcao: "Isso reflete uma barreira cultural insustentável nos dias atuais, que precisa ser superada por meio de um maior diálogo entre jovens e seus responsáveis, da preparação destes para lidar com tais situações e, também, do estímulo ao respeito e à compreensão mútua, a fim de incentivar os indivíduos a valorizarem não só a própria vida, mas também a dos outros ao seu redor."
+
+**Como melhorar:**
+- Varie os conectivos de causa, consequência e adição (por exemplo, "por isso", "consequentemente", "além disso") para evitar repetições e tornar a progressão lógica mais clara.
+- Ao enumerar exemplos, use estruturas paralelas e introduza-os com conectivos adequados ("como", "tais como", "entre eles") para garantir que a referência entre os itens seja explícita.
+- Revise a pontuação dos conectivos compostos (vírgula antes de "porém", "contudo", "entretanto") e elimine vírgulas desnecessárias que interrompem a fluidez entre as orações.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você identificou bem as causas socioculturais do suicídio entre jovens, demonstrando compreensão do problema.
+- Apresentou uma proposta geral de intervenção (diálogo, preparação de responsáveis e estímulo ao respeito), o que evita que a nota fosse inferior.
+
+**Problemas:**
+- "Nesse intuito, ao se observar as causas desse sofrimento, muitas dessas estão relacionadas à excessiva pressão social sobre tais indivíduos, os quais têm buscado o atentado contra a própria vida como fuga de seus desafios."
+  A proposta de intervenção não está explicitada nesse trecho; ele apenas descreve o problema. Para a competência C5 é necessário detalhar quem será o agente da ação, qual ação será realizada, como será feita (modo/meio), qual efeito esperado e apresentar o plano de forma concreta. Sem esses elementos a proposta fica vaga e impede a elevação da nota.
+  Correcao: "Para enfrentar a pressão social que leva ao suicídio, o Ministério da Educação, em parceria com as Secretarias de Educação dos estados, deve implementar, a partir do próximo ano, programas de educação socioemocional nas escolas públicas. O programa será ministrado por psicólogos escolares treinados, que conduzirão, semanalmente, oficinas de autocuidado e de combate ao bullying, utilizando dinâmicas interativas e recursos digitais. Como efeito esperado, pretende‑se reduzir em 15% os índices de sofrimento psicológico entre adolescentes, criando um ambiente escolar mais acolhedor e prevenindo comportamentos suicidas."
+- "Isso é reflexo de uma barreira cultural insustentável nos dias atuais, a qual precisa ser derrubada, seja por meio de um maior diálogo entre jovens e seus responsáveis, seja pela maior preparação destes para lidar com tais situações, seja, também, pelo estímulo ao respeito/compreensão com o próximo, a fim de impulsionar os indivíduos a valorizarem não só a própria vida, como também a daquele ao seu alcance."
+  A proposta está apresentada de forma genérica e sem a estrutura exigida (agente, ação, modo, efeito). Falta especificar quem vai promover o diálogo, como será realizado, quais recursos serão usados e qual impacto concreto se espera alcançar.
+  Correcao: "O Conselho Nacional de Saúde deve criar, até 2025, a campanha "Vida Jovem", que contará com a participação de ONGs, escolas e famílias. A campanha realizará, em todo o país, encontros mensais mediadores por profissionais de saúde mental, nos quais jovens e responsáveis participarão de rodas de conversa guiadas por materiais didáticos produzidos pelo Ministério da Saúde. O objetivo é aumentar em 20% a percepção de apoio familiar entre adolescentes, reduzindo a sensação de isolamento que alimenta o suicídio."
+
+**Como melhorar:**
+- Defina claramente o agente da intervenção (ex.: governo, escolas, ONGs) e descreva seu papel específico.
+- Detalhe a ação, o modo/meio de execução (ex.: oficinas, campanhas, plataformas digitais) e indique o efeito esperado com dados ou metas plausíveis.
+- Conecte cada elemento da proposta ao problema já discutido no texto, mostrando como a intervenção responde diretamente às causas apontadas.
+
+
+---
+
+## Redacao 2163
+
+**Tema:** Qualificação e o futuro do emprego
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 120 | 120 | 160 | 120 | 640 |
+| Usada no feedback (humano) | 120 | 120 | 120 | 160 | 120 | 640 |
+
+**Texto:**
+
+> Desde a quarta Revolução Industrial, o mundo vem se curvando para uma perspectiva distópica em que as máquinas substituirão o trabalho dos homens e mulheres. Entretanto, o que acontece na contemporaneidade, é contemporaneidade é a atenção para as necessidades humanas no trabalho.', 'Um dos marcos do meio trabalhista no século XXI, é XXI é o surgimento dos coachings. Inicialmente, uma área da psicologia que visa o treinamento do controle emocional do ser humano que atua como profissional. A presença desses psicólogos em empresas se tornou mais frequente, pois, é pois é imprescindível que para que se atinja que, para se atingir um nível qualificado de um serviço ou produto, é preciso enxergar o trabalhador como gente, contrariando o mesmo como sendo uma máquina de força bruta não como máquina.', 'Além disso, convém lembrar que ao longo dos processos de Revolução do Trabalho revolução no trabalho, considera-se o como o modelo mais eficiente, o Toyotismo, cujo a cuja principal característica foi moldar a produção à demanda. Considerando isso como um modelo, o futuro do trabalho precisa modificar suas ocupações e legislações, para os diferentes perfis de profissionais dentro e fora do mercado.', 'Pensando nisso, o governo, deve governo deve, por meio do Ministério do Trabalho, criar políticas que atendam às urgências dos trabalhadores, que serão identificadas pelos psicólogos presentes, e posta postas em prática pelas autoridades responsáveis do meio por essa área. Deve também, finalizando, criar incentivos de pesquisa para que se tenha um futuro promissor e harmonioso em todos os ambientes de trabalho.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de articular ideias sobre o futuro do trabalho e traz referências relevantes, como a Quarta Revolução Industrial e o Toyotismo.
+- O texto apresenta um posicionamento claro e coerente em relação à importância dos psicólogos e dos coachings no ambiente laboral.
+
+**Problemas:**
+- "o que acontece na contemporaneidade, é contemporaneidade é a atenção para as necessidades humanas no trabalho."
+  Repetição desnecessária de palavras, vírgula mal empregada e falta de concordância verbal. A construção está confusa e foge ao registro formal exigido.
+  Correcao: "O que acontece na contemporaneidade é a atenção às necessidades humanas no trabalho."
+- "Um dos marcos do meio trabalhista no século XXI, é XXI é o surgimento dos coachings."
+  Erro de pontuação (vírgula antes do verbo), repetição de “é XXI” e uso inadequado de “coachings”. A frase perde clareza e formalidade.
+  Correcao: "Um dos marcos do meio trabalhista no século XXI é o surgimento dos coachings."
+- "pois, é pois é imprescindível que para que se atinja que, para se atingir um nível qualificado de um serviço ou produto, é preciso enxergar o trabalhador como gente, contrariando o mesmo como sendo uma máquina de força bruta não como máquina."
+  Sequência de conjunções e pronomes redundantes, vírgulas mal colocadas, concordância inadequada e construção prolixa que compromete a norma culta.
+  Correcao: "Pois é imprescindível que, para se alcançar um nível qualificado de serviço ou produto, se enxergue o trabalhador como pessoa, e não como uma máquina de força bruta."
+- "o futuro do trabalho precisa modificar suas ocupações e legislações, para os diferentes perfis de profissionais dentro e fora do mercado."
+  Uso inadequado de “precisa modificar” (verbo pouco preciso) e vírgula desnecessária antes de “para”.
+  Correcao: "O futuro do trabalho deve adaptar suas ocupações e legislações aos diferentes perfis de profissionais dentro e fora do mercado."
+- "Pensando nisso, o governo, deve governo deve, por meio do Ministério do Trabalho, criar políticas que atendam às urgências dos trabalhadores, que serão identificadas pelos psicólogos presentes, e posta postas em prática pelas autoridades responsáveis do meio por essa área."
+  Repetição de “deve governo deve”, vírgulas excessivas, concordância incorreta em “posta postas” e construção confusa que viola a norma padrão.
+  Correcao: "Pensando nisso, o governo, por meio do Ministério do Trabalho, deve criar políticas que atendam às urgências dos trabalhadores, identificadas pelos psicólogos, e colocá‑las em prática pelas autoridades competentes."
+
+**Como melhorar:**
+- Releia o texto em voz alta para identificar repetições, frases truncadas e vírgulas desnecessárias; depois ajuste a estrutura buscando frases curtas e objetivas.
+- Estude as regras de concordância verbal e nominal, regência de verbos e preposições, e pratique a aplicação em exercícios de correção de textos.
+- Faça um plano de revisão antes de entregar a redação: verifique ortografia, pontuação e escolha de registro, garantindo que o texto mantenha um tom formal e coerente do início ao fim.
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Apresenta uma proposta de intervenção relacionada ao papel do governo e dos psicólogos no futuro do trabalho, demonstrando tentativa de atender à exigência da competência C2.
+- Utiliza referências históricas (Quarta Revolução Industrial, Toyotismo) que mostram tentativa de contextualizar o tema.
+
+**Problemas:**
+- "Desde a quarta Revolução Industrial, o mundo vem se curvando para uma perspectiva distópica em que as máquinas substituirão o trabalho dos homens e mulheres."
+  O trecho apresenta linguagem vaga e falta de clareza ao afirmar que "o mundo vem se curvando"; além disso, a ideia de "substituir o trabalho" não está desenvolvida com argumentos concretos, o que enfraquece a sustentação da proposta e demonstra dificuldade em manter o foco na tese proposta.
+  Correcao: "Desde a Quarta Revolução Industrial, observa‑se uma tendência crescente de automação, que pode substituir muitas funções desempenhadas por homens e mulheres, exigindo a qualificação contínua dos trabalhadores."
+- "Além disso, convém lembrar que ao longo dos processos de Revolução do Trabalho revolução no trabalho, considera-se o como o modelo mais eficiente, o Toyotismo, cujo a cuja principal característica foi moldar a produção à demanda."
+  O trecho contém repetição de palavras, erros de concordância e estrutura confusa, comprometendo a coesão e a coerência do texto. A falta de clareza impede que o argumento sobre o Toyotismo seja compreendido e conectado ao tema da qualificação e do futuro do emprego.
+  Correcao: "Além disso, é importante lembrar que, ao longo das transformações no mundo do trabalho, o Toyotismo destacou‑se como um modelo eficiente, cuja principal característica era adaptar a produção à demanda."
+
+**Como melhorar:**
+- Planeje antes de escrever: elabore um esboço que delimite claramente a tese, os argumentos principais e a proposta de intervenção, garantindo que todos os parágrafos estejam ligados ao tema central.
+- Revise a coesão e a coerência: evite repetições, erros de concordância e frases confusas; use conectivos adequados para ligar ideias e manter a progressão lógica do texto.
+- Aprofunde os argumentos: apresente dados, exemplos ou referências concretas que sustentem suas ideias sobre qualificação e futuro do emprego, demonstrando domínio do tipo dissertativo‑argumentativo.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe referências históricas (Quarta Revolução Industrial, Toyotismo) que demonstram conhecimento do tema.
+- Apresentou a ideia de intervenção estatal (políticas do Ministério do Trabalho) como proposta de solução.
+
+**Problemas:**
+- "é imprescindível que para que se atinja que, para se atingir um nível qualificado de um serviço ou produto, é preciso enxergar o trabalhador como gente, contrariando o mesmo como sendo uma máquina de força bruta não como máquina."
+  O trecho apresenta repetição de verbos, construção confusa e falta de coesão, dificultando a compreensão da argumentação. Na competência C3, a seleção e organização das informações devem ser claras e lineares, sem redundâncias que atrapalhem a defesa do ponto de vista.
+  Correcao: "É imprescindível que, para alcançar um nível qualificado de serviço ou produto, se enxergue o trabalhador como ser humano, e não como uma máquina de força bruta."
+- "Pensando nisso, o governo, deve governo deve, por meio do Ministério do Trabalho, criar políticas que atendam às urgências dos trabalhadores, que serão identificadas pelos psicólogos presentes, e posta postas em prática pelas autoridades responsáveis do meio por essa área."
+  Há repetição desnecessária de palavras (“deve governo deve”, “posta postas”) e a sequência de ideias está desorganizada, o que impede a construção de um argumento sólido e bem estruturado.
+  Correcao: "Pensando nisso, o governo, por meio do Ministério do Trabalho, deve criar políticas que atendam às urgências dos trabalhadores, identificadas pelos psicólogos, e colocá‑las em prática pelas autoridades competentes."
+
+**Como melhorar:**
+- Reescreva cada parágrafo antes de finalizar, eliminando repetições e verificando se a sequência de ideias segue uma lógica clara (introdução, desenvolvimento, conclusão).
+- Use conectivos adequados (portanto, além disso, assim) para garantir a coesão entre os argumentos e facilitar a leitura.
+- Revise a gramática e a pontuação, focando em eliminar erros de concordância e redundâncias que atrapalham a clareza da sua defesa.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "além disso" e "pensando nisso", o que demonstra tentativa de articular as ideias entre os parágrafos.
+- Há variedade de recursos de referência (por exemplo, "o futuro do trabalho", "o governo") que ajudam a manter a coesão temática.
+
+**Problemas:**
+- "é imprescindível que para que se atinja que, para se atingir um nível qualificado de um serviço ou produto, é preciso enxergar o trabalhador como gente, contrariando o mesmo como sendo uma máquina de força bruta não como máquina."
+  O trecho apresenta repetição de conjunções e verbos (“para que se atinja que, para se atingir”), além de falta de clareza na referência ao sujeito. Isso rompe a fluidez do texto e enfraquece a coesão entre as orações.
+  Correcao: "É imprescindível que, para alcançar um nível qualificado de serviço ou produto, se enxergue o trabalhador como pessoa, evitando tratá‑lo como uma simples máquina."
+- "Pensando nisso, o governo, deve governo deve, por meio do Ministério do Trabalho, criar políticas que atendam às urgências dos trabalhadores, que serão identificadas pelos psicólogos presentes, e posta postas em prática pelas autoridades responsáveis do meio por essa área."
+  Há repetição desnecessária de palavras (“deve governo deve”, “posta postas”) e a sequência de conectores está confusa, o que prejudica a articulação lógica entre as ideias apresentadas.
+  Correcao: "Pensando nisso, o governo, por meio do Ministério do Trabalho, deve criar políticas que atendam às urgências dos trabalhadores, identificadas pelos psicólogos, e colocá‑las em prática pelas autoridades competentes."
+
+**Como melhorar:**
+- Revise o texto em busca de repetições e redundâncias; substitua‑as por construções mais concisas.
+- Use conectivos de forma intencional, garantindo que cada um indique claramente a relação lógica entre as frases (causa‑efeito, adição, contraste).
+- Faça uma leitura final focada na coesão: verifique se cada parágrafo está ligado ao anterior por meio de referências claras e se as ideias fluem de forma natural.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você conseguiu articular a proposta de intervenção ao tema central, indicando a participação do governo e dos psicólogos no ambiente de trabalho.
+- A proposta apresenta um agente (governo), uma ação (criar políticas) e um objetivo (atender às urgências dos trabalhadores).
+
+**Problemas:**
+- "Pensando nisso, o governo, deve governo deve, por meio do Ministério do Trabalho, criar políticas que atendam às urgências dos trabalhadores, que serão identificadas pelos psicólogos presentes, e posta postas em prática pelas autoridades responsáveis do meio por essa área."
+  A proposta carece de clareza e detalhamento nos elementos exigidos pela competência C5: falta especificar o modo/meio de implementação, o efeito esperado e o detalhamento das etapas. Além disso, há repetição e falta de coesão, o que enfraquece a compreensão da ação proposta.
+  Correcao: "Pensando nisso, o governo, por meio do Ministério do Trabalho, deve criar um programa nacional de apoio à saúde mental no trabalho, que contemple: (i) a realização de diagnósticos periódicos por psicólogos contratados nas empresas; (ii) a elaboração de planos de intervenção personalizados; (iii) a capacitação de gestores para aplicar essas medidas; e (iv) a avaliação dos resultados a cada semestre, visando melhorar a qualidade de vida dos trabalhadores e aumentar a produtividade."
+- "Além disso, convém lembrar que ao longo dos processos de Revolução do Trabalho revolução no trabalho, considera-se o como o modelo mais eficiente, o Toyotismo, cujo a cuja principal característica foi moldar a produção à demanda."
+  O trecho apresenta incoerência e falta de conexão com a proposta de intervenção, além de erros de concordância e repetição que comprometem a articulação entre a discussão e a solução apresentada.
+  Correcao: "Além disso, é importante considerar que o modelo Toyotista, que prioriza a produção sob demanda, pode ser adaptado para incluir práticas de bem‑estar dos trabalhadores, integrando tecnologia e apoio psicológico."
+
+**Como melhorar:**
+- Defina claramente o modo/meio de execução da proposta (por exemplo, criação de um programa, cronograma de ações, recursos necessários).
+- Especifique o efeito esperado da intervenção (melhoria da saúde mental, aumento da produtividade, redução de acidentes).
+- Evite repetições e erros de concordância; revise a coesão textual para garantir que cada parte da proposta esteja conectada à argumentação desenvolvida no texto.
+
+
+---
+
+## Redacao 5199
+
+**Tema:** Efeitos do negacionismo científico na sociedade
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 160 | 120 | 160 | 80 | 680 |
+| Usada no feedback (humano) | 160 | 160 | 120 | 160 | 80 | 680 |
+
+**Texto:**
+
+> A sociedade pode ser dividida em diversas formas, e uma divisão possível é entre as pessoas que buscam informações verídicas, verdadeiras, e os negacionistas, pessoas que recebem informações falsas, s “Fake News” e as espalham como uma “verdade universal” pois não aceitam aquilo que foi comprovado cientificamente a fim de “fugir da verdade”.', 'Cada vez mais mentiras estão sendo espalhadas por negacionistas, e isso acaba afetando o mundo inteiro, e algumas delas, são a “teoria terraplanista” que como o próprio nome diz, são pessoas que defendem que a terra é plana, ou ainda, no momento que estamos enfrentando a Covid-19, surgem informações de que a vacina traria algum tipo de doença, como o HIV, fatos que não são comprovados cientificamente. E esse mesmo pensamento sem embasamento científico em relação às doenças, levou a África do Sul por exemplo, entre 1998 e 2008, a deter mais de 20% das pessoas com Aids no planeta, já que seu presidente, Thabo Mbeki, negou a gravidade desse surto.', 'Uma forma na qual os negacionistas se pronunciam, é por meio da internet, onde utilizam postagens online, e muitas pessoas acabam por não procurar uma fonte confiável e compartilham essas informações, assim fortalecendo a “fake news”. Essas mentiras acabam sendo criadas, geralmente, por pessoas que não tem acesso ao conhecimento, ou seja, acesso à escola ou meios parecidos.', 'Em suma, é necessário que as pessoas tenham uma base de informações confiáveis, para que não espalhem a mentira, por acharem que aquilo que sabem, é a “verdade absoluta”. Uma forma de intervir o problema, é a de sempre checar se aquilo que está compartilhando é verdade, pesquisando em fontes confiáveis, e estar disposto a ouvir uma verdade diferente da sua.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de articular ideias e utiliza um vocabulário adequado ao tema, o que garante a coerência argumentativa da redação.
+- A escolha de registro é, em geral, formal e apropriada ao contexto do ENEM, evitando coloquialismos excessivos.
+
+**Problemas:**
+- "e os negacionistas, pessoas que recebem informações falsas, s “Fake News” e as espalham como uma “verdade universal” pois não aceitam aquilo que foi comprovado cientificamente a fim de “fugir da verdade”.'"
+  Há erros de pontuação (vírgula antes de "e" sem necessidade, uso inadequado de aspas), ortografia ("s" isolado, "Fake News" em maiúsculas desnecessárias) e concordância ("informações falsas, s “Fake News” e as espalham" – o pronome "as" não concorda com "informações"). Além disso, a construção da frase está confusa, comprometendo a clareza.
+  Correcao: "e os negacionistas, pessoas que recebem informações falsas – as chamadas "fake news" – e as espalham como se fossem "verdade universal", pois não aceitam o que foi comprovado cientificamente, preferindo "fugir da verdade"."
+
+**Como melhorar:**
+- Revise a pontuação, especialmente o uso de vírgulas e travessões, para separar orações e elementos explicativos de forma clara.
+- Atente-se à ortografia e ao uso correto de maiúsculas/minúsculas; termos como "fake news" devem ser escritos em minúsculas, exceto quando iniciam frase.
+- Faça uma leitura final focada na concordância verbal e nominal, garantindo que pronomes e verbos estejam em acordo com seus referentes.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você compreendeu bem a proposta e manteve o foco no tema, apresentando uma tese clara sobre os efeitos do negacionismo científico na sociedade.
+- Sua argumentação inclui exemplos concretos (teoria da Terra plana, vacinas contra a Covid‑19 e a política de Thabo Mbeki), o que demonstra capacidade de desenvolver o assunto dentro do gênero dissertativo‑argumentativo.
+
+**Problemas:**
+- "uma forma na qual os negacionistas se pronunciam, é por meio da internet, onde utilizam postagens online, e muitas pessoas acabam por não procurar uma fonte confiável e compartilham essas informações, assim fortalecendo a “fake news”."
+  O trecho apresenta problemas de coesão e clareza: a construção "uma forma na qual" é redundante, há vírgulas excessivas que interrompem a fluidez e o termo "fake news" está entre aspas desnecessárias, indicando falta de domínio do registro formal exigido na C2. Além disso, a ideia poderia ser desenvolvida com maior profundidade, conectando‑a ao argumento central de forma mais direta.
+  Correcao: "Uma das estratégias utilizadas pelos negacionistas é a divulgação de informações falsas na internet, por meio de postagens que muitas vezes não são verificadas. Essa prática impede que os leitores busquem fontes confiáveis, contribuindo para a propagação da desinformação."
+
+**Como melhorar:**
+- Enriqueça sua argumentação com repertório sociocultural mais diversificado (dados de pesquisas, referências históricas ou teóricas) para demonstrar domínio avançado do tema.
+- Aprimore a coesão textual: use conectivos adequados e evite construções redundantes ou frases excessivamente longas que comprometam a clareza.
+- Adote um registro formal consistente, eliminando aspas desnecessárias e cuidando da pontuação para garantir que o texto siga rigorosamente as normas do gênero dissertativo‑argumentativo.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você trouxe exemplos concretos (teoria da Terra plana, vacina contra Covid‑19, caso da África do Sul) que demonstram conhecimento do tema e evitam que a redação fique apenas em ideias genéricas.
+- O texto apresenta uma conclusão que retoma a ideia central e propõe uma solução (checar fontes confiáveis), mostrando que você consegue articular um ponto de vista ao final da produção.
+
+**Problemas:**
+- "A sociedade pode ser dividida em diversas formas, e uma divisão possível é entre as pessoas que buscam informações verídicas, verdadeiras, e os negacionistas, pessoas que recebem informações falsas, s “Fake News” e as espalham como uma “verdade universal” pois não aceitam aquilo que foi comprovado cientificamente a fim de “fugir da verdade”."
+  O trecho apresenta repetições desnecessárias ("informações verídicas, verdadeiras"), erros de concordância e pontuação, além de falta de coesão entre as ideias. Na competência C3, a seleção e organização das informações devem ser claras e fluídas, sem ruídos que atrapalhem a compreensão do argumento.
+  Correcao: "A sociedade pode ser dividida em diferentes grupos, entre eles aqueles que buscam informações verídicas e os negacionistas, que difundem "fake news" como se fossem verdades universais, recusando evidências científicas."
+- "Essas mentiras acabam sendo criadas, geralmente, por pessoas que não tem acesso ao conhecimento, ou seja, acesso à escola ou meios parecidos."
+  A frase contém erro de concordância verbal ("não tem" em vez de "não têm") e uso vago de termos como "meios parecidos", o que enfraquece a argumentação. Para a C3, é essencial que os fatos e opiniões sejam apresentados de forma precisa e bem estruturada.
+  Correcao: "Essas mentiras são geralmente criadas por pessoas que não têm acesso ao conhecimento, ou seja, que não frequentam escolas ou não dispõem de recursos educacionais adequados."
+- "Em suma, é necessário que as pessoas tenham uma base de informações confiáveis, para que não espalhem a mentira, por acharem que aquilo que sabem, é a “verdade absoluta”."
+  O trecho apresenta vírgulas mal colocadas e falta de progressão lógica entre as ideias, o que prejudica a organização textual exigida na C3. Além disso, a argumentação fica superficial, sem aprofundar o porquê da necessidade de checagem de fontes.
+  Correcao: "Em suma, é fundamental que as pessoas tenham acesso a informações confiáveis, para que não disseminem mentiras acreditando que suas convicções correspondem à verdade absoluta."
+
+**Como melhorar:**
+- Planeje o texto antes de escrever: faça um esboço com os principais argumentos, dados e exemplos, garantindo uma sequência lógica e coesa.
+- Revise a concordância verbal e nominal, bem como a pontuação, para evitar rupturas na fluidez da leitura.
+- Enriqueça a argumentação com informações adicionais (estatísticas, citações de especialistas) e conectores que reforcem a relação entre os parágrafos, demonstrando autoria e domínio do tema.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "assim", "porém" e "em suma" para estabelecer relações de causa‑efeito e conclusão entre os parágrafos, o que demonstra consciência dos mecanismos de coesão.
+- Há variedade de recursos coesivos (conjunções, advérbios e pronomes demonstrativos) ao longo do texto, evitando repetições excessivas.
+
+**Problemas:**
+- "Cada vez mais mentiras estão sendo espalhadas por negacionistas, e isso acaba afetando o mundo inteiro, e algumas delas, são a “teoria terraplanista” que como o próprio nome diz, são pessoas que defendem que a terra é plana, ou ainda, no momento que estamos enfrentando a Covid-19, surgem informações de que a vacina traria algum tipo de doença, como o HIV, fatos que não são comprovados cientificamente."
+  O trecho apresenta encadeamento confuso de ideias: há repetição desnecessária da conjunção "e", falta de pontuação adequada e ausência de conectivo que indique a sequência lógica entre a teoria terraplanista e a desinformação sobre a Covid‑19. Isso prejudica a articulação entre as partes do texto, gerando ambiguidade.
+  Correcao: "Cada vez mais mentiras são espalhadas por negacionistas, o que afeta o mundo inteiro. Entre elas, destaca‑se a "teoria terraplanista", cujos defensores afirmam que a Terra é plana. Além disso, no contexto da Covid‑19, surgem informações falsas de que a vacina poderia causar doenças como o HIV, fatos que não têm respaldo científico."
+- "Essas mentiras acabam sendo criadas, geralmente, por pessoas que não tem acesso ao conhecimento, ou seja, acesso à escola ou meios parecidos."
+  O uso do pronome "essas" sem referência clara ao antecedente imediato dificulta a coesão referencial. Além disso, a construção "não tem acesso ao conhecimento" está desconexa do que se pretende dizer, e a expressão "meios parecidos" é vaga, comprometendo a clareza da ligação entre as ideias.
+  Correcao: "Essas mentiras são, geralmente, criadas por pessoas que não têm acesso ao conhecimento formal, ou seja, que não frequentam a escola ou não dispõem de recursos educativos semelhantes."
+
+**Como melhorar:**
+- Planeje a sequência lógica dos parágrafos antes de escrever, definindo quais conectivos (consequência, adição, contraste, conclusão) serão usados para ligar cada ideia.
+- Revise a referência dos pronomes demonstrativos (este, esse, aquele) garantindo que eles apontem claramente para o termo mencionado anteriormente.
+- Varie os tipos de conectivos (conjunções, advérbios, locuções) e evite repetições desnecessárias de "e"; use pontuação (vírgulas, ponto‑e‑vírgula) para separar orações coordenadas e melhorar a fluidez textual.
+
+
+### C5 (nota 80)
+
+**Pontos fortes:**
+- Você identificou claramente o problema do negacionismo científico e trouxe exemplos concretos (teoria da Terra plana, desinformação sobre vacinas e o caso da AIDS na África do Sul).
+- Sua proposta inicial de checar informações em fontes confiáveis demonstra preocupação com a solução e está alinhada ao tema.
+
+**Problemas:**
+- "Em suma, é necessário que as pessoas tenham uma base de informações confiáveis, para que não espalhem a mentira, por acharem que aquilo que sabem, é a “verdade absoluta”. Uma forma de intervir o problema, é a de sempre checar se aquilo que está compartilhando é verdade, pesquisando em fontes confiáveis, e estar disposto a ouvir uma verdade diferente da sua."
+  A proposta está vaga e não apresenta os elementos exigidos pela competência C5: agente (quem vai agir), ação (o que será feito), modo/meio (como será realizado), efeito (qual o impacto esperado) e detalhamento. Além disso, a solução se resume a um ato individual de checagem, sem indicar políticas públicas, campanhas educativas ou mecanismos de fiscalização que garantam a efetividade da intervenção.
+  Correcao: "Em suma, é necessário que o Ministério da Educação, em parceria com o Ministério da Saúde e plataformas digitais, implemente um programa nacional de alfabetização midiática nas escolas públicas, com a formação continuada de professores para ensinar técnicas de verificação de fontes. O programa deve incluir campanhas de conscientização nas redes sociais, financiadas pelo governo, que utilizem influenciadores digitais para divulgar guias de checagem. Como meio de monitoramento, será criado um portal oficial de fact‑checking, integrado aos mecanismos de denúncia das próprias plataformas, que removerá conteúdos falsos em até 48 horas. Espera‑se, assim, reduzir em 30% a circulação de notícias falsas sobre ciência e melhorar a confiança da população nas informações oficiais."
+
+**Como melhorar:**
+- Defina claramente quem será o agente da intervenção (ex.: governo, escolas, plataformas digitais) e descreva a ação específica que esse agente realizará.
+- Detalhe o modo/meio de execução (ex.: criação de cursos, campanhas nas redes sociais, ferramentas de fact‑checking) e indique o efeito esperado (ex.: diminuição da desinformação, aumento da confiança nas fontes científicas).
+- Conecte a proposta à discussão desenvolvida no texto, mostrando como a solução proposta combate os exemplos de negacionismo citados (teoria da Terra plana, fake news sobre vacinas, etc.).
+
+
+---
+
+## Redacao 4468
+
+**Tema:** Um réu deve ou não ser preso após a condenação em 2ª. instância?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 200 | 200 | 200 | 200 | 200 | 1000 |
+| Usada no feedback (humano) | 200 | 200 | 200 | 200 | 200 | 1000 |
+
+**Texto:**
+
+> A Constituição Federal de 1988, em seu artigo 5, é clara ao determinar que, salvo nas hipóteses de prisões cautelares, ninguém será preso até o trânsito em julgado da sentença penal condenatória, ou seja, até que não caibam mais recursos. Apesar da previsão legal, o Supremo Tribunal Federal (STF) fez um "malabarismo interpretativo" ao julgar legítima a prisão do réu em segunda instância.', 'Nesse contexto, a Corte Suprema, quando julgou o tema, se afastou de sua função precípua que é aplicar a lei, tendo em vista que a competência para elaborá-las é do Poder Legislativo. Sem dúvida, o STF, ao passo que ignorou a interpretação literal e lógica da Constituição, se comportou como um rei absolutista que cria e aplica as normas ao seu próprio alvedrio.', 'Ademais, erroneamente, argumenta-se que a prisão após segunda instância é necessária, uma vez que o julgamento completo de uma ação penal, com o esgotamento de todos os recursos, é muito demorado e, assim, o réu permanece em liberdade durante todo o processo, de modo a fortificar o sentimento de impunidade perante a sociedade. Contudo, é importante dizer que não é razoável que alguém seja antecipadamente punido por pura ineficiência do Poder Judiciário em dar celeridade às suas demandas. Ora, se há morosidade, isso deve ser solucionado de uma forma que não aniquile o princípio da presunção de inocência!', 'Portanto, tal medida validada pelo STF é um atentado contra a ordem constitucional. Por conta disso, para sanar tal controvérsia, deverá o Poder Legislativo aprovar lei que detalhe claramente a vedação à prisão em segunda instância, sob pena de violação a um caro direito fundamental.
+
+
+### C1 (nota 200)
+
+**Pontos fortes:**
+- Uso adequado de linguagem formal e vocabulário preciso, demonstrando domínio da norma culta.
+- Coerência e coesão na argumentação, com conectores bem empregados e estrutura clara.
+
+**Problemas:**
+
+**Como melhorar:**
+- Continue revisando as normas de pontuação em períodos longos para garantir ainda mais clareza.
+- Aprofunde o estudo de regência verbal e nominal para evitar eventuais deslizes em textos futuros.
+- Pratique a revisão final focada em ortografia de palavras menos frequentes, mantendo o alto padrão já alcançado.
+
+
+### C2 (nota 200)
+
+**Pontos fortes:**
+- Apresentou argumentação consistente, sustentada em dispositivos constitucionais e em posicionamento do STF, demonstrando domínio do tema proposto.
+- Utilizou repertório sociocultural (referência ao STF e ao princípio da presunção de inocência) de forma pertinente, reforçando a tese central.
+
+**Problemas:**
+- "o STF, ao passo que ignorou a interpretação literal e lógica da Constituição, se comportou como um rei absolutista que cria e aplica as normas ao seu próprio alvedrio."
+  A linguagem exagerada e a analogia ao "rei absolutista" podem ser vistas como hipérbole desnecessária, afastando o texto do registro formal exigido para o tipo dissertativo‑argumentativo. Na competência C2, o foco deve permanecer na argumentação lógica e na clareza, evitando juízos de valor excessivamente carregados.
+  Correcao: "o STF, ao passo que ignorou a interpretação literal e lógica da Constituição, adotou uma postura que extrapola sua função de guardião da lei, gerando controvérsia sobre a aplicação do princípio da presunção de inocência."
+
+**Como melhorar:**
+- Mantenha o registro formal, substituindo expressões coloquiais ou hiperbólicas por termos neutros e precisos.
+- Reforce a coesão entre os parágrafos, utilizando conectivos que indiquem claramente a progressão lógica dos argumentos.
+- Aprofunde a análise de possíveis soluções legislativas, apresentando exemplos concretos de como o Congresso poderia regulamentar a questão, sem recorrer a generalizações.
+
+
+### C3 (nota 200)
+
+**Pontos fortes:**
+- Você selecionou informações jurídicas relevantes (artigo 5º da Constituição, decisões do STF) e as relacionou de forma coerente ao ponto de vista defendido.
+- A organização das ideias em sequência lógica – introdução, desenvolvimento e conclusão – demonstra domínio da estrutura argumentativa exigida.
+
+**Problemas:**
+- "o STF fez um "malabarismo interpretativo" ao julgar legítima a prisão do réu em segunda instância." [NAO LITERAL]
+  O termo "malabarismo interpretativo" é uma linguagem coloquial e subjetiva que enfraquece a neutralidade e a precisão exigidas na seleção e interpretação de informações. Na competência C3, espera‑se que o candidato apresente argumentos com linguagem formal e fundamentada, evitando juízos de valor não justificados.
+  Correcao: "O STF adotou uma interpretação que considerou legítima a prisão do réu em segunda instância."
+
+**Como melhorar:**
+- Substitua expressões coloquiais ou carregadas de julgamento por linguagem formal e objetiva, sempre sustentando o ponto de vista com fundamentos jurídicos claros.
+- Amplie a variedade de fontes (jurisprudência, doutrina, dados estatísticos) para enriquecer a seleção de informações e demonstrar maior profundidade na argumentação.
+- Reforce a conexão entre cada argumento e o ponto de vista central, explicitando como cada fato ou opinião contribui para a defesa da sua tese.
+
+
+### C4 (nota 200)
+
+**Pontos fortes:**
+- Uso adequado de conectivos que garantem a progressão lógica entre os parágrafos, como "Apesar da previsão legal" e "Ademais".
+- Referência clara aos dispositivos constitucionais e ao STF, mantendo a coerência temática ao longo de todo o texto.
+
+**Problemas:**
+- "Portanto, tal medida validada pelo STF é um atentado contra a ordem constitucional."
+  A conjunção "Portanto" indica conclusão, mas o parágrafo anterior não apresenta um encadeamento explícito que justifique essa conclusão. Falta um conectivo de causa‑efeito que una a argumentação anterior ao juízo final, comprometendo a coesão entre períodos.
+  Correcao: "Assim, considerando que o STF validou a medida apesar da Constituição, tal medida representa um atentado contra a ordem constitucional."
+
+**Como melhorar:**
+- Utilize conectivos de causa‑efeito (por exemplo, "assim", "por isso") antes de conclusões para reforçar a relação lógica entre ideias.
+- Revise a sequência de argumentos para garantir que cada conclusão seja precedida por um desenvolvimento que a sustente explicitamente.
+- Varie os recursos de referência (pronomes, sinônimos, elipses) para evitar repetições e tornar a articulação entre parágrafos ainda mais fluida.
+
+
+### C5 (nota 200)
+
+**Pontos fortes:**
+- A proposta de intervenção está claramente articulada ao tema, indicando quem deve agir (Poder Legislativo) e qual ação deve ser tomada (aprovar lei que vedasse a prisão em segunda instância).
+- O texto detalha o modo/meio (elaboração de lei específica) e o efeito esperado (garantia da presunção de inocência e respeito ao princípio constitucional).
+
+**Problemas:**
+- "Por conta disso, para sanar tal controvérsia, deverá o Poder Legislativo aprovar lei que detalhe claramente a vedação à prisão em segunda instância, sob pena de violação a um caro direito fundamental."
+  A proposta não especifica o agente responsável pela implementação da lei nem descreve o mecanismo de fiscalização ou acompanhamento da sua aplicação, o que enfraquece o detalhamento exigido pela competência C5.
+  Correcao: "Por conta disso, para sanar tal controvérsia, o Congresso Nacional, por meio da Câmara dos Deputados e do Senado, deverá aprovar uma lei que detalhe claramente a vedação à prisão em segunda instância; o Ministério da Justiça será responsável por regulamentar a norma e criar um sistema de monitoramento que verifique seu cumprimento, garantindo que qualquer violação seja punida com sanções administrativas ao órgão competente."
+
+**Como melhorar:**
+- Especifique sempre o agente (instituição ou autoridade) que executará cada parte da proposta.
+- Descreva o mecanismo de implementação (regulamentação, fiscalização, sanções) para tornar a intervenção mais concreta.
+- Relacione explicitamente o efeito esperado da proposta ao problema discutido, demonstrando como a medida contribuirá para a solução.
+
+
+---
+
+## Redacao 749
+
+**Tema:** O Brasil paralisado: o que você pensa sobre a greve dos caminhoneiros?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 80 | 80 | 80 | 120 | 480 |
+| Usada no feedback (humano) | 120 | 80 | 80 | 80 | 120 | 480 |
+
+**Texto:**
+
+> É evidente que a greve dos caminhoneiros, ocorrida no final de maio do presente ano, causou grande transtorno no país. Uma das reivindicações mais importante era a redução no preço do diesel que tem subido diariamente.', 'A paralisação começou através de circulação pelas redes sociais e teve como consequência o desabastecimento de produtos nas cidades, como alimentos, combustíveis e remédios, e a inutilização de produtos perecíveis como o leite, advindo das fazendas para as indústrias. Estes foram descartados devido a falta de transporte e muitas cidades sentiram a falta daqueles .', 'Houve muitas críticas por parte da sociedade, principalmente de políticos e da mídia, mas teve também muitos apoiadores da greve. Entre várias manchetes de jornais jornais houve a do Diário de Pernambuco, em que na capa principal constava a frase “Brasil refém dos caminhoneiros”, palco de muitas críticas por parte da população apoiadora da reivindicação.', 'Os motoristas de caminhões fizeram uma greve pacífica e de acordo com a lei. Em uma pesquisa realizada pelo Datafolha mostra que 87% da população apóia a parada . Muitas pessoas e outras categorias de transportes, destacando-se as de táxis e escolares, foram para as ruas também protestarem . Ruas ficaram desertas, sem carros, e postos que ainda tinham combustíveis com filas enormes.', 'Entende-se que um acordo entre o Governo pode ser uma melhor solução a ser tomada, a diminuição de impostos abusivos, tanto nos combustíveis como em muitos produtos, em que às vezes passam de 50% os impostos embutidos, tornando caro o preço final. Torna-se necessário também a construção de mais ferrovias no País, pois em muitas regiões não existe, tornando o transporte rodoviário o principal meio para a chegada de produtos em outras regiões.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa compreensão do tema e consegue articular argumentos relevantes, como a necessidade de redução de impostos e investimento em ferrovias.
+- A estrutura geral do texto (introdução, desenvolvimento e conclusão) está presente, o que impede que a nota seja ainda menor.
+
+**Problemas:**
+- "Uma das reivindicações mais importante era a redução no preço do diesel que tem subido diariamente."
+  Erro de concordância nominal: o adjetivo deve concordar em número com o substantivo que acompanha. Além disso, a construção "tem subido" está fora de concordância com o sujeito "preço".
+  Correcao: "Uma das reivindicações mais importantes era a redução no preço do diesel, que tem subido diariamente."
+- "e a inutilização de produtos perecíveis como o leite, advindo das fazendas para as indústrias."
+  Uso inadequado da preposição "advindo de" que não se aplica ao sentido de origem do leite; o verbo deveria indicar procedência, não origem da ação.
+  Correcao: "e a inutilização de produtos perecíveis, como o leite, proveniente das fazendas para as indústrias."
+- "Houve muitas críticas por parte da sociedade, principalmente de políticos e da mídia, mas teve também muitos apoiadores da greve."
+  Problema de regência verbal: o verbo "ter" exige objeto direto, não "teve" como forma impessoal. Além disso, a conjunção "mas" introduz uma ideia contraditória sem a devida coesão.
+  Correcao: "Houve muitas críticas por parte da sociedade, principalmente de políticos e da mídia, mas também houve muitos apoiadores da greve."
+- "Em uma pesquisa realizada pelo Datafolha mostra que 87% da população apóia a parada ."
+  Erro de pontuação (espaço antes do ponto) e construção sintática inadequada: o sujeito da oração está ausente, gerando frase fragmentada.
+  Correcao: "Uma pesquisa realizada pelo Datafolha mostra que 87% da população apoia a paralisação."
+- "Entende-se que um acordo entre o Governo pode ser uma melhor solução a ser tomada, a diminuição de impostos abusivos, tanto nos combustíveis como em muitos produtos, em que às vezes passam de 50% os impostos embutidos, tornando caro o preço final."
+  Problemas de pontuação e de coesão: a enumeração está confusa, há vírgulas excessivas e falta de clareza na relação entre as ideias. Além disso, há concordância inadequada em "uma melhor solução a ser tomada".
+  Correcao: "Entende‑se que um acordo entre o Governo pode ser a melhor solução, com a diminuição de impostos abusivos, tanto nos combustíveis quanto em muitos produtos, que às vezes chegam a representar mais de 50% do preço final."
+
+**Como melhorar:**
+- Revisar a concordância nominal e verbal em todas as frases; pratique exercícios de concordância para internalizar as regras.
+- Atenção à pontuação, especialmente ao uso de vírgulas em enumerações e antes de conectivos; leia o texto em voz alta para identificar pausas naturais.
+- Faça uma revisão final focada na regência verbal e nominal, verificando se os verbos estão acompanhados dos complementos corretos e se as preposições são adequadas ao sentido.
+
+
+### C2 (nota 80)
+
+**Pontos fortes:**
+- Você identificou claramente o tema proposto e manteve o foco na greve dos caminhoneiros ao longo do texto.
+- Apresentou algumas informações de contexto (ex.: data da greve, principais reivindicações) que demonstram compreensão básica da proposta.
+
+**Problemas:**
+- "A paralisação começou através de circulação pelas redes sociais e teve como consequência o desabastecimento de produtos nas cidades, como alimentos, combustíveis e remédios, e a inutilização de produtos perecíveis como o leite, advindo das fazendas para as indústrias."
+  O trecho mistura causa e consequência de forma confusa e não estabelece uma relação argumentativa clara entre a greve e o desabastecimento. Falta conectar a ideia ao ponto de vista que você pretende defender, o que enfraquece a estrutura dissertativo‑argumentativa.
+  Correcao: "A paralisação, iniciada nas redes sociais, provocou o desabastecimento de alimentos, combustíveis e remédios nas cidades, pois a interrupção do transporte impediu que produtos perecíveis, como o leite, chegassem das fazendas às indústrias."
+- "Os motoristas de caminhões fizeram uma greve pacífica e de acordo com a lei. Em uma pesquisa realizada pelo Datafolha mostra que 87% da população apóia a parada ."
+  A frase apresenta erro de concordância e pontuação, além de usar dados sem contextualizá‑los na argumentação. O uso de porcentagem isolada não sustenta a tese; é preciso analisar o que esse apoio implica para a solução do problema.
+  Correcao: "Os motoristas de caminhões realizaram uma greve pacífica, dentro dos limites legais. Segundo pesquisa do Datafolha, 87% da população apoiou a paralisação, o que evidencia a percepção de que a questão dos preços dos combustíveis afeta diretamente a vida dos brasileiros."
+- "Entende-se que um acordo entre o Governo pode ser uma melhor solução a ser tomada, a diminuição de impostos abusivos, tanto nos combustíveis como em muitos produtos, em que às vezes passam de 50% os impostos embutidos, tornando caro o preço final."
+  O trecho apresenta estrutura sintática confusa, falta de coesão e repete a ideia de “acordo” sem desenvolver um argumento consistente. Além disso, a expressão “impostos abusivos” é vaga e não está sustentada por argumentos concretos, comprometendo a clareza da proposta de intervenção.
+  Correcao: "Uma solução eficaz seria a negociação de um acordo entre governo e caminhoneiros, aliada à redução dos impostos sobre combustíveis e outros produtos essenciais. Essa medida poderia diminuir o preço final ao consumidor, que atualmente inclui mais de 50% de carga tributária."
+
+**Como melhorar:**
+- Organize o texto em três partes bem delimitadas: introdução (apresentando a tese), desenvolvimento (dois ou três argumentos claros, cada um com explicação e exemplo) e conclusão (reafirmando a tese e propondo solução).
+- Use conectivos lógicos (por exemplo, "consequentemente", "além disso", "por outro lado") para estabelecer relações de causa‑efeito e contraste entre os argumentos, evitando frases soltas ou desconexas.
+- Revise a concordância verbal e nominal, bem como a pontuação, para garantir que cada frase esteja gramaticalmente correta e que as ideias sejam transmitidas de forma precisa e fluida.
+
+
+### C3 (nota 80)
+
+**Pontos fortes:**
+- Você trouxe dados concretos (pesquisa Datafolha) que demonstram apoio popular à greve, o que ajuda a sustentar seu ponto de vista.
+- O texto apresenta diferentes perspectivas (críticas da sociedade, apoio dos caminhoneiros e sugestões de solução), mostrando tentativa de articulação de argumentos.
+
+**Problemas:**
+- "É evidente que a greve dos caminhoneiros, ocorrida no final de maio do presente ano, causou grande transtorno no país."
+  A frase carece de especificidade e de conexão lógica com os demais argumentos. Não há indicação clara de quais informações, fatos ou opiniões serão desenvolvidos a seguir, o que gera desorganização na sequência argumentativa.
+  Correcao: "A greve dos caminhoneiros, iniciada em maio de 2024, provocou desabastecimento de alimentos, combustíveis e medicamentos em diversas regiões do Brasil, gerando impactos econômicos e sociais que exigem análise aprofundada."
+- "Ruas ficaram desertas, sem carros, e postos que ainda tinham combustíveis com filas enormes."
+  O trecho apresenta ideias desconexas e falta de coesão; a relação entre ruas desertas e filas em postos não está explicitada, prejudicando a clareza da argumentação.
+  Correcao: "Com a paralisação, as ruas ficaram desertas, pois poucos veículos circulavam; ao mesmo tempo, os postos que ainda mantinham estoque de combustível formaram longas filas, evidenciando a ruptura na cadeia de abastecimento."
+
+**Como melhorar:**
+- Organize os parágrafos de forma lógica: introdução com tese clara, desenvolvimento com fatos e argumentos bem encadeados, e conclusão que retome a tese e proponha soluções.
+- Use conectivos adequados (por exemplo, "consequentemente", "além disso", "por outro lado") para garantir a coesão entre as ideias e evitar saltos abruptos.
+- Selecione e apresente apenas informações relevantes ao ponto de vista defendido, evitando repetições e dados desconexos que enfraquecem a argumentação.
+
+
+### C4 (nota 80)
+
+**Pontos fortes:**
+- Você utilizou alguns conectivos básicos (ex.: "mas", "e") que permitem alguma ligação entre as ideias, evitando que o texto fique totalmente desconexo.
+- Há tentativa de retomar o tema ao longo dos parágrafos, o que impede que a nota seja ainda menor.
+
+**Problemas:**
+- "Entre várias manchetes de jornais jornais houve a do Diário de Pernambuco, em que na capa principal constava a frase “Brasil refém dos caminhoneiros”, palco de muitas críticas por parte da população apoiadora da reivindicação."
+  O trecho apresenta repetição lexical (“jornais jornais”), falta de conectivo que indique a sequência lógica e a referência “palco de muitas críticas por parte da população apoiadora da reivindicação” está confusa, pois não deixa claro quem critica quem. Além disso, a transição entre a ideia de manchetes e a de críticas não está bem articulada.
+  Correcao: "Entre várias manchetes de jornais, destacou‑se a do Diário de Pernambuco, cuja capa principal trazia a frase “Brasil refém dos caminhoneiros”. Essa manchete gerou críticas tanto da população contrária quanto da que apoiava a reivindicação."
+- "A paralisação começou através de circulação pelas redes sociais e teve como consequência o desabastecimento de produtos nas cidades, como alimentos, combustíveis e remédios, e a inutilização de produtos perecíveis como o leite, advindo das fazendas para as indústrias."
+  Há excesso de vírgulas e a sequência de ideias não está bem encadeada. O conectivo “e” aparece duas vezes seguidas, gerando ruptura na coesão. Falta um marcador que relacione a causa (circulação nas redes) à consequência (desabastecimento).
+  Correcao: "A paralisação começou a se divulgar nas redes sociais; como consequência, houve desabastecimento de alimentos, combustíveis e remédios nas cidades, além da perda de produtos perecíveis, como o leite, que não chegou das fazendas às indústrias."
+- "É evidente que a greve dos caminhoneiros, ocorrida no final de maio do presente ano, causou grande transtorno no país."
+  O uso de “grande transtorno” é vago e o conectivo “que” não estabelece relação de causa‑efeito com os parágrafos seguintes. Falta um elemento de coesão que indique que o que será desenvolvido a seguir são as consequências desse transtorno.
+  Correcao: "É evidente que a greve dos caminhoneiros, ocorrida no final de maio deste ano, provocou um grave transtorno no país, cujas consequências serão detalhadas a seguir."
+
+**Como melhorar:**
+- Planeje a sequência lógica do texto antes de escrever, definindo quais conectivos (portanto, entretanto, além disso, consequentemente) serão usados para ligar cada parágrafo ao anterior.
+- Revise as referências pronominais e nominais, garantindo que todo pronome ou termo de retomada tenha antecedente claro e único, evitando ambiguidades.
+- Varie os recursos coesivos: combine conectivos de adição, contraste e consequência, e use elipses ou substituições lexicais (sinônimos) para evitar repetições desnecessárias.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você identificou claramente o problema central da greve e relacionou-o ao desabastecimento de bens essenciais, demonstrando compreensão do tema.
+- Sua proposta inclui medidas estruturais, como a ampliação da malha ferroviária, o que indica capacidade de pensar em soluções de longo prazo.
+
+**Problemas:**
+- "A construção de mais ferrovias no País, pois em muitas regiões não existe, tornando o transporte rodoviário o principal meio para a chegada de produtos em outras regiões."
+  Na competência C5 a proposta precisa estar detalhada nos cinco elementos: agente (quem executa), ação (o que será feito), modo/meio (como será feito), efeito (qual o resultado esperado) e respeito aos direitos humanos. O trecho apresenta apenas a ação (construir ferrovias) e o problema que ela visa resolver, mas não indica quem será o agente responsável, nem o modo de implementação, nem o efeito concreto esperado nem a garantia de direitos humanos.
+  Correcao: "O Governo Federal, por meio do Ministério da Infraestrutura, deve elaborar um plano de investimento de R$ 50 bilhões para a construção de novas linhas ferroviárias nas regiões Norte e Nordeste, utilizando licitações transparentes e participação de empresas privadas com responsabilidade social, de modo a reduzir em 30% a dependência do transporte rodoviário de cargas. Essa medida garantirá o direito à alimentação e à saúde da população, ao assegurar o abastecimento regular de alimentos e medicamentos em todo o território nacional."
+- "Entende-se que um acordo entre o Governo pode ser uma melhor solução a ser tomada, a diminuição de impostos abusivos, tanto nos combustíveis como em muitos produtos, em que às vezes passam de 50% os impostos embutidos, tornando caro o preço final."
+  A proposta está vaga: não especifica quem negociará o acordo, quais impostos serão reduzidos, qual será o percentual da redução, nem como essa medida será implementada nem quais direitos humanos serão preservados. Falta, portanto, a estrutura completa exigida pela C5.
+  Correcao: "O Congresso Nacional, com a participação do Ministério da Fazenda e dos representantes dos caminhoneiros, deve aprovar a redução de 20% do ICMS sobre o diesel e de 15% do PIS/COFINS sobre produtos alimentícios, por meio de lei complementar que será regulamentada em até 90 dias. Essa ação, financiada por compensações fiscais, garantirá o direito ao acesso a alimentos a preços justos e ao transporte seguro, contribuindo para a redução do custo de vida da população."
+
+**Como melhorar:**
+- Defina explicitamente o agente responsável por cada medida (ex.: Governo Federal, Congresso, Ministério da Infraestrutura).
+- Descreva o modo/meio de implementação (licitações, parcerias público‑privadas, prazos, percentuais de redução etc.) para que a proposta seja concreta.
+- Relacione cada ação ao efeito esperado e destaque como ela assegura direitos humanos (alimentação, saúde, mobilidade).
+
+
+---
+
+## Redacao 4960
+
+**Tema:** Conscientização da população para o isolamento social em meio a crise financeira
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 200 | 120 | 120 | 160 | 120 | 720 |
+| Usada no feedback (humano) | 200 | 120 | 120 | 160 | 120 | 720 |
+
+**Texto:**
+
+> Com o advento da Covid-19, se tornou de extrema importância a conscientização da população sobre o novo vírus, por mais que ainda o mundo esteja em seu segundo período, ainda se sabe muito pouco sobre a Covid-19 e por isso devemos reforçar os conhecimentos já garantidos, como por exemplo os conhecimentos pandêmicos que adquirimos em detrimento da gripe espanhola.', 'Essa conscientização sobre a população deve partir do Estado, por conta que o mesmo deve proteger seus cidadãos e o "dever do mesmo é garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (capitulo 1, art 8°)", e isto é um fator fundamental na situação de uma pandemia, já que a mesma usufrui de maneira rigorosa todos os campos de serviços controlados por um Estado, principalmente o campo da saúde.', 'Portanto para obter sucesso na conscientização popular, o Estado deveria criar um comitê que diariamente entregue população informações com bases cientificas sobre o vírus e apoie os conhecimentos científicos pandêmicos adquiridos ao longo da história, e que tais conhecimentos sejam seguidos a risca pela população com o incentivo governamental.
+
+
+### C1 (nota 200)
+
+**Pontos fortes:**
+- Uso adequado de vocabulário formal e coerente com o tema, demonstrando domínio do registro exigido pelo ENEM.
+- Boa articulação das ideias, com conectores que garantem a coesão textual e facilitam a compreensão do argumento.
+
+**Problemas:**
+- "por conta que o mesmo deve proteger seus cidadãos e o "dever do mesmo é garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (capitulo 1, art 8°)""
+  Há erro de concordância ("por conta que" em vez de "porquanto" ou "pois"), uso inadequado de pronomes demonstrativos ("o mesmo" repetido de forma redundante) e pontuação incorreta ao inserir a citação legal, que deveria estar entre parênteses ou travessões, além de falta de acentuação em "capítulo".
+  Correcao: "porquanto o Estado deve proteger seus cidadãos, e o dever do Estado é garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (capítulo 1, art. 8°)."
+
+**Como melhorar:**
+- Revisar as construções de concordância e substituir locuções inadequadas por equivalentes corretos, como "porquanto" em vez de "por conta que".
+- Atenção à pontuação em citações de dispositivos legais: usar parênteses ou travessões e garantir a correta acentuação de palavras como "capítulo".
+- Evitar a repetição desnecessária de pronomes (ex.: "o mesmo") e optar por termos mais precisos, como "o Estado", para melhorar a clareza e a elegância do texto.
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Você compreendeu a proposta e manteve o foco no tema da conscientização para o isolamento social em meio à crise financeira.
+- Sua redação apresenta uma estrutura básica de introdução, desenvolvimento e conclusão, o que impede que a nota seja ainda menor.
+
+**Problemas:**
+- "por conta que o mesmo deve proteger seus cidadãos e o "dever do mesmo é garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (capitulo 1, art 8°)""
+  O trecho contém linguagem informal ('por conta que'), repetição desnecessária de termos ('o mesmo'), e citação de dispositivo legal sem contextualização adequada. Além disso, a construção sintática está confusa, prejudicando a clareza e a coerência argumentativa exigidas na competência C2.
+  Correcao: "Porque o Estado tem o dever de proteger seus cidadãos e garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (art. 8º, cap. 1 da Constituição)."
+- "Com o advento da Covid-19, se tornou de extrema importância a conscientização da população sobre o novo vírus, por mais que ainda o mundo esteja em seu segundo período, ainda se sabe muito pouco sobre a Covid-19 e por isso devemos reforçar os conhecimentos já garantidos, como por exemplo os conhecimentos pandêmicos que adquirimos em detrimento da gripe espanhola."
+  A frase é excessivamente longa e apresenta repetição de ideias ('ainda se sabe muito pouco', 'conhecimentos já garantidos'), além de usar termos vagos ('segundo período') que não contribuem para a argumentação. A falta de coesão compromete a progressão lógica do texto.
+  Correcao: "Com o advento da Covid-19, tornou-se essencial conscientizar a população sobre o vírus, sobretudo porque ainda há muitas lacunas de conhecimento. Por isso, é necessário reforçar as lições aprendidas em pandemias anteriores, como a gripe espanhola."
+
+**Como melhorar:**
+- Reestruture as frases longas em períodos mais curtos, garantindo clareza e coesão entre as ideias.
+- Utilize linguagem formal e evite repetições; substitua expressões coloquiais por termos acadêmicos adequados.
+- Fundamente seus argumentos com dados ou referências explícitas (por exemplo, citar estudos ou decretos) e relacione-os diretamente ao tema da crise financeira, mostrando como ela afeta a eficácia do isolamento social.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Você conseguiu relacionar o tema proposto com a necessidade de ação estatal, demonstrando compreensão básica da proposta.
+- Apresentou alguns fatos históricos (gripe espanhola) que dão suporte ao argumento de que a sociedade já enfrentou pandemias anteriores.
+
+**Problemas:**
+- "Portanto para obter sucesso na conscientização popular, o Estado deveria criar um comitê que diariamente entregue população informações com bases cientificas sobre o vírus e apoie os conhecimentos científicos pandêmicos adquiridos ao longo da história, e que tais conhecimentos sejam seguidos a risca pela população com o incentivo governamental."
+  O trecho apresenta uma sequência longa e confusa de ideias, sem divisão clara em sentenças ou em parágrafos que organizem a argumentação. Falta coesão e progressão lógica: a proposta do comitê, a entrega diária de informações, o apoio aos conhecimentos históricos e a exigência de cumprimento são misturados em uma única frase, dificultando a leitura e a defesa do ponto de vista.
+  Correcao: "Portanto, para obter sucesso na conscientização popular, o Estado deveria criar um comitê responsável por divulgar diariamente informações científicas sobre o vírus. Esse comitê também poderia reforçar os conhecimentos adquiridos ao longo da história das pandemias. Com o apoio governamental, a população seria incentivada a seguir rigorosamente essas orientações."
+- "por conta que o mesmo deve proteger seus cidadãos e o "dever do mesmo é garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (capitulo 1, art 8°)""
+  A construção da frase está gramaticalmente incorreta ('por conta que'), há repetição desnecessária de 'o mesmo' e a citação da Constituição está incompleta e sem padronização. Além disso, a informação não está integrada ao restante do texto, o que prejudica a organização e a clareza da argumentação.
+  Correcao: "Porque o Estado tem o dever de proteger seus cidadãos e garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (art. 8°, cap. 1, Constituição)."
+
+**Como melhorar:**
+- Divida a argumentação em parágrafos claros: introdução, desenvolvimento (com um parágrafo para cada argumento) e conclusão, garantindo coesão entre as ideias.
+- Use conectivos adequados (por exemplo, 'além disso', 'consequentemente', 'por isso') para estabelecer relações lógicas entre fatos, opiniões e propostas.
+- Revise a estrutura das frases, evitando construções longas e confusas; prefira sentenças curtas e objetivas que reforcem seu ponto de vista.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "Portanto" e "por isso" para estabelecer relações de causa‑efeito entre as ideias, o que demonstra consciência da necessidade de coesão textual.
+- Há tentativa de articular os parágrafos ao referir-se ao papel do Estado e à necessidade de informação científica, mantendo um fio condutor ao longo do texto.
+
+**Problemas:**
+- "por mais que ainda o mundo esteja em seu segundo período, ainda se sabe muito pouco sobre a Covid-19"
+  A repetição da palavra "ainda" gera cacofonia e quebra a fluidez da coesão. Além disso, a conjunção "por mais que" não estabelece claramente a relação de contraste esperada; seria mais adequado usar "Embora" ou "Mesmo que". A falta de um conectivo que una esse período ao anterior deixa a transição fraca.
+  Correcao: "Embora o mundo esteja em seu segundo período, ainda se sabe muito pouco sobre a Covid‑19."
+- "por conta que o mesmo deve proteger seus cidadãos e o "dever do mesmo é garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (capitulo 1, art 8°)""
+  A expressão "por conta que" é informal e inadequada ao registro dissertativo. O uso de aspas e a repetição de "o mesmo" geram ambiguidade e atrapalham a referência clara ao sujeito. Falta um conectivo adequado que una a ideia ao parágrafo anterior, comprometendo a articulação entre partes do texto.
+  Correcao: "Porque o Estado deve proteger seus cidadãos, e seu dever é garantir a todos uma qualidade de vida compatível com a dignidade da pessoa humana (capítulo 1, art. 8°)."
+
+**Como melhorar:**
+- Substitua expressões coloquiais ou inadequadas por conectivos formais (ex.: "por conta que" → "porque", "por mais que" → "embora").
+- Evite repetições desnecessárias de palavras e busque sinônimos ou estruturas diferentes para manter a fluidez da coesão.
+- Reforce a ligação entre parágrafos usando conectivos de sequência ou conclusão (ex.: "Além disso", "Dessa forma", "Consequentemente") para garantir que o texto flua de forma lógica e contínua.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você identificou claramente o papel do Estado como agente central na proposta, atendendo ao requisito de indicar um responsável pela intervenção.
+- A proposta inclui a criação de um comitê que forneceria informações científicas, demonstrando preocupação com a base factual da ação.
+
+**Problemas:**
+- "Portanto para obter sucesso na conscientização popular, o Estado deveria criar um comitê que diariamente entregue população informações com bases cientificas sobre o vírus e apoie os conhecimentos científicos pandêmicos adquiridos ao longo da história, e que tais conhecimentos sejam seguidos a risca pela população com o incentivo governamental."
+  A proposta não detalha o modo/meio de atuação (como o comitê divulgará as informações), nem especifica o efeito esperado nem os recursos necessários. Falta, ainda, a articulação entre agente, ação, meio, efeito e detalhamento, o que impede a elevação da nota na competência C5.
+  Correcao: "Portanto, para obter sucesso na conscientização popular, o Estado deveria criar um comitê de comunicação científica que, diariamente, publique vídeos curtos e infográficos nas redes sociais e nas TVs abertas, utilizando linguagem acessível e legendas. O comitê contaria com profissionais de saúde, comunicadores e designers, e receberia financiamento do orçamento de saúde pública. Como meio, seriam realizadas transmissões ao vivo e campanhas de mensagens de texto gratuitas. O efeito esperado é o aumento de 30% na adesão ao isolamento social entre a população de baixa renda, reduzindo a taxa de transmissão em 15% nos três primeiros meses."
+- "por mais que ainda o mundo esteja em seu segundo período, ainda se sabe muito pouco sobre a Covid-19 e por isso devemos reforçar os conhecimentos já garantidos, como por exemplo os conhecimentos pandêmicos que adquirimos em detrimento da gripe espanhola."
+  O trecho apresenta linguagem vaga (“segundo período”, “conhecimentos já garantidos”) e não estabelece conexão direta entre a proposta de intervenção e o problema da crise financeira, que é parte essencial do tema. A falta de clareza enfraquece a coerência da proposta.
+  Correcao: "Embora o mundo ainda esteja enfrentando a segunda onda da Covid-19, ainda há muitas incógnitas sobre o vírus. Por isso, é fundamental reforçar os conhecimentos científicos adquiridos durante pandemias anteriores, como a gripe espanhola, adaptando‑os à realidade econômica atual."
+
+**Como melhorar:**
+- Detalhe explicitamente cada elemento da proposta (agente, ação, meio, efeito e recursos), mostrando como eles se interligam.
+- Relacione a intervenção à crise financeira, indicando, por exemplo, medidas de apoio econômico que facilitem o isolamento social.
+- Utilize linguagem precisa e evite termos vagos; apresente dados ou estimativas plausíveis para justificar o efeito esperado da ação.
+
+
+---
+
+## Redacao 5467
+
+**Tema:** Parto humanizado: uma questão de saúde pública
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 160 | 160 | 160 | 120 | 760 |
+| Usada no feedback (humano) | 160 | 160 | 160 | 160 | 120 | 760 |
+
+**Texto:**
+
+> Violência obstétrica são atos que,na obstetrícia,desrespeitem a mulher e que podem trazer danos irreversíveis à sua saúde física e psicológica,como provam relatos do documentário "O Renascimento do Parto".Já o parto humanizado, respeita a autonomia feminina e,no parto,procura não fazer intervenções médicas desnecessárias. Sendo assim,o parto humanizado,por tentar trazer o minimo de danos à mulher,mostra que deve ser praticado e apoiado pela saúde pública no Brasil.', 'Primeiro,é necessário saber quais problemas o Brasil tem em relação ao parto. A Constituição federal brasileira garante que todos tenham direito à saúde,integridade física e moral,porém muitas mulheres têm esses direitos violados já que o Brasil realiza quase quatro vezes mais cesáreas do que os 15% recomendados pela OMS ( Organização Mundial da Saúde ),mesmo ela,segundo a Veja,sendo mais prejudicial à gestante do que o parto natural. Além disso,o Brasil,segundo o Senado Notícias,precisa treinar suas equipes médicas em relação ao respeito às grávidas,sendo que isso já deveria acontecer porque o desrespeito a elas é um tipo de violência obstétrica .Em suma,o governo não cumpre seu dever em relação à saúde obstétrica.', 'Em segundo plano,é necessário saber por que essas mazelas persistem. Primeiro, porque o governo do Brasil não vê homens e mulheres com a mesma importância,tanto que,segundo o G1,o primeiro banheiro feminino do Plenário do Senado foi inaugurado em 2015,sendo assim,como são as mulheres que engravidam,os problemas ligados ao parto são ignorados .Segundo,porque muitos médicos optam pela cesárea e outros métodos obstétricos invasivos e desnecessários apenas para tornar o parto mais prático para eles; isso acontece porque eles sabem que não serão denunciados já que muitas gestantes desconhecessem seus direitos. Por Por isso,o Estado tem que criar medidas que acabem com essas mazelas.', 'Portanto,o impasse deve ser resolvido. Então,o Ministério da Saúde,por ser o responsável pela saúde publica do Brasil, informará,por meio de uma campanha midiática,às gestantes quais são seus os direitos e criará uma ouvidoria especial para casos de violência obstétrica,para assim coibir possíveis agressores, O filósofo Immanuel Kant dizia: "o homem é aquilo que a educação faz dele",por isso,paralelamente,o MEC (Ministério da Educação),que é o responsável pela educação pública brasileira,deverá incluir na grade curricular dos profissionais da saúde as práticas de respeito à integridade física e moral das grávidas para que,por meio dessa aula,eles saibam o porquê e como humanizar os partos. Assim,os direitos à saúde, integridade física e moral garantidos pela Constituição serão,de forma geral,cumpridos e, não mais, relatos como os do documentário "O Renascimento do Parto" serão ouvidos.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Apresenta boa organização das ideias, com introdução, desenvolvimento e conclusão bem delimitados, o que demonstra domínio da estrutura textual exigida pelo ENEM.
+- Utiliza vocabulário adequado ao tema e faz referência a fontes (documentário, Veja, G1), mostrando capacidade de escolha de registro formal.
+
+**Problemas:**
+- "Violência obstétrica são atos que,na obstetrícia,desrespeitem a mulher e que podem trazer danos irreversíveis à sua saúde física e psicológica,como provam relatos do documentário "O Renascimento do Parto"."
+  Erro de concordância verbal (sujeito “Violência obstétrica” é singular, o verbo deve estar no singular). Falta de espaço após a vírgula e antes de “na”. Ausência de vírgula antes de “como”.
+  Correcao: "Violência obstétrica é um ato que, na obstetrícia, desrespeita a mulher e pode trazer danos irreversíveis à sua saúde física e psicológica, como provam relatos do documentário "O Renascimento do Parto"."
+- "Primeiro,é necessário saber quais problemas o Brasil tem em relação ao parto."
+  Ausência de espaço após a vírgula que separa o advérbio “Primeiro” do pronome “é”.
+  Correcao: "Primeiro, é necessário saber quais problemas o Brasil tem em relação ao parto."
+- "Por Por isso,o Estado tem que criar medidas que acabem com essas mazelas."
+  Repetição do conectivo “Por” e falta de espaço após a vírgula, gerando erro de pontuação e de coesão.
+  Correcao: "Por isso, o Estado tem que criar medidas que acabem com essas mazelas."
+
+**Como melhorar:**
+- Revisar a concordância verbal e nominal em todas as frases, garantindo que sujeito e verbo estejam em número adequado.
+- Atentar para o uso correto de espaços e pontuação (vírgulas, pontos, dois-pontos), especialmente após conectivos e antes de orações subordinadas.
+- Fazer uma leitura final focada na regência verbal e na ortografia de palavras compostas e locuções (ex.: "por meio de", "à medida que"), evitando repetições e erros de digitação.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você demonstra clareza ao apresentar a proposta de intervenção, indicando quem deve agir, como e por quê, o que garante a coerência da conclusão.
+- A argumentação está estruturada em blocos (problemas, causas e soluções), facilitando a compreensão do leitor e evitando desvios do tema.
+
+**Problemas:**
+- "Em segundo plano,é necessário saber por que essas mazelas persistem."
+  A expressão "Em segundo plano" indica que a ideia está sendo tratada como secundária, o que enfraquece a hierarquia argumentativa exigida na competência C2. O texto perde força ao apresentar argumentos essenciais como se fossem acessórios, comprometendo a consistência da argumentação.
+  Correcao: "É necessário analisar por que essas mazelas persistem."
+
+**Como melhorar:**
+- Reforce a hierarquia argumentativa: apresente os argumentos centrais como prioridade, usando conectivos adequados (por exemplo, "Primeiramente", "Em seguida", "Por fim").
+- Enriqueça o repertório sociocultural com referências a políticas públicas, legislações ou autores reconhecidos na área da saúde materna, demonstrando maior amplitude de conhecimento.
+- Revise a coesão lexical, evitando repetições e construções redundantes, para garantir fluidez e elegância ao texto dissertativo‑argumentativo.
+
+
+### C3 (nota 160)
+
+**Pontos fortes:**
+- Você conseguiu reunir dados e referências (OMS, Veja, Senado Notícias, G1) que dão sustentação ao seu ponto de vista, demonstrando capacidade de selecionar informações relevantes ao tema.
+- A estrutura geral do texto (introdução, desenvolvimento, conclusão) está presente e há tentativa de articular argumentos com propostas de intervenção, o que impede que a nota seja inferior.
+
+**Problemas:**
+- "Sendo assim,o parto humanizado,por tentar trazer o minimo de danos à mulher,mostra que deve ser praticado e apoiado pela saúde pública no Brasil."
+  A sequência de ideias não está bem encadeada: o argumento de que o parto humanizado causa "mínimo de danos" não é desenvolvido com dados ou exemplos que o comprovem, o que enfraquece a consistência da defesa do ponto de vista. Além disso, a falta de coesão entre a afirmação e a proposta de apoio institucional deixa o raciocínio pouco aprofundado.
+  Correcao: "Sendo assim, ao reduzir intervenções desnecessárias e promover o respeito à autonomia da mulher, o parto humanizado diminui riscos físicos e psicológicos, o que justifica sua ampliação como política pública de saúde no Brasil."
+- "Por Por isso,o Estado tem que criar medidas que acabem com essas mazelas."
+  A repetição "Por Por" indica falha de revisão e compromete a fluidez do texto. Além disso, a expressão "essas mazelas" é vaga; a competência C3 exige que os argumentos sejam explicitamente ligados às informações apresentadas, indicando quais práticas ou situações precisam ser combatidas.
+  Correcao: "Por isso, o Estado deve criar medidas que combatam a alta taxa de cesarianas desnecessárias e a violência obstétrica."
+- "Em segundo plano,é necessário saber por que essas mazelas persistem."
+  A expressão "Em segundo plano" confunde a hierarquia argumentativa, sugerindo que a análise das causas seja secundária, quando na verdade deveria ser um desenvolvimento central. Essa organização fraca prejudica a coerência e a lógica interna do texto.
+  Correcao: "Em seguida, é fundamental analisar por que essas mazelas persistem."
+
+**Como melhorar:**
+- Aprofunde cada argumento com evidências concretas (estatísticas, estudos, depoimentos) que sustentem a relação entre a prática do parto humanizado e a melhoria da saúde das mulheres.
+- Reforce a coesão textual usando conectivos adequados e evitando repetições ou construções vagas; revise o texto para eliminar erros de pontuação e grafia que atrapalham a leitura.
+- Organize as ideias de forma lógica: apresente o problema, explique suas causas, desenvolva os argumentos que defendem o ponto de vista e, por fim, proponha intervenções específicas e viáveis, sempre vinculando-as às informações previamente citadas.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos como "primeiro", "segundo" e "portanto", o que demonstra tentativa de organizar o texto em sequência lógica.
+- Há variedade de recursos de referência (documentário, citações de fontes jornalísticas e de Kant), o que enriquece a coesão referencial.
+
+**Problemas:**
+- "Sendo assim,o parto humanizado,por tentar trazer o minimo de danos à mulher,mostra que deve ser praticado e apoiado pela saúde pública no Brasil."
+  A falta de espaço após as vírgulas e a ausência de conectivo adequado entre as orações prejudicam a fluidez. Além disso, o uso de "Sendo assim" como único elo entre o parágrafo anterior e este não estabelece claramente a relação de causa‑efeito esperada.
+  Correcao: "Sendo assim, o parto humanizado, ao tentar minimizar os danos à mulher, mostra que deve ser praticado e apoiado pela saúde pública no Brasil."
+- "Por Por isso,o Estado tem que criar medidas que acabem com essas mazelas."
+  A repetição do conectivo "Por Por" e a ausência de espaço após a vírgula geram rupturas na coesão textual, dificultando a compreensão da sequência argumentativa.
+  Correcao: "Por isso, o Estado tem que criar medidas que acabem com essas mazelas."
+
+**Como melhorar:**
+- Revise a pontuação, especialmente o uso de vírgulas e espaços, para garantir que os conectivos cumpram sua função de ligar ideias sem interrupções.
+- Varie os conectivos de causa, consequência, adição e contraste (ex.: "porque", "consequentemente", "além disso", "no entanto") para evitar repetições e tornar a articulação entre parágrafos mais rica.
+- Antes de finalizar, releia cada parágrafo verificando se a ideia final do trecho anterior está claramente retomada no início do próximo, usando pronomes ou expressões de referência que reforcem a continuidade do discurso.
+
+
+### C5 (nota 120)
+
+**Pontos fortes:**
+- Você identificou claramente a relação entre a alta taxa de cesarianas e a violência obstétrica, demonstrando compreensão do problema central do tema.
+- Sua proposta inclui a participação de dois órgãos (Ministério da Saúde e MEC), o que indica tentativa de articular diferentes agentes na solução.
+
+**Problemas:**
+- "Portanto,o impasse deve ser resolvido. Então,o Ministério da Saúde,por ser o responsável pela saúde publica do Brasil, informará,por meio de uma campanha midiática,às gestantes quais são seus os direitos e criará uma ouvidoria especial para casos de violência obstétrica,para assim coibir possíveis agressores, O filósofo Immanuel Kant dizia: "o homem é aquilo que a educação faz dele""
+  A proposta não apresenta todos os elementos exigidos pela competência C5: falta detalhar o modo/meio de execução da campanha, o efeito esperado e a relação direta com a garantia dos direitos humanos. Além disso, a citação de Kant, embora interessante, desvia o foco da intervenção e não contribui para a clareza da proposta.
+  Correcao: "Portanto, o impasse deve ser resolvido. O Ministério da Saúde, como agente responsável pela saúde pública, lançará uma campanha midiática nacional (ação) que, por meio de vídeos, cartilhas e palestras em unidades básicas de saúde (modo/meio), informará às gestantes sobre seus direitos e sobre os procedimentos para denunciar violência obstétrica. Paralelamente, será criada uma ouvidoria especializada (ação) vinculada ao SUS, com atendimento 24 horas e equipe treinada em direitos humanos, para receber e investigar denúncias (modo/meio). O efeito esperado é o aumento da conscientização das gestantes, a redução de casos de violência obstétrica e a responsabilização dos profissionais que violarem os direitos das mulheres."
+- "Segundo,porque muitos médicos optam pela cesárea e outros métodos obstétricos invasivos e desnecessários apenas para tornar o parto mais prático para eles; isso acontece porque eles sabem que não serão denunciados já que muitas gestantes desconhecessem seus direitos."
+  A justificativa apresenta causa e consequência, mas não se transforma em proposta de intervenção. Falta indicar quem deve agir, qual ação concreta será tomada, como será feita e qual o efeito esperado, requisitos essenciais para a C5.
+  Correcao: "Para combater essa prática, o Conselho Federal de Medicina (agente) deverá instituir, a partir do próximo ano, a obrigatoriedade de cursos de atualização em parto humanizado para todos os obstetras (ação), realizados presencialmente ou via plataforma online certificada (modo/meio). Os profissionais que não concluírem o curso terão sua licença suspensa por 30 dias. O efeito esperado é a redução das cesarianas eletivas sem indicação clínica e a promoção de práticas obstétricas respeitosas, alinhadas aos direitos humanos das gestantes."
+
+**Como melhorar:**
+- Estruture cada proposta seguindo o esquema: agente → ação → modo/meio → efeito, garantindo que todos os elementos estejam presentes.
+- Evite inserções que não contribuam diretamente para a intervenção (ex.: citações filosóficas) e mantenha o foco na solução prática do problema.
+- Utilize conectores claros para separar as etapas da proposta e demonstre, de forma explícita, como a intervenção respeita e promove os direitos humanos das gestantes.
+
+
+---
+
+## Redacao 877
+
+**Tema:** O suicídio entre os jovens: como resolver esse problema?
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 120 | 120 | 80 | 80 | 80 | 480 |
+| Usada no feedback (humano) | 120 | 120 | 80 | 80 | 80 | 480 |
+
+**Texto:**
+
+> A ideia do suicídio é uma grande consolação: ajuda a suportar muitas noites más." NIETZSCHE, Friedrich em Para além do bem e do mal. Essa frase reflete o que se passa nas cabeças de inúmeros jovens nos dias atuais.', 'Com o avanço tanto tecnológico quanto cultural, é exigido cada vez mais daqueles que fazem parte da base da nossa pirâmide etária em relação ao mundo profissional. Noites sem dormir, diversos trabalhos a fazer, listas e mais listas, projetos e mais projetos, os jovens se vem à beira da loucura, sendo alvos de doenças como depressão e ansiedade, que hoje se tornaram comuns.', 'Diversos estudos são realizados para tentar sanar, ou ao menos amenizar, essa taxa de suicídio que vem aumento cada vez. A utilização de antidepressivos é a saída que muitos tomam, dopando seus cérebros com inibidores de serotonina, mas atividades físicas também tem seu lado forte contra a diminuição do estresse e ansiedade. Sua combinação gera uma chance muito grande de recuperação física e mental, com os antidepressivos fazendo o papel de dar ânimo pessoa e os exercícios de regular o estresse diário. Pessoas que seguem um tratamento psiquiátrico e psicológico tendem a se recuperarem em no mínimo seis meses, integrando exercícios e uma boa dieta a sua rotina e consequentemente diminuindo as doses diárias de remédios até uma recuperação quase total.', 'Em conclusão podemos afirmar que a maneira mais eficiente de diminuir o surto de suicídio atual, ou em qualquer era, é a combinação do tratamento psiquiátrico e psicológico com exercícios físicos e uma boa dieta e claro, o mais importante, paciência.
+
+
+### C1 (nota 120)
+
+**Pontos fortes:**
+- Você demonstra boa capacidade de argumentação ao apresentar diferentes estratégias (tratamento psiquiátrico, antidepressivos, exercícios e dieta) para enfrentar o suicídio entre jovens.
+- O texto possui coerência temática, mantendo o foco no problema proposto ao longo de todo o desenvolvimento.
+
+**Problemas:**
+- "A ideia do suicídio é uma grande consolação: ajuda a suportar muitas noites más." NIETZSCHE, Friedrich em Para além do bem e do mal."
+  Erro de pontuação e formatação de citação: falta de vírgula antes do nome do autor, uso inadequado de aspas duplas e ponto final dentro da citação, além de ausência de itálico ou destaque para o título da obra.
+  Correcao: "A ideia do suicídio é uma grande consolação: ajuda a suportar muitas noites más. (NIETZSCHE, Friedrich, *Para além do bem e do mal*)."
+- "Diversos estudos são realizados para tentar sanar, ou ao menos amenizar, essa taxa de suicídio que vem aumento cada vez."
+  Problema de concordância verbal e regência: o verbo "vêm" está incorreto (deve ser "vem"), e a expressão "vêm aumento" carece de preposição adequada; além disso, a construção "cada vez" está incompleta.
+  Correcao: "Diversos estudos são realizados para tentar sanar, ou ao menos amenizar, essa taxa de suicídio que vem aumentando a cada ano."
+
+**Como melhorar:**
+- Revisar a pontuação e a formatação de citações, seguindo as normas da ABNT ou do Manual de Redação do ENEM.
+- Prestar atenção à concordância verbal e nominal, bem como à regência de verbos e preposições, lendo o texto em voz alta para detectar incoerências.
+- Praticar a escrita de frases curtas e objetivas, evitando construções excessivamente longas que aumentam a chance de erros gramaticais.
+
+
+### C2 (nota 120)
+
+**Pontos fortes:**
+- Você manteve o foco no tema proposto, apresentando uma proposta de solução que combina tratamento psiquiátrico, psicológico, atividade física e alimentação.
+- A conclusão retoma a ideia central e demonstra que você compreendeu a necessidade de uma resposta integrada ao problema do suicídio entre jovens.
+
+**Problemas:**
+- "Diversos estudos são realizados para tentar sanar, ou ao menos amenizar, essa taxa de suicídio que vem aumento cada vez."
+  A frase apresenta erro de concordância (“vêm aumento” → “vem aumentando”) e falta de clareza na progressão temporal. Além disso, a argumentação fica vaga porque não há referência a nenhum estudo concreto, o que enfraquece a sustentação da proposta.
+  Correcao: "Diversos estudos são realizados para tentar sanar, ou ao menos amenizar, essa taxa de suicídio, que vem aumentando a cada ano."
+- "Sua combinação gera uma chance muito grande de recuperação física e mental, com os antidepressivos fazendo o papel de dar ânimo pessoa e os exercícios de regular o estresse diário."
+  Há problemas de coesão e de regência verbal (“dar ânimo pessoa” → “dar ânimo à pessoa”; “exercícios de regular” → “exercícios que regulam”). A construção sintática confunde o leitor e prejudica a fluidez do texto dissertativo‑argumentativo.
+  Correcao: "Essa combinação gera uma grande chance de recuperação física e mental, com os antidepressivos proporcionando ânimo à pessoa e os exercícios regulando o estresse diário."
+
+**Como melhorar:**
+- Fundamente seus argumentos com dados ou referências a pesquisas reconhecidas, mesmo que de forma genérica (por exemplo, “estudos da OMS apontam…”) para dar maior consistência à argumentação.
+- Revise a concordância verbal e nominal, bem como a regência dos verbos, para garantir que as frases sejam gramaticalmente corretas e fluam naturalmente.
+- Organize melhor os parágrafos: apresente a proposta de intervenção de forma clara, detalhe cada um de seus componentes (tratamento, atividade física, dieta) e explique como eles se articulam para prevenir o suicídio.
+
+
+### C3 (nota 80)
+
+**Pontos fortes:**
+- Você trouxe dados de pesquisas e citou tratamentos (antidepressivos, exercícios, dieta), demonstrando conhecimento de informações relevantes ao tema.
+- O texto apresenta uma conclusão que retoma a ideia central, indicando tentativa de defender um ponto de vista.
+
+**Problemas:**
+- "Diversos estudos são realizados para tentar sanar, ou ao menos amenizar, essa taxa de suicídio que vem aumento cada vez."
+  A frase está confusa e apresenta erro de concordância (“vêm aumento” → “vem aumentando”). Além disso, a informação não está conectada a um argumento claro que sustente seu ponto de vista, o que enfraquece a organização e a coerência exigidas na competência C3.
+  Correcao: "Diversos estudos são realizados para tentar amenizar a taxa de suicídio, que vem aumentando a cada ano."
+- "Sua combinação gera uma chance muito grande de recuperação física e mental, com os antidepressivos fazendo o papel de dar ânimo pessoa e os exercícios de regular o estresse diário."
+  Há falta de clareza e de coesão: o pronome “sua” não tem antecedente definido, e a expressão “dar ânimo pessoa” está gramaticalmente incorreta. O trecho não estabelece uma relação lógica entre os argumentos, prejudicando a sequência de ideias.
+  Correcao: "Essa combinação gera uma grande chance de recuperação física e mental, pois os antidepressivos proporcionam ânimo ao paciente, enquanto os exercícios ajudam a regular o estresse diário."
+
+**Como melhorar:**
+- Planeje o texto antes de escrever: faça um esboço com introdução, desenvolvimento (pelo menos dois argumentos) e conclusão, garantindo a sequência lógica das ideias.
+- Use conectivos adequados (por exemplo, “além disso”, “consequentemente”, “por isso”) para ligar argumentos e evidências, evitando rupturas que deixem o leitor perdido.
+- Revise a concordância verbal e nominal e a clareza das frases; substitua pronomes vagos por termos específicos que referenciem claramente o que está sendo discutido.
+
+
+### C4 (nota 80)
+
+**Pontos fortes:**
+- Você utilizou conectivos como "com o avanço" e "em conclusão" para iniciar novos parágrafos, o que demonstra tentativa de organizar o texto.
+- Há alguma referência a fontes (citação de Nietzsche), indicando preocupação em embasar a argumentação.
+
+**Problemas:**
+- "Noites sem dormir, diversos trabalhos a fazer, listas e mais listas, projetos e mais projetos, os jovens se vem à beira da loucura, sendo alvos de doenças como depressão e ansiedade, que hoje se tornaram comuns."
+  A sequência de ideias não está ligada por conectivos adequados; há repetição de termos e a oração "os jovens se vem à beira da loucura" está gramaticalmente incorreta, comprometendo a coesão entre as frases.
+  Correcao: "Noites sem dormir, diversos trabalhos a fazer, listas e mais listas, projetos e mais projetos; diante desse cenário, os jovens chegam à beira da loucura, tornando‑se alvos de doenças como depressão e ansiedade, que hoje são comuns."
+- "Sua combinação gera uma chance muito grande de recuperação física e mental, com os antidepressivos fazendo o papel de dar ânimo pessoa e os exercícios de regular o estresse diário."
+  O uso de "com" para introduzir a segunda parte da frase cria ambiguidade; falta um conectivo que relacione claramente as duas ideias (causa‑efeito). Além disso, há erro de concordância em "dar ânimo pessoa".
+  Correcao: "Essa combinação gera uma grande chance de recuperação física e mental, pois os antidepressivos dão ânimo à pessoa, enquanto os exercícios ajudam a regular o estresse diário."
+- "Em conclusão podemos afirmar que a maneira mais eficiente de diminuir o surto de suicídio atual, ou em qualquer era, é a combinação do tratamento psiquiátrico e psicológico com exercícios físicos e uma boa dieta e claro, o mais importante, paciência."
+  A frase apresenta encadeamento confuso de elementos sem o uso de conectivos adequados (vírgulas, conjunções). O termo "e claro" está isolado e rompe a fluidez do texto.
+  Correcao: "Em conclusão, podemos afirmar que a maneira mais eficiente de diminuir o surto de suicídio, tanto atualmente quanto em qualquer época, é combinar tratamento psiquiátrico e psicológico com exercícios físicos, uma boa dieta e, claro, paciência."
+
+**Como melhorar:**
+- Planeje a estrutura do texto antes de escrever, definindo quais conectivos (portanto, entretanto, além disso, por isso) serão usados para ligar ideias dentro e entre os parágrafos.
+- Revise cada frase em busca de repetições e de construções gramaticais inadequadas; substitua repetições por sinônimos e corrija a concordância verbal e nominal.
+- Pratique a reescrita de trechos longos, dividindo‑os em sentenças mais curtas e inserindo conectivos que indiquem claramente a relação de causa, consequência, adição ou contraste.
+
+
+### C5 (nota 80)
+
+**Pontos fortes:**
+- Você identificou a necessidade de tratamento multidisciplinar (psiquiátrico, psicológico, atividade física e alimentação) e relacionou isso ao tema central da redação.
+- Apresentou uma conclusão que sintetiza a proposta, demonstrando alguma capacidade de organização textual.
+
+**Problemas:**
+- "Sua combinação gera uma chance muito grande de recuperação física e mental, com os antidepressivos fazendo o papel de dar ânimo pessoa e os exercícios de regular o estresse diário."
+  A proposta não está detalhada nos termos exigidos pela competência C5: falta agente responsável, ação concreta, modo/meio de execução, efeito esperado e respeito aos direitos humanos. O trecho apenas menciona uma combinação genérica sem especificar quem deve implementar, como, onde e quais resultados se pretende alcançar.
+  Correcao: "O Ministério da Saúde, em parceria com escolas públicas, deve implementar programas de acompanhamento psicológico e atividades físicas supervisionadas, oferecendo sessões semanais de terapia cognitivo‑comportamental e aulas de educação física adaptadas, com o objetivo de reduzir em 30% os índices de ideação suicida entre adolescentes, garantindo o direito à saúde mental e à educação."
+- "Em conclusão podemos afirmar que a maneira mais eficiente de diminuir o surto de suicídio atual, ou em qualquer era, é a combinação do tratamento psiquiátrico e psicológico com exercícios físicos e uma boa dieta e claro, o mais importante, paciência."
+  A conclusão repete a ideia geral sem transformar a proposta em um plano de intervenção concreto. Não há indicação de quem executará a ação, nem do modo/meio nem do efeito mensurável, o que impede a articulação da proposta com a discussão desenvolvida.
+  Correcao: "Portanto, propõe‑se que o Conselho Nacional de Saúde crie uma política pública que, a partir de 2025, financie unidades de atenção psicossocial nas escolas, onde psicólogos e educadores desenvolvam, em conjunto, projetos de prevenção ao suicídio, combinando terapia, prática esportiva e orientação nutricional, assegurando o direito à vida e à saúde de todos os jovens."
+
+**Como melhorar:**
+- Defina claramente o agente responsável (ex.: Ministério da Saúde, escolas, Conselho Nacional de Saúde) e descreva suas atribuições na proposta.
+- Especifique o modo/meio de execução (ex.: sessões semanais, programas de educação física, financiamento de unidades de atenção psicossocial) e indique o efeito esperado de forma mensurável.
+- Garanta que a proposta respeite os direitos humanos, citando explicitamente o direito à saúde, à vida e à educação, e conecte‑a diretamente aos argumentos desenvolvidos no corpo do texto.
+
+
+---
+
+## Redacao 3775
+
+**Tema:** Desafios na Educação a Distância no Brasil
+
+| | C1 | C2 | C3 | C4 | C5 | Total |
+|---|---|---|---|---|---|---|
+| Humano | 160 | 160 | 120 | 160 | 160 | 760 |
+| Usada no feedback (humano) | 160 | 160 | 120 | 160 | 160 | 760 |
+
+**Texto:**
+
+> A tecnologia move o mundo", assim como Steve Jobs preconiza em sua tese, a tecnologia perpassa diferentes âmbitos e fornece uma gama de possibilidades. Entretanto, no que tange à edução a distância os meios digitais podem não ser favoráveis. Concernente a isso, observa-se que a omissão do Estado e o não respeito pelos direitos democráticos são entraves da questão.', 'Em primeira análise, o governo não propicía condições adequadas para aulas virtuais. Desse modo, para Monteiro Lobato um país se faz de homes e de livros, indubitavelmente, para os governantes diferente não deveria ser . Haja vista que, o qual é omisso e não cria capacitação de doscentes e nem fornece mecânismos como, internet e computadores, para estudantes de baixa renda. Consequentemente, os discentes não tem resultados acadêmicos satisfatórios.', 'Em segunda análise, os direitos não são igualitários no Brasil. Nesse contexto, segundo o coeficiente de Gini, marcador que elenca 127 países em sua heterogeneidade social, o Brasil ocupa o décimo lugar como pas mais desigual do mundo. É nítido que, o conceito de democracia não é respeitado, pois nem todos têm acesso à oportunidades, claramente, um estudante com acesso à tecnologias fica favorecido em comparação a um aluno de baixa renda. Assim, tais indivíduos são prejudicados em seus estudos.', 'Portanto, os impasses devem ser solucionados. Dessa forma, cabe ao governo estadual - esfera responsável pela educação pública de um estado- criar oportunidades à estudates pobres, como fornecer internet gratuíta para tais, como o intuíto de mitigar problemàtica. Também, cabe ao agente Estatal criar programas sociais, tanto para professore e alunos, de capacitação e acesso às redes virtuais. Nessa perspectiva, tornar-se-á totalmente verídica a máxima de Steve Jobs.
+
+
+### C1 (nota 160)
+
+**Pontos fortes:**
+- Apresenta boa articulação de ideias e demonstra conhecimento do tema, o que impede que a nota seja menor.
+- Utiliza referências a autores e a Steve Jobs, conferindo coerência e pertinência ao discurso.
+
+**Problemas:**
+- "A tecnologia move o mundo", assim como Steve Jobs preconiza em sua tese, a tecnologia perpassa diferentes âmbitos e fornece uma gama de possibilidades."
+  Erro de pontuação (vírgula antes de "assim", uso inadequado de aspas) e repetição desnecessária da palavra "tecnologia", comprometendo a fluidez e a norma culta.
+  Correcao: "A tecnologia move o mundo, como preconiza Steve Jobs em sua tese; ela perpassa diferentes âmbitos e fornece uma gama de possibilidades."
+- "Em primeira análise, o governo não propicía condições adequadas para aulas virtuais. Desse modo, para Monteiro Lobato um país se faz de homes e de livros, indubitavelmente, para os governantes diferente não deveria ser ."
+  Erros de concordância ("homes" em vez de "homens"), regência inadequada, construção confusa e pontuação incorreta, além de frase incompleta que viola a norma padrão.
+  Correcao: "Em primeira análise, o governo não propicia condições adequadas para aulas virtuais. Desse modo, para Monteiro Lobato, um país se faz de homens e de livros; indubitavelmente, os governantes não deveriam ser diferentes."
+- "Portanto, os impasses devem ser solucionados. Dessa forma, cabe ao governo estadual - esfera responsável pela educação pública de um estado- criar oportunidades à estudates pobres, como fornecer internet gratuíta para tais, como o intuíto de mitigar problemàtica."
+  Erros de ortografia ("estudates", "gratuíta", "intuíto", "problemàtica"), uso incorreto de crase e hífen, além de construção redundante que prejudica a formalidade exigida.
+  Correcao: "Portanto, os impasses devem ser solucionados. Dessa forma, cabe ao governo estadual – esfera responsável pela educação pública de um estado – criar oportunidades aos estudantes pobres, como fornecer internet gratuita, com o intuito de mitigar a problemática."
+
+**Como melhorar:**
+- Revisar a ortografia e a acentuação de todas as palavras, usando dicionário ou corretor ortográfico antes de finalizar o texto.
+- Treinar a pontuação e a concordância em frases complexas, prestando atenção especial ao uso de vírgulas, crases e hífens.
+- Fazer leituras de textos acadêmicos e de alta qualidade para internalizar o registro formal e evitar repetições ou construções confusas.
+
+
+### C2 (nota 160)
+
+**Pontos fortes:**
+- Você manteve a estrutura dissertativo‑argumentativa (introdução, desenvolvimento e conclusão) de forma clara, o que garante a coerência textual exigida.
+- Os argumentos apresentados são pertinentes ao tema (falta de infraestrutura, desigualdade de acesso), demonstrando compreensão da proposta.
+
+**Problemas:**
+- "Concernente a isso, observa-se que a omissão do Estado e o não respeito pelos direitos democráticos são entraves da questão."
+  O trecho apresenta construção sintática confusa e vocabulário inadequado para a formalidade exigida. Além disso, a expressão "entraves da questão" é vaga e não especifica o problema, enfraquecendo a argumentação.
+  Correcao: "Concernente a isso, observa‑se que a omissão do Estado e a falta de respeito pelos direitos democráticos constituem obstáculos ao desenvolvimento da educação a distância."
+- "É nítido que, o conceito de democracia não é respeitado, pois nem todos têm acesso à oportunidades, claramente, um estudante com acesso à tecnologias fica favorecido em comparação a um aluno de baixa renda."
+  Há erro de concordância (“acesso à oportunidades”), uso de vírgulas que fragmentam a frase e redundância (“claramente”). A linguagem precisa ser mais objetiva e coesa.
+  Correcao: "É nítido que o conceito de democracia não é respeitado, pois nem todos têm acesso a oportunidades; um estudante que dispõe de tecnologias fica favorecido em comparação a um aluno de baixa renda."
+
+**Como melhorar:**
+- Enriqueça seu repertório sociocultural com dados, autores ou políticas públicas específicas sobre educação a distância, citando-os de forma integrada ao argumento.
+- Revise a coesão e a coerência textual: use conectivos adequados e evite construções redundantes ou ambíguas que possam comprometer a clareza.
+- Atente para a norma padrão da língua (concordância, regência, pontuação) e para a formalidade exigida no ENEM, praticando a reescrita de trechos críticos antes da entrega final.
+
+
+### C3 (nota 120)
+
+**Pontos fortes:**
+- Apresentou dados e referências (coeficiente de Gini, Steve Jobs, Monteiro Lobato) que demonstram tentativa de fundamentar o ponto de vista.
+- Conseguiu articular duas análises distintas (infraestrutura governamental e desigualdade social) que se relacionam ao tema proposto.
+
+**Problemas:**
+- "Haja vista que, o qual é omisso e não cria capacitação de doscentes e nem fornece mecânismos como, internet e computadores, para estudantes de baixa renda."
+  O trecho apresenta problemas de coesão e clareza: a construção "Haja vista que, o qual é omisso" é confusa, há erro de concordância em "doscentes" e "mecânismos", e a sequência de ideias não está organizada de forma lógica, dificultando a compreensão do argumento.
+  Correcao: "Haja vista que o Estado é omisso e não oferece capacitação aos docentes, nem fornece mecanismos como internet e computadores para estudantes de baixa renda."
+- "É nítido que, o conceito de democracia não é respeitado, pois nem todos têm acesso à oportunidades, claramente, um estudante com acesso à tecnologias fica favorecido em comparação a um aluno de baixa renda."
+  Há vírgulas desnecessárias que interrompem a fluidez do texto, além de erros de concordância em "à oportunidades" e "à tecnologias". A argumentação também carece de conexão explícita entre a falta de democracia e a desigualdade de acesso, o que compromete a organização das ideias.
+  Correcao: "É nítido que o conceito de democracia não é respeitado, pois nem todos têm acesso a oportunidades; claramente, um estudante que dispõe de tecnologias fica favorecido em comparação a um aluno de baixa renda."
+- "Desse modo, para Monteiro Lobato um país se faz de homes e de livros, indubitavelmente, para os governantes diferente não deveria ser ."
+  O trecho contém erros de digitação ("homes"), falta de pontuação adequada e construção sintática incoerente, o que prejudica a coerência e a defesa do ponto de vista. Além disso, a referência a Monteiro Lobato não está contextualizada ao tema da educação a distância.
+  Correcao: "Desse modo, segundo Monteiro Lobato, um país se faz de homens e de livros; indubitavelmente, os governantes deveriam garantir esse acesso."
+
+**Como melhorar:**
+- Planeje a estrutura do texto antes de escrever: introdução com tese clara, dois ou três parágrafos de desenvolvimento organizados em argumentos sequenciais, e conclusão que retome a tese e proponha soluções.
+- Revise a coesão e a concordância, evitando frases confusas e erros de digitação; use conectivos adequados (porém, entretanto, assim, consequentemente) para ligar as ideias de forma lógica.
+- Enriqueça a autoria ao inserir sua própria análise crítica, relacionando os fatos apresentados aos seus argumentos e evitando citações descontextualizadas.
+
+
+### C4 (nota 160)
+
+**Pontos fortes:**
+- Você utiliza conectivos de sequência ("Em primeira análise", "Em segunda análise", "Portanto") que ajudam a organizar o texto em partes distintas.
+- Há tentativa de retomar ideias ao longo do texto, como a referência à tecnologia de Steve Jobs, o que demonstra preocupação em manter a coerência temática.
+
+**Problemas:**
+- "Consequentemente, os discentes não tem resultados acadêmicos satisfatórios."
+  O conectivo "Consequentemente" indica causa‑efeito, porém o parágrafo anterior não apresenta claramente a causa que justifique essa consequência. Falta uma referência explícita ao ponto anterior, comprometendo a coesão entre períodos.
+  Correcao: "Devido à falta de formação adequada e ao acesso limitado a recursos digitais, os discentes não têm resultados acadêmicos satisfatórios."
+- "Em segunda análise, os direitos não são igualitários no Brasil."
+  A expressão "Em segunda análise" funciona como marcador de organização, mas o parágrafo não estabelece ligação clara com o anterior. Um recurso de coesão (ex.: "Além disso", "Por outro lado") seria mais adequado para conectar as duas análises.
+  Correcao: "Além disso, em segunda análise, observa‑se que os direitos não são igualitários no Brasil."
+
+**Como melhorar:**
+- Use conectivos de adição ou contraste (ex.: "além disso", "por outro lado", "por conseguinte") para criar pontes explícitas entre os parágrafos.
+- Garanta que cada conectivo reflita a relação lógica entre as ideias que antecedem e sucedem a frase, evitando saltos sem explicação.
+- Revise a concordância verbal e nominal nos períodos que contêm conectivos, pois erros gramaticais enfraquecem a eficácia dos recursos coesivos.
+
+
+### C5 (nota 160)
+
+**Pontos fortes:**
+- Você identificou claramente os principais entraves da Educação a Distância no Brasil, como a falta de infraestrutura e a desigualdade de acesso, demonstrando compreensão do tema.
+- Sua proposta de intervenção inclui a atuação do governo estadual, o que mostra capacidade de articular agentes públicos ao problema.
+
+**Problemas:**
+- "Portanto, os impasses devem ser solucionados. Dessa forma, cabe ao governo estadual - esfera responsável pela educação pública de um estado- criar oportunidades à estudates pobres, como fornecer internet gratuíta para tais, como o intuíto de mitigar problemàtica."
+  A proposta não está suficientemente detalhada para a competência C5. Falta especificar claramente: quem (agente), o que será feito (ação), como será feito (modo/meio), qual o efeito esperado e um detalhamento dos passos. Além disso, há erros de concordância e ortografia que comprometem a clareza da intervenção.
+  Correcao: "Portanto, os impasses devem ser solucionados. Dessa forma, cabe ao governo estadual, por meio da Secretaria de Educação, criar o Programa "Conexão Escolar". O programa terá as seguintes etapas: (i) contratação de operadoras de internet para instalar conexão de alta velocidade em todas as escolas públicas da rede estadual; (ii) distribuição de kits de computador com acesso a plataformas de ensino para estudantes de baixa renda, mediante cadastro socioeconômico; (iii) capacitação de professores, por meio de cursos online gratuitos oferecidos pelo Instituto Nacional de Estudos e Pesquisas Educacionais (INEP), para que utilizem metodologias de ensino híbrido; (iv) monitoramento trimestral dos índices de frequência e desempenho dos alunos, com relatórios públicos que permitam ajustes nas ações. O efeito esperado é a redução da evasão escolar e a melhoria dos resultados acadêmicos dos estudantes em situação de vulnerabilidade."
+
+**Como melhorar:**
+- Detalhe cada elemento da proposta (agente, ação, modo, efeito) em frases curtas e objetivas.
+- Use linguagem formal e evite erros de ortografia e concordância para garantir clareza.
+- Inclua indicadores de acompanhamento (ex.: taxa de frequência, notas médias) para demonstrar o impacto esperado da intervenção.
