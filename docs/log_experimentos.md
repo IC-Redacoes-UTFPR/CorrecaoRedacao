@@ -115,7 +115,7 @@ bruto de 0,66 sem calibração nenhuma mostra que o modelo aprendeu a escala dos
 supera o 120b sem treino em todas as competências, inclusive C3. Com 516 redações a validação
 tem ruído de ±0,04, então a ordem entre 1 e 2 épocas (0,56 x 0,54) não é confiável.
 
-### Fine-tuning até 6 épocas: curva de overfitting (2026-10-03, rodada `ft6`)
+### Fine-tuning até 6 épocas: curva de overfitting (2026-10-02, rodada `ft6`)
 
 Um treino de 6 épocas (88 min), adaptador salvo ao fim de cada época, cada um avaliado na
 validação (516 redações, 17 temas novos). O cronograma da taxa de aprendizado cobre as 6 épocas,
