@@ -163,6 +163,30 @@ dizendo que desvios gramaticais (ortografia, acentuação, concordância, regên
 pontuação) são avaliados na C1 e não entram ali. Rodadas `feedback_cp30_comp3_humano` e
 `feedback_cp30_comp3_ft3` (célula 6 do `colab_vllm.ipynb`).
 
+Trajetória do feedback nas mesmas 30 redações (nota humana / nota do `ft3`; "gramática fora da
+C1" = problemas da C2 a C5 cuja explicação fala de ortografia, acentuação, concordância,
+regência, crase, pontuação ou conjugação):
+
+| Versão | Alinhamento | Trechos repetidos | Gramática fora da C1 | C5 citando a conclusão | Trechos literais |
+|---|---|---|---|---|---|
+| Formato antigo (uma chamada) | -0,26 / - | 25% / - | 13% / - | 76% / - | 97% / - |
+| v1 por competência | -0,56 / -0,32 | 34% / 34% | 33% / 38% | 45% / 44% | 97% / 94% |
+| v2 (parágrafos, trechos curtos) | -0,59 / -0,43 | 29% / 26% | 33% / 28% | 64% / 74% | 96% / 96% |
+| **v3 (gramática só na C1)** | **-0,66 / -0,58** | 21% / 26% | **4% / 3%** | 71% / 81% | 95% / 96% |
+
+Alinhamento por competência na v3 (C1 a C5): nota humana -0,46 / -0,91 / -0,64 / -0,79 / -0,75;
+nota do `ft3` -0,57 / -0,76 / -0,55 / -0,79 / -0,66. Contra a nota humana, o feedback do sistema
+real alinha -0,40 (v1: -0,26).
+
+Leitura: a v3 resolve o vazamento de gramática para as outras competências (de ~30% para 3-4%), e
+o alinhamento é o melhor até aqui nas duas fontes de nota, em todas as competências. O formato
+por competência tinha piorado o vazamento (13% no formato antigo para 33-38%): cada chamada vê a
+redação inteira e puxa os erros mais visíveis. A repetição que sobra (21-26%) já não é o mesmo
+problema duas vezes: são competências diferentes apontando o mesmo trecho por motivos próprios
+(na redação 547, sobre o mesmo trecho, a C2 diz que faltam argumentos que sustentem as medidas e
+a C5 que a proposta não diz quem age nem como). Para o estudante, dá para agrupar por trecho na apresentação. A v3 fica como
+formato do feedback.
+
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
 Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação
