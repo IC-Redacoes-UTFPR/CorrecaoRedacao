@@ -88,7 +88,7 @@ notas do 20b treinado sem vazamento (a amostra antiga vem do teste do v5, que se
 
 ### Feedback por competência nas 30 do `cp_test` (2026-10-02)
 
-Três rodadas do gpt-oss-120b (vLLM, G4, ~10 min cada) na mesma amostra
+Três rodadas do gpt-oss-120b (vLLM no Colab, ~10 min cada) na mesma amostra
 (`data/amostra_feedback_cp30.csv`, 150 pares redação x competência). Alinhamento = Spearman entre
 a nota dada no prompt e o número de problemas apontados (mais negativo, mais o feedback acompanha
 a nota).
