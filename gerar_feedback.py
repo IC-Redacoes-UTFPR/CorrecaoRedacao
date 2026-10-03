@@ -128,6 +128,9 @@ def prompt_feedback_comp(essay, comp, nota, tema_id=None, ja_citados=()):
     citados = ("Trechos ja citados nas outras competencias (escolha outros): "
                + " | ".join(f'"{t}"' for t in ja_citados) + "\n" if ja_citados else "")
     c5 = "Na C5, cite trechos da proposta de intervencao, que em geral fica no ultimo paragrafo.\n" if comp == "C5" else ""
+    # na v2 a C2 e a C3 apontavam erros de gramatica: era quase toda a repeticao que sobrava
+    so_c1 = ("Desvios gramaticais (ortografia, acentuacao, concordancia, regencia, crase, pontuacao) "
+             "sao avaliados na C1: nao os aponte aqui, nem na explicacao.\n" if comp != "C1" else "")
     return (
         "Voce e professor de redacao do ENEM e vai escrever um feedback formativo para o "
         f"estudante, so sobre a competencia {comp}: {RUBRICA[comp]}\n\n"
@@ -143,7 +146,7 @@ def prompt_feedback_comp(essay, comp, nota, tema_id=None, ja_citados=()):
         "exatamente como estao, sem corrigir nada. Em \"explicacao\", diga o "
         "que esta errado nos termos desta competencia. Em \"correcao\", reescreva o trecho do jeito "
         "certo (obrigatorio na C1), sem inventar dados, numeros ou porcentagens.\n"
-        f"{c5}{citados}"
+        f"{so_c1}{c5}{citados}"
         "- como_melhorar: 1 a 3 acoes concretas para chegar ao nivel de cima.\n\n"
         'Responda APENAS com JSON: {"pontos_fortes": ["..."], "problemas": [{"trecho": "...", '
         '"explicacao": "...", "correcao": "..."}], "como_melhorar": ["..."]}'
@@ -307,7 +310,9 @@ def demo():
     fb["C4"]["problemas"] = [{"trecho": "Ninguem aceitavam isso!"}, {"trecho": "aceitavam"}]
     # o 1o da C4 repete o 1o da C1; "aceitavam" esta dentro dele, mas curto: outro problema
     assert repetidos([{"feedback": fb}]) == (1, 4)
-    print("demo ok: literalidade, paragrafos e trechos repetidos.")
+    assert "avaliados na C1" in prompt_feedback_comp(essay, "C2", 120)
+    assert "avaliados na C1" not in prompt_feedback_comp(essay, "C1", 120)
+    print("demo ok: literalidade, paragrafos, trechos repetidos e gramatica so na C1.")
 
 
 def main(argv=None):

@@ -158,6 +158,11 @@ conjugado incorretamente". Isso também explica a queda do alinhamento da C2 (-0
 -0,55 para -0,25), embora com 30 redações por competência o erro padrão do Spearman seja de ~0,2. Próximo
 ajuste: dizer às competências 2 a 5 que desvios gramaticais são da C1 e não entram ali.
 
+Versão 3 do feedback (2026-10-03): igual à v2, mais uma linha no prompt das competências 2 a 5
+dizendo que desvios gramaticais (ortografia, acentuação, concordância, regência, crase,
+pontuação) são avaliados na C1 e não entram ali. Rodadas `feedback_cp30_comp3_humano` e
+`feedback_cp30_comp3_ft3` (célula 6 do `colab_vllm.ipynb`).
+
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
 Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação
