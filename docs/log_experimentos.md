@@ -86,6 +86,42 @@ nível de cima (Cartilha do Participante, INEP), pedindo o que falta para subir 
 trechos já citados. Nova amostra de 30 do `cp_test` (`data/amostra_feedback_cp30.csv`), para usar as
 notas do 20b treinado sem vazamento (a amostra antiga vem do teste do v5, que se sobrepõe ao `cp_train`).
 
+### Feedback por competência nas 30 do `cp_test` (2026-10-02)
+
+Três rodadas do gpt-oss-120b (vLLM, G4, ~10 min cada) na mesma amostra
+(`data/amostra_feedback_cp30.csv`, 150 pares redação x competência). Alinhamento = Spearman entre
+a nota dada no prompt e o número de problemas apontados (mais negativo, mais o feedback acompanha
+a nota).
+
+| Rodada | Nota no prompt | Alinhamento | Problemas com nota 40 / 80 / 120 / 160 / 200 | Trechos literais | Trechos repetidos |
+|---|---|---|---|---|---|
+| `feedback_cp30_junto_humano` (formato antigo) | humana | -0,26 | 2,0 / 2,1 / 2,4 / 2,4 / 0,3 | 306/316 (97%) | 58 (18%) |
+| `feedback_cp30_comp_humano` (por competência) | humana | **-0,56** | 2,8 / 2,3 / 2,4 / 1,8 / 0,9 | 290/299 (97%) | 95 (32%) |
+| `feedback_cp30_comp_ft3` (sistema real) | 20b `ft3` | -0,32 | 3,0 / 2,2 / 2,1 / 1,8 / 1,0 | 285/303 (94%) | 89 (29%) |
+
+Alinhamento por competência (C1 / C2 / C3 / C4 / C5): formato antigo -0,17 / -0,31 / -0,11 /
+-0,32 / -0,54; por competência com nota humana -0,40 / -0,79 / -0,39 / -0,79 / -0,75; com nota do
+`ft3` -0,16 / -0,55 / -0,43 / -0,47 / -0,54.
+
+Leitura:
+- O formato por competência resolve o problema principal do feedback: com a mesma nota humana, o
+  alinhamento vai de -0,26 para -0,56, e o número de problemas passa a cair quando a nota sobe
+  (antes, 40 e 80 recebiam menos problemas que 120 e 160). C2, C4 e C5 ficam fortes (-0,75 a
+  -0,79); C1 e C3 melhoram menos (-0,40).
+- No sistema real o alinhamento com a nota dada é menor (-0,32) porque as notas do `ft3` se
+  concentram em 120 e 160 (139 de 150 pares; humano 106), e sobra pouca variação para acompanhar.
+  Contra a nota humana, o feedback do sistema real alinha -0,26, o mesmo nível do formato antigo
+  recebendo a nota humana. Nestas 30 o `ft3` tem QWK 0,66 com o humano (igual ao teste inteiro) e
+  acerta a faixa exata em 54% das competências.
+- Trechos não literais: quase todos são cópias com pequenas diferenças ou dois trechos juntados
+  num só; só 1 nas duas rodadas por competência não se parece com o texto (formato antigo: 4).
+- Problema novo: a lista de trechos já citados não evita repetição, que sobe de 18% para ~30% dos
+  problemas. Exemplo (redação 547): a mesma frase da introdução citada na C1 e na C5, onde a
+  crítica "não contém proposta de intervenção" não faz sentido para uma introdução. Corrigir
+  agrupando por trecho depois da geração ou reforçando o prompt.
+- Com nota 200 o formato por competência ainda aponta ~1 problema (antigo: 0,3), em geral
+  sugestões menores.
+
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
 Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação
