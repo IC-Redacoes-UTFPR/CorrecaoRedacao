@@ -241,6 +241,39 @@ calibrado pela validação 0,67, Pearson 0,68, competências 0,50 / 0,55 / 0,49 
 (`ft3`: 0,49 / 0,53 / 0,49 / 0,54 / 0,47). As notas totais dos dois correlacionam 0,90. O
 resultado é reprodutível, e 3 épocas é o ponto certo para este tamanho de treino.
 
+### Comparação com a literatura: BERTimbau e gpt-oss nas duas divisões (2026-10-03)
+
+`colab_comparacao.ipynb` (tabela completa em `results/colab/comparacao.md`). Divisão oficial do
+essay-br (`make_official_split.py`, aleatória, semente 230: os temas do teste aparecem no treino)
+e divisão por tema (cross-prompt). Época e calibração escolhidas na validação em todos.
+
+| Divisão | Modelo | QWK bruto | Calib. val (desloc.) | Calib. val (quantil) | Pearson | C1 | C2 | C3 | C4 | C5 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| oficial | BERTimbau base, regressão | 0,74 | 0,77 | 0,77 | 0,78 | 0,58 | 0,62 | 0,62 | 0,67 | 0,68 |
+| oficial | **gpt-oss-20b LoRA, 4 épocas** | **0,78** | **0,78** | **0,78** | 0,79 | 0,64 | 0,61 | 0,62 | 0,71 | 0,73 |
+| cross-prompt | BERTimbau base, regressão | **0,68** | 0,68 | **0,71** | **0,72** | 0,42 | 0,51 | 0,46 | 0,58 | 0,56 |
+| cross-prompt | gpt-oss-20b LoRA, 3 épocas (`ft3`) | 0,66 | 0,67 | 0,69 | 0,69 | 0,49 | 0,53 | 0,49 | 0,54 | 0,47 |
+| oficial (lit.) | Amorim e Veloso; Fonseca et al. (Marinho et al., JIDM 2022) | 0,49; 0,53 | | | | | | | | |
+| aleatória (lit.) | BERTimbau base (Matsuoka, arXiv 2023, semente não informada) | 0,79 | | | | | | | | |
+
+Diferença de QWK bruto, bootstrap pareado (500 reamostragens): na divisão oficial o gpt-oss
+supera o BERTimbau por +0,033 (IC95 [+0,007, +0,059]); na cross-prompt o BERTimbau supera o
+gpt-oss por +0,027 (IC95 [+0,005, +0,050]). As duas diferenças são pequenas, mas fora do ruído.
+
+Leitura:
+- Na divisão oficial, a dos resultados publicados, o gpt-oss-20b com LoRA chega a 0,78, no
+  nível do melhor número publicado (0,79, Matsuoka, com outra semente e sem revisão por pares) e
+  muito acima dos resultados revisados (0,49 e 0,53). Nossa reprodução do BERTimbau dá 0,74 bruto
+  e 0,77 calibrado, perto dos 0,79 dele.
+- Com temas novos (cross-prompt), o BERTimbau de 110 milhões de parâmetros empata ou supera um
+  pouco o gpt-oss-20b com LoRA no total (0,68 x 0,66 bruto). O gpt-oss é melhor na C1 (0,49 x
+  0,42), o BERTimbau na C4 e na C5 (diferenças por competência sem teste). Para dar só a nota, um
+  modelo pequeno basta; a vantagem do LLM é gerar o feedback, que o BERTimbau não faz.
+- A queda da divisão oficial para a cross-prompt é maior no gpt-oss (0,78 para 0,66) que no
+  BERTimbau (0,74 para 0,68): parte do ganho do LLM com temas vistos é específica do tema. Combina
+  com a curva de épocas: com temas vistos a validação ainda sobe na 4ª época (0,55, 0,67, 0,70,
+  0,73; talvez mais épocas rendam mais), enquanto com temas novos ela para na 3ª (`ft6`).
+
 ### QWK por competência (bruto), Flash Lite
 
 | Modo | C1 | C2 | C3 | C4 | C5 |
