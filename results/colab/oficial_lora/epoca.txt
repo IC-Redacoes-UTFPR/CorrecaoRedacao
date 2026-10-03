@@ -1,0 +1,1 @@
+epoca 4 de 4, escolhida pelo QWK de validacao {1: np.float64(0.5545471366191149), 2: np.float64(0.6713297808122559), 3: np.float64(0.7048668162416281), 4: np.float64(0.7304408425268427)}
