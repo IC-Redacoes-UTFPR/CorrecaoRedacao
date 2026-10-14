@@ -35,7 +35,8 @@ def val_escolhida(ft):
 
 RODADAS = [
     ("oficial", "BERTimbau base (regressao)", "bertimbau_oficial_test", "bertimbau_oficial_val"),
-    ("oficial", "gpt-oss-20b LoRA, nota esperada", "gptoss20b_oficialev_test", val_escolhida("oficial")),
+    ("oficial", "gpt-oss-20b LoRA ate 4 epocas, nota esperada", "gptoss20b_oficialev_test", val_escolhida("oficial")),
+    ("oficial", "gpt-oss-20b LoRA ate 6 epocas, nota esperada", "gptoss20b_oficial6ev_test", val_escolhida("oficial6")),
     ("cross-prompt", "gpt-oss-120b sem treino (mts_fs)", "gptoss120b_mts_fs_cp", "gptoss120b_mts_fs_val"),
     ("cross-prompt", "BERTimbau base (regressao)", "bertimbau_cp_test", "bertimbau_cp_val"),
     ("cross-prompt", "gpt-oss-20b LoRA 3 epocas, nota esperada", "gptoss20b_ft3ev_cp", "gptoss20b_ft3ev_val"),
