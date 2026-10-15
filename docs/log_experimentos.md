@@ -187,6 +187,14 @@ problema duas vezes: são competências diferentes apontando o mesmo trecho por 
 a C5 que a proposta não diz quem age nem como). Para o estudante, dá para agrupar por trecho na apresentação. A v3 fica como
 formato do feedback.
 
+### Feedback v3 em mais 30 redações (2026-10-15)
+
+`data/amostra_feedback_cp30b.csv` (30 redações novas do teste por tema, 15 temas), para a avaliação
+humana chegar a 60. Nota humana / nota do `ft3`: alinhamento -0,59 / -0,45 (primeiras 30: -0,66 /
+-0,58), trechos literais 93% / 93%, repetidos 19% / 23%, gramática fora da C1 2% / 3%. Mesmo
+comportamento da v3 nas primeiras 30; o alinhamento um pouco menor está dentro do ruído de 30
+redações. Rodadas `feedback_cp30b_comp3_humano` e `feedback_cp30b_comp3_ft3`.
+
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
 Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação
