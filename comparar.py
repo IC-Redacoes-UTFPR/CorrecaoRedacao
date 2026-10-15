@@ -41,6 +41,11 @@ RODADAS = [
     ("cross-prompt", "BERTimbau base (regressao)", "bertimbau_cp_test", "bertimbau_cp_val"),
     ("cross-prompt", "gpt-oss-20b LoRA 3 epocas, nota esperada", "gptoss20b_ft3ev_cp", "gptoss20b_ft3ev_val"),
     ("cross-prompt", "gpt-oss-20b LoRA ft6 (epoca pela validacao)", "gptoss20b_ft6ev_cp", val_escolhida("ft6")),
+    ("cross-prompt", "BERTimbau base, paragrafos e redacao inteira", "bertimbau_cp_par_test", "bertimbau_cp_par_val"),
+    ("cross-prompt", "BERTimbau large, paragrafos e redacao inteira", "bertimbau_large_cp_par_test",
+     "bertimbau_large_cp_par_val"),
+    ("cross-prompt", "gpt-oss-20b LoRA com paragrafos (epoca pela validacao)", "gptoss20b_ft3pev_cp",
+     val_escolhida("ft3p")),
 ]
 
 LITERATURA = [

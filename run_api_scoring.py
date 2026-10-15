@@ -25,6 +25,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import ast
 import json
 import os
 import re
@@ -132,6 +133,19 @@ def limpar(texto):
     texto = re.sub(r"\[[A-Z/]+\]", "", texto)
     texto = re.sub(r"\{[a-z]+\}", "", texto)
     return re.sub(r"\s+", " ", texto).strip()
+
+
+def paragrafos(texto):
+    """O essay-br guarda a redacao como lista de paragrafos ("['p1', 'p2']") e o limpar junta tudo
+    numa linha so. Aqui os paragrafos ficam separados por linha em branco: o feedback precisa achar a
+    conclusao (C5), e a nota pode usar a organizacao do texto (C3, C4)."""
+    try:
+        ps = ast.literal_eval(str(texto))
+    except (ValueError, SyntaxError):
+        return limpar(texto)
+    if not isinstance(ps, list):
+        return limpar(texto)
+    return "\n\n".join(p for p in map(limpar, ps) if p)
 
 
 def chat(provider, model, prompt, temperature=0.1, max_tokens=400, max_retries=6):

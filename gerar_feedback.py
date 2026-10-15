@@ -19,7 +19,6 @@ Uso:
 from __future__ import annotations
 
 import argparse
-import ast
 import json
 import os
 import re
@@ -28,25 +27,12 @@ import sys
 import pandas as pd
 
 import run_api_scoring as ras
-from run_api_scoring import COMPS, RUBRICA, chat, extrair_json, limpar
+from run_api_scoring import COMPS, RUBRICA, chat, extrair_json, limpar, paragrafos
 
 
 def norm(s):
     """Minusculas, sem pontuacao e espaco unico: tolera diferenca de virgula e espaco ao citar."""
     return re.sub(r"\s+", " ", re.sub(r"[^\w\s]", " ", str(s).lower())).strip()
-
-
-def paragrafos(texto):
-    """O essay-br guarda a redacao como lista de paragrafos ("['p1', 'p2']") e o limpar junta tudo
-    numa linha so. No feedback os paragrafos ficam: o modelo precisa achar a conclusao (C5) e nao
-    deve citar um trecho que atravessa dois paragrafos."""
-    try:
-        ps = ast.literal_eval(str(texto))
-    except (ValueError, SyntaxError):
-        return limpar(texto)
-    if not isinstance(ps, list):
-        return limpar(texto)
-    return "\n\n".join(p for p in map(limpar, ps) if p)
 
 
 def prompt_feedback(essay, notas, tema_id=None):

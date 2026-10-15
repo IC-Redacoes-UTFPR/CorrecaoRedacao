@@ -30,11 +30,12 @@ import run_api_scoring as ras
 BASE = "openai/gpt-oss-20b"
 
 
-def exemplos(train_csv, temas_csv):
+def exemplos(train_csv, temas_csv, com_paragrafos=False):
     t = pd.read_csv(temas_csv)
     ras.TEMAS = {int(r.id): (r.title, str(r.description)) for r in t.itertuples()}
     df = pd.read_csv(train_csv)
-    return [{"prompt": [{"role": "user", "content": ras.prompt_ft(ras.limpar(r.essay), r.prompt)}],
+    texto = ras.paragrafos if com_paragrafos else ras.limpar
+    return [{"prompt": [{"role": "user", "content": ras.prompt_ft(texto(r.essay), r.prompt)}],
              "completion": [{"role": "assistant", "content": json.dumps(
                  {c: int(getattr(r, c.lower())) for c in ras.COMPS})}]}
             for r in df.itertuples()]
@@ -49,9 +50,10 @@ def main(argv=None):
     ap.add_argument("--base", default=BASE, help="modelo base (um gpt-oss minusculo local serve de teste)")
     ap.add_argument("--limit", type=int, default=0, help="usa so N exemplos (teste)")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--paragrafos", action="store_true", help="redacao com os paragrafos separados (avaliar_ft.py tambem)")
     args = ap.parse_args(argv)
 
-    dados = exemplos(args.train, args.temas)
+    dados = exemplos(args.train, args.temas, args.paragrafos)
     dados = dados[:args.limit] if args.limit else dados
     print(f"{len(dados)} exemplos de treino")
     if args.dry_run:

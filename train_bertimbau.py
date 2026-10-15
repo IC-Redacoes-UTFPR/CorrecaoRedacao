@@ -22,10 +22,19 @@ import numpy as np
 import pandas as pd
 
 from evaluate import evaluate_pair
-from run_api_scoring import limpar
+from run_api_scoring import limpar, paragrafos
 
 BASE = "neuralmind/bert-base-portuguese-cased"
 NOTAS = ["c1", "c2", "c3", "c4", "c5"]
+
+
+def cabeca_cauda(ids, cabe):
+    """Corta o meio de uma redacao que nao cabe: 1/4 do espaco para o inicio e 3/4 para o fim
+    (Sun et al., 2019: o fim pesa mais; aqui fica a conclusao com a proposta da C5)."""
+    if len(ids) <= cabe:
+        return ids
+    ini = cabe // 4
+    return ids[:ini] + ids[len(ids) - (cabe - ini):]
 
 
 def tabela(df, pred, modelo):
@@ -52,6 +61,10 @@ def main(argv=None):
     ap.add_argument("--lr", type=float, default=2e-5)
     ap.add_argument("--max-length", type=int, default=512)
     ap.add_argument("--limit", type=int, default=0, help="usa so N redacoes de cada parte (teste)")
+    ap.add_argument("--paragrafos", action="store_true", help="redacao com os paragrafos separados")
+    ap.add_argument("--inteira", action="store_true",
+                    help="redacao longa vira inicio + fim (em vez de cortar o fim, onde fica a proposta da C5)")
+    ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args(argv)
 
     import torch
@@ -65,11 +78,23 @@ def main(argv=None):
     if args.limit:
         partes = {n: d.head(args.limit) for n, d in partes.items()}
 
+    # o tokenizador do BERT apaga a quebra de linha: o paragrafo vira um "¶", que existe no vocabulario
+    texto = (lambda e: paragrafos(e).replace("\n\n", " ¶ ")) if args.paragrafos else limpar
+
     def dataset(df):
-        enc = tok([str(temas.get(t, "")) for t in df["prompt"]], [limpar(e) for e in df["essay"]],
-                  truncation="only_second", max_length=args.max_length)
+        titulos, redacoes = [str(temas.get(t, "")) for t in df["prompt"]], [texto(e) for e in df["essay"]]
+        if not args.inteira:
+            enc = dict(tok(titulos, redacoes, truncation="only_second", max_length=args.max_length))
+        else:
+            enc = {"input_ids": [], "token_type_ids": [], "attention_mask": []}
+            for t, r in zip(titulos, redacoes):
+                a = tok.encode(t, add_special_tokens=False)[:64]
+                b = cabeca_cauda(tok.encode(r, add_special_tokens=False), args.max_length - len(a) - 3)
+                enc["input_ids"].append([tok.cls_token_id] + a + [tok.sep_token_id] + b + [tok.sep_token_id])
+                enc["token_type_ids"].append([0] * (len(a) + 2) + [1] * (len(b) + 1))
+                enc["attention_mask"].append([1] * len(enc["input_ids"][-1]))
         enc["labels"] = (df[NOTAS].to_numpy(float) / 200).tolist()
-        return Dataset.from_dict(dict(enc))
+        return Dataset.from_dict(enc)
 
     ds = {n: dataset(d) for n, d in partes.items()}
 
@@ -87,7 +112,8 @@ def main(argv=None):
             per_device_train_batch_size=16, per_device_eval_batch_size=32, weight_decay=0.01,
             warmup_steps=max(1, round(0.1 * passos)), eval_strategy="epoch", save_strategy="epoch",
             load_best_model_at_end=True, metric_for_best_model="qwk", greater_is_better=True,
-            save_total_limit=1, logging_steps=50, report_to="none", bf16=torch.cuda.is_available()))
+            save_total_limit=1, logging_steps=50, report_to="none", bf16=torch.cuda.is_available(),
+            seed=args.seed))
     trainer.train()
     hist = [(round(h["epoch"]), round(h["eval_qwk"], 3)) for h in trainer.state.log_history if "eval_qwk" in h]
     print(f"QWK na validacao por epoca: {hist} | melhor: {max(hist, key=lambda x: x[1])}")

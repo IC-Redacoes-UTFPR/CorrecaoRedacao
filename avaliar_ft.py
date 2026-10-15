@@ -41,7 +41,9 @@ def main(argv=None):
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--esperado", action="store_true",
                     help="nota = media ponderada pela probabilidade das 6 notas, nao so a mais provavel")
+    ap.add_argument("--paragrafos", action="store_true", help="redacao com os paragrafos separados (como no treino)")
     args = ap.parse_args(argv)
+    texto = ras.paragrafos if args.paragrafos else limpar
 
     import torch
     from peft import PeftModel
@@ -75,7 +77,7 @@ def main(argv=None):
             "pred_c5", "pred_total", "ok", "modelo", "modo", "ts", "raw"]
     for i in range(0, len(df), args.lote):
         lote = df.iloc[i:i + args.lote]
-        textos = [tok.apply_chat_template([{"role": "user", "content": ras.prompt_ft(limpar(r.essay), r.prompt)}],
+        textos = [tok.apply_chat_template([{"role": "user", "content": ras.prompt_ft(texto(r.essay), r.prompt)}],
                                           tokenize=False, add_generation_prompt=True) for r in lote.itertuples()]
         enc = tok(textos, return_tensors="pt", padding=True, add_special_tokens=False).to(model.device)
         with torch.no_grad():
