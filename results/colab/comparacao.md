@@ -13,6 +13,9 @@ QWK do total no conjunto de teste; por competencia, QWK bruto.
 | cross-prompt | BERTimbau base (regressao) | 0,68 | 0,68 | 0,71 | 0,72 | 0,42 | 0,51 | 0,46 | 0,58 | 0,56 |
 | cross-prompt | gpt-oss-20b LoRA 3 epocas, nota esperada | 0,66 | 0,67 | 0,69 | 0,69 | 0,49 | 0,53 | 0,49 | 0,54 | 0,47 |
 | cross-prompt | gpt-oss-20b LoRA ft6 (epoca pela validacao) | 0,66 | 0,67 | 0,67 | 0,68 | 0,50 | 0,55 | 0,49 | 0,56 | 0,48 |
+| cross-prompt | BERTimbau base, paragrafos e redacao inteira | 0,69 | 0,68 | 0,71 | 0,72 | 0,39 | 0,53 | 0,51 | 0,60 | 0,53 |
+| cross-prompt | BERTimbau large, paragrafos e redacao inteira | 0,61 | 0,61 | 0,68 | 0,68 | 0,42 | 0,47 | 0,30 | 0,55 | 0,38 |
+| cross-prompt | gpt-oss-20b LoRA com paragrafos (epoca pela validacao) | 0,63 | 0,65 | 0,69 | 0,68 | 0,45 | 0,52 | 0,45 | 0,54 | 0,40 |
 
 ## Literatura (mesmo corpus, divisao aleatoria: temas do teste vistos no treino)
 
