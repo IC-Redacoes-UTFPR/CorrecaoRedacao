@@ -274,6 +274,19 @@ Leitura:
   com a curva de épocas: com temas vistos a validação ainda sobe na 4ª época (0,55, 0,67, 0,70,
   0,73; talvez mais épocas rendam mais), enquanto com temas novos ela para na 3ª (`ft6`).
 
+### Divisão oficial com até 6 épocas (2026-10-14, rodada `oficial6`)
+
+Pedido do Prof. Ives, porque com 4 épocas a validação ainda subia. QWK na validação (987
+redações) por época: 0,60 / 0,68 / 0,73 / 0,74 / 0,74 / 0,72. A validação sobe até a 5ª e cai na
+6ª: começo de overfitting, como na divisão por tema (onde parou na 3ª). Escolhida a 5ª. No teste:
+QWK bruto 0,75, calibrado 0,74 a 0,75, Pearson 0,75; competências 0,65 / 0,59 / 0,60 / 0,69 / 0,70.
+
+A rodada de 4 épocas tinha validação 0,73 e teste 0,78; esta tem validação 0,74 e teste 0,75. Com
+987 redações o ruído é de ±0,03 a ±0,04, então as duas rodadas são equivalentes: mais épocas não
+melhoram. Pelo protocolo (escolha pela validação), o número da divisão oficial passa a ser 0,75,
+no nível do BERTimbau (0,74 bruto, 0,77 calibrado). Reportar a faixa 0,75 a 0,78 deixa claro o
+ruído entre treinos.
+
 ### QWK por competência (bruto), Flash Lite
 
 | Modo | C1 | C2 | C3 | C4 | C5 |
