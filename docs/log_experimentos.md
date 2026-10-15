@@ -187,6 +187,29 @@ problema duas vezes: são competências diferentes apontando o mesmo trecho por 
 a C5 que a proposta não diz quem age nem como). Para o estudante, dá para agrupar por trecho na apresentação. A v3 fica como
 formato do feedback.
 
+### Tentativas de subir a nota: parágrafos, redação inteira, BERTimbau large (2026-10-15)
+
+`colab_melhorias.ipynb`, divisão por tema. Parágrafos: a redação deixa de chegar numa linha só com
+`', '` entre os parágrafos (no BERTimbau, cada parágrafo marcado com "¶", porque o tokenizador apaga a
+quebra de linha). Redação inteira: 17% das redações passam de 512 tokens; em vez de cortar o fim, fica
+o início (1/4) e o fim (3/4).
+
+| Modelo | Val QWK | Teste bruto | Teste calib. (quantil) | Pearson | C1 | C2 | C3 | C4 | C5 |
+|---|---|---|---|---|---|---|---|---|---|
+| BERTimbau base (antes) | 0,70 | 0,68 | 0,71 | 0,72 | 0,42 | 0,51 | 0,46 | 0,58 | 0,56 |
+| BERTimbau base, parágrafos + inteira | 0,70 | 0,69 | 0,71 | 0,72 | 0,39 | 0,53 | 0,51 | 0,60 | 0,53 |
+| BERTimbau large, parágrafos + inteira | 0,63 | 0,61 | 0,68 | 0,68 | 0,42 | 0,47 | 0,30 | 0,55 | 0,38 |
+| gpt-oss-20b LoRA 3 épocas (antes, `ft3`) | 0,64 | 0,66 | 0,69 | 0,69 | 0,49 | 0,53 | 0,49 | 0,54 | 0,47 |
+| gpt-oss-20b LoRA 3 épocas, parágrafos (`ft3p`) | 0,67 | 0,63 | 0,69 | 0,68 | 0,45 | 0,52 | 0,45 | 0,54 | 0,40 |
+
+Leitura: nenhuma das três melhora. O BERTimbau base com parágrafos empata (validação 0,70 nos dois;
+C3 e C4 sobem um pouco, C1 e C5 descem, tudo dentro do ruído). O large piora, sobretudo na C3 e na
+C5: com 4.573 redações e a mesma receita ele não se ajusta bem (precisaria de outra taxa de
+aprendizado e mais épocas). O gpt-oss com parágrafos tem validação maior (0,67 x 0,64), mas teste
+menor (0,63 x 0,66): com 516 redações na validação e 1.396 no teste, diferenças de 0,03 entre
+treinos são ruído. Ficam os modelos atuais (`ft3` e BERTimbau base); o teto de ~0,70 na divisão por
+tema parece vir dos dados, não da entrada.
+
 ### Feedback v3 em mais 30 redações (2026-10-15)
 
 `data/amostra_feedback_cp30b.csv` (30 redações novas do teste por tema, 15 temas), para a avaliação
