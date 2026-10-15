@@ -7,7 +7,8 @@ QWK do total no conjunto de teste; por competencia, QWK bruto.
 | Divisao | Modelo | QWK bruto | Calibrado pela val. (desloc.) | Calibrado pela val. (quantil) | Pearson | C1 | C2 | C3 | C4 | C5 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | oficial | BERTimbau base (regressao) | 0,74 | 0,77 | 0,77 | 0,78 | 0,58 | 0,62 | 0,62 | 0,67 | 0,68 |
-| oficial | gpt-oss-20b LoRA, nota esperada | 0,78 | 0,78 | 0,78 | 0,79 | 0,64 | 0,61 | 0,62 | 0,71 | 0,73 |
+| oficial | gpt-oss-20b LoRA ate 4 epocas, nota esperada | 0,78 | 0,78 | 0,78 | 0,79 | 0,64 | 0,61 | 0,62 | 0,71 | 0,73 |
+| oficial | gpt-oss-20b LoRA ate 6 epocas, nota esperada | 0,75 | 0,74 | 0,75 | 0,75 | 0,65 | 0,59 | 0,60 | 0,69 | 0,70 |
 | cross-prompt | gpt-oss-120b sem treino (mts_fs) | 0,45 | 0,62 | 0,60 | 0,63 | 0,21 | 0,46 | 0,47 | 0,31 | 0,25 |
 | cross-prompt | BERTimbau base (regressao) | 0,68 | 0,68 | 0,71 | 0,72 | 0,42 | 0,51 | 0,46 | 0,58 | 0,56 |
 | cross-prompt | gpt-oss-20b LoRA 3 epocas, nota esperada | 0,66 | 0,67 | 0,69 | 0,69 | 0,49 | 0,53 | 0,49 | 0,54 | 0,47 |
