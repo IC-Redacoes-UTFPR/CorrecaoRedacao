@@ -210,6 +210,42 @@ menor (0,63 x 0,66): com 516 redações na validação e 1.396 no teste, diferen
 treinos são ruído. Ficam os modelos atuais (`ft3` e BERTimbau base); o teto de ~0,70 na divisão por
 tema parece vir dos dados, não da entrada.
 
+### Empilhamento por competência, só CPU (2026-11-11)
+
+`empilhar.py`, divisão por tema, sem GPU: usa as previsões já salvas do `ft3` (nota esperada) e do
+BERTimbau base. Para cada competência, uma regressão ridge (alpha por RidgeCV) sobre as 10 notas
+previstas pelos dois modelos e, na última linha, mais 4 features simples do texto (palavras,
+parágrafos, diversidade de vocabulário, palavras por frase; ideia do EASY, Choi et al. 2026). O
+treino não tem previsões fora da amostra, então o ajuste é na validação (516 redações, 17 temas):
+estimativa out-of-fold por tema (GroupKFold, 5 dobras), e o teste medido uma vez com o modelo
+ajustado na validação inteira. Calibração por quantil ajustada nas previsões out-of-fold.
+Tabela também em `results/colab/empilhamento.md`.
+
+| Variante | Val. OOF QWK | Teste bruto | Teste quantil | Pearson | C1 | C2 | C3 | C4 | C5 |
+|---|---|---|---|---|---|---|---|---|---|
+| `ft3` sozinho | 0,64 | 0,66 | 0,69 | 0,69 | 0,49 | 0,53 | 0,49 | 0,54 | 0,47 |
+| BERTimbau sozinho | 0,70 | 0,68 | 0,71 | 0,72 | 0,42 | 0,51 | 0,46 | 0,58 | 0,56 |
+| média simples | 0,69 | 0,69 | 0,73 | 0,73 | 0,48 | 0,55 | 0,49 | 0,58 | 0,53 |
+| ridge, só os dois modelos | 0,70 | 0,71 | 0,74 | 0,74 | 0,46 | 0,52 | 0,49 | 0,63 | 0,56 |
+| **ridge, modelos + texto** | **0,71** | **0,72** | **0,74** | 0,74 | 0,47 | 0,51 | 0,48 | 0,63 | 0,56 |
+
+Bootstrap pareado no teste (2.000 reamostras), empilhado (modelos + texto) menos o outro, QWK bruto
+do total: contra o BERTimbau +0,034 (IC95 +0,023 a +0,045) reamostrando redações e +0,033 (IC95
++0,010 a +0,057) reamostrando temas; contra o `ft3` +0,061 (IC95 +0,044 a +0,078) e +0,058 (IC95
++0,012 a +0,101). Os dois intervalos ficam acima de zero mesmo reamostrando por tema.
+
+Leitura: **melhor resultado do projeto na divisão por tema** (bruto 0,72, quantil 0,74, contra 0,68
+e 0,71 do BERTimbau) e, diferente da média simples, a validação também aponta o empilhado (0,71 x
+0,70), então a escolha não usou o teste. O ganho vem do peso aprendido por competência (a C4 sobe
+de 0,58 para 0,63: a ridge usa as notas das outras competências como sinal), não das features de
+texto (+0,01, dentro do ruído). Limite: só 17 temas na validação para ajustar os pesos.
+
+LanguageTool (`lt_features.py` em `cp_val` e `cp_test`, ~20 min no CPU; `data/lt_cp_*.csv`):
+desvios por 100 palavras, ortografia, gramática e pontuação como mais 4 features. Spearman dos
+desvios por 100 palavras com a C1 humana: -0,34 na validação, -0,27 no teste. No empilhamento não
+ajuda: validação 0,71 (igual), teste 0,71 bruto (0,72 sem), C1 0,47 para 0,48. Os dois modelos já
+captam esse sinal. Fica a variante "modelos + texto" sem o LanguageTool.
+
 ### Feedback v3 em mais 30 redações (2026-10-15)
 
 `data/amostra_feedback_cp30b.csv` (30 redações novas do teste por tema, 15 temas), para a avaliação
