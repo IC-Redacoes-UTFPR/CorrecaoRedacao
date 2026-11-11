@@ -28,7 +28,7 @@ import pandas as pd
 
 from evaluate import _spearman, qwk
 from gerar_feedback import por_trecho
-from run_api_scoring import COMPS, RUBRICA, paragrafos
+from run_api_scoring import COMPS, paragrafos
 
 OUT = "avaliacao_humana"
 FONTES = [("results/colab/feedback_cp30_comp3_ft3.jsonl", "data/amostra_feedback_cp30.csv",
@@ -37,6 +37,19 @@ FONTES = [("results/colab/feedback_cp30_comp3_ft3.jsonl", "data/amostra_feedback
            "results/juiz/cp30b_v3_ft3.jsonl")]
 CRITERIOS = ["especificidade", "acionabilidade", "correcao", "alinhamento"]
 SEMENTE = 2026
+# RUBRICA do run_api_scoring.py e sem acento (texto de prompt); aqui e para leitores de Letras
+LEGENDA = {
+    "C1": "Domínio da modalidade escrita formal da língua portuguesa (ortografia, concordância, "
+          "regência, pontuação, escolha de registro).",
+    "C2": "Compreensão da proposta e aplicação do tipo textual dissertativo-argumentativo para "
+          "desenvolver o tema, sem tangenciar nem fugir.",
+    "C3": "Seleção, relação, organização e interpretação de informações, fatos, opiniões e argumentos "
+          "em defesa de um ponto de vista.",
+    "C4": "Conhecimento dos mecanismos linguísticos de coesão: articulação entre parágrafos, períodos e "
+          "partes do texto (conectivos, referenciação).",
+    "C5": "Elaboração de proposta de intervenção para o problema, detalhada e respeitando os direitos "
+          "humanos, com agente, ação, modo ou meio, efeito e detalhamento.",
+}
 
 INSTRUCOES = """# Avaliação do feedback: instruções
 
@@ -106,7 +119,7 @@ def montar():
         cod = f"F{k + 1:02d}"
         corpo.append(item_html(cod, r, a))
         chave.append({"codigo": cod, "index_redacao": r["index_redacao"], "feedback": fonte})
-    leg = "".join(f"<li><b>{c}</b>: {esc(RUBRICA[c])}</li>" for c in COMPS)
+    leg = "".join(f"<li><b>{c}</b>: {esc(LEGENDA[c])}</li>" for c in COMPS)
     open(f"{OUT}/itens.html", "w", encoding="utf-8").write(
         f"<!doctype html><html lang=pt-BR><meta charset=utf-8><title>Feedbacks para avaliar</title>"
         f"<style>{CSS}</style><body><h1>Feedbacks para avaliar</h1><p>Competências:</p><ul>{leg}</ul>"
