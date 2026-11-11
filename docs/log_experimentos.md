@@ -254,6 +254,37 @@ humana chegar a 60. Nota humana / nota do `ft3`: alinhamento -0,59 / -0,45 (prim
 comportamento da v3 nas primeiras 30; o alinhamento um pouco menor está dentro do ruído de 30
 redações. Rodadas `feedback_cp30b_comp3_humano` e `feedback_cp30b_comp3_ft3`.
 
+### Juiz automático do feedback (2026-11-11)
+
+`juiz_feedback.py`, ideia do FeedEval (Chu et al., 2026). Juiz de outra família
+(`gemini-3.5-flash-lite`, temperatura 0; o feedback é do gpt-oss-120b), uma chamada por feedback com a
+redação e as 5 competências: notas de 1 a 5 de especificidade, utilidade e validade por competência,
+e, para cada problema apontado, se procede e se está na competência certa. 240 feedbacks (v1, v2 e
+v3 nas 30 do `cp30`, v3 nas 30 do `cp30b`, cada um com a nota humana e com a do `ft3`), 4 chaves em
+paralelo, ~7 min. Saída em `results/juiz/`; tabela com `python juiz_feedback.py --resumo "results/juiz/*.jsonl"`.
+
+| Feedback | Especificidade | Utilidade | Validade | Problemas procedentes | Na competência certa |
+|---|---|---|---|---|---|
+| v1, nota humana | 4,28 | 4,03 | 4,04 | 88% | 77% |
+| v1, nota do `ft3` | 4,37 | 4,15 | 4,15 | 89% | 75% |
+| v2, nota humana | 4,35 | 4,17 | 4,09 | 84% | 69% |
+| v2, nota do `ft3` | 4,45 | 4,10 | 4,08 | 89% | 72% |
+| v3, nota humana | 4,23 | 4,12 | 4,18 | 87% | 84% |
+| v3, nota do `ft3` | 4,29 | 4,15 | 4,08 | 85% | 79% |
+| v3 `cp30b`, nota humana | 4,27 | 4,13 | 4,11 | 81% | 78% |
+| v3 `cp30b`, nota do `ft3` | 4,39 | 4,12 | 4,09 | 83% | 80% |
+
+Bootstrap pareado por redação (cp30, humano e `ft3` juntos, ~600 problemas por versão), proporção
+na competência certa: v3 menos v1 +6,1 pp (IC95 +0,9 a +11,4), v3 menos v2 +11,4 pp (IC95 +6,5 a
++16,3), v2 menos v1 -5,5 pp (IC95 -10,3 a -0,5).
+
+Leitura: as notas de 1 a 5 não discriminam (todas entre 4,0 e 4,5, efeito teto: o juiz é generoso),
+então não servem para comparar versões. O "na competência certa" discrimina e confirma a métrica
+automática: a v3 (gramática só na C1) é a melhor, e a v2 piora em relação à v1 (trechos mais curtos
+passaram a ser citados em mais competências). Cerca de 85% dos problemas apontados procedem, sem
+diferença entre versões. Limite: juiz não validado contra humanos; usar como prévia da avaliação
+humana, e comparar com ela quando sair.
+
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
 Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação
