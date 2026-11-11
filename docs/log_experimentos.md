@@ -285,6 +285,27 @@ passaram a ser citados em mais competências). Cerca de 85% dos problemas aponta
 diferença entre versões. Limite: juiz não validado contra humanos; usar como prévia da avaliação
 humana, e comparar com ela quando sair.
 
+### Kit da avaliação humana e problemas agrupados por trecho (2026-11-11)
+
+`avaliacao_humana.py --montar` gera `avaliacao_humana/`: `itens.html` (os 60 feedbacks v3 com a nota
+do `ft3`, códigos F01 a F60 em ordem embaralhada, semente 2026), `planilha_avaliador.csv` (4
+critérios de 1 a 5 e comentário, separador ";" para o Excel), `instrucoes.md` (rubrica) e
+`chave.csv` (código para redação; não entregar aos avaliadores). `--concordancia A.csv B.csv` dá QWK,
+acordo exato e adjacente entre os dois avaliadores e Spearman da média deles com o juiz automático;
+`--autoteste` confere a leitura das planilhas com dados simulados.
+
+No `itens.html` os problemas aparecem como o aluno veria: `gerar_feedback.por_trecho()` junta os
+problemas de competências diferentes que apontam o mesmo trecho (mesma regra do `repetidos()`, agora
+em `mesmo_trecho()`), na ordem em que o trecho aparece na redação. Nas 60 redações, 634 problemas
+viram 479 trechos.
+
+Anchiêta et al. (WebMedia 2025) avaliam o feedback com BERTScore contra feedback escrito por
+corretores. O essay-br não tem esse feedback, e o `aes_enem_dataset` (Barbosa et al.) também não, só
+notas (conferido na página do Hugging Face). A comparação com eles fica qualitativa; reproduzir a
+métrica exigiria um corpus com comentários de corretor (ex.: banco de redações da UOL).
+
+Rascunho do relatório em `docs/relatorio_rascunho.md`.
+
 ### Fine-tuning cross-prompt: escolha de épocas pela validação (2026-10-02)
 
 Divisão por tema (`make_cross_prompt_split.py`): treino 4.573 redações (105 temas), validação

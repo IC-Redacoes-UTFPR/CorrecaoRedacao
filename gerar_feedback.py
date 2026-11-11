@@ -148,21 +148,42 @@ def alinhamento(registros):
     return media, pares["nota"].corr(pares["problemas"], method="spearman")
 
 
+def mesmo_trecho(t, v):
+    """Trechos normalizados iguais na pratica: um contem o outro e o menor tem pelo menos metade do
+    tamanho do maior. Trecho curto dentro de um longo nao conta (costuma ser outro problema, ex. um
+    erro de C1 dentro da frase da proposta)."""
+    return bool(t and v and (t in v or v in t) and 2 * min(len(t), len(v)) >= max(len(t), len(v)))
+
+
 def repetidos(registros):
-    """Problemas que repetem um trecho ja citado na mesma redacao: um contem o outro e o menor tem
-    pelo menos metade do tamanho do maior. Trecho curto dentro de um longo nao conta (costuma ser
-    outro problema, ex. um erro de C1 dentro da frase da proposta)."""
+    """Problemas que repetem um trecho ja citado na mesma redacao (mesmo_trecho)."""
     rep = tot = 0
     for r in registros:
         vistos = []
         for c in COMPS:
             for p in (r["feedback"].get(c) or {}).get("problemas") or []:
                 t = norm(p.get("trecho", ""))
-                rep += any(t and v and (t in v or v in t) and 2 * min(len(t), len(v)) >= max(len(t), len(v))
-                           for v in vistos)
+                rep += any(mesmo_trecho(t, v) for v in vistos)
                 tot += 1
                 vistos.append(t)
     return rep, tot
+
+
+def por_trecho(fb, essay):
+    """Problemas de todas as competencias agrupados por trecho (mesmo_trecho), na ordem em que o
+    trecho aparece na redacao. Para mostrar ao aluno: cada trecho uma vez, com as competencias juntas.
+    Devolve [{"trecho", "itens": [(comp, explicacao, correcao)]}]."""
+    texto, grupos = norm(essay), []
+    for c in COMPS:
+        for p in (fb.get(c) or {}).get("problemas") or []:
+            t = norm(p.get("trecho", ""))
+            g = next((g for g in grupos if mesmo_trecho(t, g["_n"])), None)
+            if g is None:
+                g = {"trecho": p.get("trecho", ""), "_n": t, "itens": []}
+                grupos.append(g)
+            g["itens"].append((c, p.get("explicacao", ""), p.get("correcao", "")))
+    pos = lambda g: texto.find(g["_n"]) if g["_n"] and g["_n"] in texto else len(texto)
+    return [{k: v for k, v in g.items() if k != "_n"} for g in sorted(grupos, key=pos)]
 
 
 def marcar_literal(fb, essay):
@@ -296,6 +317,8 @@ def demo():
     fb["C4"]["problemas"] = [{"trecho": "Ninguem aceitavam isso!"}, {"trecho": "aceitavam"}]
     # o 1o da C4 repete o 1o da C1; "aceitavam" esta dentro dele, mas curto: outro problema
     assert repetidos([{"feedback": fb}]) == (1, 4)
+    g = por_trecho(fb, essay)  # C1[0] e C4[0] no mesmo grupo; os outros dois sozinhos
+    assert [len(x["itens"]) for x in g] == [2, 1, 1] and [i[0] for i in g[0]["itens"]] == ["C1", "C4"]
     assert "avaliados na C1" in prompt_feedback_comp(essay, "C2", 120)
     assert "avaliados na C1" not in prompt_feedback_comp(essay, "C1", 120)
     print("demo ok: literalidade, paragrafos, trechos repetidos e gramatica so na C1.")
